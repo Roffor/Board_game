@@ -2,10 +2,10 @@
 syrye-dannye/
 
 # сырьё и чекпоинты стенда: тяжёлые, остаются на машине, где шёл прогон
-stend/runs/*/boi.jsonl
-stend/runs/*/*.tmp
+reports/progony/*/boi.jsonl
+reports/progony/*/*.tmp
 # локальные короткие прогоны
-stend/runs/lok-*/
+reports/progony/lok-*/
 
 __pycache__/
 *.pyc

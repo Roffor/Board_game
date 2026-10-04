@@ -1,11 +1,11 @@
 ---
 description: Тесты баланса, планы для стенда, разбор прогонов, соглашение по балансу
-globs: playtest/**,stend/plans/**,stend/runs/**,stend/stend/**,stend/engine/**
+globs: playtest/**,playtest/stend/plans/**,reports/progony/**,playtest/stend/stend/**,playtest/stend/engine/**
 alwaysApply: false
 ---
-Перед работой с тестами прочитай `pravila/03-balans-i-testy.md` и `pravila/04-stend-i-server.md`. Баланс — по раундам и потерям ХП против коридоров соглашения; тесты без слова Никиты не запускай; план — по времени, любое «если» — условие на число. Скиллы: `/plan-testa`, `/korotkij-test`, `/razbor-progona`.
+Перед работой с тестами прочитай `ai/pravila/03-balans-i-testy.md` и `ai/pravila/04-stend-i-server.md`. Баланс — по раундам и потерям ХП против коридоров соглашения; тесты без слова Никиты не запускай; план — по времени, любое «если» — условие на число. Скиллы: `/plan-testa`, `/korotkij-test`, `/razbor-progona`.
 
-`stend/AGENTS.md` — правила агента-исполнителя на сервере, не твоя роль, но его границы соблюдай.
+`playtest/stend/AGENTS.md` — правила агента-исполнителя на сервере, не твоя роль, но его границы соблюдай.
 
-@pravila/03-balans-i-testy.md
-@pravila/04-stend-i-server.md
+@ai/pravila/03-balans-i-testy.md
+@ai/pravila/04-stend-i-server.md

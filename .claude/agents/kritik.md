@@ -12,11 +12,11 @@ readonly: true
 
 ## Что прочитать
 
-1. `AGENTS.md` (§1 роли, §4 «Нельзя»), `pravila/02-dizajn-igry.md` (решения, требования к колоде, чек-лист карты), `pravila/uroki.md`.
-2. Для плана или итога теста — ещё `pravila/03-balans-i-testy.md`, `pravila/04-stend-i-server.md`, формат плана в `stend/AGENTS.md`.
+1. `AGENTS.md` (§1 роли, §4 «Нельзя»), `ai/pravila/02-dizajn-igry.md` (решения, требования к колоде, чек-лист карты), `ai/pravila/uroki.md`.
+2. Для плана или итога теста — ещё `ai/pravila/03-balans-i-testy.md`, `ai/pravila/04-stend-i-server.md`, формат плана в `playtest/stend/AGENTS.md`.
 3. Материал, который проверяешь, и то, на что он ссылается.
-4. Для карт и механик героя — концепты **других** героев (`cards/mag/22 §4`, `cards/zhrec/05`, `design/06`, `07`), чтобы найти копии.
-5. Прошлые разборы в `roast/` — не повторяй найденное там, если идея это уже учла.
+4. Для карт и механик героя — концепты **других** героев (`reports/mag/22 §4`, `reports/paladin/05`, `heroes/luchnik/luchnik.md`, `heroes/bard/bard.md`), чтобы найти копии.
+5. Прошлый разбор в `design/01-prozharka-idei.md` — не повторяй найденное там, если идея это уже учла.
 
 ## Режим «прожарка идеи»
 
