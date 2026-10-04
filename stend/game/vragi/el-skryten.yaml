@@ -1,0 +1,26 @@
+# Элита. Числа ударов — итоговые после калибровки (элита ×1,9 до 10, босс ×1,5 до 19, ярус II ×1,5 до 6).
+# Текст намерения движок пишет сам по действиям.
+id: skryten
+imya: Скрытень
+yarus: EL
+zdorove: 40
+svojstva:
+  skrytyj: true
+rezhim: koloda
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 10}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, raz: 2}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, cel: vse}
+- tip: защита
+  dejstviya:
+  - {shchit: 5}
+  - {ataka: 10}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, cel: bez_shchita}

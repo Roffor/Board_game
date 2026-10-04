@@ -1,0 +1,17 @@
+id: vozmezdie-sveta
+imya: Возмездие света
+geroj: zhrec
+nabor: zapas
+bild: С–П
+vid: атака
+chisla:
+  minus: 3
+tekst: Урон = твои щиты − {minus}; щиты остаются.
+effekt:
+- {uron: 'max(0, shchit - minus)'}
+bot: {poryadok: 4.6, cennost: 5}
+granicy: {minus: [1, 5]}
+status: zapas
+staryj_id: y_reflect
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

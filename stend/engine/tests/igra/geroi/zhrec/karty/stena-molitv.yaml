@@ -1,0 +1,17 @@
+id: stena-molitv
+imya: Стена молитв
+geroj: zhrec
+nabor: apgrejd
+bild: П–Ч
+vid: молитва
+chisla:
+  shchit: 2
+tekst: '{shchit:щит} каждому герою. Молитва; если открыта карта щита — сыграй обе открытые.'
+effekt:
+- {osobyj: {imya: stena_molitv, shchit: shchit}}
+bot: {poryadok: 3.5, cennost: 6, pereplan: true}
+granicy: {shchit: [0, 4]}
+status: v_teste
+staryj_id: b_wall
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,20 @@
+id: ognennaya-metka
+imya: Огненная метка
+geroj: mag
+nabor: apgrejd
+bild: П–М
+vid: связка
+cena: 1
+chisla:
+  porcha: 1
+  plyus: 1
+tekst: '{cena:мана}. {porcha:Порча}. Если союзник в этом раунде сжигал карту — ещё {plyus:Порча}.'
+effekt:
+- {porcha: porcha + (plyus if soyuznik_szheg else 0)}
+zamenyaet: porcha-karta
+bot: {poryadok: 1.3, cennost: 5}
+granicy: {porcha: [0, 3], plyus: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: n_mark
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

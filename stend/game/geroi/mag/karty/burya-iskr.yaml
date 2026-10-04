@@ -1,0 +1,19 @@
+id: burya-iskr
+imya: Буря искр
+geroj: mag
+nabor: apgrejd
+bild: С–М
+vid: атака
+cena: 1
+chisla:
+  za_kartu: 1
+tekst: '{cena:мана}. {za_kartu:урон} за каждую карту, сыгранную в этом раунде тобой и союзником до неё (одним ударом).'
+effekt:
+- {uron: za_kartu * (sygrano_mnoj_do + sygrano_soyuznikom)}
+zamenyaet: pepelnyj-roj
+bot: {poryadok: 4.7, cennost: 6}
+granicy: {za_kartu: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: x_storm
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

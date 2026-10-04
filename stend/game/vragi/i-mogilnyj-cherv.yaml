@@ -1,0 +1,18 @@
+# Рядовой яруса I. Числа ударов — итоговые после калибровки (элита ×1,9 до 10, босс ×1,5 до 19, ярус II ×1,5 до 6).
+# Текст намерения движок пишет сам по действиям.
+id: mogilnyj-cherv
+imya: Могильный червь
+yarus: I
+zdorove: 20
+shchit_na_starte: 4
+rezhim: cikl
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 10}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, cel: vse}
+- tip: защита
+  dejstviya:
+  - {shchit: 5}

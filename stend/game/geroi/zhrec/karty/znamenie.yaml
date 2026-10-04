@@ -1,0 +1,20 @@
+id: znamenie
+imya: Знамение
+geroj: zhrec
+nabor: apgrejd
+bild: П–Ч
+vid: молитва
+chisla:
+  vera: 2
+tekst: Молитва. Сыгранная так карта даёт ещё +{vera:вера}.
+effekt:
+- molitva:
+    posle:
+    - {vera: vera}
+    ocenka_bota: 0.6 * vera
+bot: {poryadok: 3.5, cennost: 5, pereplan: true}
+granicy: {vera: [0, 4]}
+status: v_teste
+staryj_id: m_omen
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,19 @@
+id: iskry-oskolki
+imya: Искры-осколки
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+chisla:
+  n: 2
+tekst: '{cena:мана}. Возьми в руку {n:Осколок} (0 маны, 2 урона; сгорает после розыгрыша или в конце фазы героев).'
+effekt:
+- {osobyj: {imya: oskolki, n: n, karta: oskolok}}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 6, pereplan: true}
+granicy: {n: [0, 4], cena: [0, 1]}
+status: v_teste
+staryj_id: x_shards
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

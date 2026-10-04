@@ -1,0 +1,28 @@
+id: mech-i-shchit
+imya: Меч и щит+
+geroj: zhrec
+nabor: apgrejd
+bild: С–П
+vid: атака
+chisla:
+  uron: 2
+  uron_big: 3
+  doplata: 2
+tekst: '{uron:урон} и {uron:щит} союзнику. Доплата {doplata:веру}: по {uron_big}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+  - {shchit: {komu: soyuznik, n: uron}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {pust: {x: uron_big if oplacheno else uron}}
+  - {uron: x}
+  - {shchit: {komu: soyuznik, n: x}}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], uron_big: [1, 5], doplata: [0, 4]}
+status: v_teste
+staryj_id: m_swsh
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,18 @@
+id: angelskij-klinok
+imya: Ангельский клинок
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  plyus: 1
+tekst: '{uron:урон}. Если это твоя третья карта в ходу — ещё {plyus}.'
+effekt:
+- {uron: uron + (plyus if kart_iz_ruki >= 3 else 0)}
+bot: {poryadok: 4.9, cennost: 6}
+granicy: {uron: [0, 4], plyus: [0, 3]}
+status: zapas
+staryj_id: y_angel
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

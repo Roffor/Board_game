@@ -1,0 +1,4 @@
+id: altar
+imya: Алтарь угасшего света
+osobennosti:
+  - {tip: sbros, kod: altar, tekst: "Сброс карты: +1 масло (раз за бой)."}

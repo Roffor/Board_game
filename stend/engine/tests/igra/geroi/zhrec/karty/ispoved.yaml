@@ -1,0 +1,22 @@
+id: ispoved
+imya: Исповедь
+geroj: zhrec
+nabor: start
+vid: вера
+chisla:
+  sbros: 1
+  vera: 1
+  dobor: 1
+tekst: 'Сбрось {sbros:карту}: +{vera:вера} и возьми {dobor:карту}.'
+effekt:
+- {sbros: {n: sbros, v: n}}
+- esli: n
+  to:
+  - {vera: vera}
+  - {dobor: dobor}
+bot: {poryadok: 3.5, cennost: 3, pereplan: true}
+granicy: {sbros: [0, 3], vera: [0, 3], dobor: [0, 3]}
+status: prinyata
+staryj_id: z_conf
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

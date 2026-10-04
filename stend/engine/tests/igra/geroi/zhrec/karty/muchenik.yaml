@@ -1,0 +1,22 @@
+id: muchenik
+imya: Мученик
+geroj: zhrec
+nabor: apgrejd
+bild: П
+vid: защита
+chisla:
+  shchit: 5
+  maks: 3
+tekst: Авангард. {shchit:щит} себе. Каждый удар по тебе в этом раунде — +1 вера (макс {maks}).
+effekt:
+- {avangard: ja}
+- {shchit: {komu: ja, n: shchit}}
+- {osobyj: {imya: muchenik, n: maks}}
+metki:
+- avangard
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [3, 7], maks: [1, 5]}
+status: v_teste
+staryj_id: b_martyr
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

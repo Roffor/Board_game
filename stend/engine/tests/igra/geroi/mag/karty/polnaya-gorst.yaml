@@ -1,0 +1,20 @@
+id: polnaya-gorst
+imya: Полная горсть
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+chisla:
+  za_kartu: 1
+  plyus: 1
+tekst: '{cena:мана}. {za_kartu:урон} за каждую карту, оставшуюся у тебя в руке, и ещё {plyus} (одним ударом).'
+effekt:
+- {uron: za_kartu * ruka + plyus}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 5}
+granicy: {za_kartu: [0, 3], plyus: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: x_fist
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

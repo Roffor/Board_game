@@ -1,0 +1,20 @@
+id: rok
+imya: Рок
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: связка
+cena: 1
+chisla:
+  porcha: 2
+  mnozhitel: 4
+tekst: '{cena:мана}. {porcha:Порча}. Затем, если Порча ×{mnozhitel} не меньше здоровья врага, враг погибает.'
+effekt:
+- {osobyj: {imya: rok, porcha: porcha, mnozhitel: mnozhitel}}
+zamenyaet: porcha-karta
+bot: {poryadok: 4.7, cennost: 6, soyuznaya: true}
+granicy: {porcha: [0, 4], mnozhitel: [2, 6], cena: [0, 2]}
+status: v_teste
+staryj_id: x_doom
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

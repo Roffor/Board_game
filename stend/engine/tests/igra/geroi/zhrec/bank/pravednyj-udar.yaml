@@ -1,0 +1,27 @@
+id: pravednyj-udar
+imya: Праведный удар
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  doplata: 1
+tekst: '{uron:урон}. Доплата {doplata:веру}: ещё Благословение союзнику.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 1}
+  effekt:
+  - {uron: uron}
+  - esli: oplacheno
+    to:
+    - {blagoslovenie: soyuznik}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], doplata: [0, 3]}
+status: zapas
+staryj_id: y_right
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

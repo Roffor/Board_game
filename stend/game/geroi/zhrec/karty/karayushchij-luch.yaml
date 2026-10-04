@@ -1,0 +1,26 @@
+id: karayushchij-luch
+imya: Карающий луч
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  raz: 1
+  raz_big: 2
+  doplata: 2
+tekst: '{raz:попадание} по {uron}. Доплата {doplata:веру}: {raz_big:попадание}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {udary: {n: uron, raz: raz}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {udary: {n: uron, raz: raz_big if oplacheno else raz}}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], raz: [0, 3], raz_big: [0, 4], doplata: [0, 4]}
+status: v_teste
+staryj_id: y_ray
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

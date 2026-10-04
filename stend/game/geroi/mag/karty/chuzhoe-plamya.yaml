@@ -1,0 +1,28 @@
+id: chuzhoe-plamya
+imya: Чужое пламя
+geroj: mag
+nabor: apgrejd
+bild: С–М
+vid: связка
+cena: 1
+chisla:
+  n: 4
+  dobor: 2
+tekst: '{cena:мана}. Союзник может сжечь 1 карту из руки. На ней урон — {n:урон} врагу; щит — {n:щит} союзнику; иначе возьми {dobor:карту}.'
+varianty:
+- nazvanie: атаку
+  effekt:
+  - {osobyj: {imya: chuzhoe_plamya, vybor: uron, n: n, dobor: dobor}}
+- nazvanie: защиту
+  effekt:
+  - {osobyj: {imya: chuzhoe_plamya, vybor: shchit, n: n, dobor: dobor}}
+- nazvanie: другую
+  effekt:
+  - {osobyj: {imya: chuzhoe_plamya, vybor: drugoe, n: n, dobor: dobor}}
+zamenyaet: obshchij-ochag
+bot: {poryadok: 1.2, cennost: 5}
+granicy: {n: [2, 6], dobor: [0, 4], cena: [0, 2]}
+status: v_teste
+staryj_id: n_alien
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

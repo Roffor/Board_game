@@ -1,0 +1,21 @@
+id: chistoe-plamya
+imya: Чистое пламя
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+chisla:
+  uron: 4
+tekst: '{cena:мана}. {uron:урон}, если в руке у тебя нет защитных карт; иначе ничего.'
+effekt:
+- esli: not zashchita_v_ruke
+  to:
+  - {uron: uron}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 4.7, cennost: 6}
+granicy: {uron: [2, 6], cena: [0, 1]}
+status: v_teste
+staryj_id: x_clash
+istoriya:
+- перенос; в старом симуляторе «иначе» било на 0 (Порча прибавлялась), по тексту «иначе ничего»

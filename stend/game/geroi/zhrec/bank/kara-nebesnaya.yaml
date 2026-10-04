@@ -1,0 +1,22 @@
+id: kara-nebesnaya
+imya: Кара небесная
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: молитва
+chisla:
+  uron: 3
+tekst: Молитва. Если так сыграна карта урона — ещё {uron:урон}.
+effekt:
+- molitva:
+    posle:
+    - esli: sygrana_ataka
+      to:
+      - {uron: uron}
+    ocenka_bota: 0.5 * uron
+bot: {poryadok: 3.5, cennost: 6, pereplan: true}
+granicy: {uron: [1, 5]}
+status: zapas
+staryj_id: y_hkara
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

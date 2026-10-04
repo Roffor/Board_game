@@ -1,0 +1,20 @@
+id: proklyatyj-shchit
+imya: Проклятый щит
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: защита
+cena: 1
+chisla:
+  shchit: 4
+  za_porchu: 2
+tekst: '{cena:мана}. {shchit:щит} себе и ещё {za_porchu} за каждую Порчу на враге.'
+effekt:
+- {shchit: {komu: ja, n: shchit + za_porchu * porcha}}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [2, 6], za_porchu: [0, 4], cena: [0, 2]}
+status: v_teste
+staryj_id: x_cshield
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

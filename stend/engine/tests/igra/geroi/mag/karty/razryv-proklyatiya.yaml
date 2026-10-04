@@ -1,0 +1,19 @@
+id: razryv-proklyatiya
+imya: Разрыв проклятия
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: атака
+cena: 1
+chisla:
+  za_porchu: 4
+tekst: '{cena:мана}. Убери всю Порчу с врага: {za_porchu:урон} за каждую (одним ударом).'
+effekt:
+- {osobyj: {imya: razryv, za_porchu: za_porchu}}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 4.7, cennost: 6}
+granicy: {za_porchu: [2, 6], cena: [0, 2]}
+status: v_teste
+staryj_id: x_rip
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,1 @@
+[{"label": "base", "n": 120}, {"label": "e_dmg", "cards": ["e_dmg"], "n": 120}, {"label": "e_sh", "cards": ["e_sh"], "n": 120}, {"label": "x_plans", "cards": ["x_plans"]}, {"label": "x_embrace", "cards": ["x_embrace"]}, {"label": "x_plans|plans.sh=5", "cards": ["x_plans"], "P": {"plans.sh": 5}}, {"label": "x_embrace|emb2.cost=0", "cards": ["x_embrace"], "P": {"emb2.cost": 0}}]

@@ -1,0 +1,4 @@
+id: kapel
+imya: Капель
+osobennosti:
+  - {tip: opasnost_nachalo, kod: drip, tekst: "Опасность: в начале раунда каждый герой теряет 1 здоровье."}

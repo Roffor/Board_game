@@ -1,0 +1,15 @@
+id: vdohnovenie
+imya: Вдохновение
+geroj: zhrec
+nabor: zapas
+bild: Ч
+vid: вера
+chisla: {}
+tekst: Союзник берёт 1 карту. Если сыграет её в этом раунде — +3 веры.
+effekt:
+- {osobyj: vdohnovenie}
+bot: {poryadok: 0.6, cennost: 5}
+status: zapas
+staryj_id: w_inspire
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

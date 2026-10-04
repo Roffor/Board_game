@@ -1,0 +1,1 @@
+[{"label": "n_heat|heat.dmg=1,heat.max=2", "cards": ["n_heat"], "P": {"heat.dmg": 1, "heat.max": 2}}, {"label": "n_heat|heat.cost=3,heat.max=2", "cards": ["n_heat"], "P": {"heat.cost": 3, "heat.max": 2}}, {"label": "n_heat|heat.dmg=1,heat.max=1", "cards": ["n_heat"], "P": {"heat.dmg": 1, "heat.max": 1}}]

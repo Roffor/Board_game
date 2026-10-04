@@ -1,0 +1,21 @@
+id: obshchij-ochag
+imya: Общий очаг
+geroj: mag
+nabor: start
+vid: двигатель
+cena: 1
+chisla: {}
+tekst: '{cena:мана}. Ты и союзник можете сжечь по 1 карте из руки. Каждый, кто сжёг, берёт 1 карту.'
+effekt:
+- {sozhgi: {otkuda: ruka, n: 1, v: ja}}
+- {dobor: ja}
+- {soyuznik_szhigaet: {n: 1, v: 'on'}}
+- {dobor_soyuznika: 'on'}
+metki:
+- szhigatel
+bot: {poryadok: 1.2, cennost: 5, pereplan: true}
+granicy: {cena: [0, 2]}
+status: prinyata
+staryj_id: hearth
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

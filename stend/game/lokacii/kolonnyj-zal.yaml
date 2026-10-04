@@ -1,0 +1,4 @@
+id: kolonnyj-zal
+imya: Колонный зал
+osobennosti:
+  - {tip: sbros, kod: pillar, tekst: "Сброс карты: 1 щит себе."}

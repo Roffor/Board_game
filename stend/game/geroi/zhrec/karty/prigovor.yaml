@@ -1,0 +1,17 @@
+id: prigovor
+imya: Приговор
+geroj: zhrec
+nabor: start
+vid: атака
+chisla:
+  minus: 1
+  minimum: 1
+tekst: Урон = вера − {minus} (не меньше {minimum}). Вера не тратится.
+effekt:
+- {uron: 'max(minimum, vera - minus)'}
+bot: {poryadok: 4, cennost: 5}
+granicy: {minus: [0, 3], minimum: [0, 3]}
+status: prinyata
+staryj_id: z_verdict
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

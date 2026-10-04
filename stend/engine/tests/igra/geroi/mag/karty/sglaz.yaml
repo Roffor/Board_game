@@ -1,0 +1,21 @@
+id: sglaz
+imya: Сглаз
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: связка
+cena: 0
+chisla:
+  porcha: 1
+  sbros: 1
+tekst: '{cena:мана}. {porcha:Порча}. Сбрось {sbros:карту} из руки.'
+effekt:
+- {porcha: porcha}
+- {sbros: {n: sbros}}
+zamenyaet: shepot-kostra
+bot: {poryadok: 3, cennost: 5}
+granicy: {porcha: [0, 3], sbros: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: x_evil
+istoriya:
+- перенос; в итоговом отчёте 22 написано «2 Порчи», но симулятор вешал 1 — оставлено как в тестах

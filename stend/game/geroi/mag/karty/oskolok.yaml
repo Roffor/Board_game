@@ -1,0 +1,20 @@
+id: oskolok
+imya: Осколок
+geroj: mag
+nabor: zheton
+vid: атака
+cena: 0
+chisla:
+  uron: 2
+tekst: '{cena:мана}. {uron:урон}. Сгорает после розыгрыша или в конце фазы героев.'
+effekt:
+- {uron: uron}
+metki:
+- sgoraet_posle
+- sgoraet_v_ruke
+bot: {poryadok: 3, cennost: 4}
+granicy: {uron: [0, 4], cena: [0, 1]}
+status: prinyata
+staryj_id: t_shard
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

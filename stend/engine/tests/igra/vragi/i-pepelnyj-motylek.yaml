@@ -1,0 +1,21 @@
+# Рядовой яруса I. Числа ударов — итоговые после калибровки (элита ×1,9 до 10, босс ×1,5 до 19, ярус II ×1,5 до 6).
+# Текст намерения движок пишет сам по действиям.
+id: pepelnyj-motylek
+imya: Пепельный мотылёк
+yarus: I
+zdorove: 18
+shchit_na_starte: 4
+svojstva:
+  motylek: true
+rezhim: cikl
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 12, cel: motylek}
+- tip: удар
+  dejstviya:
+  - {ataka: 4, raz: 3}
+- tip: усиление
+  dejstviya:
+  - {usilenie: 1}
+  - {shchit: 2}

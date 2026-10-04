@@ -1,0 +1,19 @@
+id: pokrov-nad-dvumya
+imya: Покров над двумя
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: защита
+chisla:
+  shchit: 3
+  plyus: 2
+tekst: '{shchit:щит} каждому герою. Если на союзнике Благословение — ещё {plyus} тебе.'
+effekt:
+- {shchit: {komu: ja, n: shchit + (plyus if soyuznik_blagoslovlen else 0)}}
+- {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 4.3, cennost: 6}
+granicy: {shchit: [1, 5], plyus: [0, 4]}
+status: zapas
+staryj_id: b_two
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

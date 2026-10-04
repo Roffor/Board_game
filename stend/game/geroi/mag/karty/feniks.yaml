@@ -1,0 +1,20 @@
+id: feniks
+imya: Феникс
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: двигатель
+cena: 0
+chisla: {}
+tekst: '{cena:мана}. Сожги эту карту. Когда она сгорает, в начале следующего раунда возвращается тебе в руку.'
+effekt:
+- {osobyj: sozhgi_etu}
+pri_szhiganii:
+- {osobyj: feniks}
+zamenyaet: shepot-kostra
+bot: {poryadok: 1.15, cennost: 1}
+granicy: {cena: [0, 1]}
+status: v_teste
+staryj_id: n_phoenix
+istoriya:
+- перенос; в старом симуляторе Феникс бил на 0 (Порча прибавлялась), по тексту «без урона» удара нет

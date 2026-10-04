@@ -1,0 +1,18 @@
+id: etalon-uron
+imya: Эталон урона
+geroj: mag
+nabor: etalon
+vid: атака
+cena: 1
+podnoshenie: 1
+chisla:
+  uron: 4
+  za_podnoshenie: 2
+tekst: '{cena:мана}. {uron:урон}. Подношение: +{za_podnoshenie:урон}.'
+effekt:
+- {uron: uron + za_podnoshenie * podnoshenie}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 6}
+status: prinyata
+istoriya:
+- '[С 8.8] эталон силы апгрейда: Искра очага +3 урона. Не менять.'

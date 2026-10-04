@@ -1,0 +1,21 @@
+id: razrastanie
+imya: Разрастание
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: связка
+cena: 0
+chisla:
+  porcha: 1
+  zaryad: 1
+  shchit: 1
+tekst: '{cena:мана}. +{porcha:Порча} на враге, +{zaryad:заряд} подношения, +{shchit:щит} каждому герою, у которого есть щит.'
+effekt:
+- {osobyj: {imya: razrastanie, porcha: porcha, zaryad: zaryad, shchit: shchit}}
+zamenyaet: shepot-kostra
+bot: {poryadok: 3, cennost: 5}
+granicy: {porcha: [0, 3], zaryad: [0, 3], shchit: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: x_prolif
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,22 @@
+id: svyatye-moshchi
+imya: Святые мощи
+geroj: zhrec
+nabor: apgrejd
+bild: Ч–С
+vid: вера
+chisla:
+  vera: 2
+  uron: 2
+tekst: 'Сожги верхнюю карту своей колоды: +{vera:вера}; если это карта урона — ещё {uron:урон}.'
+effekt:
+- {osobyj: {imya: sozhgi_verh_svoej, v: ataka}}
+- esli: ataka
+  to:
+  - {uron: uron}
+- {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 4], uron: [0, 4]}
+status: v_teste
+staryj_id: w_relics
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

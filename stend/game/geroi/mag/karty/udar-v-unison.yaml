@@ -1,0 +1,20 @@
+id: udar-v-unison
+imya: Удар в унисон
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: атака
+cena: 1
+chisla:
+  uron: 2
+  plyus: 3
+tekst: '{cena:мана}. {uron:урон}. Если союзник в этом раунде уже нанёс урон — ещё {plyus}.'
+effekt:
+- {uron: uron + (plyus if soyuznik_popadal else 0)}
+zamenyaet: otgolosok
+bot: {poryadok: 4.6, cennost: 6, soyuznaya: true}
+granicy: {uron: [0, 4], plyus: [1, 5], cena: [0, 2]}
+status: v_teste
+staryj_id: x_uni
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

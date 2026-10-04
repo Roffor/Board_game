@@ -1,0 +1,16 @@
+id: nebesnyj-dospeh
+imya: Небесный доспех
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: связка
+chisla: {}
+tekst: Благословение союзнику. В этом раунде оно снимает 5 урона, а не 3.
+effekt:
+- {blagoslovenie: soyuznik}
+- {osobyj: bolshoe_blagoslovenie}
+bot: {poryadok: 4, cennost: 6}
+status: zapas
+staryj_id: b_armor
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

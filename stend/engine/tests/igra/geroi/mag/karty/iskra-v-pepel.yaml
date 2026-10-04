@@ -1,0 +1,25 @@
+id: iskra-v-pepel
+imya: Искра в пепел
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: двигатель
+cena: 0
+chisla:
+  n: 1
+  dobor: 1
+tekst: '{cena:мана}. Сожги {n:карту} из руки. Верни в руку 1 карту, сожжённую раньше. Возьми {dobor:карту}.'
+effekt:
+- {snimok_szhzhennyh: null}
+- {sozhgi: {otkuda: ruka, n: n}}
+- {verni: {n: 1, tolko_ranee: true}}
+- {dobor: dobor}
+metki:
+- szhigatel
+zamenyaet: bolshoj-koster
+bot: {poryadok: 1.2, cennost: 5, pereplan: true}
+granicy: {n: [0, 3], dobor: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: a_ash2
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

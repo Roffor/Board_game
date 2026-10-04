@@ -1,0 +1,22 @@
+id: koster-v-ego-rukah
+imya: Костёр в его руках
+geroj: mag
+nabor: apgrejd
+bild: С–М
+vid: связка
+cena: 1
+chisla:
+  bonus: 7
+tekst: '{cena:мана}. Союзник может сжечь 1 карту из руки; если сжёг, его следующее попадание +{bonus}.'
+effekt:
+- {soyuznik_szhigaet: {n: 1, v: 'on'}}
+- esli: 'on'
+  to:
+  - {bonus_soyuzniku: bonus}
+zamenyaet: obshchij-ochag
+bot: {poryadok: 1.2, cennost: 5}
+granicy: {bonus: [5, 9], cena: [0, 2]}
+status: v_teste
+staryj_id: n_hands
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,22 @@
+id: bluzhdayushchij-ogonek
+imya: Блуждающий огонёк
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+chisla:
+  uron: 3
+tekst: '{cena:мана}. {uron:урон}. Если в конце фазы героев эта карта у тебя в руке — сгорает, и заряды подношения сохраняются до следующего раунда.'
+effekt:
+- {uron: uron}
+metki:
+- sgoraet_v_ruke
+- hranit_zaryady
+zamenyaet: toplivo
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [1, 5], cena: [0, 1]}
+status: v_teste
+staryj_id: x_wisp
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

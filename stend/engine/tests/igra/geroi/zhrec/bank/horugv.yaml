@@ -1,0 +1,18 @@
+id: horugv
+imya: Хоругвь
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: защита
+chisla:
+  shchit: 5
+tekst: '{shchit:щит} себе. Твои щиты в конце этого раунда не сгорают.'
+effekt:
+- {shchit: {komu: ja, n: shchit}}
+- {osobyj: horugv}
+bot: {poryadok: 4.9, cennost: 4}
+granicy: {shchit: [3, 7]}
+status: zapas
+staryj_id: b_banner
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

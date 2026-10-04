@@ -1,0 +1,22 @@
+id: plechom-k-plechu
+imya: Плечом к плечу
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: защита
+cena: 1
+chisla:
+  shchit: 4
+tekst: '{cena:мана}. {shchit:щит} себе. Если союзник в этом раунде получил щит или Авангард — ещё {shchit:щит} ему.'
+effekt:
+- {shchit: {komu: ja, n: shchit}}
+- esli: soyuznik_poluchil_shchit or soyuznik_avangard
+  to:
+  - {shchit: {komu: soyuznik, n: shchit}}
+zamenyaet: obereg
+bot: {poryadok: 4.6, cennost: 5, soyuznaya: true}
+granicy: {shchit: [2, 6], cena: [0, 2]}
+status: v_teste
+staryj_id: x_shoulder
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

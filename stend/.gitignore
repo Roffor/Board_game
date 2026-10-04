@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+runs/*/boi.jsonl.tmp
+runs/*/sostoyanie.json.tmp
+# сырьё и чекпоинт прогона: тяжёлый, остаётся на сервере
+runs/*/boi.jsonl
+# локальные короткие прогоны
+runs/lok-*/

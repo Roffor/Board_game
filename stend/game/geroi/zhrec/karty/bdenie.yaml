@@ -1,0 +1,18 @@
+id: bdenie
+imya: Бдение
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: вера
+chisla:
+  vera: 3
+tekst: +{vera:вера}. Если в конце раунда вера 4+ — в начале следующего возьми 1 карту.
+effekt:
+- {vera: vera}
+- {osobyj: bdenie}
+bot: {poryadok: 4, cennost: 4}
+granicy: {vera: [1, 5]}
+status: v_teste
+staryj_id: w_vigil
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

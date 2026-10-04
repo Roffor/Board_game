@@ -1,0 +1,29 @@
+id: svyatoj-shchit
+imya: Святой щит
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: защита
+chisla:
+  shchit: 5
+  shchit_sebe: 4
+  doplata: 2
+tekst: '{shchit:щит} союзнику. Доплата {doplata:веру}: ещё {shchit_sebe:щит} тебе и Благословение.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - esli: oplacheno
+    to:
+    - {shchit: {komu: ja, n: shchit_sebe}}
+    - {blagoslovenie: soyuznik}
+bot: {poryadok: 4, cennost: 6}
+granicy: {shchit: [3, 7], shchit_sebe: [2, 6], doplata: [0, 4]}
+status: zapas
+staryj_id: b_holy
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

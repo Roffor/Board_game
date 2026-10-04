@@ -1,0 +1,5 @@
+id: kripta-so-skvoznyakom
+imya: Крипта со сквозняком
+osobennosti:
+  - {tip: opasnost_konec, kod: draft, tekst: "Опасность: в конце раунда самый здоровый герой теряет 1 здоровье."}
+  - {tip: sbros, kod: draftshield, tekst: "Сброс карты: 1 щит союзнику."}

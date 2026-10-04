@@ -1,0 +1,32 @@
+id: pogrebalnyj-koster
+imya: Погребальный костёр
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: двигатель
+cena: 1
+chisla:
+  za_kartu: 3
+tekst: '{cena:мана}. Сожги до 2 карт из руки, {za_kartu:щит} себе за каждую. Верни в руку 1 карту, сожжённую раньше.'
+varianty:
+- nazvanie: сжечь 1
+  effekt:
+  - {snimok_szhzhennyh: null}
+  - {sozhgi: {otkuda: ruka, n: 1, v: n}}
+  - {shchit: {komu: ja, n: za_kartu * n}}
+  - {verni: {n: 1, tolko_ranee: true}}
+- nazvanie: сжечь 2
+  effekt:
+  - {snimok_szhzhennyh: null}
+  - {sozhgi: {otkuda: ruka, n: 2, v: n}}
+  - {shchit: {komu: ja, n: za_kartu * n}}
+  - {verni: {n: 1, tolko_ranee: true}}
+metki:
+- szhigatel
+zamenyaet: bolshoj-koster
+bot: {poryadok: 1.2, cennost: 5}
+granicy: {za_kartu: [1, 5], cena: [0, 2]}
+status: v_teste
+staryj_id: a_pyre
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

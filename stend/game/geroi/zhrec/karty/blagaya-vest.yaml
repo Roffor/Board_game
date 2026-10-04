@@ -1,0 +1,18 @@
+id: blagaya-vest
+imya: Благая весть
+geroj: zhrec
+nabor: apgrejd
+bild: Ч–П
+vid: вера
+chisla:
+  dobor: 2
+tekst: Союзник берёт {dobor:карту}. Если он сыграет в этом раунде 3+ карты — +2 веры.
+effekt:
+- {dobor_soyuznika: dobor}
+- {osobyj: blagaya_vest}
+bot: {poryadok: 0.6, cennost: 5}
+granicy: {dobor: [0, 4]}
+status: v_teste
+staryj_id: w_news
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

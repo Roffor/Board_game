@@ -1,0 +1,5 @@
+id: pechati-predkov
+imya: Печати предков
+osobennosti:
+  - {tip: dvojnaya, kod: seals, tekst: "Двойная: если оба героя сбросили по карте в этом раунде — сдвиг намерения (раз за бой)."}
+  - {tip: sbros, kod: sealheal, tekst: "Сброс карты: лечение 1 себе."}

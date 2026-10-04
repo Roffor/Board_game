@@ -1,0 +1,25 @@
+id: sejchas-ili-posle
+imya: Сейчас или после
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: связка
+cena: 1
+chisla:
+  shchit: 3
+  uron: 4
+tekst: '{cena:мана}. Выбери: {shchit:щит} союзнику сразу ИЛИ {uron:урон} после всех карт союзника в этом раунде.'
+varianty:
+- nazvanie: щит
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: после
+  effekt:
+  - {osobyj: {imya: pozdnij_uron, n: uron}}
+zamenyaet: otgolosok
+bot: {poryadok: 3, cennost: 6}
+granicy: {shchit: [1, 5], uron: [2, 6], cena: [0, 2]}
+status: v_teste
+staryj_id: x_nowlater
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

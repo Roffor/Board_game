@@ -1,0 +1,18 @@
+id: krestnyj-hod
+imya: Крестный ход
+geroj: zhrec
+nabor: zapas
+bild: П–Ч
+vid: молитва
+chisla:
+  shchit: 1
+tekst: '{shchit:щит} каждому герою. Молитва.'
+effekt:
+- {shchit: {komu: oba, n: shchit}}
+- {molitva: null}
+bot: {poryadok: 3.5, cennost: 6, pereplan: true}
+granicy: {shchit: [0, 3]}
+status: zapas
+staryj_id: m_proc
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

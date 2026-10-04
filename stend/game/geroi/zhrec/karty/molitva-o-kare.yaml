@@ -1,0 +1,29 @@
+id: molitva-o-kare
+imya: Молитва о каре
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  plyus: 0
+  ocenka: 5
+tekst: 'Выбери: {uron:урон} сейчас ИЛИ Обет: в начале следующего раунда урон = вера + {plyus}.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {uron: uron}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: dmg
+      ocenka_bota: ocenka
+      effekt:
+      - {uron: vera + plyus}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], plyus: [0, 2], ocenka: [3, 7]}
+status: v_teste
+staryj_id: y_vowkara
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

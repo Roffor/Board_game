@@ -1,0 +1,17 @@
+id: sud-pravednyh
+imya: Суд праведных
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  za_ranenogo: 1
+tekst: Урон = вера + {za_ranenogo} за каждого раненого героя.
+effekt:
+- {uron: vera + za_ranenogo * ranenyh}
+bot: {poryadok: 4, cennost: 6}
+granicy: {za_ranenogo: [0, 3]}
+status: v_teste
+staryj_id: y_just
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

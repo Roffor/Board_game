@@ -1,0 +1,4 @@
+id: proval-v-polu
+imya: Провал в полу
+osobennosti:
+  - {tip: uslovie, kod: pit, tekst: "Условие: если за фазу героев враг потерял 6+ здоровья, он теряет ещё 2."}

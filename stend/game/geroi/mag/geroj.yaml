@@ -1,0 +1,5 @@
+id: mag
+imya: Маг
+mehanika: mag          # мана 3 за раунд, заряды подношения за сожжённые карты
+zdorove: 20
+start_kart: 15

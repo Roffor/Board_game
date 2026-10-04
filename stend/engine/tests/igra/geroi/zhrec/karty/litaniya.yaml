@@ -1,0 +1,22 @@
+id: litaniya
+imya: Литания
+geroj: zhrec
+nabor: apgrejd
+bild: П–Ч
+vid: защита
+chisla:
+  shchit: 5
+  vera: 1
+tekst: '{shchit:щит} союзнику. Если в этом раунде ты играл Молитву — ещё {shchit} и +{vera:вера}.'
+effekt:
+- {shchit: {komu: soyuznik, n: shchit}}
+- esli: molitv_v_raunde
+  to:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - {vera: vera}
+bot: {poryadok: 4.8, cennost: 5}
+granicy: {shchit: [3, 7], vera: [0, 3]}
+status: v_teste
+staryj_id: b_litany
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,21 @@
+id: shchit-dlya-dvoih
+imya: Щит для двоих
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: защита
+cena: 0
+podnoshenie: r
+chisla:
+  shchit: 3
+  za_podnoshenie: 2
+tekst: '{cena:мана}. {shchit:щит} союзнику. Подношение (сколько угодно раз): ещё {za_podnoshenie:щит} за каждое.'
+effekt:
+- {shchit: {komu: soyuznik, n: shchit + za_podnoshenie * podnoshenie}}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [1, 5], za_podnoshenie: [0, 4], cena: [0, 1]}
+status: v_teste
+staryj_id: n_shield2
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

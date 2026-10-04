@@ -1,0 +1,21 @@
+id: smola
+imya: Смола
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: топливо
+cena: 0
+chisla:
+  porcha: 1
+tekst: '{cena:мана}. Сыграна: ничего. Сожжена: {porcha:Порча}.'
+effekt:
+- {nichego: null}
+pri_szhiganii:
+- {porcha: porcha}
+zamenyaet: toplivo
+bot: {poryadok: 3, cennost: 2}
+granicy: {porcha: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: a_tar
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

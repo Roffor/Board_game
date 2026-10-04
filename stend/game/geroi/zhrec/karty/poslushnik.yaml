@@ -1,0 +1,19 @@
+id: poslushnik
+imya: Послушник
+geroj: zhrec
+nabor: apgrejd
+bild: С–Ч
+vid: атака
+chisla:
+  uron: 2
+  plyus: 2
+tekst: '{uron:урон}. Следующее твоё Чудо в этом раунде считает +{plyus:веру}.'
+effekt:
+- {uron: uron}
+- {osobyj: {imya: poslushnik, n: plyus}}
+bot: {poryadok: 3.3, cennost: 4}
+granicy: {uron: [0, 4], plyus: [0, 4]}
+status: v_teste
+staryj_id: m_novice
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

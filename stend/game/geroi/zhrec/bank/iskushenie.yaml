@@ -1,0 +1,19 @@
+id: iskushenie
+imya: Искушение
+geroj: zhrec
+nabor: zapas
+bild: Ч
+vid: вера
+chisla:
+  vera: 3
+  usilenie: 2
+tekst: +{vera:вера}. Враг в этом раунде бьёт на {usilenie} сильнее.
+effekt:
+- {vera: vera}
+- {oslab_vraga: -usilenie}
+bot: {poryadok: 3.3, cennost: 4}
+granicy: {vera: [1, 5], usilenie: [0, 4]}
+status: zapas
+staryj_id: w_tempt
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

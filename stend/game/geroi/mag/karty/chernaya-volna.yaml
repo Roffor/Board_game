@@ -1,0 +1,18 @@
+id: chernaya-volna
+imya: Чёрная волна
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: связка
+cena: 1
+chisla: {}
+tekst: '{cena:мана}. Удвой Порчу на враге.'
+effekt:
+- {porcha: porcha}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 6}
+granicy: {cena: [0, 2]}
+status: v_teste
+staryj_id: x_wave
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

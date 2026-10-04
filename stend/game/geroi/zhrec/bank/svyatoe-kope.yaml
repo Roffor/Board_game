@@ -1,0 +1,17 @@
+id: svyatoe-kope
+imya: Святое копьё
+geroj: zhrec
+nabor: zapas
+bild: С–Ч
+vid: атака
+chisla:
+  za_molitvu: 4
+tekst: '{za_molitvu:урон} за каждую карту, сыгранную тобой в этом раунде Молитвой.'
+effekt:
+- {uron: za_molitvu * molitv_v_raunde}
+bot: {poryadok: 4.9, cennost: 5}
+granicy: {za_molitvu: [2, 6]}
+status: zapas
+staryj_id: m_spear
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

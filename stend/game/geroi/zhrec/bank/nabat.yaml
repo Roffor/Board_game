@@ -1,0 +1,21 @@
+id: nabat
+imya: Набат
+geroj: zhrec
+nabor: zapas
+bild: С–Ч
+vid: атака
+chisla:
+  uron: 1
+  bonus: 1
+  vera: 1
+tekst: '{uron:урон}. Следующее попадание союзника в этом раунде +{bonus}. +{vera:вера}.'
+effekt:
+- {uron: uron}
+- {bonus_soyuzniku: bonus}
+- {vera: vera}
+bot: {poryadok: 0.5, cennost: 5}
+granicy: {uron: [0, 3], bonus: [0, 3], vera: [0, 3]}
+status: zapas
+staryj_id: m_alarm
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

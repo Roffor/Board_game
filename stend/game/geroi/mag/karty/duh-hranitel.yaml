@@ -1,0 +1,29 @@
+id: duh-hranitel
+imya: Дух-хранитель
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: защита
+cena: 1
+podnoshenie: 1
+chisla:
+  shchit: 4
+  drugomu: 2
+  za_podnoshenie: 3
+tekst: '{cena:мана}. {shchit:щит} себе ИЛИ союзнику, {drugomu:щит} другому. Подношение: +{za_podnoshenie:щит} другому.'
+varianty:
+- nazvanie: себе
+  effekt:
+  - {shchit: {komu: ja, n: shchit}}
+  - {shchit: {komu: soyuznik, n: drugomu + za_podnoshenie * podnoshenie}}
+- nazvanie: союзнику
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - {shchit: {komu: ja, n: drugomu + za_podnoshenie * podnoshenie}}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [2, 6], drugomu: [0, 4], za_podnoshenie: [1, 5], cena: [0, 2]}
+status: v_teste
+staryj_id: a_spirit
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

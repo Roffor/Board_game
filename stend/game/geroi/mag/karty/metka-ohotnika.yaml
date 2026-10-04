@@ -1,0 +1,20 @@
+id: metka-ohotnika
+imya: Метка охотника
+geroj: mag
+nabor: apgrejd
+bild: П–М
+vid: связка
+cena: 0
+chisla:
+  porcha: 1
+  plyus: 1
+tekst: '{cena:мана}. {porcha:Порча}. Если союзник в прошлом раунде нанёс урон — ещё {plyus:Порча}.'
+effekt:
+- {porcha: porcha + (plyus if soyuznik_popadal_proshlyj else 0)}
+zamenyaet: porcha-karta
+bot: {poryadok: 3, cennost: 5}
+granicy: {porcha: [0, 3], plyus: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: x_hunt
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

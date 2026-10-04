@@ -1,0 +1,4 @@
+id: kostnica
+imya: Костница
+osobennosti:
+  - {tip: sbros, kod: bones, tekst: "Сброс карты: 1 урон врагу."}

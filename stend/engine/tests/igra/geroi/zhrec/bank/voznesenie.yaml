@@ -1,0 +1,25 @@
+id: voznesenie
+imya: Вознесение
+geroj: zhrec
+nabor: zapas
+bild: С–Ч
+vid: атака
+chisla:
+  porog: 4
+  uron: 8
+  trata: 3
+  vera: 2
+tekst: Если вера {porog}+ — {uron:урон} и −{trata:вера}. Иначе +{vera:вера}.
+effekt:
+- esli: vera >= porog
+  to:
+  - {uron: uron}
+  - {osobyj: {imya: potrat_veru, n: trata}}
+  inache:
+  - {vera: vera}
+bot: {poryadok: 4.9, cennost: 5}
+granicy: {porog: [2, 6], uron: [6, 10], trata: [1, 5], vera: [0, 4]}
+status: zapas
+staryj_id: m_ascend
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

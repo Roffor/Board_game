@@ -1,0 +1,20 @@
+id: lestvica
+imya: Лествица
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: вера
+chisla:
+  vera: 2
+tekst: +{vera:вера}. Если после этого вера 6 — Молитва.
+effekt:
+- {vera: vera}
+- esli: vera >= 6
+  to:
+  - {molitva: null}
+bot: {poryadok: 3.5, cennost: 5, pereplan: true}
+granicy: {vera: [0, 4]}
+status: v_teste
+staryj_id: w_ladder
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

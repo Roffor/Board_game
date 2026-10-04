@@ -1,0 +1,17 @@
+id: prigovor-imenem-boga
+imya: Приговор именем бога
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  minus: 2
+tekst: 'Урон = вера × (число разных видов карт, сыгранных тобой в этом раунде, − {minus}). Виды: урон, щит, вера, Молитва.'
+effekt:
+- {uron: 'vera * max(0, vidov_kart - minus)'}
+bot: {poryadok: 4.9, cennost: 6}
+granicy: {minus: [0, 4]}
+status: v_teste
+staryj_id: y_name
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

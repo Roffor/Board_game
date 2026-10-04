@@ -1,0 +1,24 @@
+id: svetlyj-pokrov
+imya: Светлый покров
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: защита
+chisla:
+  shchit: 3
+  vera: 1
+  nuzhno: 2
+tekst: '{shchit:щит} союзнику. Если 2 из 3 (союзник в этом раунде получил щит; ты сыграл 3 карты; вера 3+) — Благословение и +{vera:вера}.'
+effekt:
+- {pust: {c: (soyuznik_poluchil_shchit > 0) + (kart_iz_ruki >= 3) + (vera >= 3)}}
+- {shchit: {komu: soyuznik, n: shchit}}
+- esli: c >= nuzhno
+  to:
+  - {blagoslovenie: soyuznik}
+  - {vera: vera}
+bot: {poryadok: 4.8, cennost: 6}
+granicy: {shchit: [1, 5], vera: [0, 3], nuzhno: [0, 4]}
+status: zapas
+staryj_id: b_cover
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

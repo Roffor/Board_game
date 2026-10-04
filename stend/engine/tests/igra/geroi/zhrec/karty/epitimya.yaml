@@ -1,0 +1,25 @@
+id: epitimya
+imya: Епитимья
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  za_kartu: 2
+  za_dve: 3
+tekst: 'Сбрось 1 карту: {za_kartu:урон}, или сбрось 2: {za_dve:урон}.'
+varianty:
+- nazvanie: сбросить 1
+  effekt:
+  - {sbros: {n: 1, v: n}}
+  - {uron: za_kartu * n}
+- nazvanie: сбросить 2
+  effekt:
+  - {sbros: {n: 2, v: n}}
+  - {uron: za_dve if n == 2 else za_kartu * n}
+bot: {poryadok: 4, cennost: 5}
+granicy: {za_kartu: [0, 4], za_dve: [1, 5]}
+status: v_teste
+staryj_id: y_penance
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

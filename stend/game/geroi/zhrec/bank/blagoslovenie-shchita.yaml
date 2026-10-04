@@ -1,0 +1,21 @@
+id: blagoslovenie-shchita
+imya: Благословение щита
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: связка
+chisla:
+  dobor: 1
+  vera: 1
+tekst: Благословение союзнику. Когда оно сработает — союзник берёт {dobor:карту}, ты +{vera:вера}.
+effekt:
+- blagoslovenie_s_effektom:
+    effekt:
+    - {dobor_soyuznika: dobor}
+    - {vera: vera}
+bot: {poryadok: 4, cennost: 6}
+granicy: {dobor: [0, 3], vera: [0, 3]}
+status: zapas
+staryj_id: b_sbless
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

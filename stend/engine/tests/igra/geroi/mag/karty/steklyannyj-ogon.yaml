@@ -1,0 +1,19 @@
+id: steklyannyj-ogon
+imya: Стеклянный огонь
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: связка
+cena: 0
+chisla:
+  shans_x100: 67
+tekst: '{cena:мана}. Твоё следующее попадание в этом раунде ×3. Брось кубик: на 1–4 карта сгорает, заряда не даёт.'
+effekt:
+- {osobyj: {imya: steklo, shans: shans_x100 / 100, zaryad: 0}}
+zamenyaet: shepot-kostra
+bot: {poryadok: 3, cennost: 5}
+granicy: {shans_x100: [65, 69], cena: [0, 1]}
+status: v_teste
+staryj_id: x_glass
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

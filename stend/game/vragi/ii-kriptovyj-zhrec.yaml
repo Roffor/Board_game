@@ -1,0 +1,22 @@
+# Рядовой яруса II. Числа ударов — итоговые после калибровки (элита ×1,9 до 10, босс ×1,5 до 19, ярус II ×1,5 до 6).
+# Текст намерения движок пишет сам по действиям.
+id: kriptovyj-zhrec
+imya: Криптовый жрец
+yarus: II
+zdorove: 20
+shchit_na_starte: 4
+svojstva:
+  motylek: true
+  bronya: 1
+rezhim: cikl
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 6, cel: vse}
+- tip: защита
+  dejstviya:
+  - {lechenie: 4}
+  - {shchit: 3}
+- tip: удар
+  dejstviya:
+  - {ataka: 6, cel: motylek}

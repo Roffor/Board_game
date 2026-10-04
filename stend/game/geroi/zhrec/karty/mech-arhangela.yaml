@@ -1,0 +1,29 @@
+id: mech-arhangela
+imya: Меч архангела
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  plyus: 1
+  vera: 1
+  doplata: 2
+tekst: '{uron:урон}. Доплата {doplata:веру}: ещё {plyus:урон} и +{vera:вера}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {uron: uron + (plyus if oplacheno else 0)}
+  - esli: oplacheno
+    to:
+    - {vera: vera}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], plyus: [0, 3], vera: [0, 3], doplata: [0, 4]}
+status: v_teste
+staryj_id: y_archsw
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,28 @@
+id: klyatva-na-dvoih
+imya: Клятва на двоих
+geroj: zhrec
+nabor: apgrejd
+bild: П
+vid: защита
+chisla:
+  shchit: 3
+  ocenka: 4
+tekst: 'Выбери: {shchit:щит} союзнику сейчас ИЛИ Обет: в конце следующей фазы героев урон врагу = щитам союзника.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: konec_fazy
+      vid_ocenki: dmg
+      ocenka_bota: ocenka
+      effekt:
+      - {uron: shchit_soyuznika}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [1, 5], ocenka: [2, 6]}
+status: v_teste
+staryj_id: b_oath2
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

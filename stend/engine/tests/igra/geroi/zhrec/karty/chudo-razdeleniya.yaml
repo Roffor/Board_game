@@ -1,0 +1,22 @@
+id: chudo-razdeleniya
+imya: Чудо разделения
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: атака
+chisla:
+  uron: 1
+  shchit: 4
+tekst: 'Чудо: за каждую веру 1 урон и 1 щит союзнику; сверх этого ещё {uron:урон} и {shchit:щит}.'
+effekt:
+- {chudo: f}
+- {uron: f + uron}
+- {shchit: {komu: soyuznik, n: f + shchit}}
+metki:
+- chudo
+bot: {poryadok: 5, cennost: 5}
+granicy: {uron: [0, 3], shchit: [2, 6]}
+status: v_teste
+staryj_id: w_mshare
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

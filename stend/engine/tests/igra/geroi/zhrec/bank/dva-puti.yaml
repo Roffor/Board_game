@@ -1,0 +1,30 @@
+id: dva-puti
+imya: Два пути
+geroj: zhrec
+nabor: zapas
+bild: С–П
+vid: атака
+chisla:
+  uron: 2
+  ocenka: 6
+tekst: 'Выбери: {uron:урон} и {uron:щит} союзнику сейчас ИЛИ Обет: в начале следующего раунда урон и щиты союзнику = вера.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {uron: uron}
+  - {shchit: {komu: soyuznik, n: uron}}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: dmg
+      ocenka_bota: ocenka
+      effekt:
+      - {uron: vera}
+      - {shchit: {komu: soyuznik, n: vera}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 4], ocenka: [4, 8]}
+status: zapas
+staryj_id: m_ways
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

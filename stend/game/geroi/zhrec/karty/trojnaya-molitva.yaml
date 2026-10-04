@@ -1,0 +1,26 @@
+id: trojnaya-molitva
+imya: Тройная молитва
+geroj: zhrec
+nabor: apgrejd
+bild: Ч–П
+vid: атака
+chisla:
+  uron: 1
+  vera: 2
+  shchit: 4
+  nuzhno: 2
+tekst: '{uron:урон}. Если 2 из 3 (союзник в этом раунде нанёс урон; на враге есть Порча; союзник сжёг или сбросил карту) — +{vera:вера} и {shchit:щит}
+  союзнику.'
+effekt:
+- {pust: {c: (soyuznik_popadal > 0) + (porcha > 0) + ((szhzheno_v_raunde > 0) or soyuznik_sbrosil)}}
+- {uron: uron}
+- esli: c >= nuzhno
+  to:
+  - {vera: vera}
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 4.8, cennost: 6}
+granicy: {uron: [0, 3], vera: [0, 4], shchit: [2, 6], nuzhno: [0, 4]}
+status: v_teste
+staryj_id: w_triple
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

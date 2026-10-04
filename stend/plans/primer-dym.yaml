@@ -1,0 +1,40 @@
+# Пример плана: короткий прогон для проверки стенда (10 минут).
+nazvanie: primer-dym
+opisanie: Проверка, что стенд работает целиком — прогон базы, маленький тест билда и подбор одного числа.
+srok_chasov: 0.17
+seed0: 12345              # или sluchajno
+tajmaut_boya_sek: 120     # бой дольше — записывается как ошибка и пропускается
+
+geroi:                    # колоды по умолчанию: старт + случайные апгрейды из своего пула (0/3/3/5 по ситуациям)
+  mag: {apgrejdy: sluchajno, pul: apgrejd}
+  zhrec: {apgrejdy: sluchajno, pul: apgrejd}
+
+pravki: {}                # временные правки чисел на весь план, файлы не меняются
+
+fazy:
+- id: baza
+  tip: progon
+  dolya: 0.3
+  pervaya_volna: 20       # боёв в каждой ситуации в первой волне
+  volna: 10               # в следующих волнах, пока есть время фазы
+  varianty:
+  - {metka: baza}
+  - {metka: ruka-5, pravki: {pravila.ruka: 5}}
+
+- id: bild-porcha
+  tip: test_bilda
+  dolya: 0.4
+  geroj: mag
+  karty: [rok, gnil]
+  pervaya_volna: 20
+  volna: 10
+
+- id: podbor-rok
+  tip: podbor
+  dolya: 0.3
+  cel: sila               # sila: сила карты к центру нормы [С 8.9]; koridory: средние к центрам коридоров [С 2, 3.2]
+  zapisyvat: false        # true — записать найденные числа в файлы игры (с историей в карте)
+  pervaya_volna: 20
+  volna: 10
+  parametry:
+  - {chislo: karta.rok.mnozhitel, shag: 1, granicy: [3, 5]}

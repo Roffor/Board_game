@@ -1,0 +1,16 @@
+id: karayushchij-pokrov
+imya: Карающий покров
+geroj: zhrec
+nabor: zapas
+bild: С–П
+vid: связка
+chisla: {}
+tekst: Благословение союзнику. Пока оно на нём, каждое его попадание +1.
+effekt:
+- {blagoslovenie: soyuznik}
+- {osobyj: karayushchij_pokrov}
+bot: {poryadok: 0.5, cennost: 6}
+status: zapas
+staryj_id: m_pcover
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

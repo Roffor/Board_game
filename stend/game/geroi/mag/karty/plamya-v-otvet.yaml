@@ -1,0 +1,20 @@
+id: plamya-v-otvet
+imya: Пламя в ответ
+geroj: mag
+nabor: apgrejd
+bild: С–М
+vid: атака
+cena: 1
+chisla:
+  uron: 4
+  za_kartu: 2
+tekst: '{cena:мана}. {uron:урон}, +{za_kartu} за каждую карту, сожжённую союзником в этом раунде.'
+effekt:
+- {uron: uron + za_kartu * soyuznik_szheg}
+zamenyaet: pepelnyj-roj
+bot: {poryadok: 3.2, cennost: 5}
+granicy: {uron: [2, 6], za_kartu: [0, 4], cena: [0, 2]}
+status: v_teste
+staryj_id: n_answer
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,20 @@
+id: gnil
+imya: Гниль
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: связка
+cena: 1
+chisla:
+  porcha: 1
+tekst: '{cena:мана}. {porcha:Порча}. В конце этого раунда Порча на враге не снимается.'
+effekt:
+- {porcha: porcha}
+- {osobyj: gnil}
+zamenyaet: porcha-karta
+bot: {poryadok: 3, cennost: 6, cennost_gnili: 1.5}
+granicy: {porcha: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: x_rot
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

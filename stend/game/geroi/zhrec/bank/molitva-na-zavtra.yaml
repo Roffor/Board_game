@@ -1,0 +1,28 @@
+id: molitva-na-zavtra
+imya: Молитва на завтра
+geroj: zhrec
+nabor: zapas
+bild: Ч
+vid: вера
+chisla:
+  vera: 1
+  vera_big: 4
+tekst: 'Выбери: +{vera:вера} сейчас ИЛИ Обет: +{vera_big:вера} в начале следующего раунда.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {vera: vera}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: faith
+      ocenka_bota: 0.6 * vera_big
+      effekt:
+      - {vera: vera_big}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 3], vera_big: [2, 6]}
+status: zapas
+staryj_id: w_tomor
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

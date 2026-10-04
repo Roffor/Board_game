@@ -1,0 +1,30 @@
+id: obet-zashchity
+imya: Обет защиты
+geroj: zhrec
+nabor: apgrejd
+bild: П
+vid: защита
+chisla:
+  shchit: 5
+  shchit_big: 6
+  ocenka: 6
+tekst: 'Выбери: {shchit:щит} себе сейчас ИЛИ Обет: в начале следующего раунда Благословение и {shchit_big:щит} союзнику.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {shchit: {komu: ja, n: shchit}}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: def
+      ocenka_bota: ocenka
+      effekt:
+      - {blagoslovenie: soyuznik}
+      - {shchit: {komu: soyuznik, n: shchit_big}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [3, 7], shchit_big: [4, 8], ocenka: [4, 8]}
+status: v_teste
+staryj_id: b_vowprot
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,19 @@
+id: klejmo-eretika
+imya: Клеймо еретика
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 1
+  n: 1
+tekst: '{uron:урон}. До конца раунда первое попадание союзника даёт +1 веру.'
+effekt:
+- {uron: uron}
+- {osobyj: {imya: klejmo, n: n}}
+bot: {poryadok: 0.7, cennost: 5}
+granicy: {uron: [0, 3], n: [0, 3]}
+status: v_teste
+staryj_id: y_brand
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

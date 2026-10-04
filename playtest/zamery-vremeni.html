@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Замеры времени партии</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; color: #000; background: #fff; margin: 0; }
+  h1 { font-size: 16pt; margin: 0 0 2mm; }
+  .sub { font-size: 9pt; color: #333; margin-bottom: 4mm; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { border: 1px solid #000; padding: 0 2mm; height: 8mm; vertical-align: middle; }
+  th { background: #e6e6e6; font-size: 9pt; height: 8mm; }
+  .head td { height: 8mm; }
+  .lbl { font-size: 8.5pt; color: #333; }
+  .num { width: 9mm; text-align: center; }
+  .type { width: 34mm; font-size: 10pt; color: #444; text-align: center; }
+  .time { width: 22mm; }
+  .rounds { width: 30mm; }
+  h2 { font-size: 11pt; margin: 3.5mm 0 1.5mm; }
+  .floors td { height: 8mm; text-align: center; width: 7.6%; }
+  .floors th { font-size: 8.5pt; }
+  .notes td { height: 18mm; vertical-align: top; font-size: 8.5pt; color: #555; padding-top: 1mm; }
+  .help { font-size: 8.5pt; color: #333; margin-top: 3mm; line-height: 1.35; }
+  .help b { color: #000; }
+</style>
+</head>
+<body>
+<h1>Двое во тьме — замеры времени партии</h1>
+<div class="sub">Записывай время по часам (например, 19:42). Всё, кроме времени боёв и партии, заполнять не обязательно.</div>
+
+<table class="head" style="table-layout:fixed"><colgroup><col style="width:17%"><col style="width:33%"><col style="width:17%"><col style="width:33%"></colgroup>
+  <tr><td class="lbl">Дата</td><td></td><td class="lbl">Герои</td><td></td></tr>
+  <tr><td class="lbl">Игроки</td><td></td><td class="lbl">Первая партия у кого-то?</td><td style="font-size:9pt">да / нет</td></tr>
+  <tr><td class="lbl">Начало партии</td><td></td><td class="lbl">Конец партии</td><td></td></tr>
+  <tr><td class="lbl">Итог</td><td style="font-size:9pt">победа / поражение, этаж ___</td><td class="lbl">Перерывы, мин</td><td></td></tr>
+</table>
+
+<h2>Бои</h2>
+<table>
+  <tr><th class="num">№</th><th class="type">Тип (обведи)</th><th class="time">Начало</th><th class="time">Конец</th><th class="rounds">Раунды (палочки)</th><th>Заметки</th></tr>
+  <tr><td class="num">1</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">2</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">3</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">4</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">5</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">6</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">7</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">8</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">9</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">10</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">11</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">12</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td class="num">13</td><td class="type">Р · Э · Б</td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>Комнаты по этажам (по желанию)</h2>
+<table class="floors">
+  <tr><th>Этаж</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr>
+  <tr><th>Комната</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>Заметки</h2>
+<table class="notes"><tr><td>Что заметно затянуло партию: споры, объяснение правил, поиск компонентов, долгие события…</td></tr></table>
+
+<div class="help">
+<b>Тип боя:</b> Р — рядовой, Э — элита, Б — босс.
+<b>Начало боя</b> — враг открыт. <b>Конец боя</b> — враг побеждён или пара пала, до выбора награды.
+<b>Раунд</b> — один цикл: намерение врага, ходы обоих героев, действие врага.
+<b>Комнаты:</b> Р — рядовой бой, Э — элита, О — отдых, С — событие, Т — тайник.
+Остальное время (раскладка, карта пути, награды, комнаты) Claude вычислит сам по общему времени партии.
+</div>
+</body>
+</html>

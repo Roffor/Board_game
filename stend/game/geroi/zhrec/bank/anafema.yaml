@@ -1,0 +1,18 @@
+id: anafema
+imya: Анафема
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  za_veru: 3
+  porog: 2
+tekst: '{za_veru:урон} за каждую веру выше {porog}. Вера не тратится.'
+effekt:
+- {uron: 'za_veru * max(0, vera - porog)'}
+bot: {poryadok: 4, cennost: 5}
+granicy: {za_veru: [1, 5], porog: [0, 4]}
+status: zapas
+staryj_id: y_anath
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

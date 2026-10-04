@@ -1,0 +1,28 @@
+id: osleplyayushchij-svet
+imya: Ослепляющий свет
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  oslab: 2
+  doplata: 2
+tekst: '{uron:урон}. Доплата {doplata:веру}: враг в этом раунде бьёт на {oslab} слабее.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {uron: uron}
+  - esli: oplacheno
+    to:
+    - {oslab_vraga: oslab}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], oslab: [0, 4], doplata: [0, 4]}
+status: zapas
+staryj_id: y_blind
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,19 @@
+id: plamya-predkov
+imya: Пламя предков
+geroj: mag
+nabor: start
+vid: визитка
+cena: 2
+podnoshenie: r
+chisla:
+  uron: 1
+  raz: 2
+tekst: '{cena:мана}. {raz:попадание} по {uron}. Подношение (сколько угодно раз): +1 попадание.'
+effekt:
+- {udary: {n: uron, raz: raz + podnoshenie}}
+bot: {poryadok: 3, cennost: 8}
+granicy: {uron: [0, 3], raz: [0, 4], cena: [1, 3]}
+status: prinyata
+staryj_id: flame
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,20 @@
+id: zhertvennik
+imya: Жертвенник
+geroj: mag
+nabor: start
+vid: связка
+cena: 1
+podnoshenie: 1
+chisla:
+  porcha: 1
+  dobor: 2
+tekst: '{cena:мана}. {porcha:Порча}. Подношение: возьми {dobor:карту}.'
+effekt:
+- {porcha: porcha}
+- {dobor: dobor * podnoshenie}
+bot: {poryadok: 1.3, cennost: 5, pereplan: true}
+granicy: {porcha: [0, 3], dobor: [0, 4], cena: [0, 2]}
+status: prinyata
+staryj_id: altar
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,25 @@
+id: molot-nebes
+imya: Молот небес
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  uron_big: 6
+  doplata: 3
+tekst: '{uron:урон}. Доплата {doplata:веру}: вместо этого {uron_big:урон}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 3}
+  effekt:
+  - {uron: uron_big if oplacheno else uron}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], uron_big: [4, 8], doplata: [1, 5]}
+status: v_teste
+staryj_id: y_hhammer
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

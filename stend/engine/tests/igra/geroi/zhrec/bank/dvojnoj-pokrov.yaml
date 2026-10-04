@@ -1,0 +1,21 @@
+id: dvojnoj-pokrov
+imya: Двойной покров
+geroj: zhrec
+nabor: zapas
+bild: П
+vid: связка
+chisla:
+  shchit: 5
+tekst: Благословение союзнику. Если оно уже на нём — {shchit:щит} ему.
+effekt:
+- esli: soyuznik_blagoslovlen
+  to:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  inache:
+  - {blagoslovenie: soyuznik}
+bot: {poryadok: 4, cennost: 6}
+granicy: {shchit: [3, 7]}
+status: zapas
+staryj_id: b_double
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

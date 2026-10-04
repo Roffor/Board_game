@@ -1,0 +1,19 @@
+id: smirenie
+imya: Смирение
+geroj: zhrec
+nabor: zapas
+bild: Ч–С
+vid: вера
+chisla:
+  dobor: 2
+tekst: 'Сбрось всю руку: +1 вера за каждую карту, возьми {dobor:карту}.'
+effekt:
+- {sbros: {n: 99, v: n}}
+- {vera: n}
+- {dobor: dobor}
+bot: {poryadok: 4.9, cennost: 4, pereplan: true}
+granicy: {dobor: [0, 4]}
+status: zapas
+staryj_id: m_humble
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

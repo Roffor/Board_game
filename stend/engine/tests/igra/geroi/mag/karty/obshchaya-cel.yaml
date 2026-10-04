@@ -1,0 +1,20 @@
+id: obshchaya-cel
+imya: Общая цель
+geroj: mag
+nabor: apgrejd
+bild: С–М
+vid: атака
+cena: 1
+chisla:
+  bonus: 4
+tekst: '{cena:мана}. Твоё следующее попадание в этом раунде +{bonus} и следующее попадание союзника +{bonus}.'
+effekt:
+- {bonus_soyuzniku: bonus}
+- {bonus_sebe: bonus}
+zamenyaet: otgolosok
+bot: {poryadok: 3, cennost: 6}
+granicy: {bonus: [2, 6], cena: [0, 2]}
+status: v_teste
+staryj_id: x_aim
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

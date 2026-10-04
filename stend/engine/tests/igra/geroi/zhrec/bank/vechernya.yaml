@@ -1,0 +1,31 @@
+id: vechernya
+imya: Вечерня
+geroj: zhrec
+nabor: zapas
+bild: П–Ч
+vid: вера
+chisla:
+  dobor: 2
+  dobor_big: 3
+  vera: 2
+  ocenka_x10: 36
+tekst: 'Выбери: возьми {dobor:карту} сейчас ИЛИ Обет: в начале следующего раунда возьми {dobor_big:карту} и +{vera:вера}.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - {dobor: dobor}
+- nazvanie: Обет
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: draw
+      ocenka_bota: ocenka_x10 / 10
+      effekt:
+      - {dobor: dobor_big}
+      - {vera: vera}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {dobor: [0, 4], dobor_big: [1, 5], vera: [0, 4], ocenka_x10: [34, 38]}
+status: zapas
+staryj_id: m_vesp
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

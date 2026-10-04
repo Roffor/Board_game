@@ -1,0 +1,18 @@
+id: eho
+imya: Эхо
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: связка
+cena: 1
+chisla: {}
+tekst: '{cena:мана}. Повтори эффект любой карты, сыгранной союзником в этом раунде (без доплаты).'
+effekt:
+- {osobyj: eho}
+zamenyaet: otgolosok
+bot: {poryadok: 4.6, cennost: 6, soyuznaya: true}
+granicy: {cena: [0, 2]}
+status: v_teste
+staryj_id: x_echo
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

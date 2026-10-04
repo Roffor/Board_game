@@ -1,0 +1,28 @@
+id: svet-skvoz-bronyu
+imya: Свет сквозь броню
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  vera: 1
+  doplata: 2
+tekst: '{uron:урон}, пробивает Броню. Доплата {doplata:веру}: +{vera:вера}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: {n: uron, bez_broni: true}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {uron: {n: uron, bez_broni: true}}
+  - esli: oplacheno
+    to:
+    - {vera: vera}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4], vera: [0, 3], doplata: [0, 4]}
+status: zapas
+staryj_id: y_pierce
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

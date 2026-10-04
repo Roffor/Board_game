@@ -1,0 +1,22 @@
+id: gnev-predkov
+imya: Гнев предков
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+podnoshenie: r
+chisla:
+  za_podnoshenie: 3
+tekst: '{cena:мана}. Подношение (сколько угодно раз): {za_podnoshenie:урон} за каждое.'
+effekt:
+- esli: podnoshenie
+  to:
+  - {uron: za_podnoshenie * podnoshenie}
+zamenyaet: pepelnyj-roj
+bot: {poryadok: 3, cennost: 5}
+granicy: {za_podnoshenie: [1, 5], cena: [0, 1]}
+status: v_teste
+staryj_id: a_wrath
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,1 @@
+[{"label": "base", "n": 120}, {"label": "e_dmg", "cards": ["e_dmg"], "n": 120}, {"label": "e_sh", "cards": ["e_sh"], "n": 120}, {"label": "x_ashskin", "cards": ["x_ashskin"]}, {"label": "x_affin", "cards": ["x_affin"]}, {"label": "x_ashskin|skin.sh=3", "cards": ["x_ashskin"], "P": {"skin.sh": 3}}, {"label": "x_affin|affin.d=8", "cards": ["x_affin"], "P": {"affin.d": 8}}]

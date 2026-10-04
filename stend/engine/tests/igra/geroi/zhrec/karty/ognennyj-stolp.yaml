@@ -1,0 +1,18 @@
+id: ognennyj-stolp
+imya: Огненный столп
+geroj: zhrec
+nabor: apgrejd
+bild: С
+vid: атака
+chisla:
+  uron: 2
+tekst: '{uron:урон}. Сожги верхнюю карту своей колоды.'
+effekt:
+- {uron: uron}
+- {osobyj: {imya: sozhgi_verh_svoej, v: ataka}}
+bot: {poryadok: 4, cennost: 6}
+granicy: {uron: [0, 4]}
+status: v_teste
+staryj_id: y_pillar
+istoriya:
+- перенос; в старом симуляторе за сожжённую атаку был ещё удар на 0 (Порча прибавлялась), по тексту его нет

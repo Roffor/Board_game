@@ -1,0 +1,29 @@
+id: chudo-zastupnichestva
+imya: Чудо заступничества
+geroj: zhrec
+nabor: start
+vid: защита
+chisla:
+  za_veru: 2
+tekst: 'Чудо: {za_veru:щит} за каждую веру, раздели между героями.'
+varianty:
+- nazvanie: союзнику
+  effekt:
+  - {chudo: f}
+  - {shchit: {komu: soyuznik, n: za_veru * f}}
+- nazvanie: себе
+  effekt:
+  - {chudo: f}
+  - {shchit: {komu: ja, n: za_veru * f}}
+- nazvanie: пополам
+  effekt:
+  - {chudo: f}
+  - {shchit: {komu: oba, n: za_veru * f // 2}}
+metki:
+- chudo
+bot: {poryadok: 5, cennost: 5}
+granicy: {za_veru: [0, 4]}
+status: prinyata
+staryj_id: z_mint
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

@@ -1,0 +1,1 @@
+[{"label": "base", "cards": []}, {"label": "a_ashes|ashes.base=1", "cards": ["a_ashes"], "P": {"ashes.base": 1}}, {"label": "a_ashes|ashes.base=2,ashes.per=1,cost0", "cards": ["a_ashes"], "P": {"ashes.base": 2, "ashes.per": 1}}]

@@ -1,0 +1,20 @@
+id: zaslon
+imya: Заслон
+geroj: zhrec
+nabor: apgrejd
+bild: П
+vid: защита
+chisla:
+  shchit: 4
+tekst: 'Авангард. Щитов себе: {shchit} + вера.'
+effekt:
+- {avangard: ja}
+- {shchit: {komu: ja, n: shchit + vera}}
+metki:
+- avangard
+bot: {poryadok: 4, cennost: 6}
+granicy: {shchit: [2, 6]}
+status: v_teste
+staryj_id: b_screen
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

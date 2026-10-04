@@ -1,0 +1,15 @@
+id: zvon-kolokola
+imya: Звон колокола
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: вера
+chisla: {}
+tekst: +1 вера за каждую карту, сыгранную союзником в этом раунде до неё.
+effekt:
+- {vera: 'min(6, sygrano_soyuznikom)'}
+bot: {poryadok: 4.8, cennost: 5}
+status: v_teste
+staryj_id: w_bell
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

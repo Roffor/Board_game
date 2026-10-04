@@ -1,0 +1,29 @@
+# Элита. Числа ударов — итоговые после калибровки (элита ×1,9 до 10, босс ×1,5 до 19, ярус II ×1,5 до 6).
+# Текст намерения движок пишет сам по действиям.
+id: pohititel-sveta
+imya: Похититель света
+yarus: EL
+zdorove: 40
+rezhim: koloda
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 10}
+- tip: удар
+  dejstviya:
+  - {kradet_maslo: 1}
+  - {ataka: 10}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, cel: vse}
+- tip: защита
+  dejstviya:
+  - {shchit: 5}
+  - {ataka: 8}
+- tip: удар
+  dejstviya:
+  - {ataka: 10, cel: bez_shchita}
+- tip: защита
+  dejstviya:
+  - {kradet_maslo: 1}
+  - {shchit: 4}

@@ -1,0 +1,22 @@
+id: vtoraya-zapoved
+imya: Вторая заповедь
+geroj: zhrec
+nabor: apgrejd
+bild: П–Ч
+vid: вера
+chisla:
+  vera: 1
+  nuzhno: 2
+tekst: +{vera:вера}. Если 2 из 3 (союзник в этом раунде взял карту; союзник получил щит; ты сбросил карту) — Молитва и Благословение.
+effekt:
+- {vera: vera}
+- esli: (soyuznik_vzyal > 0) + (soyuznik_poluchil_shchit > 0) + (ja_sbrosil > 0) >= nuzhno
+  to:
+  - {blagoslovenie: soyuznik}
+  - {molitva: null}
+bot: {poryadok: 4.8, cennost: 5, pereplan: true}
+granicy: {vera: [0, 3], nuzhno: [0, 4]}
+status: v_teste
+staryj_id: m_second
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

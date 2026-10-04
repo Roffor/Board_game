@@ -1,0 +1,21 @@
+id: pepelnyj-otzvuk
+imya: Пепельный отзвук
+geroj: mag
+nabor: apgrejd
+bild: С
+vid: атака
+cena: 0
+chisla:
+  uron: 3
+tekst: '{cena:мана}. {uron:урон}. Когда сгорает в первый раз за бой — в начале следующего раунда возвращается в руку.'
+effekt:
+- {uron: uron}
+pri_szhiganii:
+- {osobyj: vozvrat_odin_raz}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 6}
+granicy: {uron: [1, 5], cena: [0, 1]}
+status: v_teste
+staryj_id: x_ashecho
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

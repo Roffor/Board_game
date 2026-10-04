@@ -1,0 +1,33 @@
+id: iskra-s-doplatoj
+imya: Искра с доплатой
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: атака
+cena: 1
+chisla:
+  uron: 3
+  doplata: 1
+  uron_big: 6
+  porcha: 1
+tekst: '{cena:мана}. {uron:урон}. Доплата: ещё {doplata:мана} — вместо этого {uron_big:урон} и {porcha:Порча}.'
+varianty:
+- nazvanie: обычно
+  effekt:
+  - {uron: uron}
+- nazvanie: с доплатой
+  effekt:
+  - esli: mana >= doplata
+    to:
+    - {osobyj: {imya: potrat_manu, n: doplata}}
+    - {uron: uron_big}
+    - {porcha: porcha}
+    inache:
+    - {uron: uron}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 6}
+granicy: {uron: [1, 5], doplata: [0, 3], uron_big: [4, 8], porcha: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: x_kick
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

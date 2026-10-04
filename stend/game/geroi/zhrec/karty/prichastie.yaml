@@ -1,0 +1,32 @@
+id: prichastie
+imya: Причастие
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: вера
+chisla: {}
+tekst: 'Ты и союзник можете сбросить по 1 карте: +1 вера за каждую, каждый сбросивший берёт 1.'
+varianty:
+- nazvanie: оба
+  effekt:
+  - {sbros: {n: 1, v: a}}
+  - esli: a
+    to:
+    - {dobor: 1}
+  - {soyuznik_sbrasyvaet: {n: 1, v: b}}
+  - esli: b
+    to:
+    - {dobor_soyuznika: 1}
+  - {vera: a + b}
+- nazvanie: только я
+  effekt:
+  - {sbros: {n: 1, v: a}}
+  - esli: a
+    to:
+    - {dobor: 1}
+  - {vera: a}
+bot: {poryadok: 0.6, cennost: 5, pereplan: true}
+status: v_teste
+staryj_id: w_commun
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

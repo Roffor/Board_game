@@ -1,0 +1,19 @@
+id: otvetnyj-ogon
+imya: Ответный огонь
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: атака
+cena: 1
+chisla:
+  uron: 6
+tekst: '{cena:мана}. {uron:урон} и ещё урон, равный урону, который союзник получил в прошлом раунде.'
+effekt:
+- {uron: uron + soyuznik_poteryal_proshlyj}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [4, 8], cena: [0, 2]}
+status: v_teste
+staryj_id: x_retal
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

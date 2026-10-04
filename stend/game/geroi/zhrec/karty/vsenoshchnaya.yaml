@@ -1,0 +1,19 @@
+id: vsenoshchnaya
+imya: Всенощная
+geroj: zhrec
+nabor: apgrejd
+bild: Ч
+vid: молитва
+chisla:
+  sbros: 1
+tekst: Молитва дважды. Сбрось {sbros:карту} из руки.
+effekt:
+- {sbros: {n: sbros}}
+- {molitva: null}
+- {molitva: null}
+bot: {poryadok: 3.5, cennost: 6, pereplan: true}
+granicy: {sbros: [0, 3]}
+status: v_teste
+staryj_id: w_night
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

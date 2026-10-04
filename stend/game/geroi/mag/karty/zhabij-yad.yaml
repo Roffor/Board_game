@@ -1,0 +1,21 @@
+id: zhabij-yad
+imya: Жабий яд
+geroj: mag
+nabor: apgrejd
+bild: П
+vid: атака
+cena: 1
+chisla:
+  porcha: 1
+  uron: 2
+tekst: '{cena:мана}. {porcha:Порча}, затем {uron:урон}.'
+effekt:
+- {porcha: porcha}
+- {uron: uron}
+zamenyaet: iskra-ochaga
+bot: {poryadok: 3, cennost: 6}
+granicy: {porcha: [0, 3], uron: [0, 4], cena: [0, 2]}
+status: v_teste
+staryj_id: x_toad
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

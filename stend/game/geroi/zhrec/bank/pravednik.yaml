@@ -1,0 +1,18 @@
+id: pravednik
+imya: Праведник
+geroj: zhrec
+nabor: zapas
+bild: П–Ч
+vid: связка
+chisla:
+  maks: 3
+tekst: Благословение союзнику. +1 вера за каждое сработавшее в этом бою Благословение (макс {maks}).
+effekt:
+- {blagoslovenie: soyuznik}
+- {vera: 'min(maks, blagoslovenij_v_boyu)'}
+bot: {poryadok: 4, cennost: 5}
+granicy: {maks: [1, 5]}
+status: zapas
+staryj_id: m_right
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

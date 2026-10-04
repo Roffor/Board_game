@@ -1,0 +1,27 @@
+id: trojnoj-obryad
+imya: Тройной обряд
+geroj: mag
+nabor: apgrejd
+bild: С–П–М
+vid: атака
+cena: 1
+chisla:
+  uron: 2
+  plyus: 4
+  dobor: 1
+  nuzhno: 2
+tekst: '{cena:мана}. {uron:урон}. Если 2 из 3 (ты сжигал карту в этом раунде; на враге есть Порча; союзник получил щит) — ещё {plyus:урон} и возьми
+  {dobor:карту}.'
+effekt:
+- {pust: {polno: (szhzheno_v_raunde > 0) + (porcha > 0) + (soyuznik_poluchil_shchit > 0) >= nuzhno}}
+- {uron: uron + (plyus if polno else 0)}
+- esli: polno
+  to:
+  - {dobor: dobor}
+zamenyaet: plamya-predkov
+bot: {poryadok: 4.7, cennost: 6}
+granicy: {uron: [0, 4], plyus: [2, 6], dobor: [0, 3], nuzhno: [0, 4], cena: [0, 2]}
+status: v_teste
+staryj_id: x_triple
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

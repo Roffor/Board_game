@@ -1,0 +1,21 @@
+id: chudo-gneva
+imya: Чудо гнева
+geroj: zhrec
+nabor: zapas
+bild: Ч
+vid: атака
+chisla:
+  za_veru: 3
+  porog: 6
+tekst: 'Чудо: {za_veru:урон} за каждую веру, если вера {porog}; иначе 1 за каждую.'
+effekt:
+- {chudo: f}
+- {uron: (za_veru if f >= porog else 1) * f}
+metki:
+- chudo
+bot: {poryadok: 5, cennost: 5}
+granicy: {za_veru: [1, 5], porog: [4, 8]}
+status: zapas
+staryj_id: w_mwrath
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

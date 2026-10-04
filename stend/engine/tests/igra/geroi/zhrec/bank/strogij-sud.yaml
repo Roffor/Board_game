@@ -1,0 +1,25 @@
+id: strogij-sud
+imya: Строгий суд
+geroj: zhrec
+nabor: zapas
+bild: С
+vid: атака
+chisla:
+  uron: 2
+  plyus: 3
+  vera: 1
+  nuzhno: 2
+tekst: '{uron:урон}. Если 2 из 3 (у врага меньше половины здоровья; ты сбросил карту в этом раунде; на союзнике Благословение) — ещё {plyus:урон}
+  и +{vera:вера}.'
+effekt:
+- {pust: {polno: (vrag_zdorove * 2 < vrag_maks_zdorove) + (ja_sbrosil > 0) + soyuznik_blagoslovlen >= nuzhno}}
+- {uron: uron + (plyus if polno else 0)}
+- esli: polno
+  to:
+  - {vera: vera}
+bot: {poryadok: 4.7, cennost: 6}
+granicy: {uron: [0, 4], plyus: [1, 5], vera: [0, 3], nuzhno: [0, 4]}
+status: zapas
+staryj_id: y_strict
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

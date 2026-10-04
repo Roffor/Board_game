@@ -1,0 +1,28 @@
+id: strazh-sveta
+imya: Страж света
+geroj: zhrec
+nabor: start
+vid: защита
+chisla:
+  shchit: 3
+  shchit_big: 5
+  doplata: 2
+tekst: 'Авангард. {shchit:щит} себе. Доплата {doplata:веру}: {shchit_big}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {avangard: ja}
+  - {shchit: {komu: ja, n: shchit}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {avangard: ja}
+  - {shchit: {komu: ja, n: shchit_big if oplacheno else shchit}}
+metki:
+- avangard
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [1, 5], shchit_big: [3, 7], doplata: [0, 4]}
+status: prinyata
+staryj_id: z_lguard
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

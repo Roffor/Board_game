@@ -1,0 +1,23 @@
+id: porcha-karta
+imya: Порча
+geroj: mag
+nabor: start
+vid: связка
+cena: 1
+chisla:
+  porcha: 1
+  shchit: 3
+tekst: '{cena:мана}. {porcha:Порча} ИЛИ {shchit:щит} союзнику.'
+varianty:
+- nazvanie: Порча
+  effekt:
+  - {porcha: porcha}
+- nazvanie: щит союзнику
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 1, cennost: 5}
+granicy: {porcha: [0, 3], shchit: [1, 5], cena: [0, 2]}
+status: prinyata
+staryj_id: curse
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

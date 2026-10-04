@@ -1,0 +1,22 @@
+id: shepot-bezumiya
+imya: Шёпот безумия
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: связка
+cena: 1
+chisla:
+  porcha: 2
+  pri_szhiganii: 1
+tekst: '{cena:мана}. {porcha:Порча}. Если эту карту сжигают — {pri_szhiganii:Порча} бесплатно.'
+effekt:
+- {porcha: porcha}
+pri_szhiganii:
+- {porcha: pri_szhiganii}
+zamenyaet: porcha-karta
+bot: {poryadok: 3, cennost: 3}
+granicy: {porcha: [0, 4], pri_szhiganii: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: x_madness
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

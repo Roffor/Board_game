@@ -1,0 +1,27 @@
+id: shchit-nebes
+imya: Щит небес
+geroj: zhrec
+nabor: apgrejd
+bild: П
+vid: защита
+chisla:
+  shchit: 6
+  doplata: 2
+tekst: '{shchit:щит} союзнику. Доплата {doplata:веру}: ещё Благословение.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - esli: oplacheno
+    to:
+    - {blagoslovenie: soyuznik}
+bot: {poryadok: 4, cennost: 6}
+granicy: {shchit: [4, 8], doplata: [0, 4]}
+status: v_teste
+staryj_id: b_hshield
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

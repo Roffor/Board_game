@@ -1,0 +1,21 @@
+id: krov-na-altare
+imya: Кровь на алтаре
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: связка
+cena: 1
+podnoshenie: 1
+chisla:
+  porcha: 1
+  za_podnoshenie: 1
+tekst: '{cena:мана}. {porcha:Порча}. Подношение: +{za_podnoshenie:Порча}.'
+effekt:
+- {porcha: porcha + za_podnoshenie * podnoshenie}
+zamenyaet: porcha-karta
+bot: {poryadok: 1.3, cennost: 5}
+granicy: {porcha: [0, 3], za_podnoshenie: [0, 3], cena: [0, 2]}
+status: v_teste
+staryj_id: a_blood
+istoriya:
+- перенос; в отчёте 22 написано «Подношение (сколько угодно раз)», но в симуляторе подношение было одно — оставлено как в тестах

@@ -1,0 +1,19 @@
+id: chudo-sveta
+imya: Чудо света
+geroj: zhrec
+nabor: start
+vid: атака
+chisla:
+  minus: 1
+tekst: 'Чудо: урон = сожжённая вера − {minus} (не меньше 1, если вера была), одним ударом.'
+effekt:
+- {chudo: f}
+- {uron: 'max(1, f - minus) if f > 0 else 0'}
+metki:
+- chudo
+bot: {poryadok: 5, cennost: 5}
+granicy: {minus: [0, 3]}
+status: prinyata
+staryj_id: z_mlight
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

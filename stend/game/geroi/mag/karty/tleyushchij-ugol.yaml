@@ -1,0 +1,23 @@
+id: tleyushchij-ugol
+imya: Тлеющий уголь
+geroj: mag
+nabor: apgrejd
+bild: С–П
+vid: топливо
+cena: 0
+chisla:
+  shchit: 1
+  raz: 4
+  uron: 1
+tekst: '{cena:мана}. {shchit:щит} себе. Сожжён: {raz:попадание} по {uron}.'
+effekt:
+- {shchit: {komu: ja, n: shchit}}
+pri_szhiganii:
+- {udary: {n: uron, raz: raz}}
+zamenyaet: toplivo
+bot: {poryadok: 3, cennost: 2}
+granicy: {shchit: [0, 3], raz: [2, 6], uron: [0, 3], cena: [0, 1]}
+status: v_teste
+staryj_id: a_ember
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

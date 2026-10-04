@@ -1,0 +1,22 @@
+id: zhertvennyj-shchit
+imya: Жертвенный щит
+geroj: mag
+nabor: apgrejd
+bild: М
+vid: защита
+cena: 1
+podnoshenie: 1
+chisla:
+  shchit: 4
+  za_podnoshenie: 3
+tekst: '{cena:мана}. Союзник получает Авангард и {shchit:щит}. Подношение: +{za_podnoshenie:щит} ему.'
+effekt:
+- {avangard: soyuznik}
+- {shchit: {komu: soyuznik, n: shchit + za_podnoshenie * podnoshenie}}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [2, 6], za_podnoshenie: [1, 5], cena: [0, 2]}
+status: v_teste
+staryj_id: a_sacshield
+istoriya:
+- перенос из старого симулятора (числа итоговые на 01.10)

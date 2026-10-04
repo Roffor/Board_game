@@ -1,0 +1,28 @@
+id: etalon-shchit
+imya: Эталон щита
+geroj: mag
+nabor: etalon
+vid: защита
+cena: 1
+podnoshenie: 1
+chisla:
+  shchit: 5
+tekst: '{cena:мана}. {shchit:щит} себе ИЛИ союзнику. Подношение: обоим.'
+varianty:
+- nazvanie: себе
+  effekt:
+  - {shchit: {komu: ja, n: shchit}}
+  - esli: podnoshenie
+    to:
+    - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: союзнику
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - esli: podnoshenie
+    to:
+    - {shchit: {komu: ja, n: shchit}}
+zamenyaet: obereg
+bot: {poryadok: 3, cennost: 5}
+status: prinyata
+istoriya:
+- '[С 8.8] эталон силы апгрейда: Оберег +3 щита. Не менять.'
