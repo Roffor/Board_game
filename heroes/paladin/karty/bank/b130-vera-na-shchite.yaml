@@ -1,0 +1,18 @@
+id: b130-vera-na-shchite
+imya: Вера на щите
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 130
+tekst: 'Заслон союзнику. Вера 4+: этот Заслон ослабляет каждый удар раунда и снимается в конце раунда.'
+effekt:
+- zaslon:
+    komu: soyuznik
+    stojkij: vera >= 4
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

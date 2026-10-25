@@ -1,0 +1,24 @@
+id: b014-stroj
+imya: Строй
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 14
+chisla:
+  shchit: 3
+tekst: '{shchit:щит} себе и союзнику.'
+effekt:
+- shchit:
+    komu: oba
+    n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

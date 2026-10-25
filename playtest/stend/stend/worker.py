@@ -35,7 +35,7 @@ def decks_for(g, v, sit, seed):
         own = list(spec.get('obyazatelno') or [])
         if spec['apgrejdy'] == 'sluchajno':
             pul = spec['pul']
-            pool = upgrade_pool(g, hid) if pul == 'apgrejd' else list(pul)
+            pool = upgrade_pool(g, hid, tuple(pul.split('+'))) if isinstance(pul, str) else list(pul)
             ups = S.random_upgrades(pool, n, seed, salts.get(hid, (13, 7)), exclude=own)
         else:
             ups = list(spec['apgrejdy'])[:n]

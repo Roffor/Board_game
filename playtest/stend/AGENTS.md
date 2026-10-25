@@ -50,6 +50,7 @@ python run.py boj <I|II|EL|BOSS> <номер> [сид]   # один бой с п
 - Менять можно только то, что разрешает план (раздел `parametry` фазы подбора или явный список в плане), и только внутри указанных границ. У каждой карты есть свои `granicy` — за них выходить нельзя, движок не загрузит такую карту.
 - Каждая правка карты записывается в её `istoriya`: дата, кто, было → стало, почему. Подбор делает это сам; при ручной правке — пиши сам.
 - Механику (поля `effekt`, `varianty`, `osobyj`, тексты, `vid`, свойства врагов) не меняй, если план прямо не разрешил.
+- **Исключение — банк идей** (карты с `nabor: bank` в `../../heroes/<герой>/karty/bank/`, решение Никиты 2026-10-25): если план разрешает правку банка, ты можешь добавлять картам урон и щит, менять любые числа, расширять `granicy` и немного менять концепт (порог условия, маленький базовый эффект, «вдвое» → «ещё N», упрощение отслеживания). Ресурс, статус и механику героя, на которых держится идея, не меняй. Каждая правка — в `istoriya` карты и отдельной строкой в `zhurnal.md` с пометкой «концепт», если менялся не только счёт.
 - Здоровье рядового врага не больше 20, элиты не больше 40 [С 4.1]. Силу карт не компенсируй здоровьем врагов — ослабляй карты.
 - Замена карт: можно перенести файл карты из `../../heroes/<герой>/karty/osnovnye/` в `karty/zapas/` и обратно, поменяв `nabor` (`apgrejd` ↔ `zapas`). Запиши это в журнал.
 
@@ -63,11 +64,11 @@ python run.py boj <I|II|EL|BOSS> <номер> [сид]   # один бой с п
 nazvanie: имя-прогона
 srok_chasov: 6
 seed0: sluchajno            # или число
-geroi: {mag: {apgrejdy: sluchajno, pul: apgrejd}, zhrec: {apgrejdy: sluchajno, pul: apgrejd}}
+geroi: {mag: {apgrejdy: sluchajno, pul: apgrejd}, zhrec: {apgrejdy: sluchajno, pul: apgrejd}}   # pul: apgrejd | bank | apgrejd+bank | [id, ...]; легендарки — в obyazatelno
 pravki: {}                  # временные правки на весь план: {karta.<id>.<число>: N, vrag.<id>.zdorove: N, pravila.<ключ>: N}
 fazy:
 - {id: baza, tip: progon, dolya: 0.2, varianty: [{metka: baza}]}
-- {id: bild, tip: test_bilda, dolya: 0.5, geroj: mag, karty: [rok, gnil]}     # или bild: П
+- {id: bild, tip: test_bilda, dolya: 0.5, geroj: mag, karty: [rok, gnil]}     # или bild: П (для банка: bild: З, nabory: [bank])
 - {id: podbor, tip: podbor, dolya: 0.3, cel: sila, zapisyvat: true,
    parametry: [{chislo: karta.rok.mnozhitel, shag: 1, granicy: [3, 5]}]}
 ```

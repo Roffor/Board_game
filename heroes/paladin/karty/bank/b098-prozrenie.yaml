@@ -1,0 +1,29 @@
+id: b098-prozrenie
+imya: Прозрение
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 98
+chisla:
+  n: 3
+  shchit: 2
+tekst: Посмотри {n} верхние карты колоды, разложи в любом порядке. {shchit:щит} себе.
+effekt:
+- uporyadochit: n
+- shchit:
+    komu: ja
+    n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  n:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

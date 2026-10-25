@@ -46,6 +46,14 @@ class Bot(Choices):
                     best = (s, c, oi)
         return None if best is None else (best[1], best[2])
 
+    @staticmethod
+    def wants_blessing(f):
+        if f.bl_swapped:
+            return False
+        if any('blag' in c.tags for h in f.H.values() for c in h.hand):
+            return True
+        return any(name in ('neugasimaya_vera', 'dvojnaya_molitva', 'shipy_zaslona') for name in f.H[f.P].legend)
+
     # ------------------------------------------------ оценка плана
     def evaluate(self, base, seq, start=None):
         g = (start or base).plan_copy()
@@ -134,10 +142,11 @@ class Bot(Choices):
             if i == len(hand):
                 out.append(list(cur)); return
             rec(i + 1, left, cur)
-            if left > 0:
-                c = hand[i]
+            c = hand[i]
+            w = 2 if 'dve_karty' in c.tags else (0 if 'mozhet_vne_limita' in c.tags else 1)
+            if left >= max(1, w) or (w == 0 and left >= 0):
                 for oi in range(len(c.d.variants)):
-                    cur.append(('play', f.P, c, oi, 0)); rec(i + 1, left - 1, cur); cur.pop()
+                    cur.append(('play', f.P, c, oi, 0)); rec(i + 1, left - w, cur); cur.pop()
         rec(0, h.maxplays - h.plays, [])
         return out
 
@@ -186,10 +195,15 @@ class Bot(Choices):
             variants += [hid for hid in f.order if f.H[hid].alive]
         self.plans += 1
         best = None; allp = {}
+        # смена благословений — только если в руках или легендарках есть что-то про Лунарис/Соларис
+        swaps = [False, True] if self.wants_blessing(f) else [False]
+        variants = [(v, sw) for sw in swaps for v in variants]
         for v in variants:
             g = f.plan_copy()
-            if v is not None:
-                g.flash(v)
+            if v[1]:
+                g.swap_blessings()
+            if v[0] is not None:
+                g.flash(v[0])
             (s, seq), ranked = self.best_plan(g, base=f)
             if best is None or s > best[0] + 1e-9:
                 best = (s, v, seq)
@@ -210,8 +224,10 @@ class Bot(Choices):
             if sec[0] - s_pass >= 0.5 * gain:
                 best = sec; self.errors += 1
                 f.L('   [игроки выбирают не лучший, а второй по качеству вариант]')
-        if best[1] is not None:
-            f.flash(best[1])
+        if best[1][1]:
+            f.swap_blessings()
+        if best[1][0] is not None:
+            f.flash(best[1][0])
         seq = best[2]
         while seq:
             if f.E.hp <= 0 or not any(h.alive for h in f.H.values()):

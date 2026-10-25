@@ -1,0 +1,37 @@
+id: b035-rovno-tri
+imya: Ровно три
+geroj: zhrec
+nabor: bank
+bild: В
+vid: связка
+nomer_idei: 35
+chisla:
+  uron: 3
+  shchit: 3
+  uron_mal: 1
+tekst: 'Если вера ровно 3: {uron:урон} и {shchit:щит} союзнику. Иначе {uron_mal:урон}.'
+effekt:
+- esli: vera == 3
+  to:
+  - uron: uron
+  - shchit:
+      komu: soyuznik
+      n: shchit
+  inache:
+  - uron: uron_mal
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 6
+  uron_mal:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

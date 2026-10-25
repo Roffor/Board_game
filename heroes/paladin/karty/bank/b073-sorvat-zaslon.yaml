@@ -1,0 +1,27 @@
+id: b073-sorvat-zaslon
+imya: Сорвать заслон в гнев
+geroj: zhrec
+nabor: bank
+bild: З
+vid: атака
+nomer_idei: 73
+chisla:
+  uron: 6
+tekst: 'Сними Заслон с союзника: {uron:урон} врагу.'
+effekt:
+- snyat_zaslon:
+    s: soyuznik
+    v: s
+- esli: s
+  to:
+  - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 12
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

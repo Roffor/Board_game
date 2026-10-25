@@ -1,0 +1,22 @@
+id: b126-molitva-pod-udarom
+imya: Молитва под ударом
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 126
+tekst: 'Если на тебе Авангард: Молитва дважды. Иначе Молитва.'
+effekt:
+- esli: ja_avangard
+  to:
+  - molitva:
+      raz: 2
+  inache:
+  - molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

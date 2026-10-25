@@ -1,0 +1,39 @@
+id: b060-zhertvennik
+imya: Жертвенник
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 60
+chisla:
+  za: 2
+tekst: 'Доплата любой верой: Авангард и {za:щит} себе за каждую сожжённую.'
+varianty:
+- nazvanie: вся вера
+  effekt:
+  - szhech_veru:
+      n: vera
+      v: k
+  - avangard: ja
+  - shchit:
+      komu: ja
+      n: za * k
+- nazvanie: половина
+  effekt:
+  - szhech_veru:
+      n: vera // 2
+      v: k
+  - avangard: ja
+  - shchit:
+      komu: ja
+      n: za * k
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

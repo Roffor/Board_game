@@ -1,0 +1,19 @@
+id: b107-molitva-iz-glubiny
+imya: Молитва из глубины
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 107
+tekst: Сыграй нижнюю карту своей колоды, как Молитвой.
+effekt:
+- molitva:
+    otkuda: niz
+    otkryt: 1
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

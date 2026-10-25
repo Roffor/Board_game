@@ -1,0 +1,18 @@
+id: b064-zaslon-na-sebya
+imya: Заслон на себя
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 64
+tekst: Заслон себе. Авангард.
+effekt:
+- zaslon:
+    komu: ja
+- avangard: ja
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

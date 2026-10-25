@@ -1,0 +1,36 @@
+id: b129-plata-za-zaslon
+imya: Плата за заслон
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 129
+chisla:
+  doplata: 1
+tekst: 'Заслон союзнику. Доплата {doplata:веру}: не считается в лимит.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - zaslon:
+      komu: soyuznik
+- nazvanie: доплата
+  doplata:
+    vera: 1
+  effekt:
+  - zaslon:
+      komu: soyuznik
+  - esli: oplacheno
+    to:
+    - ne_v_limit: 1
+metki:
+- mozhet_vne_limita
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  doplata:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,41 @@
+id: b078-zaslon-naperyod
+imya: Заслон наперёд
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 78
+chisla:
+  shchit: 3
+  ocenka: 4
+tekst: 'Выбери: Заслон союзнику сейчас или после хода врага Заслон обоим и {shchit:щит} союзнику.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - zaslon:
+      komu: soyuznik
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: shield
+      ocenka_bota: ocenka
+      effekt:
+      - zaslon:
+          komu: oba
+      - shchit:
+          komu: soyuznik
+          n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  ocenka:
+  - 0
+  - 10
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

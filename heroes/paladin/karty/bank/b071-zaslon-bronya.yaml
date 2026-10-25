@@ -1,0 +1,21 @@
+id: b071-zaslon-bronya
+imya: Заслон-броня
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 71
+tekst: Заслон союзнику. Когда он сработает, снятый урон становится щитом союзнику на следующий раунд.
+effekt:
+- zaslon:
+    komu: soyuznik
+    effekt:
+    - shchit_potom:
+        komu: soyuznik
+        n: snyato
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

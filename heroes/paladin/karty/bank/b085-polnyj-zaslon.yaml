@@ -1,0 +1,19 @@
+id: b085-polnyj-zaslon
+imya: Полный заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 85
+tekst: 'Заслон союзнику: следующий удар по нему отменяется целиком. Ты не можешь играть карт урона в этом раунде.'
+effekt:
+- zaslon:
+    komu: soyuznik
+    polnyj: 1
+- zapret_urona: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

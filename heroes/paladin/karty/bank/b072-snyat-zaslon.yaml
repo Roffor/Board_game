@@ -1,0 +1,29 @@
+id: b072-snyat-zaslon
+imya: Снять заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 72
+chisla:
+  shchit: 7
+tekst: 'Сними Заслон с союзника: {shchit:щит} ему.'
+effekt:
+- snyat_zaslon:
+    s: soyuznik
+    v: s
+- esli: s
+  to:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 14
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

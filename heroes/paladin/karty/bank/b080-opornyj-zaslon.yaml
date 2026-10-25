@@ -1,0 +1,18 @@
+id: b080-opornyj-zaslon
+imya: Опорный заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 80
+tekst: Заслон союзнику. Пока он на нём, щит союзника не сгорает в конце раунда.
+effekt:
+- zaslon:
+    komu: soyuznik
+    opora: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

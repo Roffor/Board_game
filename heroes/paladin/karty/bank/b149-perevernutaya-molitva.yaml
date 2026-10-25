@@ -1,0 +1,22 @@
+id: b149-perevernutaya-molitva
+imya: Перевёрнутая молитва
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 149
+tekst: Переверни кубик веры. Если вера стала больше, Молитва.
+effekt:
+- pust:
+    a: vera
+- perevernut_veru: 1
+- esli: vera > a
+  to:
+  - molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

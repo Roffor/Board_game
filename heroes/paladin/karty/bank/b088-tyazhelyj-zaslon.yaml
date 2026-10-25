@@ -1,0 +1,21 @@
+id: b088-tyazhelyj-zaslon
+imya: Тяжёлый заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 88
+tekst: Заслон союзнику. Если у тебя Авангард, Заслон и тебе.
+effekt:
+- zaslon:
+    komu: soyuznik
+- esli: ja_avangard
+  to:
+  - zaslon:
+      komu: ja
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

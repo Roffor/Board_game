@@ -1,0 +1,28 @@
+id: b151-neugasimaya-vera
+imya: Неугасимая вера
+geroj: zhrec
+nabor: legendarka
+bild: ''
+vid: связка
+nomer_idei: 151
+chisla:
+  vera_na_starte: 2
+  sol_vera: 1
+  lun_ostatok: 1
+tekst: 'Вера не обнуляется между боями (на стенде: бой начинается с {vera_na_starte:веру}). Соларис: в начале боя ещё +{sol_vera:вера}. Лунарис:
+  Чудо оставляет {lun_ostatok:веру}.'
+passiv:
+  imya: neugasimaya_vera
+granicy:
+  vera_na_starte:
+  - 0
+  - 5
+  sol_vera:
+  - 0
+  - 4
+  lun_ostatok:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: легендарка Никиты, эффекты Соларис/Лунарис — Claude; числа черновые'

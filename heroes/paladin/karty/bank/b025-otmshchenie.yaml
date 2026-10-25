@@ -1,0 +1,35 @@
+id: b025-otmshchenie
+imya: Отмщение
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 25
+chisla:
+  uron: 2
+  dop: 2
+  vera: 1
+tekst: '{uron:урон}. Если здоровье союзника не полное, ещё {dop:урон} и +{vera:вера}.'
+effekt:
+- esli: soyuznik_ranen
+  to:
+  - uron: uron + dop
+  - vera: vera
+  inache:
+  - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  dop:
+  - 0
+  - 5
+  vera:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

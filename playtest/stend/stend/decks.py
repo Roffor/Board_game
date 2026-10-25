@@ -15,6 +15,8 @@ def build_deck(game, hid, upgrades, start=None):
         c = game.cards[cid]
         if c.hero != hid:
             raise ValueError(f'карта {cid} — не карта героя {hid}')
+        if c.set == 'legendarka':         # легендарка лежит рядом с планшетом, стартовую не заменяет
+            deck.append(c); continue
         if not left:
             deck.append(c); continue
         tgt = next((x for x in left if x.cid == c.replaces), None) if c.replaces else None
@@ -27,5 +29,6 @@ def build_deck(game, hid, upgrades, start=None):
 
 
 def upgrade_pool(game, hid, sets=('apgrejd',)):
-    """Пул апгрейдов героя: карты из набора (по умолчанию apgrejd), кроме отклонённых."""
+    """Пул апгрейдов героя: карты из наборов (по умолчанию apgrejd; bank — банк идей), кроме отклонённых.
+    Легендарки в случайный пул не входят: их кладут в колоду явно (obyazatelno)."""
     return [c.cid for c in game.hero_cards(hid, set(sets)) if c.status != 'ubrana']

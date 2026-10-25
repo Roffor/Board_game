@@ -1,0 +1,26 @@
+id: b043-anafema
+imya: Анафема
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 43
+chisla:
+  za: 3
+  porog: 3
+tekst: '{za:урон} за каждую веру выше {porog}. Вера не тратится.'
+effekt:
+- uron: za * max(0, vera - porog)
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  porog:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

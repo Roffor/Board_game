@@ -1,0 +1,26 @@
+id: b096-znamenie-svyshe
+imya: Знамение свыше
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 96
+chisla:
+  vera: 2
+tekst: Молитва. Сыгранная так карта даёт ещё +{vera:вера}.
+effekt:
+- molitva:
+    posle:
+    - vera: vera
+    ocenka_bota: 0.6 * vera
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

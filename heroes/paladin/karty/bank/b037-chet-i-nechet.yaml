@@ -1,0 +1,37 @@
+id: b037-chet-i-nechet
+imya: Чёт и нечет
+geroj: zhrec
+nabor: bank
+bild: В
+vid: связка
+nomer_idei: 37
+chisla:
+  uron: 3
+  shchit: 4
+  vera: 1
+tekst: 'Вера чётная: {uron:урон}. Нечётная: {shchit:щит} союзнику. В любом случае +{vera:вера}.'
+effekt:
+- esli: vera % 2 == 0
+  to:
+  - uron: uron
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+- vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 8
+  vera:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

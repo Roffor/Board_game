@@ -1,0 +1,22 @@
+id: b001-udar-mecha
+imya: Удар меча
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 1
+chisla:
+  uron: 3
+tekst: '{uron:урон}.'
+effekt:
+- uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

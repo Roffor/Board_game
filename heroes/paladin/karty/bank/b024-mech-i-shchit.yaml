@@ -1,0 +1,47 @@
+id: b024-mech-i-shchit
+imya: Меч и щит
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 24
+chisla:
+  uron: 2
+  shchit: 2
+  big: 3
+  doplata: 2
+tekst: '{uron:урон} и {shchit:щит} союзнику. Доплата {doplata:веру}: по {big}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uron: uron
+  - shchit:
+      komu: soyuznik
+      n: shchit
+- nazvanie: доплата
+  doplata:
+    vera: 2
+  effekt:
+  - uron: big if oplacheno else uron
+  - shchit:
+      komu: soyuznik
+      n: big if oplacheno else shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  shchit:
+  - 0
+  - 5
+  big:
+  - 0
+  - 6
+  doplata:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

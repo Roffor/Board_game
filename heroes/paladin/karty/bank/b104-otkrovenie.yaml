@@ -1,0 +1,22 @@
+id: b104-otkrovenie
+imya: Откровение
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 104
+tekst: 'Открой верхнюю карту: если это карта урона, сыграй её Молитвой; иначе возьми её в руку.'
+effekt:
+- esli: verh_ataka
+  to:
+  - molitva:
+      otkryt: 1
+  inache:
+  - dobor: 1
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

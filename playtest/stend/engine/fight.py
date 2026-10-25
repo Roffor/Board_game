@@ -35,12 +35,14 @@ class Hero:
         self.shielded_rnd = 0; self.drew_rnd = 0; self.disc_rnd = 0; self.burned_by_ally_rnd = 0
         self.taken = 0; self.taken_mark = 0; self.taken_last = 0
         self.played = []            # [(карта, вариант)] за раунд
+        # Паладин (банк 2026-10-25): свойства Заслона на этом герое, его «когда сработает», легендарки-пассивки
+        self.zmod = {}; self.zriders = []; self.legend = {}
 
     def clone(self):
         h = Hero.__new__(Hero)
         h.__dict__ = dict(self.__dict__)
         h.draw = list(self.draw); h.hand = list(self.hand); h.disc = list(self.disc); h.exiled = list(self.exiled)
-        h.played = list(self.played)
+        h.played = list(self.played); h.zmod = dict(self.zmod); h.zriders = list(self.zriders)
         return h
 
 
@@ -75,7 +77,11 @@ class Fight:
         self.H = {}
         for hid, cards in decks.items():
             hd = game.heroes[hid]
-            self.H[hid] = Hero(hid, hd['mehanika'], hd['imya'], hd['zdorove'], [CardInst(c, hid) for c in cards])
+            self.H[hid] = Hero(hid, hd['mehanika'], hd['imya'], hd['zdorove'],
+                               [CardInst(c, hid) for c in cards if c.set != 'legendarka'])
+            for c in cards:
+                if c.set == 'legendarka':      # легендарка — пассивка рядом с планшетом, в колоду не идёт
+                    self.H[hid].legend[c.passive] = dict(c.numbers)
         mech = {h.mech: h.id for h in self.H.values()}
         if set(mech) != {'mag', 'zhrec'}:
             raise ValueError('в версии 1 движок знает пару Маг + Жрец')
@@ -101,6 +107,10 @@ class Fight:
         self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0; self.news = False
         self.vigil = False; self.banner = False; self.banner_keep = 0; self.cover = False
         self._free = 0
+        # Паладин (банк): благословения Лунарис/Соларис, Перехват, запреты, отложенные щиты, открытый верх колоды
+        self.bl = {self.M: 'sol', self.P: 'lun'}; self.bl_swapped = False
+        self.intercept = 0; self.no_dmg_cards = False; self.no_hand = False; self.mir_keep = False
+        self.next_shields = {}; self.opened = []; self.reliq = 0; self._post = []
         # оценки будущего для бота (копятся только в копии для планирования)
         self.est = 0.0; self.est_f = 0.0
         self.stats = {}; self.min_frac = 1.0
@@ -141,6 +151,7 @@ class Fight:
         g.fdisc_round = list(self.fdisc_round); g.feat_used = list(self.feat_used); g.reserved = list(self.reserved)
         g.phx = list(self.phx); g.vows = list(self.vows); g.bless_riders = list(self.bless_riders)
         g.inspired = list(self.inspired); g.kinds_rnd = set(self.kinds_rnd); g._after = []
+        g.bl = dict(self.bl); g.next_shields = dict(self.next_shields); g.opened = list(self.opened); g._post = []
         g.stats = None; g.log = []
         return g
 
@@ -158,6 +169,10 @@ class Fight:
             h.draw = list(h.deck); self.rng.shuffle(h.draw)
             h.hand, h.disc, h.exiled = [], [], []
             h.faith = 0; h.maxplays = R['limit_kart_zhreca'] if h.mech == 'zhrec' else 99
+        lg = self.H[self.P].legend.get('neugasimaya_vera')
+        if lg:      # вера между боями: в одиночном бою стенда — вера на старте (средний перенос)
+            self.H[self.P].faith = min(self.faith_max, int(lg.get('vera_na_starte', 0)) +
+                                       (int(lg.get('sol_vera', 0)) if self.bl[self.P] == 'sol' else 0))
         if self.E.deckmode:
             self.rng.shuffle(self.E.dpile)
         self.L(f'БОЙ: {self.E.name} ({self.E.hp} здоровья)' + (f' в локации «{self.loc.name}»' if self.loc else '') +
@@ -212,6 +227,12 @@ class Fight:
 
     def miracle(self):
         P = self.H[self.P]; f = P.faith; P.faith = 0
+        if self.mir_keep:           # Чудо в колоде: это Чудо веру не сжигает
+            P.faith = f; self.mir_keep = False
+        else:
+            lg = P.legend.get('neugasimaya_vera')
+            if lg and self.bl[self.P] == 'lun':
+                P.faith = min(f, int(lg.get('lun_ostatok', 0)))
         f += self.mir_plus; self.mir_plus = 0
         self.mir_rnd += 1
         self.st('chudes'); self.st('vera_v_chudo', f)
@@ -303,6 +324,35 @@ class Fight:
     def bless(self, hid):
         if self.H[hid].alive:
             self.H[hid].blessed = True
+
+    def zaslon(self, hid, mods=None, rider=None):
+        """Заслон (бывшее Благословение) со свойствами: sila (+к ослаблению), stojkij (каждый удар раунда,
+        снимается в конце раунда), perehod (сработав, переходит на другого героя), polnyj (отменяет удар целиком),
+        opora (щит героя не сгорает, пока Заслон на нём). rider — эффект «когда сработает»."""
+        h = self.H[hid]
+        if not h.alive:
+            return
+        if not h.blessed:
+            h.zmod = {}
+        h.blessed = True
+        if mods:
+            h.zmod = dict(h.zmod, **mods)
+        if rider is not None:
+            h.zriders = h.zriders + [rider]
+        self.st('zaslonov')
+
+    def unzaslon(self, hid):
+        h = self.H[hid]
+        if not h.blessed:
+            return 0
+        h.blessed = False; h.zmod = {}; h.zriders = []
+        return 1
+
+    def swap_blessings(self):
+        """Смена благословений: переворот обоих жетонов Лунарис/Соларис."""
+        self.bl = {k: ('lun' if v == 'sol' else 'sol') for k, v in self.bl.items()}
+        self.bl_swapped = True; self.st('smen_blagoslovenij')
+        self.L(f'   Благословения меняются: {self.hn(self.M)} — {self.bl[self.M]}, {self.hn(self.P)} — {self.bl[self.P]}')
 
     def vanguard(self, hid):
         self.H[hid].vanguard = True
@@ -417,26 +467,48 @@ class Fight:
             self.H[self.M].pend += 1
 
     # ================================================================ Жрец: Молитва, Обет, Благословение
-    def pray(self, ctx, n_open=None, n_play=1, uselimit=False, kind_filter=None, then=None, est=0.0):
+    def pray(self, ctx, n_open=None, n_play=1, uselimit=False, kind_filter=None, then=None, est=0.0,
+             otkuda='verh', ostalnye='sbros', sygrannye='sbros', dvazhdy=False, do_pervoj=False):
+        """Молитва: открыть карты с верха (или низа) колоды Паладина и сыграть n_play из них бесплатно.
+        Банк 2026-10-25: otkuda (verh/niz), ostalnye и sygrannye — куда уходят несыгранные и сыгранные
+        (sbros/niz/verh), dvazhdy — сыгранная срабатывает дважды и сгорает, do_pervoj — открывать до первой
+        карты вида kind_filter. Легендарка «Двойная молитва» добавляет карту."""
         P = self.H[self.P]
         n_open = (n_open or self.R['molitva_otkryt']) + self.pray_bonus; self.pray_bonus = 0
+        lg = P.legend.get('dvojnaya_molitva'); base_play = n_play
+        if lg:
+            d = int(lg.get('dop_kart', 1)); n_play += d; n_open += d
+            if self.bl[self.P] == 'lun':
+                n_open += int(lg.get('lun_otkryt', 0))
         if self.planning:
             B = self.R['bot']
-            k = n_play if kind_filter is None else 0.45 * n_open
+            k = n_play if kind_filter is None or do_pervoj else 0.45 * n_open
             w = B['ocenka_molitvy'] + est
             if uselimit:
                 k = min(k, max(0, P.maxplays - P.plays)); w = B['ocenka_molitvy_v_limit']
+            if dvazhdy:
+                w *= 1.6
             self.est += w * k
             self.pray_rnd += 1
             return []
         opened = []
-        for _ in range(n_open):
-            if self._top(self.P) is None:
-                break
-            opened.append(P.draw.pop())
+        if do_pervoj:
+            for _ in range(len(P.draw) + len(P.disc)):
+                c = self._top(self.P) if otkuda == 'verh' else self._bottom(self.P)
+                if c is None:
+                    break
+                P.draw.remove(c); opened.append(c)
+                if kind_filter is None or c.kind == kind_filter:
+                    break
+        else:
+            for _ in range(n_open):
+                c = self._top(self.P) if otkuda == 'verh' else self._bottom(self.P)
+                if c is None:
+                    break
+                P.draw.remove(c); opened.append(c)
         self.st('molitv'); played = []
-        rounds = n_play if kind_filter is None else len(opened)
-        for _ in range(rounds):
+        rounds = n_play if (kind_filter is None or do_pervoj) else len(opened)
+        for i in range(rounds):
             cands = [c for c in opened if kind_filter is None or c.kind == kind_filter]
             if not cands or self.E.hp <= 0 or not P.alive:
                 break
@@ -449,8 +521,11 @@ class Fight:
             if not uselimit:
                 P.maxplays += 1
             self._free += 1
+            e0 = self.E.hp; s0 = P.shield
             try:
                 ok = self.play(self.P, c, oi, 0)
+                if ok and dvazhdy and self.E.hp > 0:
+                    c.d.variants[oi].effect(self, Ctx(self.P, c, 0, False, oi))
             finally:
                 self._free -= 1
             if not ok:
@@ -458,12 +533,41 @@ class Fight:
                 if not uselimit:
                     P.maxplays -= 1
                 continue
+            if dvazhdy and any(x is c for x in P.disc):
+                P.disc = [x for x in P.disc if x is not c]; self._exile(self.P, c)
+            elif sygrannye != 'sbros' and any(x is c for x in P.disc):
+                P.disc = [x for x in P.disc if x is not c]
+                if sygrannye == 'niz':
+                    P.draw.insert(0, c)
+                else:
+                    P.draw.append(c)
             played.append(c); self.pray_rnd += 1; self.st('molitvoj_sygrano')
+            if lg and i >= base_play and c.kind == 'атака' and self.bl[self.P] == 'sol' and self.E.hp > 0:
+                self.hit(self.P, int(lg.get('sol_uron', 0)))
             if then is not None:
                 c2 = Ctx(self.P, ctx.card); c2.loc['sygrana_ataka'] = int(c.kind == 'атака')
+                c2.loc['sygrana_zashchita'] = int(c.kind == 'защита')
+                c2.loc['sygrana_molitva'] = int(c.kind == 'молитва')
+                c2.loc['sygrano_chudo'] = int('chudo' in c.tags)
+                c2.loc['shchit_s_karty'] = max(0, P.shield - s0); c2.loc['uron_s_karty'] = max(0, e0 - self.E.hp)
                 then(self, c2)
-        P.disc += opened
+        if ostalnye == 'niz':
+            P.draw[0:0] = opened
+        elif ostalnye == 'verh':
+            P.draw += sorted(opened, key=lambda x: x.value)
+        else:
+            P.disc += opened
         return played
+
+    def _bottom(self, hid):
+        h = self.H[hid]
+        if not h.draw:
+            if not h.disc:
+                return None
+            h.draw = h.disc; h.disc = []
+            if not self.planning:
+                self.rng.shuffle(h.draw)
+        return h.draw[0]
 
     def threat_k(self):
         return 1.0 + 2.2 * self.E.threat / max(1, self.E.maxhp)
@@ -558,11 +662,26 @@ class Fight:
         if k == self.P and n > 0 and self.martyr > 0:
             self.martyr -= 1; self.own_faith(1)
         trig = h.blessed and n > 0
+        horig = h; zm = {}; snyato = 0
         if h.blessed and n > 0:
-            b = self.R['blagoslovenie_bolshoe'] if (k == self.M and self.bless_big) else self.bless_n
-            n = max(0, n - b); h.blessed = False
-            self.L(f'      Благословение на {h.name}: удар слабее на {b}')
+            zm = h.zmod
+            if zm.get('polnyj'):
+                b = n
+            else:
+                b = (self.R['blagoslovenie_bolshoe'] if (k == self.M and self.bless_big) else self.bless_n) + zm.get('sila', 0)
+            snyato = min(n, max(0, b)); n -= snyato
+            shipy = self.H[self.P].legend.get('shipy_zaslona')
+            if not (zm.get('stojkij') or (shipy and self.bl[self.P] == 'lun')):
+                h.blessed = False; h.zmod = {}
+            self.L(f'      Заслон на {h.name}: удар слабее на {snyato}')
+            if self.intercept and k != self.P and self.H[self.P].alive:     # Перехват: удар принимает Паладин
+                n = max(0, n - (self.intercept - 1)); k = self.P; h = self.H[k]
+                self.L(f'      Перехват: удар принимает {h.name}')
         a = min(h.shield, n); h.shield -= a; n -= a
+        if trig and a > 0 and self.H[self.P].legend.get('shipy_zaslona') and self.E.hp > 0:
+            lg = self.H[self.P].legend['shipy_zaslona']
+            t = a + (int(lg.get('sol_uron', 0)) if self.bl[self.P] == 'sol' else 0)
+            self.L(f'      Шипы Заслона: враг получает {t}'); self._raw_hit(self.P, t); self.st('shipy_uron', t)
         if n > 0:
             if not self.planning:
                 h.taken += min(n, h.hp)
@@ -573,12 +692,22 @@ class Fight:
             if h.hp <= 0:
                 h.hp = 0; h.alive = False; h.shield = 0
                 self.L(f'      *** {h.name} падает! ***'); self.st('padenij')
-        if trig and k == self.M:
-            self.bless_trig_rnd += 1; self.bless_trig_fight += 1; self.cover = False; self.st('blagoslovenie_srabotalo')
+        if trig:
+            self.bless_trig_rnd += 1; self.bless_trig_fight += 1; self.st('blagoslovenie_srabotalo')
+        if trig and horig.id == self.M:
+            self.cover = False
             rs = self.bless_riders; self.bless_riders = []
             for eff, me, card in rs:
                 if self.E.hp > 0:
                     eff(self, Ctx(me, card))
+        if trig:
+            rs = horig.zriders; horig.zriders = []
+            for eff, me, card in rs:
+                if self.E.hp > 0:
+                    c = Ctx(me, card); c.loc['snyato'] = snyato; eff(self, c)
+            if zm.get('perehod') and not horig.blessed:
+                other = self.P if horig.id != self.P else self.M
+                self.bless(other); self.L(f'      Заслон переходит на {self.hn(other)}')
 
     def enemy_act(self, intent):
         e = self.E
@@ -717,15 +846,20 @@ class Fight:
 
     def _play_priest(self, h, card, opt):
         d = card.d
-        if h.plays >= h.maxplays:
+        w = 2 if 'dve_karty' in d.tags else 1
+        if h.plays + w > h.maxplays:
             return False
         v = d.variants[opt]
+        if not self._free and self.no_hand:
+            return False
+        if self.no_dmg_cards and v.has_dmg:
+            return False
         if not self._free:
             h.hand_plays_rnd += 1
         self.kinds_rnd = self.kinds_rnd | {d.kind}
         h.hand.remove(card)
         self.reserved = [r for r in self.reserved if r is not card]
-        h.plays += 1
+        h.plays += w
         paid = False
         if v.pay_faith and h.faith >= v.pay_faith:
             h.faith -= v.pay_faith; paid = True; self.st('vera_potrachena', v.pay_faith); self.st('doplat')
@@ -735,8 +869,15 @@ class Fight:
             self.stats.setdefault('karty', {}).setdefault(d.cid, 0)
             self.stats['karty'][d.cid] += 1
         e0 = self.E.hp
+        self._post = []
         v.effect(self, Ctx(h.id, card, 0, paid, opt))
-        h.disc.append(card)
+        post = self._post; self._post = []
+        if 'na_verh' in post or 'na_verh_posle' in d.tags:
+            h.draw.append(card)
+        elif 'pod_niz' in post:
+            h.draw.insert(0, card)
+        else:
+            h.disc.append(card)
         h.plays_rnd += 1; h.played.append((card, opt))
         if self.E.hp != e0:
             self.L(f'      враг {e0} → {self.E.hp}' + (f' (Порча {self.E.porcha})' if self.E.porcha else ''))
@@ -795,6 +936,7 @@ class Fight:
         self.bless_trig_rnd = 0; self.kinds_rnd = set(); self.pray_rnd = 0; self.mir_rnd = 0; self.weak = 0
         self.brand = 0; self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0
         self.inspired = []; self.news = False; self.mmult = False; self.burned_rnd = 0
+        self.bl_swapped = False; self.intercept = 0; self.no_dmg_cards = False; self.no_hand = False
         if self.rnd > R['predel_raundov']:
             self.stuck = True
             for h in self.H.values():
@@ -809,6 +951,11 @@ class Fight:
             self.vigil = False
         if self.banner_keep:
             P.shield += self.banner_keep; self.banner_keep = 0
+        for k, n in self.next_shields.items():
+            self.shield(k, n)
+        self.next_shields = {}
+        if self.reliq:
+            P.faith = min(self.faith_max, P.faith + self.reliq); self.reliq = 0
         self.banner = False
         if self.doll_dmg > 0 and e.hp > 0:
             d = self.doll_dmg; self.doll_dmg = 0; self.doll = 0
@@ -905,8 +1052,16 @@ class Fight:
             if al:
                 self._hazard(max(al, key=lambda x: self.H[x].hp), 'Сквозняк')
         for h in self.H.values():
-            h.shield = 0; h.vanguard = False
+            if not (h.blessed and h.zmod.get('opora')):
+                h.shield = 0
+            if h.blessed and h.zmod.get('stojkij'):
+                self.unzaslon(h.id)
+            h.vanguard = False
+            back = [c for c in h.hand if any(c is x for x in self.opened)]
+            if back:
+                h.hand = [c for c in h.hand if not any(c is x for x in back)]; h.draw += back
             h.disc += h.hand; h.hand = []
+        self.opened = []
         e.porcha = 0
         self.track_hp()
         if e.deckmode:
@@ -967,4 +1122,18 @@ VARS = {
     'ranenyh': lambda f, h, a: sum(1 for x in f.H.values() if x.alive and x.hp < x.maxhp),
     'blagoslovenij_v_boyu': lambda f, h, a: f.bless_trig_fight,
     'blagoslovenie_srabotalo_proshlyj': lambda f, h, a: f.bless_trig_last,
+    # Паладин (банк 2026-10-25)
+    'soyuznik_zaslon': lambda f, h, a: int(a.blessed),
+    'ja_zaslon': lambda f, h, a: int(h.blessed),
+    'ja_avangard': lambda f, h, a: int(h.vanguard),
+    'zdorove': lambda f, h, a: h.hp,
+    'zdorove_soyuznika': lambda f, h, a: a.hp,
+    'soyuznik_ranen': lambda f, h, a: int(a.hp < a.maxhp),
+    'solaris': lambda f, h, a: int(f.bl[h.id] == 'sol'),
+    'lunaris': lambda f, h, a: int(f.bl[h.id] == 'lun'),
+    'blag_menyalis': lambda f, h, a: int(f.bl_swapped),
+    'sygrana_molitvoj': lambda f, h, a: int(f._free > 0),
+    'verh_ataka': lambda f, h, a: int(bool(h.draw) and h.draw[-1].kind == 'атака'),
+    'verh_zashchita': lambda f, h, a: int(bool(h.draw) and h.draw[-1].kind == 'защита'),
+    'v_kolode': lambda f, h, a: len(h.draw),
 }

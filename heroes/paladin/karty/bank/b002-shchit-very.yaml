@@ -1,0 +1,31 @@
+id: b002-shchit-very
+imya: Щит веры
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 2
+chisla:
+  shchit: 4
+tekst: '{shchit:щит} себе или союзнику.'
+varianty:
+- nazvanie: себе
+  effekt:
+  - shchit:
+      komu: ja
+      n: shchit
+- nazvanie: союзнику
+  effekt:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

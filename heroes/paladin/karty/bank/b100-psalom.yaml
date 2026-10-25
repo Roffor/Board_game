@@ -1,0 +1,26 @@
+id: b100-psalom
+imya: Псалом
+geroj: zhrec
+nabor: bank
+bild: М
+vid: атака
+nomer_idei: 100
+chisla:
+  uron: 2
+  mnozhitel: 3
+tekst: '{uron:урон}. Если эта карта сыграна Молитвой, урон ×{mnozhitel}.'
+effekt:
+- uron: uron * (mnozhitel if sygrana_molitvoj else 1)
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  mnozhitel:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

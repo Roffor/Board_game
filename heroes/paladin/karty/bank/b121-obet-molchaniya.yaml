@@ -1,0 +1,25 @@
+id: b121-obet-molchaniya
+imya: Обет молчания
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 121
+chisla:
+  raz: 3
+tekst: Ты не играешь карт из руки до конца раунда. Молитва {raz:раз}.
+effekt:
+- tolko_molitvy: 1
+- molitva:
+    raz: raz
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  raz:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

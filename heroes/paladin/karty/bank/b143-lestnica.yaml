@@ -1,0 +1,26 @@
+id: b143-lestnica
+imya: Лестница
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: вера
+nomer_idei: 143
+chisla:
+  vera: 2
+tekst: +{vera:вера}. Если стало 6, Молитва.
+effekt:
+- vera: vera
+- esli: vera >= 6
+  to:
+  - molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

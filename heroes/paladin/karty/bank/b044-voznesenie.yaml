@@ -1,0 +1,36 @@
+id: b044-voznesenie
+imya: Вознесение
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 44
+chisla:
+  uron: 7
+  cena: 3
+  vera: 2
+tekst: 'Вера 4+: {uron:урон} и −{cena:вера}. Иначе +{vera:вера}.'
+effekt:
+- esli: vera >= 4
+  to:
+  - uron: uron
+  - szhech_veru:
+      n: cena
+  inache:
+  - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 14
+  cena:
+  - 0
+  - 6
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

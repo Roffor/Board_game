@@ -1,0 +1,23 @@
+id: b125-otpushchenie
+imya: Отпущение
+geroj: zhrec
+nabor: bank
+bild: М
+vid: вера
+nomer_idei: 125
+chisla:
+  vera: 1
+tekst: Положи лучшую карту из сброса на верх колоды. +{vera:вера}.
+effekt:
+- iz_sbrosa_na_verh: 1
+- vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

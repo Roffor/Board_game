@@ -1,0 +1,39 @@
+id: b056-znamenie
+imya: Знамение
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 56
+chisla:
+  vera: 2
+  vera_mal: 1
+  shchit: 2
+tekst: 'Соларис: +{vera:вера}. Лунарис: +{vera_mal:вера} и {shchit:щит} союзнику.'
+effekt:
+- esli: solaris
+  to:
+  - vera: vera
+  inache:
+  - vera: vera_mal
+  - shchit:
+      komu: soyuznik
+      n: shchit
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 5
+  vera_mal:
+  - 0
+  - 4
+  shchit:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

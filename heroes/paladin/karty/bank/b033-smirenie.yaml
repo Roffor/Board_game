@@ -1,0 +1,26 @@
+id: b033-smirenie
+imya: Смирение
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 33
+chisla:
+  uron: 6
+  uron_mal: 1
+tekst: 'Если вера 0: {uron:урон}. Иначе {uron_mal:урон}.'
+effekt:
+- uron: uron if vera == 0 else uron_mal
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 12
+  uron_mal:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

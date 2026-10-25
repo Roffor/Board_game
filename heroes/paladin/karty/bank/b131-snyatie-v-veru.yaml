@@ -1,0 +1,27 @@
+id: b131-snyatie-v-veru
+imya: Снятие в веру
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: вера
+nomer_idei: 131
+chisla:
+  vera: 3
+tekst: 'Сними Заслон с союзника: +{vera:вера}.'
+effekt:
+- snyat_zaslon:
+    s: soyuznik
+    v: s
+- esli: s
+  to:
+  - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

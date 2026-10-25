@@ -1,0 +1,47 @@
+id: b016-udar-shchitom
+imya: Удар щитом
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 16
+chisla:
+  uron: 2
+  shchit: 2
+  shchit_big: 4
+  doplata: 2
+tekst: '{uron:урон} и {shchit:щит} себе. Доплата {doplata:веру}: {shchit_big:щит}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uron: uron
+  - shchit:
+      komu: ja
+      n: shchit
+- nazvanie: доплата
+  doplata:
+    vera: 2
+  effekt:
+  - uron: uron
+  - shchit:
+      komu: ja
+      n: shchit_big if oplacheno else shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  shchit:
+  - 0
+  - 5
+  shchit_big:
+  - 0
+  - 8
+  doplata:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

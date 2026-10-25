@@ -1,0 +1,19 @@
+id: b099-chetki
+imya: Чётки
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 99
+tekst: Положи карту из руки на верх колоды. Молитва.
+effekt:
+- na_verh_iz_ruki:
+    n: 1
+- molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

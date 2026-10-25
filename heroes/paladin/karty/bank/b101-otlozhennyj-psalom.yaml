@@ -1,0 +1,40 @@
+id: b101-otlozhennyj-psalom
+imya: Отложенный псалом
+geroj: zhrec
+nabor: bank
+bild: М
+vid: защита
+nomer_idei: 101
+chisla:
+  shchit: 3
+  shchit_big: 6
+tekst: 'Выбери: {shchit:щит} себе сейчас или положи эту карту на верх колоды: сыгранная Молитвой, она даёт {shchit_big:щит} обоим.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - esli: sygrana_molitvoj
+    to:
+    - shchit:
+        komu: oba
+        n: shchit_big
+    inache:
+    - shchit:
+        komu: ja
+        n: shchit
+- nazvanie: на верх
+  effekt:
+  - ocenka: 2
+  - eta_na_verh: 1
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  shchit_big:
+  - 0
+  - 12
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

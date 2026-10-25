@@ -1,0 +1,22 @@
+id: b147-svyatoe-kope
+imya: Святое копьё
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: атака
+nomer_idei: 147
+chisla:
+  za: 3
+tekst: '{za:урон} за каждую карту, сыгранную Молитвой в этом раунде.'
+effekt:
+- uron: za * molitv_v_raunde
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

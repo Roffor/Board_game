@@ -1,0 +1,27 @@
+id: b047-polnota
+imya: Полнота
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 47
+chisla:
+  uron: 3
+tekst: 'Если вера 6: эта карта не считается в лимит. {uron:урон}.'
+effekt:
+- esli: vera >= 6
+  to:
+  - ne_v_limit: 1
+- uron: uron
+metki:
+- mozhet_vne_limita
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

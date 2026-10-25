@@ -1,0 +1,22 @@
+id: b018-pravednyj-gnev
+imya: Праведный гнев
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 18
+chisla:
+  za: 2
+tekst: '{za:урон} за каждого героя, у которого здоровье не полное.'
+effekt:
+- uron: za * ranenyh
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

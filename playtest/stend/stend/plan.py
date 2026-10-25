@@ -62,7 +62,8 @@ def load(path, game):
                 raise PlanError(f'{w}: geroj — один из {sorted(game.heroes)}')
             cards = ph.get('karty')
             if cards is None and ph.get('bild'):
-                cards = [c.cid for c in game.hero_cards(hid, {'apgrejd'}) if c.build == ph['bild']]
+                cards = [c.cid for c in game.hero_cards(hid, set(ph.get('nabory', ['apgrejd'])))
+                         if c.build == ph['bild']]
             if not cards:
                 raise PlanError(f'{w}: укажи karty (список id) или bild')
             for c in cards:

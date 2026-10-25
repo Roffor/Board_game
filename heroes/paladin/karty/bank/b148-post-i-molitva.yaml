@@ -1,0 +1,43 @@
+id: b148-post-i-molitva
+imya: Пост и молитва
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 148
+chisla:
+  za: 2
+tekst: 'Сожги веру: Молитва за каждые {za} сожжённые.'
+varianty:
+- nazvanie: сжечь 2
+  effekt:
+  - szhech_veru:
+      n: 2
+      v: k
+  - molitva:
+      raz: k // za
+- nazvanie: сжечь 4
+  effekt:
+  - szhech_veru:
+      n: 4
+      v: k
+  - molitva:
+      raz: k // za
+- nazvanie: сжечь 6
+  effekt:
+  - szhech_veru:
+      n: 6
+      v: k
+  - molitva:
+      raz: k // za
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

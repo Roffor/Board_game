@@ -1,0 +1,33 @@
+id: b123-trojnaya-molitva
+imya: Тройная молитва
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 123
+chisla:
+  vera: 1
+  nuzhno: 2
+tekst: '+{vera:вера}. Если 2 из 3 (вера 4+; на союзнике Заслон; верхняя карта колоды — карта урона): Молитва дважды.'
+effekt:
+- pust:
+    c: (vera >= 4) + soyuznik_zaslon + verh_ataka
+- vera: vera
+- esli: c >= nuzhno
+  to:
+  - molitva:
+      raz: 2
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  vera:
+  - 0
+  - 4
+  nuzhno:
+  - 1
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,25 @@
+id: b069-otvetnyj-zaslon
+imya: Ответный заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: связка
+nomer_idei: 69
+chisla:
+  uron: 3
+tekst: Заслон союзнику. Когда он сработает, {uron:урон} врагу.
+effekt:
+- zaslon:
+    komu: soyuznik
+    effekt:
+    - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

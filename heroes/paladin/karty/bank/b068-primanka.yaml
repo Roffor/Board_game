@@ -1,0 +1,18 @@
+id: b068-primanka
+imya: Приманка
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 68
+tekst: 'Заслон и Авангард союзнику: враг бьёт того, кого ты защитил.'
+effekt:
+- zaslon:
+    komu: soyuznik
+- avangard: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

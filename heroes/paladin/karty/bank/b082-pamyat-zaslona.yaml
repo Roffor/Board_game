@@ -1,0 +1,34 @@
+id: b082-pamyat-zaslona
+imya: Память заслона
+geroj: zhrec
+nabor: bank
+bild: З
+vid: связка
+nomer_idei: 82
+chisla:
+  uron: 2
+  shchit: 3
+tekst: 'Если на союзнике нет Заслона: Заслон и {uron:урон}. Если есть: {shchit:щит} обоим.'
+effekt:
+- esli: soyuznik_zaslon
+  to:
+  - shchit:
+      komu: oba
+      n: shchit
+  inache:
+  - zaslon:
+      komu: soyuznik
+  - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  shchit:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

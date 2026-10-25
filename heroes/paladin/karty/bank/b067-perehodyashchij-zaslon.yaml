@@ -1,0 +1,18 @@
+id: b067-perehodyashchij-zaslon
+imya: Переходящий заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 67
+tekst: Заслон союзнику. Сработав, он не снимается, а переходит на тебя.
+effekt:
+- zaslon:
+    komu: soyuznik
+    perehod: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

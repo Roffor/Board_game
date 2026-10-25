@@ -1,0 +1,29 @@
+id: b132-chudo-vozmezdiya
+imya: Чудо возмездия
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: атака
+nomer_idei: 132
+chisla:
+  za: 1
+  dop: 3
+tekst: 'Чудо: {za:урон} за каждую веру. Если на союзнике Заслон, ещё {dop:урон}.'
+effekt:
+- chudo: f
+- uron: za * f + (dop if soyuznik_zaslon else 0)
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+  dop:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

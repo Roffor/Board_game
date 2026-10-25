@@ -1,0 +1,28 @@
+id: b152-dvojnaya-molitva
+imya: Двойная молитва
+geroj: zhrec
+nabor: legendarka
+bild: ''
+vid: связка
+nomer_idei: 152
+chisla:
+  dop_kart: 1
+  sol_uron: 2
+  lun_otkryt: 1
+tekst: 'Каждая Молитва играет на {dop_kart:карту} с верха колоды больше. Соларис: лишняя карта урона бьёт ещё на {sol_uron}. Лунарис: Молитва
+  открывает ещё {lun_otkryt:карту} на выбор.'
+passiv:
+  imya: dvojnaya_molitva
+granicy:
+  dop_kart:
+  - 0
+  - 4
+  sol_uron:
+  - 0
+  - 5
+  lun_otkryt:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: легендарка Никиты, эффекты Соларис/Лунарис — Claude; числа черновые'

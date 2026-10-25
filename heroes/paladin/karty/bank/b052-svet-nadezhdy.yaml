@@ -1,0 +1,32 @@
+id: b052-svet-nadezhdy
+imya: Свет надежды
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 52
+chisla:
+  vera: 3
+  shchit: 2
+tekst: 'Если вера меньше 2: +{vera:вера}. Иначе {shchit:щит} обоим.'
+effekt:
+- esli: vera < 2
+  to:
+  - vera: vera
+  inache:
+  - shchit:
+      komu: oba
+      n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

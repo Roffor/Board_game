@@ -1,0 +1,26 @@
+id: b038-klinok-veruyushchego
+imya: Клинок верующего
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 38
+chisla:
+  uron: 2
+  uron_big: 5
+tekst: '{uron:урон}. Вера 4+: {uron_big:урон}.'
+effekt:
+- uron: uron_big if vera >= 4 else uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  uron_big:
+  - 0
+  - 10
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,19 @@
+id: b135-pokrov-molitvy
+imya: Покров молитвы
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: молитва
+nomer_idei: 135
+tekst: Заслон союзнику. Молитва.
+effekt:
+- zaslon:
+    komu: soyuznik
+- molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,25 @@
+id: b004-shag-vpered
+imya: Шаг вперёд
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 4
+chisla:
+  shchit: 4
+tekst: Авангард. {shchit:щит} себе.
+effekt:
+- avangard: ja
+- shchit:
+    komu: ja
+    n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

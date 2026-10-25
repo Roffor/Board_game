@@ -1,0 +1,25 @@
+id: b046-chudo-suda
+imya: Чудо суда
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 46
+chisla:
+  za: 1
+tekst: 'Чудо: {za:урон} за каждую веру. Если вера была 6, вдвое.'
+effekt:
+- chudo: f
+- uron: za * f * (2 if f >= 6 else 1)
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

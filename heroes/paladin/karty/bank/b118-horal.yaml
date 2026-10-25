@@ -1,0 +1,23 @@
+id: b118-horal
+imya: Хорал
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 118
+tekst: Молитва. Если так сыграна карта с Молитвой, ещё одна Молитва.
+effekt:
+- molitva:
+    posle:
+    - esli: sygrana_molitva
+      to:
+      - molitva: null
+    ocenka_bota: 1
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: в идее «она играет две верхние карты»; на стенде — ещё одна Молитва'

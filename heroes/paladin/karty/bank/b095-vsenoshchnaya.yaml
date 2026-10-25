@@ -1,0 +1,20 @@
+id: b095-vsenoshchnaya
+imya: Всенощная
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 95
+tekst: Молитва дважды. Сбрось 1 карту из руки.
+effekt:
+- molitva:
+    raz: 2
+- sbros:
+    n: 1
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

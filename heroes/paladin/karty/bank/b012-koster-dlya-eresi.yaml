@@ -1,0 +1,28 @@
+id: b012-koster-dlya-eresi
+imya: Костёр для ереси
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: вера
+nomer_idei: 12
+chisla:
+  vera: 2
+tekst: 'Сожги карту из руки: +{vera:вера}.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s
+  to:
+  - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

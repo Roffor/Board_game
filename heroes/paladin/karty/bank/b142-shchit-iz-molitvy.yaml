@@ -1,0 +1,21 @@
+id: b142-shchit-iz-molitvy
+imya: Щит из молитвы
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: молитва
+nomer_idei: 142
+tekst: Молитва. Если на союзнике Заслон, весь щит с сыгранной карты получает союзник.
+effekt:
+- molitva:
+    posle:
+    - esli: soyuznik_zaslon
+      to:
+      - otdat_shchit: shchit_s_karty
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

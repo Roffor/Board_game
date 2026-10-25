@@ -1,0 +1,28 @@
+id: b097-kara-nebesnaya
+imya: Кара небесная
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 97
+chisla:
+  uron: 3
+tekst: Молитва. Если так сыграна карта урона, ещё {uron:урон}.
+effekt:
+- molitva:
+    posle:
+    - esli: sygrana_ataka
+      to:
+      - uron: uron
+    ocenka_bota: 0.5 * uron
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  uron:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,41 @@
+id: b030-chudo-zastupnichestva
+imya: Чудо заступничества
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 30
+chisla:
+  za: 2
+tekst: 'Чудо: {za:щит} за каждую веру, раздели между героями.'
+varianty:
+- nazvanie: союзнику
+  effekt:
+  - chudo: f
+  - shchit:
+      komu: soyuznik
+      n: za * f
+- nazvanie: себе
+  effekt:
+  - chudo: f
+  - shchit:
+      komu: ja
+      n: za * f
+- nazvanie: пополам
+  effekt:
+  - chudo: f
+  - shchit:
+      komu: oba
+      n: za * f // 2
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

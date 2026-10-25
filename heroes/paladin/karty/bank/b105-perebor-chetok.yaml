@@ -1,0 +1,20 @@
+id: b105-perebor-chetok
+imya: Перебор чёток
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 105
+tekst: Открывай верхние карты, пока не откроешь карту урона, сыграй её Молитвой. Остальные под низ колоды.
+effekt:
+- molitva:
+    tolko_vid: атака
+    do_pervoj: true
+    ostalnye: niz
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

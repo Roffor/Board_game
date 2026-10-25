@@ -1,0 +1,35 @@
+id: b124-horugv
+imya: Хоругвь
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 124
+chisla:
+  uron: 2
+tekst: 'Молитва. Соларис: сыгранная так карта урона бьёт ещё на {uron}. Лунарис: щит с сыгранной так карты получает и союзник.'
+effekt:
+- molitva:
+    posle:
+    - esli: solaris and sygrana_ataka
+      to:
+      - uron: uron
+    - esli: lunaris and sygrana_zashchita
+      to:
+      - shchit:
+          komu: soyuznik
+          n: shchit_s_karty
+    ocenka_bota: 1
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  uron:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

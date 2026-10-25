@@ -1,0 +1,20 @@
+id: b083-bystryj-zaslon
+imya: Быстрый заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 83
+tekst: Заслон союзнику. Не считается в лимит.
+effekt:
+- zaslon:
+    komu: soyuznik
+- ne_v_limit: 1
+metki:
+- mozhet_vne_limita
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

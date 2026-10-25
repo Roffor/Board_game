@@ -1,0 +1,28 @@
+id: b039-strazh-obeta
+imya: Страж обета
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 39
+chisla:
+  shchit: 4
+tekst: '{shchit:щит} себе. Вера 4+: ещё Заслон союзнику.'
+effekt:
+- shchit:
+    komu: ja
+    n: shchit
+- esli: vera >= 4
+  to:
+  - zaslon:
+      komu: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

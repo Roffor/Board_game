@@ -1,0 +1,26 @@
+id: b009-ispytanie
+imya: Испытание
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: молитва
+nomer_idei: 9
+chisla:
+  n: 2
+tekst: 'Посмотри {n} верхние карты колоды: одну возьми, другую положи на верх.'
+effekt:
+- smotri_verh:
+    n: n
+    vzyat: 1
+    ostalnye: verh
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  n:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,28 @@
+id: b015-tyazhelyj-dospeh
+imya: Тяжёлый доспех
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 15
+chisla:
+  shchit: 3
+  dop: 3
+tekst: '{shchit:щит} себе. Если у тебя Авангард, ещё {dop:щит}.'
+effekt:
+- shchit:
+    komu: ja
+    n: shchit + (dop if ja_avangard else 0)
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  dop:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

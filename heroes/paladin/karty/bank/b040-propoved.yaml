@@ -1,0 +1,22 @@
+id: b040-propoved
+imya: Проповедь
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 40
+chisla:
+  plus: 0
+tekst: Урон = вера. Вера не тратится.
+effekt:
+- uron: vera + plus
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  plus:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

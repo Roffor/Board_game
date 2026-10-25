@@ -1,0 +1,33 @@
+id: b110-podgotovka
+imya: Подготовка
+geroj: zhrec
+nabor: bank
+bild: М
+vid: вера
+nomer_idei: 110
+chisla:
+  za: 1
+tekst: Положи одну или две карты из руки на верх колоды. +{za:вера} за каждую.
+varianty:
+- nazvanie: одну
+  effekt:
+  - na_verh_iz_ruki:
+      n: 1
+      v: k
+  - vera: za * k
+- nazvanie: две
+  effekt:
+  - na_verh_iz_ruki:
+      n: 2
+      v: k
+  - vera: za * k
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,27 @@
+id: b144-dar-svyshe
+imya: Дар свыше
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 144
+chisla:
+  n: 2
+tekst: Молитва. Если так сыграно Чудо, оно считает +{n:вера}.
+effekt:
+- osobyj:
+    imya: poslushnik
+    n: n
+- molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  n:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: прибавка держится до первого Чуда в этом раунде, не только сыгранного Молитвой'

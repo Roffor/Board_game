@@ -1,0 +1,29 @@
+id: b090-poslednij-zaslon
+imya: Последний заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 90
+chisla:
+  sila: 6
+tekst: Заслон союзнику. Если у него здоровья меньше, чем у тебя, этот Заслон ослабляет удар ещё на {sila}.
+effekt:
+- esli: zdorove_soyuznika < zdorove
+  to:
+  - zaslon:
+      komu: soyuznik
+      sila: sila
+  inache:
+  - zaslon:
+      komu: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  sila:
+  - 0
+  - 12
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,35 @@
+id: b070-zaslon-vest
+imya: Заслон-весть
+geroj: zhrec
+nabor: bank
+bild: З
+vid: связка
+nomer_idei: 70
+chisla:
+  dobor: 1
+  ocenka: 2
+tekst: Заслон союзнику. Когда он сработает, союзник берёт {dobor:карту} в начале следующего раунда.
+effekt:
+- zaslon:
+    komu: soyuznik
+    effekt:
+    - obet:
+        kogda: nachalo
+        vid_ocenki: draw
+        ocenka_bota: ocenka
+        effekt:
+        - dobor_soyuznika: dobor
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  dobor:
+  - 0
+  - 4
+  ocenka:
+  - 0
+  - 10
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: карта приходит в начале следующего раунда: Заслон срабатывает в ход врага, после него рука сбрасывается'

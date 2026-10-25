@@ -1,0 +1,20 @@
+id: b153-shipy-zaslona
+imya: Шипы заслона
+geroj: zhrec
+nabor: legendarka
+bild: ''
+vid: связка
+nomer_idei: 153
+chisla:
+  sol_uron: 1
+tekst: 'Если враг ударил героя под Заслоном, враг получает урон, равный щиту, который этот удар снял. Соларис: ещё {sol_uron:урон}. Лунарис: Заслон
+  после удара не снимается.'
+passiv:
+  imya: shipy_zaslona
+granicy:
+  sol_uron:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: легендарка Никиты, эффекты Соларис/Лунарис — Claude; числа черновые'

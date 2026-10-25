@@ -1,0 +1,43 @@
+id: b081-znamya-nad-golovoj
+imya: Знамя над головой
+geroj: zhrec
+nabor: bank
+bild: З
+vid: связка
+nomer_idei: 81
+chisla:
+  shchit: 2
+  uron: 3
+  shchit_s: 3
+tekst: 'Заслон союзнику и {shchit:щит} себе. Соларис: ещё {uron:урон}. Лунарис: ещё {shchit_s:щит} союзнику.'
+effekt:
+- zaslon:
+    komu: soyuznik
+- shchit:
+    komu: ja
+    n: shchit
+- esli: solaris
+  to:
+  - uron: uron
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit_s
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 5
+  uron:
+  - 0
+  - 6
+  shchit_s:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

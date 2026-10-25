@@ -1,0 +1,29 @@
+id: b020-blagaya-vest
+imya: Благая весть
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 20
+chisla:
+  dobor: 1
+tekst: 'Соларис: союзник берёт {dobor:карту}. Лунарис: Заслон союзнику.'
+effekt:
+- esli: solaris
+  to:
+  - dobor_soyuznika: dobor
+  inache:
+  - zaslon:
+      komu: soyuznik
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  dobor:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

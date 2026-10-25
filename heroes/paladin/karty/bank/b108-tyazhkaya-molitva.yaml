@@ -1,0 +1,19 @@
+id: b108-tyazhkaya-molitva
+imya: Тяжкая молитва
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 108
+tekst: 'Молитва: сыгранная карта срабатывает дважды, затем сожги её.'
+effekt:
+- molitva:
+    otkryt: 1
+    dvazhdy: true
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

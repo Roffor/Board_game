@@ -1,0 +1,49 @@
+id: b007-obet-utra
+imya: Обет утра
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 7
+chisla:
+  shchit: 3
+  shchit_big: 5
+  vera: 1
+  ocenka: 4
+tekst: 'Выбери: {shchit:щит} союзнику сейчас или после хода врага {shchit_big:щит} ему и +{vera:вера}.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: shield
+      ocenka_bota: ocenka
+      effekt:
+      - shchit:
+          komu: soyuznik
+          n: shchit_big
+      - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  shchit_big:
+  - 0
+  - 10
+  vera:
+  - 0
+  - 4
+  ocenka:
+  - 0
+  - 10
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

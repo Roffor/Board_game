@@ -1,0 +1,23 @@
+id: b102-vozvrashchenie
+imya: Возвращение
+geroj: zhrec
+nabor: bank
+bild: М
+vid: атака
+nomer_idei: 102
+chisla:
+  uron: 2
+tekst: '{uron:урон}. После розыгрыша положи эту карту на верх колоды.'
+effekt:
+- uron: uron
+- eta_na_verh: 1
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

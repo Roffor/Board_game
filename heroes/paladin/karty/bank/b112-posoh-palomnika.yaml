@@ -1,0 +1,27 @@
+id: b112-posoh-palomnika
+imya: Посох паломника
+geroj: zhrec
+nabor: bank
+bild: М
+vid: атака
+nomer_idei: 112
+chisla:
+  uron: 4
+tekst: Сбрось верхнюю карту колоды. Если это карта урона, {uron:урон}.
+effekt:
+- sbros_verha:
+    n: 1
+    v: a
+- esli: a
+  to:
+  - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

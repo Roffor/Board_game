@@ -1,0 +1,18 @@
+id: b066-stojkij-zaslon
+imya: Стойкий заслон
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 66
+tekst: Заслон союзнику. В этом раунде он ослабляет каждый удар, а снимается в конце раунда.
+effekt:
+- zaslon:
+    komu: soyuznik
+    stojkij: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,38 @@
+id: b141-znamya-na-kolode
+imya: Знамя на колоде
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: связка
+nomer_idei: 141
+chisla:
+  uron: 4
+  uron_mal: 1
+tekst: 'Выбери: {uron_mal:урон} или положи эту карту на верх колоды. Сыгранная Молитвой, она даёт Заслон обоим и {uron:урон}.'
+varianty:
+- nazvanie: сыграть
+  effekt:
+  - esli: sygrana_molitvoj
+    to:
+    - zaslon:
+        komu: oba
+    - uron: uron
+    inache:
+    - uron: uron_mal
+- nazvanie: на верх
+  effekt:
+  - ocenka: 2
+  - eta_na_verh: 1
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  uron_mal:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

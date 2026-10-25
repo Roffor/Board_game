@@ -1,0 +1,34 @@
+id: b111-predvestie
+imya: Предвестие
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 111
+chisla:
+  ocenka: 6
+tekst: 'Выбери: Молитва сейчас или после хода врага Молитва дважды.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - molitva: null
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: draw
+      ocenka_bota: ocenka
+      effekt:
+      - molitva:
+          raz: 2
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  ocenka:
+  - 0
+  - 12
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -18,6 +18,7 @@
   pust: {имя: выражение}                  запомнить число для следующих шагов
 Механики Мага: mana, zaryad, a также особые операции из engine/special.py.
 Механики Жреца: vera, chudo, molitva, obet, doplata (в вариантах карты) и особые операции.
+Механики банка Паладина (Заслон, благословения, верх колоды, лимит) — engine/paladin.py.
 Числа везде — выражения (см. engine/expr.py)."""
 from .expr import compile_expr, ExprError
 
@@ -307,9 +308,12 @@ def _molitva(arg, w):
     filt = arg.get('tolko_vid')
     then, sub = compile_block(arg.get('posle') or [], w + ' (posle)')
     est = X(arg.get('ocenka_bota', 0), w)
+    kw = {k: arg[k] for k in ('otkuda', 'ostalnye', 'sygrannye', 'dvazhdy', 'do_pervoj') if k in arg}
+    raz = X(arg.get('raz', 1), w)
     def run(f, ctx):
-        f.pray(ctx, n_open=None if n_open is None else int(n_open(f, ctx)), n_play=int(n_play(f, ctx)),
-               uselimit=uselimit, kind_filter=filt, then=then if arg.get('posle') else None, est=est(f, ctx))
+        for _ in range(int(raz(f, ctx))):
+            f.pray(ctx, n_open=None if n_open is None else int(n_open(f, ctx)), n_play=int(n_play(f, ctx)),
+                   uselimit=uselimit, kind_filter=filt, then=then if arg.get('posle') else None, est=est(f, ctx), **kw)
     return run, sub
 
 
@@ -342,3 +346,6 @@ def _special(arg, w):
     comp, dmg, sh = special.SPECIAL[name]
     fn = comp(params, w)
     return fn, {'dmg': dmg, 'shield': sh}
+
+
+from . import paladin  # noqa: E402,F401  операции банка Паладина регистрируются в OPS

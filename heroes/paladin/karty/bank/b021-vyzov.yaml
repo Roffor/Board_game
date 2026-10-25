@@ -1,0 +1,25 @@
+id: b021-vyzov
+imya: Вызов
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 21
+chisla:
+  uron: 4
+tekst: Авангард. Если на тебе нет щита, {uron:урон}.
+effekt:
+- esli: shchit == 0
+  to:
+  - uron: uron
+- avangard: ja
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

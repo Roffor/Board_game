@@ -1,0 +1,37 @@
+id: b019-karayushchij-vypad
+imya: Карающий выпад
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 19
+chisla:
+  uron: 2
+  uron_big: 4
+  doplata: 2
+tekst: '{uron:урон}. Доплата {doplata:веру}: {uron_big:урон}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uron: uron
+- nazvanie: доплата
+  doplata:
+    vera: 2
+  effekt:
+  - uron: uron_big if oplacheno else uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  uron_big:
+  - 0
+  - 8
+  doplata:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

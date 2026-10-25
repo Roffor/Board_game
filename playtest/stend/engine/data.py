@@ -10,7 +10,7 @@ karty/osnovnye/ (колода) и karty/zapas/ (в коробку не идут)
 поэтому раскладка определяется по наличию pravila.yaml в корне.
 
 Карта — один YAML-файл. Поля карты:
-  id, imya, geroj, nabor (start / apgrejd / zapas / zheton), bild, vid, kopij (для стартовых),
+  id, imya, geroj, nabor (start / apgrejd / zapas / zheton / bank — банк идей / legendarka — пассивка), bild, vid, kopij (для стартовых),
   cena (мана мага), podnoshenie (1 / 2 / r), chisla, tekst, effekt или varianty, pri_szhiganii,
   metki, zamenyaet (какую стартовую карту заменяет апгрейд), bot (подсказки бота), granicy, status, istoriya.
 Текст карты собирается из чисел: «{uron:урон}» даёт «3 урона», «{cena}» — цену."""
@@ -20,7 +20,7 @@ from .expr import compile_expr, ExprError
 from . import effects
 
 VIDY = {'атака', 'защита', 'связка', 'топливо', 'двигатель', 'визитка', 'вера', 'молитва'}
-NABORY = {'start', 'apgrejd', 'zapas', 'zheton', 'etalon', 'otkaz'}
+NABORY = {'start', 'apgrejd', 'zapas', 'zheton', 'etalon', 'otkaz', 'bank', 'legendarka'}
 
 
 class DataError(ValueError):
@@ -135,8 +135,15 @@ class CardDef:
         # эффекты
         if 'varianty' in d and 'effekt' in d:
             raise DataError(f'{w}: нужно что-то одно — effekt или varianty')
+        self.passive = None
+        if self.set == 'legendarka':       # легендарка: пассивка рядом с планшетом, правило в fight.py по имени
+            self.passive = (d.get('passiv') or {}).get('imya')
+            if not self.passive:
+                raise DataError(f'{w}: у легендарки нужен passiv: {{imya: ...}}')
         if 'varianty' in d:
             vs = d['varianty']
+        elif self.set == 'legendarka':
+            vs = []
         else:
             vs = [{'nazvanie': '', 'effekt': d.get('effekt') or []}]
         self.variants = []
@@ -293,6 +300,7 @@ def layout(root):
                 geroi=g('heroes', '*', 'geroj.yaml'),
                 karty=lambda hdir, hid: sorted(glob.glob(os.path.join(hdir, 'karty', 'osnovnye', '*.yaml'))
                                                + glob.glob(os.path.join(hdir, 'karty', 'zapas', '*.yaml'))
+                                               + glob.glob(os.path.join(hdir, 'karty', 'bank', '*.yaml'))
                                                + glob.glob(j('playtest', 'stend', 'etalon', hid, '*.yaml'))),
                 vragi=g('dungeons', '*', 'vragi', '*.yaml'), lokacii=g('dungeons', '*', 'lokacii', '*.yaml'))
 

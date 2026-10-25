@@ -1,0 +1,27 @@
+id: b127-chudo-stojkosti
+imya: Чудо стойкости
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 127
+chisla:
+  za: 1
+tekst: 'Чудо: Заслон обоим, каждый ослабляет удар ещё на {za} за каждую сожжённую веру.'
+effekt:
+- chudo: f
+- zaslon:
+    komu: oba
+    sila: za * f
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

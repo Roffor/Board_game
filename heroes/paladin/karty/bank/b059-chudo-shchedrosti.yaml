@@ -1,0 +1,26 @@
+id: b059-chudo-shchedrosti
+imya: Чудо щедрости
+geroj: zhrec
+nabor: bank
+bild: В
+vid: связка
+nomer_idei: 59
+chisla:
+  za: 2
+tekst: 'Чудо: союзник берёт карту за каждые {za} веры.'
+effekt:
+- chudo: f
+- dobor_soyuznika: f // za
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

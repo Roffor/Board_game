@@ -1,0 +1,38 @@
+id: b106-litaniya
+imya: Литания
+geroj: zhrec
+nabor: bank
+bild: М
+vid: защита
+nomer_idei: 106
+chisla:
+  shchit: 4
+  dop: 3
+  vera: 1
+tekst: '{shchit:щит} союзнику. Если в этом раунде ты играл Молитву, ещё {dop:щит} и +{vera:вера}.'
+effekt:
+- shchit:
+    komu: soyuznik
+    n: shchit
+- esli: molitv_v_raunde > 0
+  to:
+  - shchit:
+      komu: soyuznik
+      n: dop
+  - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  dop:
+  - 0
+  - 6
+  vera:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

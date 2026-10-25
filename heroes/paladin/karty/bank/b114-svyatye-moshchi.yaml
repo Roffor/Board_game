@@ -1,0 +1,32 @@
+id: b114-svyatye-moshchi
+imya: Святые мощи
+geroj: zhrec
+nabor: bank
+bild: М
+vid: вера
+nomer_idei: 114
+chisla:
+  vera: 2
+  uron: 3
+tekst: 'Сожги верхнюю карту колоды: +{vera:вера}. Если это карта урона, ещё {uron:урон}.'
+effekt:
+- osobyj:
+    imya: sozhgi_verh_svoej
+    v: a
+- vera: vera
+- esli: a
+  to:
+  - uron: uron
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 5
+  uron:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,34 @@
+id: b006-rassvet-i-sumerki
+imya: Рассвет и сумерки
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 6
+chisla:
+  uron: 3
+  shchit: 4
+tekst: 'Соларис: {uron:урон}. Лунарис: {shchit:щит} союзнику.'
+effekt:
+- esli: solaris
+  to:
+  - uron: uron
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

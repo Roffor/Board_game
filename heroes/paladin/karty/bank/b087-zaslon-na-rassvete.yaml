@@ -1,0 +1,23 @@
+id: b087-zaslon-na-rassvete
+imya: Заслон на рассвете
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 87
+tekst: Заслон союзнику. Если в этом раунде менялись благословения, Заслон и тебе.
+effekt:
+- zaslon:
+    komu: soyuznik
+- esli: blag_menyalis
+  to:
+  - zaslon:
+      komu: ja
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

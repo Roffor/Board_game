@@ -1,0 +1,25 @@
+id: b116-slovo-nastavnika
+imya: Слово наставника
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 116
+chisla:
+  dobor: 1
+tekst: Молитва. Сыгранная так карта после розыгрыша уходит под низ колоды, а не в сброс. Возьми {dobor:карту}.
+effekt:
+- molitva:
+    sygrannye: niz
+- dobor: dobor
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  dobor:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

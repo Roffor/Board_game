@@ -1,0 +1,26 @@
+id: b145-vozglas
+imya: Возглас
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: атака
+nomer_idei: 145
+chisla:
+  uron: 2
+tekst: '{uron:урон}. Вера 4+: Молитва.'
+effekt:
+- uron: uron
+- esli: vera >= 4
+  to:
+  - molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  uron:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

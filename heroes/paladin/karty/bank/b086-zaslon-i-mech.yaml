@@ -1,0 +1,24 @@
+id: b086-zaslon-i-mech
+imya: Заслон и меч
+geroj: zhrec
+nabor: bank
+bild: З
+vid: атака
+nomer_idei: 86
+chisla:
+  uron: 2
+tekst: '{uron:урон} и Заслон союзнику.'
+effekt:
+- uron: uron
+- zaslon:
+    komu: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

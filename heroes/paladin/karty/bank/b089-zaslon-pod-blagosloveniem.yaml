@@ -1,0 +1,36 @@
+id: b089-zaslon-pod-blagosloveniem
+imya: Заслон под благословением
+geroj: zhrec
+nabor: bank
+bild: З
+vid: связка
+nomer_idei: 89
+chisla:
+  uron: 2
+  shchit: 3
+tekst: 'Соларис: Заслон союзнику и {uron:урон}. Лунарис: Заслон союзнику и {shchit:щит} ему.'
+effekt:
+- zaslon:
+    komu: soyuznik
+- esli: solaris
+  to:
+  - uron: uron
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+metki:
+- blag
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  shchit:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

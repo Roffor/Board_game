@@ -1,0 +1,29 @@
+id: b134-zaslon-pod-chudo
+imya: Заслон под чудо
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 134
+chisla:
+  vera: 2
+tekst: 'Если вера 0: Заслон обоим и +{vera:вера}. Иначе Заслон союзнику.'
+effekt:
+- esli: vera == 0
+  to:
+  - zaslon:
+      komu: oba
+  - vera: vera
+  inache:
+  - zaslon:
+      komu: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

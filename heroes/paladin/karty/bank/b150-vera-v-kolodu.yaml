@@ -1,0 +1,40 @@
+id: b150-vera-v-kolodu
+imya: Вера в колоду
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 150
+chisla:
+  n: 3
+  doplata: 2
+tekst: 'Доплата {doplata:веру}: посмотри {n} верхние карты, одну сыграй Молитвой, остальные разложи в любом порядке. Без доплаты — только разложи.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uporyadochit: n
+- nazvanie: доплата
+  doplata:
+    vera: 2
+  effekt:
+  - esli: oplacheno
+    to:
+    - molitva:
+        otkryt: n
+        ostalnye: verh
+    inache:
+    - uporyadochit: n
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  n:
+  - 0
+  - 6
+  doplata:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

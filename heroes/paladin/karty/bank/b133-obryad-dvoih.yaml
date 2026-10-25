@@ -1,0 +1,42 @@
+id: b133-obryad-dvoih
+imya: Обряд двоих
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 133
+chisla:
+  shchit: 3
+  shchit_mal: 2
+  nuzhno: 2
+tekst: 'Если 2 из 3 (вера 6; на союзнике Заслон; у союзника есть щит): Заслон и {shchit:щит} обоим. Иначе {shchit_mal:щит} союзнику.'
+effekt:
+- pust:
+    c: (vera >= 6) + soyuznik_zaslon + (shchit_soyuznika > 0)
+- esli: c >= nuzhno
+  to:
+  - zaslon:
+      komu: oba
+  - shchit:
+      komu: oba
+      n: shchit
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit_mal
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  shchit_mal:
+  - 0
+  - 5
+  nuzhno:
+  - 1
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

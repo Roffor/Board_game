@@ -1,0 +1,32 @@
+id: b057-posvyashchenie
+imya: Посвящение
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 57
+chisla:
+  porog: 4
+  shchit: 3
+tekst: Подними веру до {porog}, если она ниже. Иначе {shchit:щит} себе.
+effekt:
+- esli: vera < porog
+  to:
+  - vera: porog - vera
+  inache:
+  - shchit:
+      komu: ja
+      n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  porog:
+  - 0
+  - 8
+  shchit:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

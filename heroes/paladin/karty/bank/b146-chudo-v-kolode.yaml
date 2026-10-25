@@ -1,0 +1,20 @@
+id: b146-chudo-v-kolode
+imya: Чудо в колоде
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: вера
+nomer_idei: 146
+tekst: Положи карту Чуда из руки на верх колоды. Следующее Чудо не сжигает веру.
+effekt:
+- na_verh_iz_ruki:
+    n: 1
+    tolko_metka: chudo
+- chudo_ne_szhigaet: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: веру не сжигает следующее Чудо, а не только сыгранное Молитвой'

@@ -1,0 +1,24 @@
+id: b136-molitva-za-brata
+imya: Молитва за брата
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: молитва
+nomer_idei: 136
+tekst: Молитва. Если так сыграна карта щита, щит с неё получает союзник, и на него ложится Заслон.
+effekt:
+- molitva:
+    posle:
+    - esli: sygrana_zashchita
+      to:
+      - otdat_shchit: shchit_s_karty
+      - zaslon:
+          komu: soyuznik
+    ocenka_bota: 1
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

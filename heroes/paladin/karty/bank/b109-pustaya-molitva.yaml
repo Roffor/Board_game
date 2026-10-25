@@ -1,0 +1,31 @@
+id: b109-pustaya-molitva
+imya: Пустая молитва
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 109
+chisla:
+  vera: 2
+tekst: 'Посмотри верхнюю карту: сыграй её Молитвой или сбрось и получи +{vera:вера}.'
+varianty:
+- nazvanie: сыграть
+  effekt:
+  - molitva:
+      otkryt: 1
+- nazvanie: сбросить
+  effekt:
+  - sbros_verha:
+      n: 1
+  - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,35 @@
+id: b017-poslednij-rubezh
+imya: Последний рубеж
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 17
+chisla:
+  shchit: 5
+  shchit_mal: 1
+tekst: 'Если у союзника здоровья меньше, чем у тебя: Авангард и {shchit:щит}. Иначе {shchit_mal:щит}.'
+effekt:
+- esli: zdorove_soyuznika < zdorove
+  to:
+  - avangard: ja
+  - shchit:
+      komu: ja
+      n: shchit
+  inache:
+  - shchit:
+      komu: ja
+      n: shchit_mal
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 10
+  shchit_mal:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

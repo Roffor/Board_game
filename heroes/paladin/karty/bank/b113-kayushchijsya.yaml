@@ -1,0 +1,22 @@
+id: b113-kayushchijsya
+imya: Кающийся
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 113
+tekst: 'Сбрось карту из руки: Молитва.'
+effekt:
+- sbros:
+    n: 1
+    v: s
+- esli: s
+  to:
+  - molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

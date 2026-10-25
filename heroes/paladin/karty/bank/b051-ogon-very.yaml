@@ -1,0 +1,33 @@
+id: b051-ogon-very
+imya: Огонь веры
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 51
+chisla:
+  za: 2
+tekst: 'Доплата любой верой: {za:урон} за каждую сожжённую.'
+varianty:
+- nazvanie: вся вера
+  effekt:
+  - szhech_veru:
+      n: vera
+      v: k
+  - uron: za * k
+- nazvanie: половина
+  effekt:
+  - szhech_veru:
+      n: vera // 2
+      v: k
+  - uron: za * k
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

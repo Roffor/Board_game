@@ -1,0 +1,28 @@
+id: b050-chudo-razdeleniya
+imya: Чудо разделения
+geroj: zhrec
+nabor: bank
+bild: В
+vid: связка
+nomer_idei: 50
+chisla:
+  za: 1
+tekst: 'Чудо: за каждую веру {za:урон} и {za:щит} союзнику.'
+effekt:
+- chudo: f
+- uron: za * f
+- shchit:
+    komu: soyuznik
+    n: za * f
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

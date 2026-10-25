@@ -10,7 +10,7 @@ from .choices import Choices
 from .effects import EffectError
 from .expr import ExprError
 
-API_VERSION = '1.0'
+API_VERSION = '1.1'   # 2026-10-25: наборы bank и legendarka, операции банка Паладина
 RULES_VERSION = '1.0'
 
 __all__ = ['Game', 'Fight', 'Choices', 'CardDef', 'CardInst', 'DataError', 'EffectError', 'ExprError',

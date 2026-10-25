@@ -1,0 +1,31 @@
+id: b091-zaslon-klyatva
+imya: Заслон-клятва
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 91
+chisla:
+  shchit: 3
+tekst: 'Сбрось карту: Заслон союзнику и {shchit:щит} ему.'
+effekt:
+- sbros:
+    n: 1
+    v: s
+- esli: s
+  to:
+  - zaslon:
+      komu: soyuznik
+  - shchit:
+      komu: soyuznik
+      n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

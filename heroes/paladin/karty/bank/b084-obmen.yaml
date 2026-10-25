@@ -1,0 +1,25 @@
+id: b084-obmen
+imya: Обмен
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 84
+chisla:
+  shchit: 2
+tekst: Перенеси Заслон с союзника на себя или с себя на союзника. {shchit:щит} обоим.
+effekt:
+- perenesti_zaslon: 1
+- shchit:
+    komu: oba
+    n: shchit
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

@@ -1,0 +1,25 @@
+id: b128-zaslon-very
+imya: Заслон веры
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: связка
+nomer_idei: 128
+chisla:
+  vera: 2
+tekst: Заслон союзнику. Когда он сработает, +{vera:вера}.
+effekt:
+- zaslon:
+    komu: soyuznik
+    effekt:
+    - vera: vera
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  vera:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

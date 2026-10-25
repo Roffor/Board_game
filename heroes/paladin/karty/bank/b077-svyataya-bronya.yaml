@@ -1,0 +1,27 @@
+id: b077-svyataya-bronya
+imya: Святая броня
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 77
+chisla:
+  shchit: 4
+tekst: '{shchit:щит} себе. Если на тебе Заслон, ещё Авангард.'
+effekt:
+- shchit:
+    komu: ja
+    n: shchit
+- esli: ja_zaslon
+  to:
+  - avangard: ja
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

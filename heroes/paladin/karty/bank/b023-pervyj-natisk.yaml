@@ -1,0 +1,27 @@
+id: b023-pervyj-natisk
+imya: Первый натиск
+geroj: zhrec
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 23
+chisla:
+  uron: 2
+tekst: Если это твоя первая карта в раунде, она не считается в лимит. {uron:урон}.
+effekt:
+- esli: sygrano_mnoj_do == 0
+  to:
+  - ne_v_limit: 1
+- uron: uron
+metki:
+- mozhet_vne_limita
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

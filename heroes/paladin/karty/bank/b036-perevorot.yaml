@@ -1,0 +1,16 @@
+id: b036-perevorot
+imya: Переворот
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 36
+tekst: Переверни кубик веры на противоположную грань.
+effekt:
+- perevernut_veru: 1
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

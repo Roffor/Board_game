@@ -1,0 +1,28 @@
+id: b032-maloe-chudo
+imya: Малое чудо
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 32
+chisla:
+  za: 2
+tekst: 'Сожги половину веры (с округлением вверх): {za:урон} за каждую сожжённую, остальная вера остаётся.'
+effekt:
+- szhech_veru:
+    n: (vera + 1) // 2
+    v: k
+- uron: za * k
+metki:
+- chudo
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: в идее «эффект любого своего Чуда из руки»; на стенде — урон за сожжённую веру'

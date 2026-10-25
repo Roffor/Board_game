@@ -1,0 +1,21 @@
+id: b140-litaniya-strazhi
+imya: Литания стражи
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: защита
+nomer_idei: 140
+tekst: Заслон союзнику. Если в этом раунде ты играл Молитву, Заслон и тебе.
+effekt:
+- zaslon:
+    komu: soyuznik
+- esli: molitv_v_raunde > 0
+  to:
+  - zaslon:
+      komu: ja
+bot:
+  poryadok: 4
+  cennost: 5
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

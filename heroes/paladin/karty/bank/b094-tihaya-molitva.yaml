@@ -1,0 +1,24 @@
+id: b094-tihaya-molitva
+imya: Тихая молитва
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 94
+chisla:
+  vera: 1
+tekst: +{vera:вера}. Молитва.
+effekt:
+- vera: vera
+- molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  vera:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

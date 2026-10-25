@@ -1,0 +1,20 @@
+id: b122-molitva-otvet
+imya: Молитва-ответ
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 122
+tekst: Молитва; несыгранные открытые карты уходят под низ колоды.
+effekt:
+- molitva:
+    otkryt: 2
+    ostalnye: niz
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- 'упрощено для стенда: базовая Молитва уже открывает 2 карты; отличие — несыгранная уходит под низ, а не в сброс'

@@ -1,0 +1,23 @@
+id: b138-kolokol-trevogi
+imya: Колокол тревоги
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: молитва
+nomer_idei: 138
+tekst: 'Сними Заслон с союзника: Молитва дважды.'
+effekt:
+- snyat_zaslon:
+    s: soyuznik
+    v: s
+- esli: s
+  to:
+  - molitva:
+      raz: 2
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

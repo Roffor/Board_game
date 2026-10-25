@@ -1,0 +1,25 @@
+id: b042-obet-bednosti
+imya: Обет бедности
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 42
+chisla:
+  za: 1
+tekst: 'Сбрось руку: +{za:вера} за каждую сброшенную карту.'
+effekt:
+- sbros:
+    n: ruka
+    v: s
+- vera: za * s
+bot:
+  poryadok: 4
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

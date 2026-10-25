@@ -1,0 +1,23 @@
+id: b137-zaslon-iz-kolody
+imya: Заслон из колоды
+geroj: zhrec
+nabor: bank
+bild: З–М
+vid: защита
+nomer_idei: 137
+tekst: 'Посмотри верхнюю карту: если это карта щита, сыграй её Молитвой; иначе Заслон союзнику.'
+effekt:
+- esli: verh_zashchita
+  to:
+  - molitva:
+      otkryt: 1
+  inache:
+  - zaslon:
+      komu: soyuznik
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'

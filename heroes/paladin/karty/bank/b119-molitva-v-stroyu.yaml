@@ -1,0 +1,26 @@
+id: b119-molitva-v-stroyu
+imya: Молитва в строю
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 119
+chisla:
+  shchit: 1
+tekst: '{shchit:щит} себе и союзнику. Молитва.'
+effekt:
+- shchit:
+    komu: oba
+    n: shchit
+- molitva: null
+bot:
+  poryadok: 4
+  cennost: 5
+  pereplan: true
+granicy:
+  shchit:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
