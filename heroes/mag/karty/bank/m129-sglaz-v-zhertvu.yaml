@@ -1,0 +1,25 @@
+id: m129-sglaz-v-zhertvu
+imya: Сглаз в жертву
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: связка
+nomer_idei: 129
+cena: 0
+tekst: '{cena:мана}. Сними Порчу: получи жетон Подношения.'
+effekt:
+- snyat_porchu:
+    v: s
+- esli: s
+  to:
+  - zheton: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

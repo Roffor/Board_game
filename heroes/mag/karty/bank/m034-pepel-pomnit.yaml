@@ -1,0 +1,23 @@
+id: m034-pepel-pomnit
+imya: Пепел помнит
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 34
+cena: 0
+tekst: '{cena:мана}. До конца раунда: когда сжигается любая карта, возьми карту.'
+effekt:
+- do_konca_raunda:
+    pepel_dobor: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: вариант «или смени благословения» на стенде не выбирается'

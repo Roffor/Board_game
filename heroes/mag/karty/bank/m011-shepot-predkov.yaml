@@ -1,0 +1,29 @@
+id: m011-shepot-predkov
+imya: Шёпот предков
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 11
+cena: 0
+chisla:
+  dobor: 2
+tekst: '{cena:мана}. Возьми {dobor:карту}, сбрось одну.'
+effekt:
+- dobor: dobor
+- sbros:
+    n: 1
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

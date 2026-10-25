@@ -1,0 +1,28 @@
+id: m048-zaslon-iz-pepla
+imya: Заслон из пепла
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 48
+cena: 1
+chisla:
+  za: 1
+tekst: '{cena:мана}. {za:щит} за каждую карту в зоне сожжённых.'
+effekt:
+- shchit:
+    komu: ja
+    n: za * szhzheno_vsego
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

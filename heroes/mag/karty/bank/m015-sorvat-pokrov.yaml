@@ -1,0 +1,21 @@
+id: m015-sorvat-pokrov
+imya: Сорвать покров
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 15
+cena: 0
+tekst: '{cena:мана}. Сними со врага весь щит.'
+effekt:
+- snyat_shchit_vraga: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

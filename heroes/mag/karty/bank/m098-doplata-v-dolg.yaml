@@ -1,0 +1,37 @@
+id: m098-doplata-v-dolg
+imya: Доплата в долг
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 98
+cena: 1
+chisla:
+  uron: 3
+  doplata: 1
+tekst: '{cena:мана}. {uron:урон}. Доплата {doplata:мана}: эффект дважды; доплату можно взять в долг.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uron: uron
+- nazvanie: в долг
+  effekt:
+  - uron: uron
+  - uron: uron
+  - dolg: doplata
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  doplata:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

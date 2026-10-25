@@ -1,0 +1,30 @@
+id: m025-poslednij-dovod
+imya: Последний довод
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 25
+cena: 1
+chisla:
+  uron: 8
+  uron_mal: 1
+tekst: '{cena:мана}. Если это единственная карта в руке, {uron:урон}. Иначе {uron_mal:урон}.'
+effekt:
+- uron: uron if ruka == 0 else uron_mal
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 16
+  uron_mal:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

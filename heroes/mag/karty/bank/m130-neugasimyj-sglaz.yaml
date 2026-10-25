@@ -1,0 +1,27 @@
+id: m130-neugasimyj-sglaz
+imya: Неугасимый сглаз
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: связка
+nomer_idei: 130
+cena: 0
+tekst: '{cena:мана}. Сожги две карты из руки: Порча в этом раунде не снимается.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 2
+    v: s
+- esli: s >= 2
+  to:
+  - porcha_derzhitsya: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

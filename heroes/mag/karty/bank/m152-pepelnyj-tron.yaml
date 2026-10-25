@@ -1,0 +1,24 @@
+id: m152-pepelnyj-tron
+imya: Пепельный трон
+geroj: mag
+nabor: legendarka
+bild: ''
+vid: связка
+nomer_idei: 152
+chisla:
+  sol_skidka: 1
+  lun_shchit: 2
+granicy:
+  sol_skidka:
+  - 0
+  - 4
+  lun_shchit:
+  - 0
+  - 5
+tekst: 'Сожжённые карты можно играть из зоны сожжённых как из руки (на стенде бот видит 4 лучшие). Соларис: на {sol_skidka:мана} дешевле. Лунарис:
+  каждая такая карта даёт {lun_shchit:щит}.'
+passiv:
+  imya: pepelnyj_tron
+status: ideya
+istoriya:
+- '2026-10-25 Claude: легендарка, выбранная Никитой 2026-10-24; числа черновые'

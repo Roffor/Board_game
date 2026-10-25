@@ -1,0 +1,28 @@
+id: m035-chistyj-list
+imya: Чистый лист
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 35
+cena: 0
+tekst: '{cena:мана}. Сожги руку, возьми столько же карт.'
+effekt:
+- pust:
+    r: ruka
+- sozhgi:
+    otkuda: ruka
+    n: r
+    v: k
+- dobor: k
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

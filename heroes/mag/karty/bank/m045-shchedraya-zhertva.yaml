@@ -1,0 +1,37 @@
+id: m045-shchedraya-zhertva
+imya: Щедрая жертва
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 45
+cena: 0
+chisla:
+  za: 4
+tekst: '{cena:мана}. Потрать сколько угодно жетонов Подношения: {za:урон} за каждый.'
+varianty:
+- nazvanie: все
+  effekt:
+  - potrat_zheton:
+      n: zhetony
+      v: k
+  - uron: za * k
+- nazvanie: один
+  effekt:
+  - potrat_zheton:
+      n: 1
+      v: k
+  - uron: za * k
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

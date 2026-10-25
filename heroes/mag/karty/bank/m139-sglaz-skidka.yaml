@@ -1,0 +1,29 @@
+id: m139-sglaz-skidka
+imya: Сглаз-скидка
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: связка
+nomer_idei: 139
+cena: 0
+chisla:
+  n: 1
+tekst: '{cena:мана}. Если на враге Порча, в этом ходу твои карты стоят на {n:мана} меньше.'
+effekt:
+- esli: porcha > 0
+  to:
+  - skidka: n
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  n:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

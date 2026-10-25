@@ -1,0 +1,27 @@
+id: m146-zheton-pod-raspisku
+imya: Жетон под расписку
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: связка
+nomer_idei: 146
+cena: 0
+chisla:
+  dolg_n: 1
+tekst: '{cena:мана}. Возьми {dolg_n:мана} в долг: получи жетон Подношения.'
+effekt:
+- dolg: dolg_n
+- zheton: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dolg_n:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

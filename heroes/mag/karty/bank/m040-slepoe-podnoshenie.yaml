@@ -1,0 +1,29 @@
+id: m040-slepoe-podnoshenie
+imya: Слепое подношение
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 40
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. Сожги две верхние карты своей колоды не глядя. {uron:урон}.'
+effekt:
+- sozhgi:
+    otkuda: verh
+    n: 2
+- uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

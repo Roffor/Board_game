@@ -1,0 +1,22 @@
+id: m037-poslednij-vzdoh
+imya: Последний вздох
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 37
+cena: 0
+tekst: '{cena:мана}. До конца хода: когда сжигаешь карту из руки, сначала бесплатно срабатывает её эффект.'
+effekt:
+- do_konca_raunda:
+    poslednij_vzdoh: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

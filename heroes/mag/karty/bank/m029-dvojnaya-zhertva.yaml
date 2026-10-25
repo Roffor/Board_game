@@ -1,0 +1,33 @@
+id: m029-dvojnaya-zhertva
+imya: Двойная жертва
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 29
+cena: 0
+tekst: '{cena:мана}. Сожги две карты из руки, можешь сменить благословения.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 2
+- nazvanie: сменить
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 2
+  - smena_blagoslovenij: 1
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

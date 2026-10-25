@@ -1,0 +1,27 @@
+id: m082-porcha-zaslon
+imya: Порча-заслон
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 82
+cena: 0
+chisla:
+  dop: 2
+tekst: '{cena:мана}. Пока на враге Порча, в этом раунде ты и союзник получаете на {dop} щита больше.'
+effekt:
+- do_konca_raunda:
+    porcha_shchit: dop
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dop:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

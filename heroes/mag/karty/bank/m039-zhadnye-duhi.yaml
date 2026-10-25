@@ -1,0 +1,26 @@
+id: m039-zhadnye-duhi
+imya: Жадные духи
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 39
+cena: 0
+tekst: '{cena:мана}. Союзник сжигает до двух карт из своей руки, каждый из вас берёт по карте за каждую.'
+effekt:
+- soyuznik_szhigaet:
+    n: 2
+    v: k
+- dobor: k
+- dobor_soyuznika: k
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

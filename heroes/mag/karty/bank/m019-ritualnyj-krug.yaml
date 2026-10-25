@@ -1,0 +1,35 @@
+id: m019-ritualnyj-krug
+imya: Ритуальный круг
+geroj: mag
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 19
+cena: 1
+chisla:
+  shchit: 3
+  uron: 3
+tekst: '{cena:мана}. {shchit:щит} себе и союзнику. Если на враге Порча, ещё {uron:урон}.'
+effekt:
+- shchit:
+    komu: oba
+    n: shchit
+- esli: porcha > 0
+  to:
+  - uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  uron:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,32 @@
+id: m056-poslednyaya-iskra
+imya: Последняя искра
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 56
+cena: 0
+chisla:
+  shchit: 3
+tekst: '{cena:мана}. {shchit:щит} себе. Сожги эту карту и ещё одну из руки (две сожжённые — жетон Подношения).'
+effekt:
+- shchit:
+    komu: ja
+    n: shchit
+- sozhgi:
+    otkuda: ruka
+    n: 1
+- osobyj: sozhgi_etu
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

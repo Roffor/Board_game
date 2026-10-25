@@ -1,0 +1,35 @@
+id: m002-obereg
+imya: Оберег
+geroj: mag
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 2
+cena: 1
+chisla:
+  shchit: 5
+tekst: '{cena:мана}. {shchit:щит} себе или союзнику.'
+varianty:
+- nazvanie: себе
+  effekt:
+  - shchit:
+      komu: ja
+      n: shchit
+- nazvanie: союзнику
+  effekt:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

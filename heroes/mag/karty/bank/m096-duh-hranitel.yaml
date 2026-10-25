@@ -1,0 +1,28 @@
+id: m096-duh-hranitel
+imya: Дух-хранитель
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 96
+cena: 1
+chisla:
+  uron: 3
+tekst: '{cena:мана}. Карта остаётся перед тобой, пока платишь: в начале каждого хода плата растёт на 1, и пока она лежит, каждый ход {uron:урон}.'
+effekt:
+- soderzhanie:
+    vid: uron
+    n: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

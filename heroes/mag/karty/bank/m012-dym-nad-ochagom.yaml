@@ -1,0 +1,31 @@
+id: m012-dym-nad-ochagom
+imya: Дым над очагом
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 12
+cena: 0
+chisla:
+  dobor: 1
+tekst: '{cena:мана}. Сбрось карту: союзник берёт {dobor:карту}.'
+effekt:
+- sbros:
+    n: 1
+    v: s
+- esli: s
+  to:
+  - dobor_soyuznika: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dobor:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

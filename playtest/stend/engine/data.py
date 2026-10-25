@@ -118,6 +118,11 @@ class CardDef:
             if not isinstance(v, (int, float)):
                 raise DataError(f'{w}: число «{k}» должно быть числом, а не {v!r}')
         self.cost = int(self._num(d.get('cena', 0), w, 'cena'))
+        # новые правила мага (2026-10-24): цена выражением и разрешение играть в долг
+        self.cost_expr = effects.X(d['cena_vyrazhenie'], w) if 'cena_vyrazhenie' in d else None
+        self.cond_expr = effects.X(d['uslovie'], w) if 'uslovie' in d else None   # когда карту вообще можно сыграть
+        dv = d.get('v_dolg')
+        self.debt_expr = None if dv in (None, False, 0) else effects.X(1 if dv is True else dv, w)
         off = d.get('podnoshenie')
         self.offering = None if off in (None, 0, '0') else str(off)
         if self.offering not in (None, '1', '2', 'r'):

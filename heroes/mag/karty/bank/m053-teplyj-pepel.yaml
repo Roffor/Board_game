@@ -1,0 +1,27 @@
+id: m053-teplyj-pepel
+imya: Тёплый пепел
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 53
+cena: 0
+chisla:
+  shchit: 3
+tekst: '{cena:мана}. До конца раунда: каждая карта, которую сжигает союзник, даёт тебе {shchit:щит}.'
+effekt:
+- do_konca_raunda:
+    teplyj_pepel: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

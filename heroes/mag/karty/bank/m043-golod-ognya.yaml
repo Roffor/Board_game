@@ -1,0 +1,27 @@
+id: m043-golod-ognya
+imya: Голод огня
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 43
+cena: 3
+chisla:
+  uron: 8
+tekst: '{cena:мана}. {uron:урон}. Стоит на одну ману меньше за каждую карту, сожжённую в этом раунде.'
+effekt:
+- uron: uron
+cena_vyrazhenie: max(0, 3 - szhzheno_v_raunde)
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 16
+  cena:
+  - 0
+  - 4
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

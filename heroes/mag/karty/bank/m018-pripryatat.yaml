@@ -1,0 +1,21 @@
+id: m018-pripryatat
+imya: Припрятать
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 18
+cena: 0
+tekst: '{cena:мана}. Оставь лучшую карту из руки на следующий ход.'
+effekt:
+- uderzhat: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

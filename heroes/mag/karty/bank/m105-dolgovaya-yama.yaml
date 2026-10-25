@@ -1,0 +1,26 @@
+id: m105-dolgovaya-yama
+imya: Долговая яма
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 105
+cena: 1
+chisla:
+  za: 3
+tekst: '{cena:мана}. {za:урон} за каждый жетон долга у тебя.'
+effekt:
+- uron: za * dolg
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,22 @@
+id: m124-va-bank
+imya: Ва-банк
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 124
+cena: 0
+tekst: '{cena:мана}. Сыграй верхнюю карту колоды бесплатно, её цена становится долгом.'
+effekt:
+- sygraj_v_dolg:
+    otkuda: verh
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

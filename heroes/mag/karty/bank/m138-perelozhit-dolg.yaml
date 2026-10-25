@@ -1,0 +1,31 @@
+id: m138-perelozhit-dolg
+imya: Переложить долг
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: атака
+nomer_idei: 138
+cena: 1
+chisla:
+  za: 2
+tekst: '{cena:мана}. Спиши с себя долг: наложи Порчу и нанеси {za:урон} за каждый снятый жетон.'
+effekt:
+- spisat_dolg:
+    v: k
+- esli: k
+  to:
+  - porcha: 1
+  - uron: za * k
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

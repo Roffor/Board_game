@@ -1,0 +1,32 @@
+id: m090-porcha-golod
+imya: Порча-голод
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 90
+cena: 0
+chisla:
+  dobor: 2
+tekst: '{cena:мана}. Если на враге Порча, сожги карту из руки и возьми {dobor:карту}.'
+effekt:
+- esli: porcha > 0
+  to:
+  - sozhgi:
+      otkuda: ruka
+      n: 1
+  - dobor: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

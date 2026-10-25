@@ -1,0 +1,28 @@
+id: m125-dolzhnik-pod-zashchitoj
+imya: Должник под защитой
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 125
+cena: 1
+chisla:
+  za: 3
+tekst: '{cena:мана}. {za:щит} за каждый жетон долга у тебя.'
+effekt:
+- shchit:
+    komu: ja
+    n: za * dolg
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

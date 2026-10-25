@@ -1,0 +1,29 @@
+id: m097-vechnyj-obereg
+imya: Вечный оберег
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 97
+cena: 1
+chisla:
+  shchit: 2
+tekst: '{cena:мана}. Карта остаётся перед тобой, пока платишь: в начале каждого хода плата растёт на 1, и пока она лежит, ты и союзник получаете
+  {shchit:щит}.'
+effekt:
+- soderzhanie:
+    vid: shchit
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

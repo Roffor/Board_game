@@ -1,0 +1,21 @@
+id: m017-golos-predka
+imya: Голос предка
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 17
+cena: 0
+tekst: '{cena:мана}. Посмотри зону сожжённых, лучшую карту положи на верх колоды.'
+effekt:
+- verh_iz_szhzhennyh: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

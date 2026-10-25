@@ -1,0 +1,22 @@
+id: m106-raspiska
+imya: Расписка
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 106
+cena: 0
+tekst: '{cena:мана}. Сыграй карту из руки бесплатно, её цена становится долгом.'
+effekt:
+- sygraj_v_dolg:
+    otkuda: ruka
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

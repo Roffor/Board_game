@@ -1,0 +1,38 @@
+id: m117-zajm-s-procentami
+imya: Займ с процентами
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 117
+cena: 0
+chisla:
+  mana: 2
+  dobor: 1
+  procent: 1
+tekst: '{cena:мана}. +{mana:мана} и возьми {dobor:карту}. Долг на {procent} больше взятой маны.'
+effekt:
+- mana_v_dolg: mana
+- dolg: procent
+- dobor: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 2
+  pereplan: true
+granicy:
+  mana:
+  - 0
+  - 5
+  dobor:
+  - 0
+  - 4
+  procent:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

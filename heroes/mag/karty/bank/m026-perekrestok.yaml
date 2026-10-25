@@ -1,0 +1,45 @@
+id: m026-perekrestok
+imya: Перекрёсток
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 26
+cena: 1
+chisla:
+  uron: 4
+  shchit: 5
+  dobor: 2
+tekst: '{cena:мана}. Выбери одно: {uron:урон}, {shchit:щит} или возьми {dobor:карту}.'
+varianty:
+- nazvanie: урон
+  effekt:
+  - uron: uron
+- nazvanie: щит
+  effekt:
+  - shchit:
+      komu: ja
+      n: shchit
+- nazvanie: карты
+  effekt:
+  - dobor: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  uron:
+  - 0
+  - 8
+  shchit:
+  - 0
+  - 10
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,30 @@
+id: m099-dosrochno
+imya: Досрочно
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 99
+cena: 0
+chisla:
+  za: 3
+tekst: '{cena:мана}. Отдай долг сейчас, не дожидаясь хода: {za:щит} за каждый отданный жетон.'
+effekt:
+- otdaj_dolg:
+    v: k
+- shchit:
+    komu: ja
+    n: za * k
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,32 @@
+id: m006-otgolosok-peremeny
+imya: Отголосок перемены
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 6
+cena: 1
+chisla:
+  uron: 3
+  dop: 3
+tekst: '{cena:мана}. {uron:урон}. Если в этом раунде благословения менялись, ещё {dop:урон}.'
+effekt:
+- uron: uron + (dop if blag_menyalis else 0)
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  dop:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

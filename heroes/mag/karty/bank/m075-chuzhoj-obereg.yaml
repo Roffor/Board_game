@@ -1,0 +1,23 @@
+id: m075-chuzhoj-obereg
+imya: Чужой оберег
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 75
+cena: 0
+tekst: '{cena:мана}. Если на враге Порча, щит, который враг получает в этом раунде, достаётся тебе (в начале следующего раунда).'
+effekt:
+- do_konca_raunda:
+    chuzhoj_shchit: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: враг получает щит в свой ход, после него щит мага сгорает; поэтому щит приходит магу в начале следующего раунда'

@@ -1,0 +1,29 @@
+id: m004-strazh-poroga
+imya: Страж порога
+geroj: mag
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 4
+cena: 1
+chisla:
+  shchit: 5
+tekst: '{cena:мана}. Авангард. {shchit:щит} себе.'
+effekt:
+- avangard: ja
+- shchit:
+    komu: ja
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

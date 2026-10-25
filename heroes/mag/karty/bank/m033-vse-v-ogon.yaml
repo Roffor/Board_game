@@ -1,0 +1,30 @@
+id: m033-vse-v-ogon
+imya: Всё в огонь
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 33
+cena: 1
+chisla:
+  za: 1
+tekst: '{cena:мана}. Сожги всю колоду. Получи {za:мана} за каждую сожжённую карту.'
+effekt:
+- szhech_kolodu:
+    v: k
+- mana: za * k
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 3
+  pereplan: true
+granicy:
+  za:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

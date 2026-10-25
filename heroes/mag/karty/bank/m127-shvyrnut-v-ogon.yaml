@@ -1,0 +1,33 @@
+id: m127-shvyrnut-v-ogon
+imya: Швырнуть в огонь
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 127
+cena: 1
+chisla:
+  za: 2
+tekst: '{cena:мана}. Сожги карту из руки: наложи Порчу и нанеси урон = {za} × цена этой карты.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s
+  to:
+  - porcha: 1
+  - uron: za * cena_szhzhennoj
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,44 @@
+id: m008-otlozhennyj-udar
+imya: Отложенный удар
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 8
+cena: 1
+chisla:
+  uron: 3
+  uron_big: 6
+  ocenka: 5
+tekst: '{cena:мана}. Сейчас: {uron:урон}. Или после хода врага: {uron_big:урон}.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - uron: uron
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: dmg
+      ocenka_bota: ocenka
+      effekt:
+      - uron: uron_big
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  uron_big:
+  - 0
+  - 12
+  ocenka:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

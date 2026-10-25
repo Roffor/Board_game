@@ -1,0 +1,27 @@
+id: m100-skidka-duhov
+imya: Скидка духов
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 100
+cena: 1
+chisla:
+  n: 1
+tekst: '{cena:мана}. До конца хода карты стоят на {n:мана} меньше.'
+effekt:
+- skidka: n
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 2
+granicy:
+  n:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

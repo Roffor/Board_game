@@ -1,0 +1,21 @@
+id: m101-otlozhit
+imya: Отложить
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 101
+cena: 0
+tekst: '{cena:мана}. Отложи карту из руки на следующий ход: тогда сыграешь её бесплатно.'
+effekt:
+- otlozhit_kartu: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

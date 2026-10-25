@@ -1,0 +1,28 @@
+id: m147-otkup
+imya: Откуп
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: связка
+nomer_idei: 147
+cena: 0
+tekst: '{cena:мана}. Потрать жетон Подношения: спиши весь долг.'
+effekt:
+- esli: dolg > 0
+  to:
+  - potrat_zheton:
+      n: 1
+      v: k
+  - esli: k
+    to:
+    - spisat_dolg: {}
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

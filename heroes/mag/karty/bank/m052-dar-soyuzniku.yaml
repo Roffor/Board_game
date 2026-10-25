@@ -1,0 +1,31 @@
+id: m052-dar-soyuzniku
+imya: Дар союзнику
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 52
+cena: 0
+chisla:
+  dobor: 2
+tekst: '{cena:мана}. Потрать жетон Подношения: союзник берёт {dobor:карту}.'
+effekt:
+- potrat_zheton:
+    n: 1
+    v: k
+- esli: k
+  to:
+  - dobor_soyuznika: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

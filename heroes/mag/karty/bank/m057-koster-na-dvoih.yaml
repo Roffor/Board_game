@@ -1,0 +1,33 @@
+id: m057-koster-na-dvoih
+imya: Костёр на двоих
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 57
+cena: 0
+chisla:
+  shchit: 3
+tekst: '{cena:мана}. Ты и союзник сжигаете по карте из руки, оба получаете {shchit:щит}.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+- soyuznik_szhigaet:
+    n: 1
+- shchit:
+    komu: oba
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

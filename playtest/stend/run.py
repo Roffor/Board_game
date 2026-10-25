@@ -24,10 +24,10 @@ def arg(name, default=None):
 
 def proverka():
     import engine
-    from engine.tests import test_karty, test_zolotye, test_paladin
+    from engine.tests import test_karty, test_zolotye, test_paladin, test_mag2
     g = engine.load_game(GAME)
     print(f'данные игры в порядке: карт {len(g.cards)}, врагов {len(g.enemies)}, комнат {len(g.locations)}')
-    ok = test_karty.run() and test_zolotye.run() and test_paladin.run()
+    ok = test_karty.run() and test_zolotye.run() and test_paladin.run() and test_mag2.run()
     print('проверка пройдена' if ok else 'ПРОВЕРКА НЕ ПРОЙДЕНА')
     return ok
 

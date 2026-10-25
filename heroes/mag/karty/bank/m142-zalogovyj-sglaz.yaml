@@ -1,0 +1,33 @@
+id: m142-zalogovyj-sglaz
+imya: Залоговый сглаз
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: атака
+nomer_idei: 142
+cena: 0
+chisla:
+  dolg_n: 1
+  uron: 5
+tekst: '{cena:мана}. Возьми {dolg_n:мана} в долг. Когда отдашь весь долг, наложи Порчу и нанеси {uron:урон}.'
+effekt:
+- dolg: dolg_n
+- pri_oplate:
+  - porcha: 1
+  - uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dolg_n:
+  - 0
+  - 4
+  uron:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

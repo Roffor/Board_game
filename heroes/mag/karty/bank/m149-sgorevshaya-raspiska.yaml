@@ -1,0 +1,29 @@
+id: m149-sgorevshaya-raspiska
+imya: Сгоревшая расписка
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: связка
+nomer_idei: 149
+cena: 0
+chisla:
+  mana: 1
+tekst: '{cena:мана}. +{mana:мана} в долг. Отдавая долг в начале следующего хода, вместо маны сожги две верхние карты колоды.'
+effekt:
+- mana_v_dolg: mana
+- zhech_po_rozygryshu: 1
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  mana:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: добавлен займ, чтобы было что отдавать'

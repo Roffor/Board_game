@@ -1,0 +1,27 @@
+id: m116-poslednij-zajm
+imya: Последний займ
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 116
+cena: 1
+chisla:
+  uron: 8
+tekst: '{cena:мана}. Можно сыграть, только если у тебя есть долг. {uron:урон}.'
+effekt:
+- uron: uron
+uslovie: dolg > 0
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 16
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

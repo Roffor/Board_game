@@ -1,0 +1,22 @@
+id: m031-ten-iz-pepla
+imya: Тень из пепла
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 31
+cena: 1
+tekst: '{cena:мана}. Сыграй лучшую сожжённую карту бесплатно.'
+effekt:
+- sygraj_szhzhennuyu: 1
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,23 @@
+id: m058-pustoj-altar
+imya: Пустой алтарь
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 58
+cena: 0
+tekst: '{cena:мана}. Если в руке нет других карт, получи жетон Подношения.'
+effekt:
+- esli: ruka == 0
+  to:
+  - zheton: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

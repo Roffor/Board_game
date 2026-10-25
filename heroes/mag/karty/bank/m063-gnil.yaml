@@ -1,0 +1,32 @@
+id: m063-gnil
+imya: Гниль
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 63
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. Порча в этом раунде не снимается. Если на враге Порча, в конце хода героев {uron:урон}.'
+effekt:
+- porcha_derzhitsya: 1
+- esli: porcha > 0
+  to:
+  - osobyj:
+      imya: pozdnij_uron
+      n: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: урон приходит в конце фазы героев (готовая операция «поздний урон»), а не в конце раунда'

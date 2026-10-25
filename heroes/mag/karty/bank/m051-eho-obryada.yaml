@@ -1,0 +1,30 @@
+id: m051-eho-obryada
+imya: Эхо обряда
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 51
+cena: 1
+podnoshenie: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. {uron:урон}. Подношение: ещё раз {uron:урон}.'
+effekt:
+- uron: uron
+- esli: podnoshenie
+  to:
+  - uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

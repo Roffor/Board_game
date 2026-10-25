@@ -16,6 +16,7 @@
 import random
 from .data import CardInst
 from .effects import Ctx
+from . import mag2
 
 ALIVE_HAND = 6
 
@@ -111,6 +112,9 @@ class Fight:
         self.bl = {self.M: 'sol', self.P: 'lun'}; self.bl_swapped = False
         self.intercept = 0; self.no_dmg_cards = False; self.no_hand = False; self.mir_keep = False
         self.next_shields = {}; self.opened = []; self.reliq = 0; self._post = []
+        # новые правила мага (2026-10-24, engine/mag2.py): жетон Подношения, Порча-индикатор, долг
+        self.nm = mag2.enabled(self, {self.M: list(decks.get(self.M, []))})
+        self.m2 = mag2.M2(); self.last_burned_cost = 0
         # оценки будущего для бота (копятся только в копии для планирования)
         self.est = 0.0; self.est_f = 0.0
         self.stats = {}; self.min_frac = 1.0
@@ -152,6 +156,7 @@ class Fight:
         g.phx = list(self.phx); g.vows = list(self.vows); g.bless_riders = list(self.bless_riders)
         g.inspired = list(self.inspired); g.kinds_rnd = set(self.kinds_rnd); g._after = []
         g.bl = dict(self.bl); g.next_shields = dict(self.next_shields); g.opened = list(self.opened); g._post = []
+        g.m2 = self.m2.clone()
         g.stats = None; g.log = []
         return g
 
@@ -170,7 +175,7 @@ class Fight:
             h.hand, h.disc, h.exiled = [], [], []
             h.faith = 0; h.maxplays = R['limit_kart_zhreca'] if h.mech == 'zhrec' else 99
         lg = self.H[self.P].legend.get('neugasimaya_vera')
-        if lg:      # вера между боями: в одиночном бою стенда — вера на старте (средний перенос)
+        if lg is not None:      # вера между боями: в одиночном бою стенда — вера на старте (средний перенос)
             self.H[self.P].faith = min(self.faith_max, int(lg.get('vera_na_starte', 0)) +
                                        (int(lg.get('sol_vera', 0)) if self.bl[self.P] == 'sol' else 0))
         if self.E.deckmode:
@@ -231,7 +236,7 @@ class Fight:
             P.faith = f; self.mir_keep = False
         else:
             lg = P.legend.get('neugasimaya_vera')
-            if lg and self.bl[self.P] == 'lun':
+            if lg is not None and self.bl[self.P] == 'lun':
                 P.faith = min(f, int(lg.get('lun_ostatok', 0)))
         f += self.mir_plus; self.mir_plus = 0
         self.mir_rnd += 1
@@ -242,6 +247,9 @@ class Fight:
         self.H[hid].mana += n
 
     def add_charge(self, n):
+        if self.nm:
+            self.m2.ptok += n
+            return
         self.charges += n
 
     def add_next_bonus(self, hid, n):
@@ -251,11 +259,13 @@ class Fight:
         self.weak += n
 
     # ================================================================ урон по врагу
-    def hit(self, hid, n, armor_pierce=False):
+    def hit(self, hid, n, armor_pierce=False, ignore_shield=False):
         e = self.E
         if e.hp <= 0:
             return
         M, P = self.M, self.P
+        if self.nm:
+            n = mag2.hit_mod(self, hid, n)
         if hid == M and n > 0:
             if self.cover and self.H[M].blessed:
                 n += self.R['pokrov_bonus']
@@ -274,13 +284,17 @@ class Fight:
             h.hits_rnd += 1
         if hid == P and n > 0 and h.next_bonus:
             n += h.next_bonus; h.next_bonus = 0
-        self._raw_hit(hid, n)
+        self._raw_hit(hid, n, ignore_shield)
+        if self.nm:
+            mag2.after_hit(self, hid)
 
     def _raw_hit(self, hid, n, ignore_shield=False):
         e = self.E
         if e.hp <= 0:
             return
         dmg = n + e.porcha
+        if self.nm:
+            dmg = mag2.raw_hit_mod(self, hid, dmg)
         if e.porcha > 0 and not self.porcha_trig:
             self.porcha_trig = True; self.st('porcha_srabotala')
             self.gain_faith(1, 'союзник')
@@ -314,11 +328,18 @@ class Fight:
     def shield(self, hid, n):
         h = self.H[hid]
         if n and h.alive:
+            if self.nm:
+                n = mag2.shield_mod(self, hid, n)
             h.shield += n
             if n > 0:
                 h.shielded_rnd += 1
+            if self.nm:
+                mag2.after_shield(self, hid, n)
 
     def add_porcha(self, n):
+        if self.nm:
+            mag2.porcha(self, n)
+            return
         self.E.porcha += n
 
     def bless(self, hid):
@@ -352,6 +373,8 @@ class Fight:
         """Смена благословений: переворот обоих жетонов Лунарис/Соларис."""
         self.bl = {k: ('lun' if v == 'sol' else 'sol') for k, v in self.bl.items()}
         self.bl_swapped = True; self.st('smen_blagoslovenij')
+        if self.nm:
+            mag2.on_swap(self)
         self.L(f'   Благословения меняются: {self.hn(self.M)} — {self.bl[self.M]}, {self.hn(self.P)} — {self.bl[self.P]}')
 
     def vanguard(self, hid):
@@ -371,6 +394,8 @@ class Fight:
             self.charges += 1
         self.burned_rnd += 1
         self.st('szhzheno')
+        if self.nm:
+            mag2.on_exile(self, owner, c)
 
     def burn(self, me, n, src='ruka'):
         """Сжечь до n карт. Маг получает заряд подношения за каждую. Возвращает число сожжённых."""
@@ -382,6 +407,8 @@ class Fight:
                 if not cands:
                     break
                 c = self.choices.burn_pick(self, me, cands); own.hand.remove(c); owner = me
+                if self.nm and me == self.M and self.m2.rf.get('poslednij_vzdoh') and c.d.variants and self.E.hp > 0:
+                    c.d.variants[0].effect(self, Ctx(me, c))       # Последний вздох: эффект сжигаемой карты
             elif src == 'sbros':
                 if not own.disc:
                     break
@@ -400,6 +427,7 @@ class Fight:
                     break
                 c = min(cands, key=lambda x: x.value); al.hand.remove(c); owner = al.id; self.st('szhzheno_u_soyuznika')
             done += 1
+            self.last_burned_cost = c.cost
             self._exile(owner, c)
             self.L(f'      сожжена «{c.name}» → заряд ({self.charges})')
             if owner == me and c.d.on_burn is not None:
@@ -476,7 +504,7 @@ class Fight:
         P = self.H[self.P]
         n_open = (n_open or self.R['molitva_otkryt']) + self.pray_bonus; self.pray_bonus = 0
         lg = P.legend.get('dvojnaya_molitva'); base_play = n_play
-        if lg:
+        if lg is not None:
             d = int(lg.get('dop_kart', 1)); n_play += d; n_open += d
             if self.bl[self.P] == 'lun':
                 n_open += int(lg.get('lun_otkryt', 0))
@@ -542,7 +570,7 @@ class Fight:
                 else:
                     P.draw.append(c)
             played.append(c); self.pray_rnd += 1; self.st('molitvoj_sygrano')
-            if lg and i >= base_play and c.kind == 'атака' and self.bl[self.P] == 'sol' and self.E.hp > 0:
+            if lg is not None and i >= base_play and c.kind == 'атака' and self.bl[self.P] == 'sol' and self.E.hp > 0:
                 self.hit(self.P, int(lg.get('sol_uron', 0)))
             if then is not None:
                 c2 = Ctx(self.P, ctx.card); c2.loc['sygrana_ataka'] = int(c.kind == 'атака')
@@ -687,6 +715,8 @@ class Fight:
                 h.taken += min(n, h.hp)
             h.hp -= n; h.lost_hp_fight = True
             self.L(f'      {h.name} теряет {n} ({src}) → {max(0, h.hp)}')
+            if self.nm:
+                mag2.on_deal(self, k, n)
             if k == self.M:
                 self.gain_faith(1, 'союзник')
             if h.hp <= 0:
@@ -722,8 +752,10 @@ class Fight:
                     for _ in range(act[3]):
                         for tk in self.targets(act[2], n):
                             self.deal(tk, n)
+                    if self.nm:
+                        mag2.enemy_attack(self, n)
                 elif k == 'shield':
-                    e.shield += act[1]
+                    e.shield += mag2.enemy_shield(self, act[1]) if self.nm else act[1]
                 elif k == 'buff':
                     e.buff += act[1]
                 elif k == 'heal':
@@ -785,22 +817,41 @@ class Fight:
         h = self.H[hid]
         if not h.alive or not any(c is card for c in h.hand):
             return False
+        b0 = self.burned_rnd
         if h.mech == 'mag':
-            return self._play_mage(h, card, opt, want_off)
-        return self._play_priest(h, card, opt)
+            ok = self._play_mage(h, card, opt, want_off)
+        else:
+            ok = self._play_priest(h, card, opt)
+        if ok and self.nm and self.burned_rnd - b0 >= 2:     # сжёг 2+ карты за один розыгрыш — жетон Подношения
+            self.m2.ptok += 1; self.st('zhetonov_polucheno')
+        return ok
 
     def _play_mage(self, h, card, opt, want_off):
         d = card.d
-        if h.mana < d.cost:
+        if self.nm:
+            if d.cond_expr is not None and not d.cond_expr(self, Ctx(h.id, card)):
+                return False
+            if h.mana < mag2.cost_of(self, h, card) and not mag2.can_debt(self, h, card):
+                return False
+        elif h.mana < d.cost:
             return False
         h.hand.remove(card)
         self.reserved = [r for r in self.reserved if r is not card]
-        h.mana -= d.cost; h.plays += 1
+        if self.nm:
+            mag2.pay_cost(self, h, card)
+        else:
+            h.mana -= d.cost
+        h.plays += 1
         o = 0
         if d.offering:
             price = 2 if d.offering == '2' else 1
             for _ in range(want_off):
-                if self.charges >= price:
+                if self.nm:
+                    if self.m2.ptok >= 1:                  # новые правила: строка Подношения тратит жетон
+                        self.m2.ptok -= 1; o += 1; self.st('zhetonov_potracheno')
+                    else:
+                        break
+                elif self.charges >= price:
                     self.charges -= price; o += 1; self.st('zaryadov_potracheno', price)
                 else:
                     break
@@ -811,10 +862,18 @@ class Fight:
             self.stats.setdefault('karty', {}).setdefault(d.cid, 0)
             self.stats['karty'][d.cid] += 1
         e0 = self.E.hp
-        self._after = []
+        stash = (self._after, self._post)
+        self._after = []; self._post = []
         v.effect(self, Ctx(h.id, card, o, False, opt))
-        h.disc.append(card)
+        post = self._post
+        if 'na_verh' in post:
+            h.draw.append(card)
+        elif 'ubrat' not in post:              # «Содержание»: карта лежит перед магом, пока он платит
+            h.disc.append(card)
         self._after_play(h, card)
+        self._after, self._post = stash
+        if self.nm:
+            mag2.after_mage_play(self, h, card)
         h.plays_rnd += 1; h.played.append((card, opt))
         if any(card is x for x in self.inspired):
             self.inspired = [x for x in self.inspired if x is not card]
@@ -869,9 +928,11 @@ class Fight:
             self.stats.setdefault('karty', {}).setdefault(d.cid, 0)
             self.stats['karty'][d.cid] += 1
         e0 = self.E.hp
+        stash = (self._after, self._post)
         self._post = []
         v.effect(self, Ctx(h.id, card, 0, paid, opt))
-        post = self._post; self._post = []
+        post = self._post
+        self._after, self._post = stash
         if 'na_verh' in post or 'na_verh_posle' in d.tags:
             h.draw.append(card)
         elif 'pod_niz' in post:
@@ -956,6 +1017,8 @@ class Fight:
         self.next_shields = {}
         if self.reliq:
             P.faith = min(self.faith_max, P.faith + self.reliq); self.reliq = 0
+        if self.nm:
+            mag2.start_round(self)
         self.banner = False
         if self.doll_dmg > 0 and e.hp > 0:
             d = self.doll_dmg; self.doll_dmg = 0; self.doll = 0
@@ -1051,6 +1114,7 @@ class Fight:
             al = self.alive_ids()
             if al:
                 self._hazard(max(al, key=lambda x: self.H[x].hp), 'Сквозняк')
+        keep = mag2.finish_round(self) if self.nm else []
         for h in self.H.values():
             if not (h.blessed and h.zmod.get('opora')):
                 h.shield = 0
@@ -1060,9 +1124,14 @@ class Fight:
             back = [c for c in h.hand if any(c is x for x in self.opened)]
             if back:
                 h.hand = [c for c in h.hand if not any(c is x for x in back)]; h.draw += back
-            h.disc += h.hand; h.hand = []
+            if keep and h.id == self.M:
+                h.hand = [c for c in h.hand if not any(c is x for x in keep)]
+            h.disc += h.hand; h.hand = list(keep) if h.id == self.M else []
         self.opened = []
-        e.porcha = 0
+        if self.nm:
+            mag2.end_round_porcha(self)
+        else:
+            e.porcha = 0
         self.track_hp()
         if e.deckmode:
             e.ddisc.append(e.intent)
@@ -1095,7 +1164,7 @@ class Fight:
 VARS = {
     'vera': lambda f, h, a: f.H[f.P].faith,
     'mana': lambda f, h, a: h.mana,
-    'zaryady': lambda f, h, a: f.charges,
+    'zaryady': lambda f, h, a: f.m2.ptok if f.nm else f.charges,
     'porcha': lambda f, h, a: f.E.porcha,
     'vrag_zdorove': lambda f, h, a: f.E.hp,
     'vrag_maks_zdorove': lambda f, h, a: f.E.maxhp,
@@ -1136,4 +1205,13 @@ VARS = {
     'verh_ataka': lambda f, h, a: int(bool(h.draw) and h.draw[-1].kind == 'атака'),
     'verh_zashchita': lambda f, h, a: int(bool(h.draw) and h.draw[-1].kind == 'защита'),
     'v_kolode': lambda f, h, a: len(h.draw),
+    # новые правила мага (2026-10-24)
+    'zhetony': lambda f, h, a: f.m2.ptok,
+    'dolg': lambda f, h, a: f.m2.debt + f.m2.debt2,
+    'dolg_otdan': lambda f, h, a: f.m2.paid,
+    'szhzheno_vsego': lambda f, h, a: len(h.exiled),
+    'vrag_shchit': lambda f, h, a: f.E.shield,
+    'cena_szhzhennoj': lambda f, h, a: f.last_burned_cost,
+    'status_soyuznika_na_vrage': lambda f, h, a: int(h.id == f.P and f.E.porcha > 0),
+    'para_poteryala_proshlyj': lambda f, h, a: h.taken_last + a.taken_last,
 }

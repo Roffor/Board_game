@@ -1,0 +1,36 @@
+id: m143-pereplavka
+imya: Переплавка
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: связка
+nomer_idei: 143
+cena: 0
+tekst: '{cena:мана}. Сожги карту из руки: получи ману по её цене или погаси столько же долга.'
+varianty:
+- nazvanie: мана
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 1
+      v: s
+  - mana: cena_szhzhennoj if s else 0
+- nazvanie: долг
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 1
+      v: s
+  - spisat_dolg:
+      n: cena_szhzhennoj if s else 0
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

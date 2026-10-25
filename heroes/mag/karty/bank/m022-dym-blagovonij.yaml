@@ -1,0 +1,31 @@
+id: m022-dym-blagovonij
+imya: Дым благовоний
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 22
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. Смени благословения. Если на враге Порча, {uron:урон}.'
+effekt:
+- smena_blagoslovenij: 1
+- esli: porcha > 0
+  to:
+  - uron: uron
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,27 @@
+id: m132-zhertva-za-dvoih
+imya: Жертва за двоих
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: связка
+nomer_idei: 132
+cena: 0
+tekst: '{cena:мана}. Сожги карту. Если на враге Порча, считается, что ты сжёг две: жетон Подношения.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s and porcha > 0
+  to:
+  - uslovnyj_zheton: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

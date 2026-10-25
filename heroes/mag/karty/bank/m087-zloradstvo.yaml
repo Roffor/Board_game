@@ -1,0 +1,27 @@
+id: m087-zloradstvo
+imya: Злорадство
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 87
+cena: 0
+chisla:
+  shchit: 1
+tekst: '{cena:мана}. До конца раунда: когда Порча срабатывает, получи {shchit:щит}.'
+effekt:
+- do_konca_raunda:
+    zloradstvo: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

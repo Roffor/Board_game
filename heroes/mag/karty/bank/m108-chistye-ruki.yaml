@@ -1,0 +1,30 @@
+id: m108-chistye-ruki
+imya: Чистые руки
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 108
+cena: 1
+chisla:
+  uron: 7
+  uron_mal: 2
+tekst: '{cena:мана}. Если у тебя нет долга, {uron:урон}. Иначе {uron_mal:урон}.'
+effekt:
+- uron: uron if dolg == 0 else uron_mal
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 14
+  uron_mal:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

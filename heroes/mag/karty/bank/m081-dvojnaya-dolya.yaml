@@ -1,0 +1,24 @@
+id: m081-dvojnaya-dolya
+imya: Двойная доля
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 81
+cena: 0
+tekst: '{cena:мана}. Если на враге Порча, бонус Порчи на твоём следующем попадании считается дважды.'
+effekt:
+- esli: porcha > 0
+  to:
+  - do_konca_raunda:
+      dvojnaya_porcha: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

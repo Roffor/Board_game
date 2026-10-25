@@ -1,0 +1,46 @@
+id: m062-snyat-sglaz
+imya: Снять сглаз
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 62
+cena: 0
+chisla:
+  shchit: 5
+  mana: 2
+tekst: '{cena:мана}. Сними Порчу с врага: {shchit:щит} или +{mana:мана}.'
+varianty:
+- nazvanie: щит
+  effekt:
+  - snyat_porchu:
+      v: s
+  - esli: s
+    to:
+    - shchit:
+        komu: ja
+        n: shchit
+- nazvanie: мана
+  effekt:
+  - snyat_porchu:
+      v: s
+  - esli: s
+    to:
+    - mana: mana
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  shchit:
+  - 0
+  - 10
+  mana:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

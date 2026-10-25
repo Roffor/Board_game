@@ -1,0 +1,30 @@
+id: m066-dvojnoj-sglaz
+imya: Двойной сглаз
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 66
+cena: 0
+chisla:
+  uron: 4
+tekst: '{cena:мана}. Наложи Порчу. Если Порча уже была, вместо этого {uron:урон}.'
+effekt:
+- esli: porcha > 0
+  to:
+  - uron: uron
+  inache:
+  - porcha: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

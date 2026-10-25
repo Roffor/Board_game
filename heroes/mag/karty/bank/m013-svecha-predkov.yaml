@@ -1,0 +1,34 @@
+id: m013-svecha-predkov
+imya: Свеча предков
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 13
+cena: 1
+chisla:
+  uron: 3
+  shchit: 3
+tekst: '{cena:мана}. {uron:урон}. Если эту карту сжигают, союзник получает {shchit:щит}.'
+effekt:
+- uron: uron
+pri_szhiganii:
+- shchit:
+    komu: soyuznik
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

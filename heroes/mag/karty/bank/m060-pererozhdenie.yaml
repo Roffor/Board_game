@@ -1,0 +1,29 @@
+id: m060-pererozhdenie
+imya: Перерождение
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 60
+cena: 1
+chisla:
+  shchit: 4
+tekst: '{cena:мана}. Замешай зону сожжённых обратно в колоду. {shchit:щит} себе.'
+effekt:
+- zameshaj_szhzhennye: 1
+- shchit:
+    komu: ja
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

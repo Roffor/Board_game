@@ -1,0 +1,34 @@
+id: m102-ryvok
+imya: Рывок
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 102
+cena: 0
+chisla:
+  mana: 1
+  dobor: 2
+tekst: '{cena:мана}. +{mana:мана}, возьми {dobor:карту}. Эта карта сгорает.'
+effekt:
+- mana: mana
+- dobor: dobor
+- osobyj: sozhgi_etu
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+  pereplan: true
+granicy:
+  mana:
+  - 0
+  - 4
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

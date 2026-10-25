@@ -1,0 +1,27 @@
+id: m046-sytye-duhi
+imya: Сытые духи
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 46
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. {uron:урон}. Если у тебя есть жетон Подношения, эта карта стоит 0 (жетон не тратится).'
+effekt:
+- uron: uron
+cena_vyrazhenie: 0 if zhetony > 0 else 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

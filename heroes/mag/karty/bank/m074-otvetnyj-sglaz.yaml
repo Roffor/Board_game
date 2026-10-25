@@ -1,0 +1,33 @@
+id: m074-otvetnyj-sglaz
+imya: Ответный сглаз
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 74
+cena: 0
+chisla:
+  ocenka: 2
+tekst: '{cena:мана}. После хода врага: если враг нанёс урон, наложи на него Порчу.'
+effekt:
+- obet:
+    kogda: nachalo
+    vid_ocenki: dmg
+    ocenka_bota: ocenka
+    effekt:
+    - esli: para_poteryala_proshlyj > 0
+      to:
+      - porcha: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  ocenka:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

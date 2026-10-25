@@ -1,0 +1,36 @@
+id: m014-zhertvennaya-chasha
+imya: Жертвенная чаша
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 14
+cena: 1
+chisla:
+  uron: 3
+  uron_big: 6
+tekst: '{cena:мана}. {uron:урон}. После розыгрыша можешь сжечь эту карту, тогда {uron_big:урон}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - uron: uron
+- nazvanie: сжечь
+  effekt:
+  - uron: uron_big
+  - osobyj: sozhgi_etu
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  uron_big:
+  - 0
+  - 12
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

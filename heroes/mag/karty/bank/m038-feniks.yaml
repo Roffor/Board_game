@@ -1,0 +1,28 @@
+id: m038-feniks
+imya: Феникс
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 38
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. {uron:урон}. Эту карту можно сыграть из зоны сожжённых.'
+effekt:
+- uron: uron
+metki:
+- iz_pepla
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

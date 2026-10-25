@@ -1,0 +1,28 @@
+id: m126-rost-procentov
+imya: Рост процентов
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 126
+cena: 0
+chisla:
+  dobor: 2
+tekst: '{cena:мана}. Твой долг растёт на жетон, возьми {dobor:карту}.'
+effekt:
+- dolg: 1
+- dobor: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  dobor:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

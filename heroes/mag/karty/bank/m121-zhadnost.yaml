@@ -1,0 +1,33 @@
+id: m121-zhadnost
+imya: Жадность
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 121
+cena: 0
+tekst: '{cena:мана}. Бери карты по одной, до трёх. Каждая взятая — жетон долга.'
+varianty:
+- nazvanie: '1'
+  effekt:
+  - dobor: 1
+  - dolg: 1
+- nazvanie: '2'
+  effekt:
+  - dobor: 2
+  - dolg: 2
+- nazvanie: '3'
+  effekt:
+  - dobor: 3
+  - dolg: 3
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

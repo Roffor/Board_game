@@ -1,0 +1,29 @@
+id: m072-sglaz-i-obereg
+imya: Сглаз и оберег
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 72
+cena: 1
+chisla:
+  shchit: 4
+tekst: '{cena:мана}. Наложи Порчу, союзник получает {shchit:щит}.'
+effekt:
+- porcha: 1
+- shchit:
+    komu: soyuznik
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

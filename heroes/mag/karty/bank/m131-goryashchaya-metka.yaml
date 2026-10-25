@@ -1,0 +1,27 @@
+id: m131-goryashchaya-metka
+imya: Горящая метка
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 131
+cena: 0
+chisla:
+  uron: 2
+tekst: '{cena:мана}. До конца раунда: пока на враге Порча, каждая сожжённая карта наносит ему {uron:урон}.'
+effekt:
+- do_konca_raunda:
+    goryashchaya_metka: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

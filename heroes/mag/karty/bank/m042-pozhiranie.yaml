@@ -1,0 +1,28 @@
+id: m042-pozhiranie
+imya: Пожирание
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 42
+cena: 2
+chisla:
+  uron: 7
+tekst: '{cena:мана}. {uron:урон}. Цену можно оплатить, сжигая карты из сброса: одна карта за одну ману.'
+effekt:
+- uron: uron
+metki:
+- pozhiranie
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 14
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

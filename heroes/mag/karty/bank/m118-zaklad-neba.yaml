@@ -1,0 +1,30 @@
+id: m118-zaklad-neba
+imya: Заклад неба
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 118
+cena: 0
+chisla:
+  mana: 1
+tekst: '{cena:мана}. Смени благословения и получи {mana:мана} в долг.'
+effekt:
+- smena_blagoslovenij: 1
+- mana_v_dolg: mana
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  mana:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

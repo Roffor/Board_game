@@ -1,0 +1,48 @@
+id: m007-otlozhennyj-obereg
+imya: Отложенный оберег
+geroj: mag
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 7
+cena: 1
+chisla:
+  shchit: 4
+  shchit_big: 7
+  ocenka: 5
+tekst: '{cena:мана}. Сейчас: {shchit:щит} себе. Или после хода врага: {shchit_big:щит} себе.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - shchit:
+      komu: ja
+      n: shchit
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: shield
+      ocenka_bota: ocenka
+      effekt:
+      - shchit:
+          komu: ja
+          n: shchit_big
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  shchit_big:
+  - 0
+  - 14
+  ocenka:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,43 @@
+id: m028-iskra-v-peple
+imya: Искра в пепле
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 28
+cena: 0
+podnoshenie: 1
+chisla:
+  shchit: 3
+  uron: 4
+tekst: '{cena:мана}. Сожги карту из руки: {shchit:щит}. Подношение: вместо щита {uron:урон}.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s
+  to:
+  - esli: podnoshenie
+    to:
+    - uron: uron
+    inache:
+    - shchit:
+        komu: ja
+        n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 6
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

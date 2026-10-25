@@ -1,0 +1,38 @@
+id: m027-ochag-greet-oboih
+imya: Очаг греет обоих
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 27
+cena: 0
+chisla:
+  dobor: 1
+  shchit: 3
+tekst: '{cena:мана}. Соларис: союзник берёт {dobor:карту}. Лунарис: союзник получает {shchit:щит}.'
+effekt:
+- esli: solaris
+  to:
+  - dobor_soyuznika: dobor
+  inache:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  dobor:
+  - 0
+  - 4
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

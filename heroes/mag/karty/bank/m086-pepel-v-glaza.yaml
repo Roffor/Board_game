@@ -1,0 +1,27 @@
+id: m086-pepel-v-glaza
+imya: Пепел в глаза
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 86
+cena: 0
+tekst: '{cena:мана}. Сожги карту из руки: наложи Порчу.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s
+  to:
+  - porcha: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

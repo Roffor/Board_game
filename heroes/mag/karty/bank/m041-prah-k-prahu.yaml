@@ -1,0 +1,31 @@
+id: m041-prah-k-prahu
+imya: Прах к праху
+geroj: mag
+nabor: bank
+bild: П
+vid: защита
+nomer_idei: 41
+cena: 1
+chisla:
+  shchit: 5
+tekst: '{cena:мана}. Сожги две карты из своего сброса. {shchit:щит} себе.'
+effekt:
+- sozhgi:
+    otkuda: sbros
+    n: 2
+- shchit:
+    komu: ja
+    n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

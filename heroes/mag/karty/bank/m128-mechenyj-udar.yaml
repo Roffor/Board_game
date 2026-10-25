@@ -1,0 +1,30 @@
+id: m128-mechenyj-udar
+imya: Меченый удар
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 128
+cena: 1
+podnoshenie: 1
+chisla:
+  uron: 3
+tekst: '{cena:мана}. {uron:урон}. Подношение: наложи Порчу (до удара).'
+effekt:
+- esli: podnoshenie
+  to:
+  - porcha: 1
+- uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

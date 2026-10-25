@@ -1,0 +1,46 @@
+id: m049-pepelnaya-burya
+imya: Пепельная буря
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 49
+cena: 1
+chisla:
+  za: 3
+tekst: '{cena:мана}. Сожги из руки сколько хочешь карт, {za:урон} за каждую.'
+varianty:
+- nazvanie: сжечь 1
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 1
+      v: s
+  - uron: za * s
+- nazvanie: сжечь 2
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 2
+      v: s
+  - uron: za * s
+- nazvanie: сжечь 3
+  effekt:
+  - sozhgi:
+      otkuda: ruka
+      n: 3
+      v: s
+  - uron: za * s
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,34 @@
+id: m023-gri-gri
+imya: Гри-гри
+geroj: mag
+nabor: bank
+bild: ''
+vid: защита
+nomer_idei: 23
+cena: 1
+podnoshenie: 1
+chisla:
+  shchit: 4
+tekst: '{cena:мана}. {shchit:щит} себе. Подношение: такой же щит союзнику.'
+effekt:
+- shchit:
+    komu: ja
+    n: shchit
+- esli: podnoshenie
+  to:
+  - shchit:
+      komu: soyuznik
+      n: shchit
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

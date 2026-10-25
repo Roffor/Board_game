@@ -1,0 +1,35 @@
+id: m111-dobrosovestnyj
+imya: Добросовестный
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 111
+cena: 0
+chisla:
+  shchit: 4
+  dobor: 1
+tekst: '{cena:мана}. Если в начале этого хода ты отдал долг, получи {shchit:щит} и возьми {dobor:карту}.'
+effekt:
+- esli: dolg_otdan > 0
+  to:
+  - shchit:
+      komu: ja
+      n: shchit
+  - dobor: dobor
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  shchit:
+  - 0
+  - 8
+  dobor:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,30 @@
+id: m005-povorot-neba
+imya: Поворот неба
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 5
+cena: 0
+chisla:
+  dobor: 1
+tekst: '{cena:мана}. Смени благословения, возьми {dobor:карту}.'
+effekt:
+- smena_blagoslovenij: 1
+- dobor: dobor
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  dobor:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

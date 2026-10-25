@@ -1,0 +1,28 @@
+id: m104-poruchitel
+imya: Поручитель
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 104
+cena: 0
+tekst: '{cena:мана}. Союзник может сжечь карту из руки, чтобы погасить один жетон твоего долга. Это сжигание не даёт жетон Подношения.'
+effekt:
+- esli: dolg > 0
+  to:
+  - soyuznik_szhigaet:
+      n: 1
+      v: s
+  - spisat_dolg:
+      n: s
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: жетон Подношения не даётся и так: сжигается одна карта'

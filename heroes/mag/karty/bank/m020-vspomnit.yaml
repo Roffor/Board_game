@@ -1,0 +1,21 @@
+id: m020-vspomnit
+imya: Вспомнить
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 20
+cena: 0
+tekst: '{cena:мана}. Верни лучшую карту из сброса на верх колоды.'
+effekt:
+- iz_sbrosa_na_verh: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

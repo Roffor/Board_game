@@ -1,0 +1,27 @@
+id: m077-klyuch-k-sglazu
+imya: Ключ к сглазу
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 77
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. {uron:урон}. Если на враге Порча, эта карта стоит 0.'
+effekt:
+- uron: uron
+cena_vyrazhenie: 0 if porcha > 0 else 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

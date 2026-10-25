@@ -1,0 +1,28 @@
+id: m047-vykup
+imya: Выкуп
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 47
+cena: 0
+tekst: '{cena:мана}. Потрать жетон Подношения: возьми лучшую сожжённую карту в руку.'
+effekt:
+- potrat_zheton:
+    n: 1
+    v: k
+- esli: k
+  to:
+  - verni:
+      n: 1
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -181,7 +181,10 @@ def _look(arg, w):
         take = top[len(top) - kk:] if kk else []
         top = top[:len(top) - kk] if kk else top
         h.hand += take
-        if rest == 'niz':
+        if rest == 'szhech':
+            for c in top:
+                f._exile(ctx.me, c)
+        elif rest == 'niz':
             h.draw[0:0] = top
         else:
             h.draw += top

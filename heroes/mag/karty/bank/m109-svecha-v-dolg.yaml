@@ -1,0 +1,27 @@
+id: m109-svecha-v-dolg
+imya: Свеча в долг
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 109
+cena: 2
+chisla:
+  uron: 7
+tekst: '{cena:мана}. {uron:урон}. Эту карту можно сыграть в долг вместо маны.'
+effekt:
+- uron: uron
+v_dolg: true
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 14
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

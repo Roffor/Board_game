@@ -1,0 +1,37 @@
+id: m073-otlozhennyj-sglaz
+imya: Отложенный сглаз
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 73
+cena: 0
+chisla:
+  ocenka: 3
+tekst: '{cena:мана}. Сейчас: Порча. Или после хода врага: Порча до конца следующего раунда.'
+varianty:
+- nazvanie: сейчас
+  effekt:
+  - porcha: 1
+- nazvanie: после
+  effekt:
+  - obet:
+      kogda: nachalo
+      vid_ocenki: dmg
+      ocenka_bota: ocenka
+      effekt:
+      - porcha: 1
+      - porcha_derzhitsya: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  ocenka:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

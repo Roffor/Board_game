@@ -1,0 +1,24 @@
+id: m069-uyazvimost
+imya: Уязвимость
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 69
+cena: 0
+tekst: '{cena:мана}. Если на враге Порча, следующее попадание союзника вдвое сильнее.'
+effekt:
+- esli: porcha > 0
+  to:
+  - do_konca_raunda:
+      udvoit_soyuznika: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,39 @@
+id: m135-peregruzka-sglazom
+imya: Перегрузка сглазом
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: атака
+nomer_idei: 135
+cena: 1
+chisla:
+  uron: 3
+  shchit: 3
+  dolg_n: 1
+tekst: '{cena:мана}. Порча, {uron:урон} и {shchit:щит} себе. В следующий ход у тебя на {dolg_n:мана} меньше.'
+effekt:
+- porcha: 1
+- uron: uron
+- shchit:
+    komu: ja
+    n: shchit
+- dolg: dolg_n
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  shchit:
+  - 0
+  - 6
+  dolg_n:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

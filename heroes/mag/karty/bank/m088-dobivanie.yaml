@@ -1,0 +1,29 @@
+id: m088-dobivanie
+imya: Добивание
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 88
+cena: 1
+chisla:
+  uron: 5
+tekst: '{cena:мана}. Если у врага меньше половины здоровья, наложи Порчу и нанеси {uron:урон}.'
+effekt:
+- esli: vrag_zdorove * 2 < vrag_maks_zdorove
+  to:
+  - porcha: 1
+  - uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 10
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

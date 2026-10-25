@@ -1,0 +1,26 @@
+id: m083-broshennyj-zhrebij
+imya: Брошенный жребий
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 83
+cena: 0
+tekst: '{cena:мана}. Сбрось карту: наложи Порчу.'
+effekt:
+- sbros:
+    n: 1
+    v: s
+- esli: s
+  to:
+  - porcha: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

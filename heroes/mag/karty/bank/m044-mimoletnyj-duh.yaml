@@ -1,0 +1,28 @@
+id: m044-mimoletnyj-duh
+imya: Мимолётный дух
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 44
+cena: 1
+chisla:
+  uron: 7
+tekst: '{cena:мана}. {uron:урон}. Если в конце хода эта карта в руке, она сгорает.'
+effekt:
+- uron: uron
+metki:
+- sgoraet_v_ruke
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 14
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

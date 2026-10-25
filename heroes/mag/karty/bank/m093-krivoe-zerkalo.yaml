@@ -1,0 +1,22 @@
+id: m093-krivoe-zerkalo
+imya: Кривое зеркало
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 93
+cena: 1
+tekst: '{cena:мана}. Если на враге Порча, его атака в этом раунде бьёт и его самого.'
+effekt:
+- do_konca_raunda:
+    zerkalo: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

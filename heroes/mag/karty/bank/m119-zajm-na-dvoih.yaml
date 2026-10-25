@@ -1,0 +1,26 @@
+id: m119-zajm-na-dvoih
+imya: Займ на двоих
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 119
+cena: 0
+tekst: '{cena:мана}. Ты и союзник берёте по карте. В следующий ход вы оба сбрасываете по карте.'
+effekt:
+- dobor: 1
+- dobor_soyuznika: 1
+- sbros_potom:
+    komu: oba
+    n: 1
+bot:
+  poryadok: 3
+  cennost: 5
+  pereplan: true
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,26 @@
+id: m024-polnye-ruki
+imya: Полные руки
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 24
+cena: 1
+chisla:
+  za: 1
+tekst: '{cena:мана}. {za:урон} за каждую карту в руке.'
+effekt:
+- uron: za * ruka
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

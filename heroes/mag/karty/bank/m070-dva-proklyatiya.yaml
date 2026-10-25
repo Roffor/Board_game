@@ -1,0 +1,30 @@
+id: m070-dva-proklyatiya
+imya: Два проклятия
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 70
+cena: 1
+chisla:
+  uron: 4
+tekst: '{cena:мана}. Если на враге есть статус союзника, наложи Порчу и нанеси {uron:урон}.'
+effekt:
+- esli: status_soyuznika_na_vrage
+  to:
+  - porcha: 1
+  - uron: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: у Паладина статус лежит на героях, поэтому в паре с ним карта не срабатывает'

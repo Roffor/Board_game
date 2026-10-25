@@ -1,0 +1,25 @@
+id: m071-pyl-mertveca
+imya: Пыль мертвеца
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 71
+cena: 0
+podnoshenie: 1
+tekst: '{cena:мана}. Наложи Порчу. Подношение: Порча в конце раунда не снимается.'
+effekt:
+- porcha: 1
+- esli: podnoshenie
+  to:
+  - porcha_derzhitsya: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

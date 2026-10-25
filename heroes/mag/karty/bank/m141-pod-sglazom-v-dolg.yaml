@@ -1,0 +1,27 @@
+id: m141-pod-sglazom-v-dolg
+imya: Под сглазом в долг
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: атака
+nomer_idei: 141
+cena: 2
+chisla:
+  uron: 6
+tekst: '{cena:мана}. {uron:урон}. Если на враге Порча, эту карту можно сыграть в долг.'
+effekt:
+- uron: uron
+v_dolg: porcha > 0
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 12
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

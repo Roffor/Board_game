@@ -1,0 +1,22 @@
+id: m150-zajm-pod-pepel
+imya: Займ под пепел
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: связка
+nomer_idei: 150
+cena: 0
+tekst: '{cena:мана}. Получи ману за каждую карту в зоне сожжённых, вся она в долг.'
+effekt:
+- mana_v_dolg: szhzheno_vsego
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 2
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

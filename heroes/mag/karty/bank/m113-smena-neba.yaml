@@ -1,0 +1,26 @@
+id: m113-smena-neba
+imya: Смена неба
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 113
+cena: 0
+tekst: '{cena:мана}. Смени благословения; до конца раунда каждая смена благословений списывает жетон долга.'
+effekt:
+- do_konca_raunda:
+    smena_spisyvaet: 1
+- smena_blagoslovenij: 1
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: карта сама меняет благословения: иначе смена после розыгрыша в раунде почти не случается'

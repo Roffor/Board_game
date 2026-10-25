@@ -1,0 +1,22 @@
+id: m095-udvoit-stavku
+imya: Удвоить ставку
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 95
+cena: 0
+tekst: '{cena:мана}. Удвой свой долг и получи столько же маны сейчас.'
+effekt:
+- mana_v_dolg: dolg
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 2
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

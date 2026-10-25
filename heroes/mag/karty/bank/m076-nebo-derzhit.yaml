@@ -1,0 +1,25 @@
+id: m076-nebo-derzhit
+imya: Небо держит
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 76
+cena: 0
+tekst: '{cena:мана}. Если в этом раунде благословения менялись, Порча в конце раунда не снимается.'
+effekt:
+- esli: blag_menyalis
+  to:
+  - porcha_derzhitsya: 1
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,33 @@
+id: m120-mana-v-peple
+imya: Мана в пепле
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 120
+cena: 1
+chisla:
+  uron: 2
+  mana: 2
+tekst: '{cena:мана}. {uron:урон}. Если эту карту сжечь, +{mana:мана}.'
+effekt:
+- uron: uron
+pri_szhiganii:
+- mana: mana
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+granicy:
+  uron:
+  - 0
+  - 5
+  mana:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

@@ -1,0 +1,27 @@
+id: m103-perezanyat
+imya: Перезанять
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 103
+cena: 0
+chisla:
+  rost: 1
+tekst: '{cena:мана}. Перенеси весь долг на ход позже, но он растёт на {rost}.'
+effekt:
+- otlozhit_dolg:
+    rost: rost
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  rost:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

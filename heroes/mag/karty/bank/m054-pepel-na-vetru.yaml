@@ -1,0 +1,44 @@
+id: m054-pepel-na-vetru
+imya: Пепел на ветру
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 54
+cena: 0
+chisla:
+  uron: 4
+  shchit: 4
+tekst: '{cena:мана}. Сожги карту из руки. Соларис: {uron:урон}. Лунарис: {shchit:щит} союзнику.'
+effekt:
+- sozhgi:
+    otkuda: ruka
+    n: 1
+    v: s
+- esli: s
+  to:
+  - esli: solaris
+    to:
+    - uron: uron
+    inache:
+    - shchit:
+        komu: soyuznik
+        n: shchit
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  shchit:
+  - 0
+  - 8
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

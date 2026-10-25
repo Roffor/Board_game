@@ -86,6 +86,9 @@ class Bot(Choices):
             s += 0.6 * (g.H[g.P].faith - base.H[base.P].faith)
             s -= 1.5 * (g.E.buff - base.E.buff) + 0.3 * g.E.shield
         s -= 0.6 * (g.H[g.M].exiled_n - base.H[base.M].exiled_n)
+        if base.nm:          # новые правила мага: жетон Подношения — ценность, долг — будущая мана
+            s += 1.8 * (g.m2.ptok - base.m2.ptok)
+            s -= 1.6 * ((g.m2.debt + g.m2.debt2) - (base.m2.debt + base.m2.debt2))
         s -= OIL_V * (base.oil - g.oil)
         # подсказки ценности будущего
         alive_e = g.E.hp > 0
@@ -123,15 +126,26 @@ class Bot(Choices):
                 out.append(list(cur)); return
             rec(i + 1, mana, cur)
             c = hand[i]
-            if c.cost <= mana:
+            cc = self.mage_cost(f, h, c)
+            if cc <= mana:
                 pays = {'1': (0, 1), '2': (0, 1), 'r': (0, 1, 2, 3)}.get(c.d.offering, (0,))
                 for oi in range(len(c.d.variants)):
                     for off in pays:
                         cur.append(('play', f.M, c, oi, off))
-                        rec(i + 1, mana - c.cost, cur)
+                        rec(i + 1, mana - cc, cur)
                         cur.pop()
         rec(0, h.mana + bonus, [])
         return out
+
+    @staticmethod
+    def mage_cost(f, h, c):
+        """Цена карты для перебора планов: по новым правилам мага — с выражением цены, скидками и «в долг»."""
+        if not f.nm:
+            return c.cost
+        from engine import mag2
+        if mag2.can_debt(f, h, c):
+            return 0
+        return mag2.cost_of(f, h, c)
 
     def gen_priest(self, f):
         h = f.H[f.P]

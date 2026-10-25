@@ -1,0 +1,23 @@
+id: m092-sglaz-ot-boli
+imya: Сглаз от боли
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 92
+cena: 0
+tekst: '{cena:мана}. До конца раунда: когда союзник получает урон, на врага ложится Порча (в начале следующего раунда).'
+effekt:
+- do_konca_raunda:
+    bol_v_porchu: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- 'упрощено для стенда: союзник получает урон в ход врага, после него Порча снимается; поэтому она ложится в начале следующего раунда'

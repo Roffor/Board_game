@@ -1,0 +1,28 @@
+id: m016-skvoz-zaslon
+imya: Сквозь заслон
+geroj: mag
+nabor: bank
+bild: ''
+vid: атака
+nomer_idei: 16
+cena: 1
+chisla:
+  uron: 3
+tekst: '{cena:мана}. {uron:урон}, щит врага не учитывается.'
+effekt:
+- uron:
+    n: uron
+    mimo_shchita: true
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

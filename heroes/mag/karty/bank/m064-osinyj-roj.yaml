@@ -1,0 +1,27 @@
+id: m064-osinyj-roj
+imya: Осиный рой
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 64
+cena: 1
+chisla:
+  uron: 2
+tekst: '{cena:мана}. До конца хода каждая следующая сыгранная тобой карта наносит {uron:урон}.'
+effekt:
+- do_konca_raunda:
+    osy: uron
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

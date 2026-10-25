@@ -3,7 +3,7 @@
 
 Общие операции (есть у всех героев):
   uron: X                         одно попадание по врагу на X (попадание 0 тоже попадание: Порча прибавляется)
-  uron: {n: X, bez_broni: true}   попадание, которое пробивает Броню
+  uron: {n: X, bez_broni: true}   попадание, которое пробивает Броню (mimo_shchita: true — мимо щита врага)
   udary: {n: X, raz: Y}           Y попаданий по X
   shchit: {komu: ja|soyuznik|oba, n: X}
   porcha: X                       Порча на врага
@@ -127,8 +127,8 @@ def store(ctx, name, v):
 @op('uron', dmg=True)
 def _uron(arg, w):
     if isinstance(arg, dict):
-        n = X(arg['n'], w); ap = bool(arg.get('bez_broni'))
-        return lambda f, ctx: f.hit(ctx.me, n(f, ctx), armor_pierce=ap)
+        n = X(arg['n'], w); ap = bool(arg.get('bez_broni')); ms = bool(arg.get('mimo_shchita'))
+        return lambda f, ctx: f.hit(ctx.me, n(f, ctx), armor_pierce=ap, ignore_shield=ms)
     n = X(arg, w)
     return lambda f, ctx: f.hit(ctx.me, n(f, ctx))
 
@@ -348,4 +348,4 @@ def _special(arg, w):
     return fn, {'dmg': dmg, 'shield': sh}
 
 
-from . import paladin  # noqa: E402,F401  операции банка Паладина регистрируются в OPS
+from . import paladin, mag2  # noqa: E402,F401  операции банков Паладина и мага регистрируются в OPS

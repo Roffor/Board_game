@@ -1,0 +1,21 @@
+id: m059-golod-plameni
+imya: Голод пламени
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 59
+cena: 0
+tekst: '{cena:мана}. Сожги карту из руки. Если у неё есть строка Подношения, она срабатывает без жетона.'
+effekt:
+- effekt_kart_ruki: 1
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

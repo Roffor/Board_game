@@ -1,0 +1,37 @@
+id: m107-kredit-doveriya
+imya: Кредит доверия
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 107
+cena: 0
+chisla:
+  mana: 1
+  dobor: 1
+tekst: '{cena:мана}. Если долга нет: +{mana:мана} в долг и возьми {dobor:карту}. Если есть: возьми две карты.'
+effekt:
+- esli: dolg == 0
+  to:
+  - mana_v_dolg: mana
+  - dobor: dobor
+  inache:
+  - dobor: 2
+bot:
+  poryadok: 3
+  cennost: 5
+  mana_v_plane: 1
+  pereplan: true
+granicy:
+  mana:
+  - 0
+  - 4
+  dobor:
+  - 0
+  - 4
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

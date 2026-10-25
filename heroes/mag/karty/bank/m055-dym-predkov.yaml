@@ -1,0 +1,32 @@
+id: m055-dym-predkov
+imya: Дым предков
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 55
+cena: 1
+chisla:
+  nuzhno: 2
+tekst: '{cena:мана}. 2 из 3 (есть жетон Подношения; в руке не больше двух карт; благословения менялись): сыграй лучшую сожжённую карту бесплатно.'
+effekt:
+- pust:
+    c: (zhetony > 0) + (ruka <= 2) + blag_menyalis
+- esli: c >= nuzhno
+  to:
+  - sygraj_szhzhennuyu: 1
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  nuzhno:
+  - 1
+  - 3
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

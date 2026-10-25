@@ -1,0 +1,38 @@
+id: m003-dvulikij-zhest
+imya: Двуликий жест
+geroj: mag
+nabor: bank
+bild: ''
+vid: связка
+nomer_idei: 3
+cena: 1
+chisla:
+  uron: 4
+  shchit: 3
+tekst: '{cena:мана}. Соларис: {uron:урон}. Лунарис: {shchit:щит} себе и союзнику.'
+effekt:
+- esli: solaris
+  to:
+  - uron: uron
+  inache:
+  - shchit:
+      komu: oba
+      n: shchit
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  uron:
+  - 0
+  - 8
+  shchit:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

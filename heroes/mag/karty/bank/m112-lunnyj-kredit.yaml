@@ -1,0 +1,35 @@
+id: m112-lunnyj-kredit
+imya: Лунный кредит
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 112
+cena: 0
+chisla:
+  za: 3
+tekst: '{cena:мана}. Лунарис: долг отодвигается на ход. Соларис: отдай долг сейчас и нанеси {za:урон} за каждый жетон.'
+effekt:
+- esli: lunaris
+  to:
+  - otlozhit_dolg:
+      rost: 0
+  inache:
+  - otdaj_dolg:
+      v: k
+  - uron: za * k
+metki:
+- blag
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 6
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'

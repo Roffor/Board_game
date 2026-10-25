@@ -1,0 +1,27 @@
+id: m137-dolzhnik-proklinaet
+imya: Должник проклинает
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: атака
+nomer_idei: 137
+cena: 1
+chisla:
+  za: 2
+tekst: '{cena:мана}. Наложи Порчу. Если у тебя есть долг, ещё {za:урон} за каждый жетон.'
+effekt:
+- porcha: 1
+- uron: za * dolg
+bot:
+  poryadok: 3
+  cennost: 5
+granicy:
+  za:
+  - 0
+  - 5
+  cena:
+  - 0
+  - 3
+status: ideya
+istoriya:
+- '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
