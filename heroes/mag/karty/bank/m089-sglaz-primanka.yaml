@@ -1,30 +1,26 @@
 id: m089-sglaz-primanka
 imya: Сглаз-приманка
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: защита
 nomer_idei: 89
-cena: 1
+cena: 3
 chisla:
-  shchit: 2
+  shchit: 1
 tekst: '{cena:мана}. Наложи Порчу. Авангард: в этом раунде враг бьёт тебя, а не союзника. {shchit:щит} себе.'
 effekt:
-- porcha: 1
-- avangard: ja
-- shchit:
-    komu: ja
-    n: shchit
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {porcha: 1}
+- {avangard: ja}
+- {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: cena 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: cena 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

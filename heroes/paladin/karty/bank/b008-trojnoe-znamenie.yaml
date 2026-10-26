@@ -1,34 +1,34 @@
 id: b008-trojnoe-znamenie
 imya: Тройное знамение
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: атака
 nomer_idei: 8
 chisla:
   uron_mal: 1
-  uron: 6
+  uron: 2
   nuzhno: 2
 tekst: '{uron_mal:урон}. Если 2 из 3 (у союзника есть щит; вера 4+; благословения менялись в этом раунде): ещё {uron:урон}.'
 effekt:
-- pust:
-    c: (shchit_soyuznika > 0) + (vera >= 4) + blag_menyalis
-- uron: uron_mal + (uron if c >= nuzhno else 0)
+- {pust: {c: (shchit_soyuznika > 0) + (vera >= 4) + blag_menyalis}}
+- {uron: uron_mal + (uron if c >= nuzhno else 0)}
 metki:
 - blag
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  uron_mal:
-  - 0
-  - 4
-  uron:
-  - 0
-  - 12
-  nuzhno:
-  - 1
-  - 3
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron_mal: [0, 4], uron: [0, 12], nuzhno: [1, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: uron 6 → 5'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 5 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: uron 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: uron 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  uron 1 → 6'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: uron 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: uron 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 14: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: uron 3 → 2'

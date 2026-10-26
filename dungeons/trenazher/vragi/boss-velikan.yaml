@@ -1,0 +1,23 @@
+# Тренажёр (2026-10-26, Никита: «Не дроби на два удара. Бей либо пару, либо конкретного игрока по условию»). Одна атака в намерении; рядовой ≤8, элита ≤13, босс ≤16, в одну цель ≤10.
+id: velikan
+imya: Великан
+yarus: BOSS
+zdorove: 62
+rezhim: cikl
+namereniya:
+- tip: удар
+  dejstviya:
+  - {ataka: 9, cel: menshe_shchita}
+- tip: удар
+  dejstviya:
+  - {ataka: 4, cel: vse}
+- tip: защита
+  dejstviya:
+  - {shchit: 8}
+  - {ataka: 9, cel: zdorovyj}
+- tip: удар
+  dejstviya:
+  - {ataka: 9, cel: samyj_ranenyj}
+- tip: удар
+  dejstviya:
+  - {ataka: 5, cel: vse}

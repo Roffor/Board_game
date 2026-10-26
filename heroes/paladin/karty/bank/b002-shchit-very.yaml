@@ -1,31 +1,34 @@
 id: b002-shchit-very
 imya: Щит веры
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 2
 chisla:
-  shchit: 4
+  shchit: 1
 tekst: '{shchit:щит} себе или союзнику.'
 varianty:
 - nazvanie: себе
   effekt:
-  - shchit:
-      komu: ja
-      n: shchit
+  - {shchit: {komu: ja, n: shchit}}
 - nazvanie: союзнику
   effekt:
-  - shchit:
-      komu: soyuznik
-      n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 8
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 8]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 39: shchit 2 → 1'
+kopij: 2

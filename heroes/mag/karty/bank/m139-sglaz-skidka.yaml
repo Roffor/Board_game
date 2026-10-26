@@ -1,7 +1,7 @@
 id: m139-sglaz-skidka
 imya: Сглаз-скидка
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р–Д
 vid: связка
 nomer_idei: 139
@@ -12,18 +12,10 @@ tekst: '{cena:мана}. Если на враге Порча, в этом ход
 effekt:
 - esli: porcha > 0
   to:
-  - skidka: n
-bot:
-  poryadok: 3
-  cennost: 5
-  mana_v_plane: 1
-granicy:
-  n:
-  - 0
-  - 4
-  cena:
-  - 0
-  - 3
+  - {skidka: n}
+bot: {poryadok: 3, cennost: 5, mana_v_plane: 1}
+granicy: {n: [0, 4], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -1,0 +1,31 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m213-ukol-proklyatiya
+imya: Укол проклятия
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 213
+cena: 0
+chisla:
+  uron: 1
+  dobor: 1
+tekst: '{cena:мана}. {uron:урон}. Если на враге Порча, возьми {dobor:карту}.'
+effekt:
+- {uron: uron}
+- esli: porcha > 0
+  to:
+  - {dobor: dobor}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dobor: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 16: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 17: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 30: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 49: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 50: uron 2 → 1'

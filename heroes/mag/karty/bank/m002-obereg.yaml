@@ -1,35 +1,38 @@
 id: m002-obereg
 imya: Оберег
 geroj: mag
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 2
 cena: 1
 chisla:
-  shchit: 5
+  shchit: 1
 tekst: '{cena:мана}. {shchit:щит} себе или союзнику.'
 varianty:
 - nazvanie: себе
   effekt:
-  - shchit:
-      komu: ja
-      n: shchit
+  - {shchit: {komu: ja, n: shchit}}
 - nazvanie: союзнику
   effekt:
-  - shchit:
-      komu: soyuznik
-      n: shchit
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 10
-  cena:
-  - 0
-  - 3
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 10], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: shchit 5 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 5'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: shchit 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 14: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 39: shchit 2 → 1'
+- '2026-10-27 Claude: решение Никиты 3А: копий в старте 2 → 1'
+kopij: 1

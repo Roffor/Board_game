@@ -10,22 +10,17 @@ chisla:
   za: 2
 tekst: '{cena:мана}. Спиши с себя долг: наложи Порчу и нанеси {za:урон} за каждый снятый жетон.'
 effekt:
-- spisat_dolg:
-    v: k
+- {spisat_dolg: {v: k}}
 - esli: k
   to:
-  - porcha: 1
-  - uron: za * k
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+  - {porcha: 1}
+  - {uron: za * k}
+bot: {poryadok: 3, cennost: 5}
+granicy: {za: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 18: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 42: cena 0 → 1'

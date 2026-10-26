@@ -1,0 +1,27 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m231-bystryj-zajm
+imya: Быстрый займ
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 231
+cena: 0
+chisla:
+  mana: 1
+  dobor: 1
+  uron: 1
+tekst: '{cena:мана}. {uron:урон}. +{mana:мана} в долг, возьми {dobor:карту}.'
+effekt:
+- {uron: uron}
+- {mana_v_dolg: mana}
+- {dobor: dobor}
+bot: {poryadok: 3, cennost: 5}
+granicy: {mana: [0, 6], dobor: [0, 6], cena: [0, 3], uron: [0, 5]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 Claude: подгонка 8 ч, правка работы карты после круга 5 (бот играл её в 5–16% случаев, когда в руке): добавлено «1 урон». Было:
+  «{cena:мана}. +{mana:мана} в долг, возьми {dobor:карту}.»'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 28: uron 2 → 1'

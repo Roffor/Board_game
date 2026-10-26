@@ -41,7 +41,7 @@ class Choices:
     def take_hit(self, f, cands, n):
         """Кто из героев принимает удар: тот, кто потеряет меньше здоровья."""
         def loss(k):
-            h = f.H[k]; x = max(0, n - (f.bless_n if h.blessed else 0) - h.shield)
+            h = f.H[k]; x = max(0, n - (f.bless_n if (h.blessed and not f.R.get('zaslon_shipy', 0)) else 0) - h.shield)
             return (x >= h.hp, x, -h.hp)
         return min(cands, key=loss)
 

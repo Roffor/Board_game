@@ -1,7 +1,7 @@
 id: b012-koster-dlya-eresi
 imya: Костёр для ереси
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: ''
 vid: вера
 nomer_idei: 12
@@ -9,20 +9,13 @@ chisla:
   vera: 2
 tekst: 'Сожги карту из руки: +{vera:вера}.'
 effekt:
-- sozhgi:
-    otkuda: ruka
-    n: 1
-    v: s
+- {sozhgi: {otkuda: ruka, n: 1, v: s}}
 - esli: s
   to:
-  - vera: vera
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 5
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

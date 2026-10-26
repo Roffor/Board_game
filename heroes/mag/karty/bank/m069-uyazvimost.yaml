@@ -1,24 +1,20 @@
 id: m069-uyazvimost
 imya: Уязвимость
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: связка
 nomer_idei: 69
-cena: 0
+cena: 1
 tekst: '{cena:мана}. Если на враге Порча, следующее попадание союзника вдвое сильнее.'
 effekt:
 - esli: porcha > 0
   to:
-  - do_konca_raunda:
-      udvoit_soyuznika: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+  - {do_konca_raunda: {udvoit_soyuznika: 1}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: cena 0 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

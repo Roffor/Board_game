@@ -1,0 +1,29 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b227-shchit-molyashchegosya
+imya: Щит молящегося
+geroj: zhrec
+nabor: bank
+bild: М
+vid: защита
+nomer_idei: 227
+chisla:
+  shchit: 1
+tekst: '{shchit:щит} себе. Если эта карта сыграна Молитвой, и союзнику {shchit:щит}.'
+effekt:
+- {shchit: {komu: ja, n: shchit}}
+- esli: sygrana_molitvoj
+  to:
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 37: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 39: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 42: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 44: shchit 2 → 1'

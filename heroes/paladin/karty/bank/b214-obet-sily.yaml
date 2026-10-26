@@ -1,0 +1,36 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b214-obet-sily
+imya: Обет силы
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 214
+chisla:
+  uron: 1
+  uron_big: 3
+  shchit: 1
+  vera: 1
+  doplata: 1
+tekst: '{uron:урон} и +{vera:вера}. Доплата {doplata:веру}: вместо этого {uron_big:урон} и {shchit:щит} себе.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+  - {vera: vera}
+- nazvanie: доплата
+  doplata: {vera: 1}
+  effekt:
+  - {uron: uron_big if oplacheno else uron}
+  - {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 6], uron_big: [0, 6], shchit: [0, 6], vera: [0, 6], doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron_big 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: uron_big 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 48: uron_big 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 66: uron_big 2 → 3'

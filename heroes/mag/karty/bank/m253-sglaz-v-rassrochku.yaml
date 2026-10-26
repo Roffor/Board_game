@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m253-sglaz-v-rassrochku
+imya: Сглаз в рассрочку
+geroj: mag
+nabor: bank
+bild: Р–Д
+vid: связка
+nomer_idei: 253
+cena: 2
+chisla:
+  dobor: 1
+  dolg_n: 1
+tekst: '{cena:мана}. Наложи Порчу, возьми {dobor:карту}. {dolg_n:мана} в долг.'
+effekt:
+- {porcha: 1}
+- {dobor: dobor}
+- {dolg: dolg_n}
+bot: {poryadok: 3, cennost: 5}
+granicy: {dobor: [0, 6], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 55: cena 1 → 2'

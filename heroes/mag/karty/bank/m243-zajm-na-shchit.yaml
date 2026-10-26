@@ -1,0 +1,35 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m243-zajm-na-shchit
+imya: Займ на щит
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 243
+cena: 0
+chisla:
+  shchit: 1
+  dobor: 1
+  dolg_n: 1
+tekst: '{cena:мана}. Союзник получает {shchit:щит} и берёт {dobor:карту}. {dolg_n:мана} в долг.'
+effekt:
+- {shchit: {komu: soyuznik, n: shchit}}
+- {dobor_soyuznika: dobor}
+- {dolg: dolg_n}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 6], dobor: [0, 6], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 7: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 8: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: shchit 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 30: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 42: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 44: shchit 2 → 1'

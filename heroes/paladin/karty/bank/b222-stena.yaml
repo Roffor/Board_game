@@ -1,0 +1,28 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b222-stena
+imya: Стена
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 222
+chisla:
+  shchit: 1
+  dop: 2
+tekst: Авангард. {shchit:щит} себе. Если на союзнике Заслон, ещё {dop:щит}.
+effekt:
+- {avangard: ja}
+- {shchit: {komu: ja, n: shchit + (dop if soyuznik_zaslon else 0)}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6], dop: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: shchit 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 23: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 30: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 40: shchit 2 → 1'

@@ -1,0 +1,36 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b231-chudo-molitvy
+imya: Чудо молитвы
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 231
+chisla:
+  uron: 3
+  doplata: 2
+tekst: '{uron:урон}. Доплата {doplata:веру}: вместо этого Молитва дважды.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - esli: oplacheno
+    to:
+    - {molitva: null}
+    - {molitva: null}
+    inache:
+    - {uron: uron}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {uron: [0, 6], doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 16: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: uron 4 → 3'

@@ -1,26 +1,25 @@
 id: b059-chudo-shchedrosti
 imya: Чудо щедрости
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: связка
 nomer_idei: 59
 chisla:
   za: 2
-tekst: 'Чудо: союзник берёт карту за каждые {za} веры.'
+  shchit: 2
+tekst: '{shchit:щит} союзнику. Чудо: союзник берёт карту за каждые {za} веры.'
 effekt:
-- chudo: f
-- dobor_soyuznika: f // za
+- {shchit: {komu: soyuznik, n: shchit}}
+- {chudo: f}
+- {dobor_soyuznika: f // za}
 metki:
 - chudo
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
-granicy:
-  za:
-  - 0
-  - 5
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {za: [0, 5], shchit: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Claude: подгонка, правка работы карты (план §этап 2 п.5; бот играл её в 2–5% случаев, когда в руке): добавлено «2 щита союзнику».
+  Было: «Чудо: союзник берёт карту за каждые {za} веры.»'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

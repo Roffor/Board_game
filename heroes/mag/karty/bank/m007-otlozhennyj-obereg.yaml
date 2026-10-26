@@ -1,22 +1,20 @@
 id: m007-otlozhennyj-obereg
 imya: Отложенный оберег
 geroj: mag
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 7
 cena: 1
 chisla:
-  shchit: 4
-  shchit_big: 7
+  shchit: 1
+  shchit_big: 2
   ocenka: 5
 tekst: '{cena:мана}. Сейчас: {shchit:щит} себе. Или после хода врага: {shchit_big:щит} себе.'
 varianty:
 - nazvanie: сейчас
   effekt:
-  - shchit:
-      komu: ja
-      n: shchit
+  - {shchit: {komu: ja, n: shchit}}
 - nazvanie: после
   effekt:
   - obet:
@@ -24,25 +22,26 @@ varianty:
       vid_ocenki: shield
       ocenka_bota: ocenka
       effekt:
-      - shchit:
-          komu: ja
-          n: shchit_big
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 8
-  shchit_big:
-  - 0
-  - 14
-  ocenka:
-  - 0
-  - 10
-  cena:
-  - 0
-  - 3
+      - {shchit: {komu: ja, n: shchit_big}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 8], shchit_big: [0, 14], ocenka: [0, 10], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 19: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 21: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 1'
+- '2026-10-26 Claude: shchit_big 7 → 3 (большой отложенный/доплатный щит подгонка не резала: рычаг брал первое число; Никита: «Это слишком много!»)'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: shchit_big 3 → 2'

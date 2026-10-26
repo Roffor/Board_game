@@ -1,0 +1,27 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b218-zaslon-very
+imya: Заслон веры
+geroj: zhrec
+nabor: bank
+bild: В–З
+vid: защита
+nomer_idei: 218
+chisla:
+  doplata: 2
+tekst: 'Заслон союзнику. Доплата {doplata:веру}: и Заслон тебе.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {zaslon: {komu: soyuznik}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {zaslon: {komu: soyuznik}}
+  - esli: oplacheno
+    to:
+    - {zaslon: {komu: ja}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'

@@ -1,0 +1,33 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b215-krepost-duha
+imya: Крепость духа
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 215
+chisla:
+  shchit: 1
+  uron: 1
+  porog: 4
+tekst: '{shchit:щит} себе и союзнику. Вера {porog}+: ещё {uron:урон}.'
+effekt:
+- {shchit: {komu: oba, n: shchit}}
+- esli: vera >= porog
+  to:
+  - {uron: uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6], uron: [0, 6], porog: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 23: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 64: uron 2 → 1'

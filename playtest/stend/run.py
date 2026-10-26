@@ -7,6 +7,8 @@
   python run.py proverka                     проверить данные игры и тесты движка
   python run.py tablica                      обновить таблицы карт в документах героев (heroes/<герой>/<герой>.md)
   python run.py boj <ситуация> <номер> [сид]  сыграть один бой с подробным журналом (для разбора)
+  python run.py uchitel plans/<конфиг>.yaml  один проход подбора весов оценки бота (stend/uchitel.py)
+  python run.py podgonka plans/<конфиг>.yaml подгонка кругами: бои → правка карт и врагов → новый круг (stend/podgonka.py)
 
 Ключи: --yader N (по умолчанию все), --bez-dyma (без дымового прогона),
 --minut M (через M минут сохранить состояние и выйти с кодом 3; та же команда продолжит — для запуска кусками)."""
@@ -65,8 +67,21 @@ if __name__ == '__main__':
     if cmd == 'boj':
         boj(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]) if len(sys.argv) > 4 else 1)
         sys.exit(0)
-    from stend.runner import Run, Pauza
     n = arg('--yader'); m = arg('--minut')
+    if cmd == 'uchitel':
+        from stend.uchitel import Uchitel
+        Uchitel(os.path.abspath(sys.argv[2]), GAME, RUNS, procs=int(n) if n else None).run()
+        sys.exit(0)
+    if cmd == 'podgonka':
+        from stend.podgonka import Podgonka, Pauza as P2
+        try:
+            Podgonka(GAME, os.path.abspath(sys.argv[2]), GAME, RUNS, procs=int(n) if n else None,
+                     minut=float(m) if m else None, use_git='--git' in sys.argv).run()
+        except P2:
+            print('ПАУЗА: состояние сохранено, запусти ту же команду, чтобы продолжить')
+            sys.exit(3)
+        sys.exit(0)
+    from stend.runner import Run, Pauza
     try:
         Run(ROOT, os.path.abspath(cmd), game_dir=GAME, runs_dir=RUNS, procs=int(n) if n else None, use_git='--git' in sys.argv,
             smoke='--bez-dyma' not in sys.argv, minut=float(m) if m else None).run()

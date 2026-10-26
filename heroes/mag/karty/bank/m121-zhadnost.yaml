@@ -1,7 +1,7 @@
 id: m121-zhadnost
 imya: Жадность
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Д
 vid: связка
 nomer_idei: 121
@@ -10,24 +10,19 @@ tekst: '{cena:мана}. Бери карты по одной, до трёх. К�
 varianty:
 - nazvanie: '1'
   effekt:
-  - dobor: 1
-  - dolg: 1
+  - {dobor: 1}
+  - {dolg: 1}
 - nazvanie: '2'
   effekt:
-  - dobor: 2
-  - dolg: 2
+  - {dobor: 2}
+  - {dolg: 2}
 - nazvanie: '3'
   effekt:
-  - dobor: 3
-  - dolg: 3
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  cena:
-  - 0
-  - 3
+  - {dobor: 3}
+  - {dolg: 3}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

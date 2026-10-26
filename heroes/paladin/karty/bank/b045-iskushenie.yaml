@@ -1,27 +1,21 @@
 id: b045-iskushenie
 imya: Искушение
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: вера
 nomer_idei: 45
 chisla:
   vera: 3
-  sila: 2
+  sila: 1
 tekst: +{vera:вера}. Враг в этом раунде бьёт на {sila} сильнее.
 effekt:
-- vera: vera
-- usilit_vraga: sila
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 6
-  sila:
-  - 0
-  - 5
+- {vera: vera}
+- {usilit_vraga: sila}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 6], sila: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Claude: подгонка, ручная правка числа: «враг бьёт на 2 сильнее» → на 1 (бот не играл)'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

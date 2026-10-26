@@ -12,7 +12,7 @@ OIL_V = 2.5          # цена одного масла в оценке план
 K_TOP = 18           # сколько лучших планов каждого героя скрещивать
 K_ALLY = 6           # сколько ещё планов мага с картами «от союзника» добавить
 NEAR = 2.2           # «равноценный» план: хуже лучшего меньше чем на одно здоровье героя
-ERR_P = 0.25         # шанс выбрать второй по качеству план (живые игроки ошибаются)
+ERR_P = 0.33         # шанс выбрать второй по качеству план (живые игроки ошибаются); 2026-10-26 Никита: каждый третий раунд (было 0,25)
 
 
 def plan_key(seq):
@@ -68,9 +68,10 @@ class Bot(Choices):
         if not killed:
             g.enemy_act(g.plan_intent())
         k = base.threat_k()
+        W = base.R['bot']
         s = (base.E.hp - g.E.hp) * k
         if killed:
-            s += 12
+            s += W.get('ves_ubijstva', 12)
         for hid in base.order:
             h0, h1 = base.H[hid], g.H[hid]
             w = 2.2 if h0.hp > 7 else 3.2
@@ -78,17 +79,18 @@ class Bot(Choices):
             if h0.alive and not h1.alive:
                 s -= 20
             if h1.alive and h1.blessed and not killed:
-                s += 1.5
+                s += W.get('ves_zaslona', 1.5)
             s += 1.0 * h1.pend
         if not any(h.alive for h in g.H.values()):
             s -= 1000
         if not killed:
-            s += 0.6 * (g.H[g.P].faith - base.H[base.P].faith)
+            s += W.get('ves_very', 0.6) * (g.H[g.P].faith - base.H[base.P].faith)
+            s += W.get('ves_ruki', 0.0) * sum(len(g.H[h].hand) - len(base.H[h].hand) for h in base.order)
             s -= 1.5 * (g.E.buff - base.E.buff) + 0.3 * g.E.shield
-        s -= 0.6 * (g.H[g.M].exiled_n - base.H[base.M].exiled_n)
+        s -= W.get('ves_sozhzhennoj', 0.6) * (g.H[g.M].exiled_n - base.H[base.M].exiled_n)
         if base.nm:          # новые правила мага: жетон Подношения — ценность, долг — будущая мана
-            s += 1.8 * (g.m2.ptok - base.m2.ptok)
-            s -= 1.6 * ((g.m2.debt + g.m2.debt2) - (base.m2.debt + base.m2.debt2))
+            s += W.get('ves_podnosheniya', 1.8) * (g.m2.ptok - base.m2.ptok)
+            s -= W.get('ves_dolga', 1.6) * ((g.m2.debt + g.m2.debt2) - (base.m2.debt + base.m2.debt2))
         s -= OIL_V * (base.oil - g.oil)
         # подсказки ценности будущего
         alive_e = g.E.hp > 0
@@ -205,7 +207,7 @@ class Bot(Choices):
             f.reveal()
         variants = [None]
         incoming = sum(a[1] * a[3] for a in e.intent['acts'] if a[0] == 'atk')
-        if f.oil >= 1 and not f.hidden() and incoming >= 4 and not f.flash_weak:
+        if f.R.get('vspyshka', 1) and f.oil >= 1 and not f.hidden() and incoming >= 4 and not f.flash_weak:   # vspyshka 0 — тренажёр без Вспышки
             variants += [hid for hid in f.order if f.H[hid].alive]
         self.plans += 1
         best = None; allp = {}
@@ -269,6 +271,10 @@ def run_fight(game, decks, enemy, location, seed, log=False, err_p=ERR_P):
         f.start_round()
         if f.over:
             break
+        vr = f.stats.setdefault('v_ruke', {})          # диагностика бота: в скольких раундах карта была в руке
+        for h in f.H.values():
+            for c in {x.d.cid for x in h.hand}:
+                vr[c] = vr.get(c, 0) + 1
         bot.play_round(f)
         f.check_over()
         f.finish_round()

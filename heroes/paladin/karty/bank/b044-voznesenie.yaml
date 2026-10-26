@@ -1,7 +1,7 @@
 id: b044-voznesenie
 imya: Вознесение
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: атака
 nomer_idei: 44
@@ -13,24 +13,13 @@ tekst: 'Вера 4+: {uron:урон} и −{cena:вера}. Иначе +{vera:в
 effekt:
 - esli: vera >= 4
   to:
-  - uron: uron
-  - szhech_veru:
-      n: cena
+  - {uron: uron}
+  - {szhech_veru: {n: cena}}
   inache:
-  - vera: vera
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 14
-  cena:
-  - 0
-  - 6
-  vera:
-  - 0
-  - 5
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 14], cena: [0, 6], vera: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

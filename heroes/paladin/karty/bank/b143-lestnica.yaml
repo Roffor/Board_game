@@ -1,7 +1,7 @@
 id: b143-lestnica
 imya: Лестница
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М–В
 vid: вера
 nomer_idei: 143
@@ -9,18 +9,13 @@ chisla:
   vera: 2
 tekst: +{vera:вера}. Если стало 6, Молитва.
 effekt:
-- vera: vera
+- {vera: vera}
 - esli: vera >= 6
   to:
-  - molitva: null
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
-granicy:
-  vera:
-  - 0
-  - 5
+  - {molitva: null}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {vera: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

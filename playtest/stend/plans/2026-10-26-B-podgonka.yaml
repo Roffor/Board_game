@@ -1,0 +1,17 @@
+# Этап Б плана 2026-10-26-podgonka-8ch.md: круги баланса (stend/podgonka.py)
+srok_chasov: 5.3
+seed0: 2610026
+boev: {I: 1000, II: 3000, EL: 3000, BOSS: 3000}
+porog_r: 0.2
+porog_p: 1.0
+sdvig_kart: 8
+min_boev_karty: 60
+redko: 0.5
+redko_dolya: 0.35
+start_kazhdye: 1
+start_kart: 1
+vragi_kazhdye: 1
+udar_maks: 6
+tajmaut: 30
+pobedy_zapas: 0.97
+poslednij_krug: 70

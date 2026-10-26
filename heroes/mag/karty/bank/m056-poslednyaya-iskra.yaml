@@ -1,32 +1,34 @@
 id: m056-poslednyaya-iskra
 imya: Последняя искра
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П
 vid: защита
 nomer_idei: 56
-cena: 0
+cena: 2
 chisla:
-  shchit: 3
+  shchit: 2
 tekst: '{cena:мана}. {shchit:щит} себе. Сожги эту карту и ещё одну из руки (две сожжённые — жетон Подношения).'
 effekt:
-- shchit:
-    komu: ja
-    n: shchit
-- sozhgi:
-    otkuda: ruka
-    n: 1
-- osobyj: sozhgi_etu
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {shchit: {komu: ja, n: shchit}}
+- {sozhgi: {otkuda: ruka, n: 1}}
+- {osobyj: sozhgi_etu}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: cena 1 → 0'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: shchit 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: shchit 3 → 2'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

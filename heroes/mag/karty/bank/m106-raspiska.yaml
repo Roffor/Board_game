@@ -1,22 +1,18 @@
 id: m106-raspiska
 imya: Расписка
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Д
 vid: связка
 nomer_idei: 106
-cena: 0
+cena: 1
 tekst: '{cena:мана}. Сыграй карту из руки бесплатно, её цена становится долгом.'
 effekt:
-- sygraj_v_dolg:
-    otkuda: ruka
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {sygraj_v_dolg: {otkuda: ruka}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 0 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

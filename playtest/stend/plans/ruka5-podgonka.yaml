@@ -1,0 +1,9 @@
+# Дотест: подгонка кругами при руке 5 (копия проекта, основные файлы не меняются)
+srok_chasov: 1.6
+seed0: 5555
+boev: {I: 1000, II: 3000, EL: 3000, BOSS: 3000}
+sdvig_kart: 8
+start_kazhdye: 1
+start_kart: 2
+vragi_kazhdye: 1
+tajmaut: 30

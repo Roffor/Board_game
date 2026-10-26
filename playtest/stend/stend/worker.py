@@ -69,7 +69,8 @@ def one(job):
                    choice=(sum(1 for a in var if a[1] > 0) / len(var)) if var else 0.0,
                    plays=st.get('sygrano_mag', 0) + st.get('sygrano_zhrec', 0),
                    dmg_share_mag=(dm / (dm + dp)) if dm + dp else None,
-                   karty=st.get('karty', {}), errors_bot=bot.errors,
+                   karty=st.get('karty', {}), v_ruke=st.get('v_ruke', {}), shchit_pary=st.get('shchit_mag', 0) + st.get('shchit_zhrec', 0),
+                   shchit_h={'mag': st.get('shchit_mag', 0), 'zhrec': st.get('shchit_zhrec', 0)}, vrag_bil=st.get('vrag_bil', 0), errors_bot=bot.errors,
                    deck={k: [c.cid for c in d] for k, d in decks.items()})
     except TimeoutError as ex:
         row.update(error='timeout', detail=str(ex))

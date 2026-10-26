@@ -1,0 +1,303 @@
+# Круг 4
+
+Боёв 10000, ошибок 3, время 0 мин.
+
+| Ситуация | Боёв | Раунды (коридор) | Потери пары, % (коридор) | Победы | Затяжные |
+|---|---|---|---|---|---|
+| I | 1000 | 2.50 (3.5–4.0) | 0.8 (8–15) | 100% | 0% |
+| II | 3000 | 3.25 (3.0–3.5) | 1.8 (5–12) | 100% | 2% |
+| EL | 2999 | 4.75 (4.0–6.0) | 8.4 (20–35) | 100% | 2% |
+| BOSS | 2998 | 6.50 (5.0–8.0) | 15.1 (30–60) | 100% | 0% |
+
+Правок: 9.
+
+- m109-svecha-v-dolg: uron 2 → 1 (выброс: Δр -0.35 от медианы -0.03)
+- m141-pod-sglazom-v-dolg: uron 2 → 1 (выброс: Δр -0.40 от медианы -0.03)
+- враг chuchelo-rubaka: удары +1 (потери 1.0% при коридоре [8, 15]); щит +1 (раунды 2.27 при коридоре [3.5, 4.0])
+- враг chuchelo-strazh: удары +1 (потери 0.5% при коридоре [8, 15]); щит +1 (раунды 2.75 при коридоре [3.5, 4.0])
+- враг latnik: удары +1 (потери 2.0% при коридоре [5, 12]); щит −1 (раунды 3.69 при коридоре [3.0, 3.5])
+- враг mechnik: удары +1 (потери 1.6% при коридоре [5, 12]); щит +1 (раунды 2.82 при коридоре [3.0, 3.5])
+- враг palach: удары +1 (потери 9.1% при коридоре [20, 35]); щит +1 (раунды 4.27 при коридоре [4.0, 6.0])
+- враг strazh-vorot: удары +1 (потери 7.6% при коридоре [20, 35])
+- враг velikan: удары +1 (потери 15.1% при коридоре [30, 60])
+
+Бот не раскрывает (< 0.5 розыгрыша за бой и < 35% розыгрышей, когда в руке): 75 карт: b005-smena-znamen, b012-koster-dlya-eresi, b015-tyazhelyj-dospeh, b017-poslednij-rubezh, b031-chudo-prozreniya, b034-pepel-posle-chuda, b036-perevorot, b039-strazh-obeta, b041-svidetelstvo, b044-voznesenie, b045-iskushenie, b048-bdenie, b054-zapal, b058-relikvarij, b059-chudo-shchedrosti, b072-snyat-zaslon, b074-perehvat, b092-raskolotyj-zaslon, b106-litaniya, b120-otkrytaya-molitva, b123-trojnaya-molitva, b125-otpushchenie, b131-snyatie-v-veru, b134-zaslon-pod-chudo, b139-zastava, b146-chudo-v-kolode, m017-golos-predka, m020-vspomnit, m030-golodnyj-duh, m033-vse-v-ogon, m034-pepel-pomnit, m037-poslednij-vzdoh, m047-vykup, m048-zaslon-iz-pepla, m052-dar-soyuzniku, m053-teplyj-pepel, m055-dym-predkov, m058-pustoj-altar, m059-golod-plameni, m062-snyat-sglaz, m070-dva-proklyatiya, m073-otlozhennyj-sglaz, m075-chuzhoj-obereg, m076-nebo-derzhit, m079-sglaz-iz-ruk-soyuznika, m080-zapertyj-shchit, m081-dvojnaya-dolya, m087-zloradstvo, m092-sglaz-ot-boli, m095-udvoit-stavku, m099-dosrochno, m100-skidka-duhov, m103-perezanyat, m104-poruchitel, m111-dobrosovestnyj, m115-zalog, m116-poslednij-zajm, m117-zajm-s-procentami, m121-zhadnost, m123-chuzhoj-udar-v-uplatu, m125-dolzhnik-pod-zashchitoj, m127-shvyrnut-v-ogon, m131-goryashchaya-metka, m133-dolgij-sglaz, m136-prostit-dolg, m138-perelozhit-dolg, m139-sglaz-skidka, m140-procenty, m143-pereplavka, m144-topka, m145-vyplata-ognem, m147-otkup, m148-avans, m149-sgorevshaya-raspiska, m150-zajm-pod-pepel
+
+## Вклад карт (II/EL/BOSS)
+
+| Карта | Боёв | Δр | Δп, ХП | Розыгрышей за бой | Сыграна, когда в руке |
+|---|---|---|---|---|---|
+| m084-znaki-soshlis | 207 | -0.85 | -1.01 | 1.40 | 82% |
+| m142-zalogovyj-sglaz | 245 | -0.71 | -0.17 | 1.43 | 79% |
+| m042-pozhiranie | 249 | -0.57 | -0.47 | 1.88 | 89% |
+| b079-obryad-zaslona | 226 | -0.53 | -1.53 | 1.79 | 99% |
+| m078-tolko-pod-sglazom | 252 | -0.43 | -0.64 | 0.72 | 38% |
+| m141-pod-sglazom-v-dolg | 222 | -0.40 | -0.11 | 1.40 | 70% |
+| m065-grad | 236 | -0.39 | -0.59 | 1.36 | 71% |
+| m046-sytye-duhi | 227 | -0.39 | -0.63 | 1.67 | 88% |
+| m091-hudoj-znak | 214 | -0.38 | -0.49 | 1.28 | 67% |
+| b051-ogon-very | 229 | -0.38 | +0.07 | 1.68 | 86% |
+| m067-tyanushchaya-porcha | 227 | -0.37 | -0.91 | 1.31 | 68% |
+| m008-otlozhennyj-udar | 217 | -0.35 | -0.11 | 1.80 | 92% |
+| m109-svecha-v-dolg | 234 | -0.35 | -0.32 | 1.69 | 86% |
+| m066-dvojnoj-sglaz | 217 | -0.34 | -0.40 | 1.62 | 81% |
+| m006-otgolosok-peremeny | 219 | -0.34 | -0.53 | 1.53 | 77% |
+| m135-peregruzka-sglazom | 259 | -0.34 | -0.23 | 1.46 | 71% |
+| m077-klyuch-k-sglazu | 260 | -0.33 | -0.44 | 1.65 | 82% |
+| m089-sglaz-primanka | 246 | -0.32 | -0.29 | 0.75 | 39% |
+| m108-chistye-ruki | 221 | -0.32 | -0.22 | 1.69 | 88% |
+| m014-zhertvennaya-chasha | 239 | -0.32 | -0.60 | 1.01 | 97% |
+| m049-pepelnaya-burya | 256 | -0.30 | +0.29 | 1.06 | 50% |
+| b093-svet-na-shchite | 237 | -0.30 | -0.15 | 1.35 | 72% |
+| m044-mimoletnyj-duh | 255 | -0.30 | -0.70 | 1.67 | 91% |
+| m038-feniks | 238 | -0.29 | -0.49 | 1.52 | 72% |
+| m130-neugasimyj-sglaz | 240 | -0.28 | +0.24 | 1.52 | 75% |
+| b036-perevorot | 217 | -0.27 | +0.12 | 0.46 | 26% |
+| b032-maloe-chudo | 221 | -0.27 | -0.22 | 1.48 | 74% |
+| m128-mechenyj-udar | 239 | -0.26 | -0.63 | 1.22 | 62% |
+| b024-mech-i-shchit | 255 | -0.26 | -0.19 | 1.59 | 83% |
+| b038-klinok-veruyushchego | 230 | -0.25 | -0.23 | 1.40 | 71% |
+| m137-dolzhnik-proklinaet | 228 | -0.25 | +0.18 | 1.05 | 54% |
+| b041-svidetelstvo | 234 | -0.25 | -0.06 | 0.32 | 16% |
+| m026-perekrestok | 231 | -0.25 | -0.36 | 1.58 | 80% |
+| b040-propoved | 222 | -0.24 | -0.50 | 1.62 | 79% |
+| m051-eho-obryada | 217 | -0.24 | -0.08 | 1.50 | 73% |
+| m022-dym-blagovonij | 223 | -0.23 | -0.33 | 0.83 | 43% |
+| m072-sglaz-i-obereg | 243 | -0.23 | -0.22 | 0.72 | 39% |
+| m056-poslednyaya-iskra | 253 | -0.23 | -0.14 | 0.74 | 55% |
+| b145-vozglas | 248 | -0.22 | +0.15 | 1.43 | 71% |
+| b149-perevernutaya-molitva | 267 | -0.21 | -0.43 | 1.13 | 59% |
+| m088-dobivanie | 230 | -0.20 | -0.63 | 0.79 | 40% |
+| m083-broshennyj-zhrebij | 245 | -0.19 | -0.39 | 0.75 | 39% |
+| m013-svecha-predkov | 252 | -0.19 | -0.27 | 1.38 | 71% |
+| m071-pyl-mertveca | 216 | -0.19 | -0.05 | 0.81 | 41% |
+| m035-chistyj-list | 258 | -0.19 | -0.96 | 2.22 | 89% |
+| m003-dvulikij-zhest | 234 | -0.19 | -0.10 | 1.48 | 75% |
+| m134-polnyj-obryad | 268 | -0.18 | -0.20 | 0.98 | 49% |
+| b043-anafema | 220 | -0.17 | +0.30 | 1.27 | 61% |
+| m098-doplata-v-dolg | 246 | -0.17 | +0.08 | 1.49 | 75% |
+| m016-skvoz-zaslon | 251 | -0.16 | -0.45 | 1.68 | 80% |
+| b083-bystryj-zaslon | 255 | -0.16 | -0.05 | 1.04 | 53% |
+| b135-pokrov-molitvy | 223 | -0.16 | -0.41 | 1.97 | 96% |
+| b106-litaniya | 222 | -0.16 | -0.07 | 0.47 | 24% |
+| b050-chudo-razdeleniya | 216 | -0.15 | -0.03 | 1.35 | 66% |
+| b091-zaslon-klyatva | 250 | -0.15 | +0.23 | 0.64 | 33% |
+| m086-pepel-v-glaza | 237 | -0.15 | -0.11 | 0.60 | 30% |
+| m093-krivoe-zerkalo | 258 | -0.15 | +0.43 | 0.59 | 30% |
+| m111-dobrosovestnyj | 225 | -0.15 | +0.67 | 0.36 | 18% |
+| b095-vsenoshchnaya | 257 | -0.15 | -1.16 | 2.21 | 101% |
+| m063-gnil | 255 | -0.14 | -0.17 | 0.63 | 33% |
+| m043-golod-ognya | 207 | -0.14 | -0.01 | 0.90 | 46% |
+| b017-poslednij-rubezh | 253 | -0.14 | +0.15 | 0.48 | 24% |
+| b143-lestnica | 250 | -0.13 | -0.05 | 0.52 | 27% |
+| b042-obet-bednosti | 246 | -0.13 | +0.03 | 0.78 | 41% |
+| b140-litaniya-strazhi | 238 | -0.13 | +0.16 | 0.74 | 36% |
+| m054-pepel-na-vetru | 198 | -0.13 | -0.94 | 1.48 | 74% |
+| b065-zaslon-dlya-dvoih | 254 | -0.12 | -1.04 | 1.55 | 76% |
+| b022-zavershayushchij-udar | 237 | -0.12 | +0.15 | 1.54 | 74% |
+| b052-svet-nadezhdy | 248 | -0.12 | -0.35 | 0.51 | 26% |
+| b129-plata-za-zaslon | 232 | -0.12 | -0.15 | 0.80 | 41% |
+| b015-tyazhelyj-dospeh | 243 | -0.11 | -0.10 | 0.38 | 18% |
+| m064-osinyj-roj | 232 | -0.10 | -0.12 | 1.16 | 55% |
+| b131-snyatie-v-veru | 253 | -0.10 | +0.19 | 0.13 | 6% |
+| b137-zaslon-iz-kolody | 231 | -0.10 | -0.03 | 0.88 | 44% |
+| b049-vera-v-brata | 229 | -0.10 | -0.30 | 0.54 | 28% |
+| b060-zhertvennik | 230 | -0.10 | -0.49 | 0.61 | 32% |
+| b039-strazh-obeta | 257 | -0.09 | +0.43 | 0.37 | 19% |
+| b048-bdenie | 248 | -0.09 | +0.37 | 0.38 | 20% |
+| b082-pamyat-zaslona | 251 | -0.09 | -0.37 | 1.47 | 75% |
+| b139-zastava | 255 | -0.09 | +1.02 | 0.43 | 22% |
+| b092-raskolotyj-zaslon | 249 | -0.09 | +0.31 | 0.26 | 13% |
+| b136-molitva-za-brata | 218 | -0.08 | -0.11 | 1.98 | 97% |
+| m125-dolzhnik-pod-zashchitoj | 219 | -0.08 | +0.88 | 0.14 | 7% |
+| b056-znamenie | 246 | -0.08 | -0.40 | 0.64 | 32% |
+| b035-rovno-tri | 249 | -0.08 | -0.02 | 1.31 | 66% |
+| m112-lunnyj-kredit | 276 | -0.07 | +0.04 | 0.86 | 44% |
+| m039-zhadnye-duhi | 254 | -0.07 | -0.51 | 1.87 | 86% |
+| b142-shchit-iz-molitvy | 274 | -0.07 | +0.06 | 1.83 | 89% |
+| b081-znamya-nad-golovoj | 239 | -0.07 | -0.50 | 1.79 | 87% |
+| b031-chudo-prozreniya | 240 | -0.07 | +0.44 | 0.09 | 4% |
+| b084-obmen | 242 | -0.07 | +0.03 | 0.62 | 32% |
+| m041-prah-k-prahu | 252 | -0.06 | +0.82 | 1.09 | 51% |
+| m120-mana-v-peple | 217 | -0.06 | -0.39 | 1.21 | 61% |
+| b090-poslednij-zaslon | 265 | -0.06 | +0.39 | 0.53 | 26% |
+| b132-chudo-vozmezdiya | 245 | -0.06 | +0.58 | 1.39 | 66% |
+| b071-zaslon-bronya | 224 | -0.06 | +0.06 | 1.15 | 58% |
+| b046-chudo-suda | 225 | -0.06 | +0.20 | 1.20 | 62% |
+| b012-koster-dlya-eresi | 212 | -0.05 | -0.13 | 0.48 | 23% |
+| b075-shchit-pod-zaslonom | 246 | -0.05 | +0.06 | 0.55 | 27% |
+| b114-svyatye-moshchi | 267 | -0.05 | +0.07 | 0.75 | 36% |
+| b102-vozvrashchenie | 249 | -0.05 | +0.46 | 1.82 | 64% |
+| m025-poslednij-dovod | 243 | -0.05 | -0.47 | 0.92 | 46% |
+| b122-molitva-otvet | 244 | -0.05 | -0.35 | 1.81 | 89% |
+| b033-smirenie | 223 | -0.05 | +0.20 | 1.41 | 72% |
+| b019-karayushchij-vypad | 254 | -0.05 | +0.13 | 1.60 | 81% |
+| b066-stojkij-zaslon | 235 | -0.04 | +0.08 | 1.11 | 56% |
+| b078-zaslon-naperyod | 260 | -0.04 | -0.23 | 1.55 | 77% |
+| m057-koster-na-dvoih | 241 | -0.04 | -0.09 | 0.92 | 46% |
+| m138-perelozhit-dolg | 232 | -0.04 | -0.36 | 0.47 | 24% |
+| m127-shvyrnut-v-ogon | 254 | -0.04 | -0.04 | 0.32 | 16% |
+| m045-shchedraya-zhertva | 222 | -0.04 | -0.04 | 1.19 | 59% |
+| b023-pervyj-natisk | 224 | -0.04 | -0.33 | 1.37 | 65% |
+| b130-vera-na-shchite | 246 | -0.04 | -0.01 | 0.71 | 34% |
+| m102-ryvok | 257 | -0.03 | -0.39 | 0.93 | 75% |
+| b054-zapal | 240 | -0.03 | +0.14 | 0.34 | 17% |
+| m075-chuzhoj-obereg | 244 | -0.03 | +0.36 | 0.43 | 22% |
+| b133-obryad-dvoih | 211 | -0.03 | -0.33 | 0.66 | 31% |
+| b125-otpushchenie | 267 | -0.03 | +0.19 | 0.26 | 12% |
+| b097-kara-nebesnaya | 213 | -0.03 | -0.24 | 2.15 | 95% |
+| b096-znamenie-svyshe | 233 | -0.03 | -0.48 | 1.94 | 96% |
+| b005-smena-znamen | 235 | -0.03 | +0.15 | 0.27 | 14% |
+| b068-primanka | 232 | -0.03 | -0.51 | 0.98 | 47% |
+| b072-snyat-zaslon | 232 | -0.02 | +0.47 | 0.19 | 9% |
+| b144-dar-svyshe | 218 | -0.02 | -0.24 | 1.89 | 88% |
+| b086-zaslon-i-mech | 220 | -0.02 | -0.11 | 1.57 | 79% |
+| m126-rost-procentov | 242 | -0.02 | -0.13 | 1.92 | 91% |
+| b073-sorvat-zaslon | 247 | -0.02 | +0.10 | 0.65 | 33% |
+| b119-molitva-v-stroyu | 219 | -0.02 | -0.51 | 2.11 | 96% |
+| m040-slepoe-podnoshenie | 218 | -0.02 | +0.25 | 1.72 | 72% |
+| b111-predvestie | 244 | -0.02 | -0.26 | 2.68 | 119% |
+| b057-posvyashchenie | 258 | -0.01 | -0.17 | 0.74 | 38% |
+| m099-dosrochno | 258 | -0.01 | +0.32 | 0.42 | 21% |
+| b115-bdenie-u-altarya | 252 | -0.01 | -0.04 | 0.55 | 27% |
+| m096-duh-hranitel | 234 | -0.01 | +0.98 | 1.05 | 89% |
+| m101-otlozhit | 249 | -0.01 | -0.74 | 2.04 | 96% |
+| b006-rassvet-i-sumerki | 279 | -0.01 | -0.41 | 1.12 | 58% |
+| b058-relikvarij | 234 | -0.01 | +0.40 | 0.09 | 4% |
+| m074-otvetnyj-sglaz | 251 | -0.01 | +0.05 | 1.96 | 96% |
+| b045-iskushenie | 235 | -0.00 | +0.08 | 0.23 | 11% |
+| b067-perehodyashchij-zaslon | 265 | +0.00 | -0.46 | 1.14 | 55% |
+| m069-uyazvimost | 253 | +0.00 | -0.04 | 0.60 | 30% |
+| m131-goryashchaya-metka | 238 | +0.01 | -0.35 | 0.35 | 17% |
+| b074-perehvat | 239 | +0.01 | +0.24 | 0.45 | 22% |
+| b089-zaslon-pod-blagosloveniem | 274 | +0.01 | +0.01 | 1.45 | 67% |
+| b085-polnyj-zaslon | 220 | +0.01 | +1.26 | 0.53 | 26% |
+| b087-zaslon-na-rassvete | 215 | +0.01 | -0.92 | 1.41 | 70% |
+| m036-gadanie-peplom | 237 | +0.02 | -0.18 | 2.85 | 101% |
+| b100-psalom | 258 | +0.02 | +0.26 | 1.16 | 60% |
+| b077-svyataya-bronya | 238 | +0.03 | -0.30 | 0.78 | 38% |
+| b147-svyatoe-kope | 241 | +0.03 | +0.28 | 0.93 | 46% |
+| b076-udar-pod-zaslonom | 231 | +0.03 | +0.26 | 1.45 | 73% |
+| b069-otvetnyj-zaslon | 214 | +0.03 | +0.22 | 1.22 | 59% |
+| m076-nebo-derzhit | 242 | +0.04 | +0.33 | 0.23 | 11% |
+| b126-molitva-pod-udarom | 255 | +0.04 | -0.43 | 1.98 | 91% |
+| m140-procenty | 269 | +0.04 | +0.26 | 0.21 | 10% |
+| b055-stojkost | 218 | +0.05 | -0.64 | 0.83 | 41% |
+| b063-krepkij-zaslon | 240 | +0.05 | +0.05 | 0.76 | 39% |
+| b101-otlozhennyj-psalom | 267 | +0.05 | +0.15 | 1.42 | 57% |
+| b026-chasha-na-dvoih | 250 | +0.05 | +0.39 | 1.42 | 65% |
+| m080-zapertyj-shchit | 238 | +0.06 | +0.07 | 0.46 | 22% |
+| b080-opornyj-zaslon | 222 | +0.06 | +0.31 | 0.50 | 25% |
+| m029-dvojnaya-zhertva | 241 | +0.06 | +0.15 | 1.73 | 75% |
+| m021-plechom-k-plechu | 227 | +0.06 | +0.54 | 0.58 | 29% |
+| b146-chudo-v-kolode | 240 | +0.06 | +0.44 | 0.12 | 6% |
+| m122-karty-vzajmy | 220 | +0.06 | -0.01 | 2.07 | 92% |
+| b018-pravednyj-gnev | 246 | +0.07 | +0.33 | 1.36 | 67% |
+| b134-zaslon-pod-chudo | 234 | +0.07 | +0.55 | 0.49 | 24% |
+| b107-molitva-iz-glubiny | 272 | +0.07 | +0.32 | 1.82 | 87% |
+| b141-znamya-na-kolode | 235 | +0.07 | +0.32 | 2.02 | 78% |
+| m005-povorot-neba | 256 | +0.07 | -0.44 | 1.98 | 92% |
+| b030-chudo-zastupnichestva | 240 | +0.08 | -0.80 | 0.73 | 36% |
+| m106-raspiska | 246 | +0.08 | -0.34 | 0.91 | 45% |
+| b116-slovo-nastavnika | 224 | +0.08 | +0.16 | 2.21 | 95% |
+| b047-polnota | 230 | +0.08 | +0.05 | 1.23 | 61% |
+| b025-otmshchenie | 215 | +0.08 | +0.56 | 1.31 | 63% |
+| m010-gadanie-na-uglyah | 238 | +0.08 | -0.32 | 2.08 | 100% |
+| m117-zajm-s-procentami | 228 | +0.08 | +0.20 | 0.32 | 15% |
+| m105-dolgovaya-yama | 239 | +0.09 | +0.06 | 0.66 | 35% |
+| m113-smena-neba | 250 | +0.09 | +0.03 | 0.66 | 34% |
+| b064-zaslon-na-sebya | 233 | +0.09 | -0.78 | 1.21 | 58% |
+| b088-tyazhelyj-zaslon | 260 | +0.09 | +0.16 | 0.69 | 33% |
+| m119-zajm-na-dvoih | 235 | +0.09 | +0.06 | 0.60 | 28% |
+| b105-perebor-chetok | 220 | +0.10 | +0.47 | 1.81 | 87% |
+| b110-podgotovka | 244 | +0.10 | +0.20 | 0.50 | 25% |
+| b113-kayushchijsya | 244 | +0.10 | +0.13 | 1.88 | 87% |
+| m115-zalog | 222 | +0.10 | -0.18 | 0.25 | 12% |
+| b124-horugv | 232 | +0.10 | -0.13 | 2.21 | 99% |
+| m144-topka | 253 | +0.10 | +0.29 | 0.19 | 10% |
+| b118-horal | 252 | +0.11 | +0.04 | 2.15 | 97% |
+| b016-udar-shchitom | 250 | +0.11 | -0.79 | 1.72 | 81% |
+| m048-zaslon-iz-pepla | 245 | +0.11 | +0.70 | 0.28 | 13% |
+| m092-sglaz-ot-boli | 264 | +0.12 | +0.13 | 0.24 | 12% |
+| b099-chetki | 246 | +0.12 | +0.07 | 1.77 | 83% |
+| m110-zajm-dlya-druga | 239 | +0.12 | -0.28 | 0.91 | 42% |
+| b021-vyzov | 265 | +0.12 | +0.07 | 0.58 | 28% |
+| m107-kredit-doveriya | 212 | +0.12 | -0.36 | 0.69 | 34% |
+| m116-poslednij-zajm | 245 | +0.12 | -0.16 | 0.47 | 24% |
+| m132-zhertva-za-dvoih | 259 | +0.12 | +0.10 | 0.87 | 45% |
+| b070-zaslon-vest | 274 | +0.12 | -0.31 | 1.31 | 62% |
+| b034-pepel-posle-chuda | 237 | +0.12 | -0.00 | 0.30 | 15% |
+| b138-kolokol-trevogi | 238 | +0.13 | +0.41 | 0.72 | 34% |
+| m148-avans | 270 | +0.13 | +0.20 | 0.19 | 9% |
+| m139-sglaz-skidka | 214 | +0.13 | +0.18 | 0.43 | 20% |
+| m060-pererozhdenie | 250 | +0.14 | +0.86 | 0.70 | 34% |
+| m149-sgorevshaya-raspiska | 254 | +0.14 | +0.24 | 0.43 | 20% |
+| b127-chudo-stojkosti | 223 | +0.14 | -0.78 | 1.27 | 60% |
+| m015-sorvat-pokrov | 256 | +0.14 | +0.21 | 0.55 | 27% |
+| m073-otlozhennyj-sglaz | 272 | +0.14 | +0.28 | 0.24 | 12% |
+| m059-golod-plameni | 246 | +0.14 | +0.18 | 0.40 | 19% |
+| m123-chuzhoj-udar-v-uplatu | 253 | +0.15 | -0.20 | 0.31 | 15% |
+| b009-ispytanie | 261 | +0.15 | +0.19 | 1.05 | 49% |
+| m146-zheton-pod-raspisku | 231 | +0.15 | +0.50 | 1.90 | 90% |
+| m118-zaklad-neba | 232 | +0.15 | -0.11 | 0.53 | 25% |
+| b027-perekrestok | 273 | +0.15 | -0.65 | 1.66 | 78% |
+| b003-dvuruchnyj-zamah | 211 | +0.16 | +0.25 | 0.88 | 41% |
+| b128-zaslon-very | 251 | +0.16 | +0.00 | 0.90 | 43% |
+| m047-vykup | 252 | +0.16 | +0.22 | 0.22 | 11% |
+| b053-chudo-otrazheniya | 229 | +0.16 | -0.34 | 0.51 | 25% |
+| m050-podmenysh | 251 | +0.16 | +0.01 | 0.90 | 41% |
+| m129-sglaz-v-zhertvu | 243 | +0.16 | +0.35 | 0.56 | 29% |
+| m032-vozvrashchennyj | 266 | +0.17 | -0.08 | 0.76 | 36% |
+| m079-sglaz-iz-ruk-soyuznika | 223 | +0.18 | +0.06 | 0.43 | 21% |
+| m030-golodnyj-duh | 255 | +0.18 | -0.62 | 0.40 | 20% |
+| m114-vklad | 219 | +0.18 | -0.20 | 1.89 | 89% |
+| b104-otkrovenie | 245 | +0.18 | +0.86 | 0.86 | 41% |
+| b037-chet-i-nechet | 247 | +0.19 | -0.01 | 0.84 | 39% |
+| m090-porcha-golod | 233 | +0.19 | +0.03 | 1.04 | 49% |
+| m100-skidka-duhov | 240 | +0.19 | +0.12 | 0.42 | 20% |
+| m087-zloradstvo | 233 | +0.19 | +0.96 | 0.48 | 24% |
+| m055-dym-predkov | 255 | +0.19 | +0.04 | 0.49 | 22% |
+| m034-pepel-pomnit | 238 | +0.19 | -0.31 | 0.40 | 19% |
+| b098-prozrenie | 255 | +0.20 | +0.28 | 0.97 | 49% |
+| m082-porcha-zaslon | 232 | +0.20 | +0.47 | 0.84 | 42% |
+| m147-otkup | 235 | +0.20 | +0.26 | 0.22 | 10% |
+| m081-dvojnaya-dolya | 261 | +0.21 | -0.25 | 0.38 | 18% |
+| m053-teplyj-pepel | 212 | +0.21 | +1.14 | 0.19 | 9% |
+| b123-trojnaya-molitva | 231 | +0.21 | +0.42 | 0.40 | 19% |
+| b103-kolokol | 242 | +0.21 | -0.20 | 2.18 | 101% |
+| m058-pustoj-altar | 242 | +0.21 | +0.05 | 0.44 | 21% |
+| m023-gri-gri | 237 | +0.22 | +0.72 | 0.51 | 24% |
+| b112-posoh-palomnika | 247 | +0.23 | +0.23 | 0.55 | 27% |
+| m017-golos-predka | 264 | +0.23 | +0.01 | 0.22 | 11% |
+| b011-nastavlenie | 224 | +0.23 | +0.26 | 0.71 | 34% |
+| m136-prostit-dolg | 248 | +0.24 | +0.25 | 0.27 | 13% |
+| m124-va-bank | 246 | +0.24 | +0.12 | 2.02 | 94% |
+| b108-tyazhkaya-molitva | 226 | +0.24 | +0.34 | 2.25 | 95% |
+| b044-voznesenie | 261 | +0.24 | +0.08 | 0.44 | 21% |
+| m143-pereplavka | 233 | +0.24 | +0.47 | 0.41 | 19% |
+| m121-zhadnost | 245 | +0.24 | +0.11 | 0.10 | 5% |
+| m031-ten-iz-pepla | 226 | +0.24 | +0.16 | 0.97 | 46% |
+| b121-obet-molchaniya | 219 | +0.25 | +0.30 | 2.18 | 88% |
+| b120-otkrytaya-molitva | 244 | +0.25 | +0.28 | 0.45 | 21% |
+| b117-nebesnyj-poryadok | 230 | +0.25 | +0.28 | 0.60 | 30% |
+| m104-poruchitel | 245 | +0.26 | +0.15 | 0.31 | 15% |
+| m085-rasplata | 234 | +0.26 | +0.23 | 0.64 | 30% |
+| m052-dar-soyuzniku | 250 | +0.26 | +0.28 | 0.45 | 23% |
+| m070-dva-proklyatiya | 221 | +0.26 | +0.01 | 0.07 | 3% |
+| b150-vera-v-kolodu | 253 | +0.27 | +0.24 | 0.87 | 42% |
+| b059-chudo-shchedrosti | 251 | +0.28 | +0.07 | 0.08 | 4% |
+| b109-pustaya-molitva | 243 | +0.29 | +0.31 | 1.84 | 86% |
+| m027-ochag-greet-oboih | 232 | +0.29 | -0.07 | 1.80 | 85% |
+| m103-perezanyat | 277 | +0.30 | +0.06 | 0.20 | 10% |
+| m062-snyat-sglaz | 253 | +0.31 | +0.58 | 0.40 | 19% |
+| m145-vyplata-ognem | 246 | +0.31 | +0.21 | 0.50 | 22% |
+| b020-blagaya-vest | 247 | +0.33 | +0.19 | 0.62 | 30% |
+| m020-vspomnit | 258 | +0.33 | +0.48 | 0.22 | 10% |
+| m095-udvoit-stavku | 250 | +0.34 | +0.72 | 0.21 | 10% |
+| m133-dolgij-sglaz | 250 | +0.34 | +0.10 | 0.19 | 9% |
+| b148-post-i-molitva | 267 | +0.34 | +0.43 | 0.95 | 44% |
+| m033-vse-v-ogon | 240 | +0.34 | +0.28 | 0.50 | 19% |
+| m150-zajm-pod-pepel | 260 | +0.34 | +0.43 | 0.20 | 9% |
+| m018-pripryatat | 226 | +0.34 | +0.59 | 2.03 | 94% |
+| m037-poslednij-vzdoh | 230 | +0.39 | +0.28 | 0.29 | 14% |
+| m097-vechnyj-obereg | 263 | +0.42 | +1.61 | 1.17 | 96% |

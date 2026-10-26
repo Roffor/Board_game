@@ -1,7 +1,7 @@
 id: b053-chudo-otrazheniya
 imya: Чудо отражения
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: защита
 nomer_idei: 53
@@ -9,17 +9,13 @@ chisla:
   za: 1
 tekst: 'Чудо: в этом раунде каждый удар врага слабее на {za} за каждую сожжённую веру.'
 effekt:
-- chudo: f
-- oslab_vraga: za * f
+- {chudo: f}
+- {oslab_vraga: za * f}
 metki:
 - chudo
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 4
+bot: {poryadok: 4, cennost: 5}
+granicy: {za: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: «Слабость» (враг бьёт слабее) убрать совсем — в запас'

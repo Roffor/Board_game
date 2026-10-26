@@ -1,0 +1,27 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m245-pepelnyj-zajm
+imya: Пепельный займ
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: атака
+nomer_idei: 245
+cena: 0
+chisla:
+  uron: 2
+  dolg_n: 1
+tekst: '{cena:мана}. {dolg_n:мана} в долг: сожги карту из руки и {uron:урон}.'
+effekt:
+- {dolg: dolg_n}
+- {sozhgi: {otkuda: ruka, n: 1, v: s}}
+- {uron: uron}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 3: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 24: uron 3 → 2'

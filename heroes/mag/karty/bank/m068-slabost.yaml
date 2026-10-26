@@ -1,7 +1,7 @@
 id: m068-slabost
 imya: Слабость
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: защита
 nomer_idei: 68
@@ -10,18 +10,12 @@ chisla:
   oslab: 2
 tekst: '{cena:мана}. Наложи Порчу. В этом раунде враг бьёт на {oslab} слабее.'
 effekt:
-- porcha: 1
-- oslab_vraga: oslab
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  oslab:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {porcha: 1}
+- {oslab_vraga: oslab}
+bot: {poryadok: 3, cennost: 5}
+granicy: {oslab: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-26 Никита: «Слабость» (враг бьёт слабее) убрать совсем — в запас'

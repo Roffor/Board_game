@@ -1,17 +1,15 @@
 id: b061-zaslon
 imya: Заслон
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: З
 vid: защита
 nomer_idei: 61
 tekst: Заслон союзнику.
 effekt:
-- zaslon:
-    komu: soyuznik
-bot:
-  poryadok: 4
-  cennost: 5
+- {zaslon: {komu: soyuznik}}
+bot: {poryadok: 4, cennost: 5}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'

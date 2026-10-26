@@ -1,27 +1,27 @@
 id: m021-plechom-k-plechu
 imya: Плечом к плечу
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: ''
 vid: защита
 nomer_idei: 21
-cena: 0
+cena: 1
 chisla:
-  shchit: 2
+  shchit: 1
 tekst: '{cena:мана}. До конца раунда: когда союзник получает щит, ты получаешь {shchit:щит}.'
 effekt:
-- do_konca_raunda:
-    plechom: shchit
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {plechom: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 3 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 0 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

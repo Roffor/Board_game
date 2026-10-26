@@ -10,21 +10,11 @@ chisla:
   n: 3
 tekst: '{cena:мана}. Посмотри {n} верхние карты, одну возьми, остальные сожги.'
 effekt:
-- smotri_verh:
-    n: n
-    vzyat: 1
-    ostalnye: szhech
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  n:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {smotri_verh: {n: n, vzyat: 1, ostalnye: szhech}}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {n: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: cena 1 → 0'

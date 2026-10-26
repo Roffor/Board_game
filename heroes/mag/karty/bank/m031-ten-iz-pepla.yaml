@@ -5,18 +5,13 @@ nabor: bank
 bild: П
 vid: связка
 nomer_idei: 31
-cena: 1
+cena: 0
 tekst: '{cena:мана}. Сыграй лучшую сожжённую карту бесплатно.'
 effekt:
-- sygraj_szhzhennuyu: 1
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  cena:
-  - 0
-  - 3
+- {sygraj_szhzhennuyu: 1}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: cena 1 → 0'

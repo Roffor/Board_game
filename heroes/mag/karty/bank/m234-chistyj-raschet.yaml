@@ -1,0 +1,33 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m234-chistyj-raschet
+imya: Чистый расчёт
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 234
+cena: 1
+chisla:
+  uron: 2
+  shchit: 1
+tekst: '{cena:мана}. {uron:урон}. Если у тебя нет долга, ещё {shchit:щит} себе.'
+effekt:
+- {uron: uron}
+- esli: dolg == 0
+  to:
+  - {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], shchit: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 31: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 50: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 51: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 58: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 62: uron 3 → 2'

@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m210-toplivo-ochaga
+imya: Топливо очага
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 210
+cena: 0
+chisla:
+  mana: 1
+  dobor: 1
+tekst: '{cena:мана}. Сожги карту из руки: +{mana:мана}, возьми {dobor:карту}.'
+effekt:
+- {sozhgi: {otkuda: ruka, n: 1, v: s}}
+- esli: s
+  to:
+  - {mana: mana}
+  - {dobor: dobor}
+bot: {poryadok: 3, cennost: 5}
+granicy: {mana: [0, 6], dobor: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'

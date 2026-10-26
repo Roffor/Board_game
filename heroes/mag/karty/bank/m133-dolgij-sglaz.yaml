@@ -1,26 +1,20 @@
 id: m133-dolgij-sglaz
 imya: Долгий сглаз
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П–Р
 vid: связка
 nomer_idei: 133
 cena: 0
 tekst: '{cena:мана}. Потрать жетон Подношения: Порча держится до конца следующего раунда.'
 effekt:
-- potrat_zheton:
-    n: 1
-    v: k
+- {potrat_zheton: {n: 1, v: k}}
 - esli: k
   to:
-  - porcha_derzhitsya: 2
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+  - {porcha_derzhitsya: 2}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

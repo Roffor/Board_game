@@ -1,7 +1,7 @@
 id: b115-bdenie-u-altarya
 imya: Бдение у алтаря
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М
 vid: защита
 nomer_idei: 115
@@ -9,13 +9,10 @@ tekst: Посмотри верхнюю карту. Если это карта щ
 effekt:
 - esli: verh_zashchita
   to:
-  - molitva:
-      otkryt: 1
-  - avangard: ja
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
+  - {molitva: {otkryt: 1}}
+  - {avangard: ja}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -8,7 +8,7 @@ ROOT = os.path.join(os.path.dirname(__file__), '..', '..', '..', '..')  # кор
 
 
 def fight_with(g, enemy, seed=1):
-    decks = {h: g.start_deck(h) for h in g.heroes}
+    decks = {h: g.start_deck(h, zapasnoj=True) for h in g.heroes}
     loc = None
     f = Fight(g, decks, enemy, loc, seed, Choices())
     f.start_round()
@@ -35,7 +35,7 @@ def run():
                         n += 1
                         try:
                             ok = f.play(d.hero, c, vi, off)
-                            if not ok:
+                            if not ok and not d.cond_expr:   # карта с условием розыгрыша вправе не сыграться
                                 errs.append(f'{cid} [{vi}] не сыгралась')
                             if not planning:
                                 f.finish_round()

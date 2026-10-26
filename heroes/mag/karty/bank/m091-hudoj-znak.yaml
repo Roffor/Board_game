@@ -7,23 +7,22 @@ vid: атака
 nomer_idei: 91
 cena: 0
 chisla:
-  uron: 4
+  uron: 1
 tekst: '{cena:мана}. Наложи Порчу. Если в руке нет других карт, ещё {uron:урон}.'
 effekt:
-- porcha: 1
+- {porcha: 1}
 - esli: ruka == 0
   to:
-  - uron: uron
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 8
-  cena:
-  - 0
-  - 3
+  - {uron: uron}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 8], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: uron 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: uron 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron 2 → 1'

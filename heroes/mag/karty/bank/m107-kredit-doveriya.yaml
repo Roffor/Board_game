@@ -1,11 +1,11 @@
 id: m107-kredit-doveriya
 imya: Кредит доверия
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Д
 vid: связка
 nomer_idei: 107
-cena: 0
+cena: 1
 chisla:
   mana: 1
   dobor: 1
@@ -13,25 +13,14 @@ tekst: '{cena:мана}. Если долга нет: +{mana:мана} в дол�
 effekt:
 - esli: dolg == 0
   to:
-  - mana_v_dolg: mana
-  - dobor: dobor
+  - {mana_v_dolg: mana}
+  - {dobor: dobor}
   inache:
-  - dobor: 2
-bot:
-  poryadok: 3
-  cennost: 5
-  mana_v_plane: 1
-  pereplan: true
-granicy:
-  mana:
-  - 0
-  - 4
-  dobor:
-  - 0
-  - 4
-  cena:
-  - 0
-  - 3
+  - {dobor: 2}
+bot: {poryadok: 3, cennost: 5, mana_v_plane: 1, pereplan: true}
+granicy: {mana: [0, 4], dobor: [0, 4], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 0 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

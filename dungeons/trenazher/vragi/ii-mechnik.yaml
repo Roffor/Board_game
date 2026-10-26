@@ -1,0 +1,18 @@
+# Тренажёр (2026-10-26, Никита: «Не дроби на два удара. Бей либо пару, либо конкретного игрока по условию»). Одна атака в намерении; рядовой ≤8, элита ≤13, босс ≤16, в одну цель ≤10.
+id: mechnik
+imya: Мечник
+yarus: II
+zdorove: 20
+svojstva: {bronya: 1}
+rezhim: cikl
+namereniya:
+- tip: удар
+  dejstviya:
+  - {shchit: 2}
+  - {ataka: 8, cel: menshe_shchita}
+- tip: удар
+  dejstviya:
+  - {ataka: 8, cel: samyj_ranenyj}
+- tip: удар
+  dejstviya:
+  - {ataka: 4, cel: vse}

@@ -1,22 +1,17 @@
 id: m123-chuzhoj-udar-v-uplatu
 imya: Чужой удар в уплату
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Д
 vid: связка
 nomer_idei: 123
 cena: 0
 tekst: '{cena:мана}. До конца раунда каждое попадание союзника по врагу гасит один жетон долга.'
 effekt:
-- do_konca_raunda:
-    udar_soyuznika_platit: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {udar_soyuznika_platit: 1}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

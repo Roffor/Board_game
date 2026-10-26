@@ -6,14 +6,13 @@ bild: З
 vid: защита
 nomer_idei: 78
 chisla:
-  shchit: 3
+  shchit: 1
   ocenka: 4
 tekst: 'Выбери: Заслон союзнику сейчас или после хода врага Заслон обоим и {shchit:щит} союзнику.'
 varianty:
 - nazvanie: сейчас
   effekt:
-  - zaslon:
-      komu: soyuznik
+  - {zaslon: {komu: soyuznik}}
 - nazvanie: после
   effekt:
   - obet:
@@ -21,21 +20,38 @@ varianty:
       vid_ocenki: shield
       ocenka_bota: ocenka
       effekt:
-      - zaslon:
-          komu: oba
-      - shchit:
-          komu: soyuznik
-          n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
-  ocenka:
-  - 0
-  - 10
+      - {zaslon: {komu: oba}}
+      - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6], ocenka: [0, 10]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 24: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 52: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 53: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: shchit 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 40: shchit 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 46: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 47: shchit 2 → 1'

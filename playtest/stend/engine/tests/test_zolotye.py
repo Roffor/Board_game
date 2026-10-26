@@ -50,7 +50,7 @@ def play(g, ei, li, seed):
         f.finish_round()
     r = f.result()
     return dict(won=r['won'], rounds=r['rounds'], end_hp=r['end_hp'], enemy=r['enemy'], ehp=f.E.hp,
-                stats={k: v for k, v in sorted(r['stats'].items()) if k != 'karty'})
+                stats={k: v for k, v in sorted(r['stats'].items()) if k not in ('karty', 'v_ruke', 'shchit_mag', 'shchit_zhrec', 'vrag_bil')})   # диагностика стенда 26.10 — не правила
 
 
 CASES = [(ei, ei * 3 + 1, 1000 + ei * 17 + j) for ei in range(13) for j in range(3)]

@@ -1,0 +1,34 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m222-vorozhba
+imya: Ворожба
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 222
+cena: 1
+chisla:
+  uron: 1
+  shchit: 1
+tekst: '{cena:мана}. Выбери: Порча и {uron:урон} или {shchit:щит} союзнику.'
+varianty:
+- nazvanie: порча
+  effekt:
+  - {porcha: 1}
+  - {uron: uron}
+- nazvanie: щит
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], shchit: [0, 7], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 3: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 31: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 36: shchit 2 → 1'

@@ -1,7 +1,7 @@
 id: m010-gadanie-na-uglyah
 imya: Гадание на углях
 geroj: mag
-nabor: bank
+nabor: start
 bild: ''
 vid: связка
 nomer_idei: 10
@@ -10,21 +10,12 @@ chisla:
   n: 3
 tekst: '{cena:мана}. Посмотри {n} верхние карты, разложи в любом порядке, одну возьми.'
 effekt:
-- smotri_verh:
-    n: n
-    vzyat: 1
-    ostalnye: verh
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  n:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {smotri_verh: {n: n, vzyat: 1, ostalnye: verh}}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {n: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: cena 1 → 0'
+- '2026-10-26 Claude: подгонка, после круга 19: в старт вместо Сглаза'

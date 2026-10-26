@@ -1,0 +1,5 @@
+srok_chasov: 1
+poslednij_krug: 1
+bez_pravok: true
+seed0: 99
+boev: {I: 1000, II: 3000, EL: 3000, BOSS: 3000}

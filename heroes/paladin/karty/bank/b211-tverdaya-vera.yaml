@@ -1,0 +1,40 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b211-tverdaya-vera
+imya: Твёрдая вера
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 211
+chisla:
+  shchit: 1
+  shchit_big: 1
+  vera: 1
+  porog: 3
+tekst: 'Вера {porog}+: {shchit_big:щит} себе. Иначе {shchit:щит} себе и +{vera:вера}.'
+effekt:
+- esli: vera >= porog
+  to:
+  - {shchit: {komu: ja, n: shchit_big}}
+  inache:
+  - {shchit: {komu: ja, n: shchit}}
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6], shchit_big: [0, 7], vera: [0, 6], porog: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 1 → 2'
+- '2026-10-26 Claude: shchit_big 4 → 3 (большой отложенный/доплатный щит подгонка не резала: рычаг брал первое число; Никита: «Это слишком много!»)'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: shchit_big 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit_big 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: shchit_big 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 36: shchit_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 37: shchit_big 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 40: shchit_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit_big 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 44: shchit_big 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 46: shchit_big 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 47: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 48: shchit_big 2 → 1'

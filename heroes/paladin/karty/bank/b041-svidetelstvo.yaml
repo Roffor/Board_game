@@ -1,7 +1,7 @@
 id: b041-svidetelstvo
 imya: Свидетельство
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: вера
 nomer_idei: 41
@@ -10,17 +10,10 @@ chisla:
   vera_big: 3
 tekst: +{vera:вера}. Если у союзника здоровья меньше, чем у тебя, +{vera_big:вера}.
 effekt:
-- vera: vera_big if zdorove_soyuznika < zdorove else vera
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 4
-  vera_big:
-  - 0
-  - 6
+- {vera: vera_big if zdorove_soyuznika < zdorove else vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 4], vera_big: [0, 6]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

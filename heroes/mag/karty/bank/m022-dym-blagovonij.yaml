@@ -7,25 +7,21 @@ vid: атака
 nomer_idei: 22
 cena: 1
 chisla:
-  uron: 4
+  uron: 6
 tekst: '{cena:мана}. Смени благословения. Если на враге Порча, {uron:урон}.'
 effekt:
-- smena_blagoslovenij: 1
+- {smena_blagoslovenij: 1}
 - esli: porcha > 0
   to:
-  - uron: uron
+  - {uron: uron}
 metki:
 - blag
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 8
-  cena:
-  - 0
-  - 3
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 8], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: uron 4 → 5'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: uron 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: uron 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 20: uron 5 → 6'

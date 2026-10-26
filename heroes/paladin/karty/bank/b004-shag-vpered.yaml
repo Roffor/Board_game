@@ -1,25 +1,35 @@
 id: b004-shag-vpered
 imya: Шаг вперёд
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 4
 chisla:
-  shchit: 4
+  shchit: 1
 tekst: Авангард. {shchit:щит} себе.
 effekt:
-- avangard: ja
-- shchit:
-    komu: ja
-    n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 8
+- {avangard: ja}
+- {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 8]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 19: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 21: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit 2 → 1'

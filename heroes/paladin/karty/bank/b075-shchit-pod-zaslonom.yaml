@@ -1,24 +1,20 @@
 id: b075-shchit-pod-zaslonom
 imya: Щит под заслоном
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: З
 vid: защита
 nomer_idei: 75
 chisla:
-  shchit: 3
+  shchit: 1
 tekst: '{shchit:щит} союзнику. Если на нём Заслон, вдвое.'
 effekt:
-- shchit:
-    komu: soyuznik
-    n: shchit * (2 if soyuznik_zaslon else 1)
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
+- {shchit: {komu: soyuznik, n: shchit * (2 if soyuznik_zaslon else 1)}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -1,39 +1,34 @@
 id: b056-znamenie
 imya: Знамение
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: вера
 nomer_idei: 56
 chisla:
   vera: 2
   vera_mal: 1
-  shchit: 2
+  shchit: 1
 tekst: 'Соларис: +{vera:вера}. Лунарис: +{vera_mal:вера} и {shchit:щит} союзнику.'
 effekt:
 - esli: solaris
   to:
-  - vera: vera
+  - {vera: vera}
   inache:
-  - vera: vera_mal
-  - shchit:
-      komu: soyuznik
-      n: shchit
+  - {vera: vera_mal}
+  - {shchit: {komu: soyuznik, n: shchit}}
 metki:
 - blag
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 5
-  vera_mal:
-  - 0
-  - 4
-  shchit:
-  - 0
-  - 5
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 5], vera_mal: [0, 4], shchit: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 3 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

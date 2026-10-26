@@ -3,6 +3,7 @@ syrye-dannye/
 
 # сырьё и чекпоинты стенда: тяжёлые, остаются на машине, где шёл прогон
 reports/progony/*/boi.jsonl
+reports/progony/*/boi-krug-*.jsonl
 reports/progony/*/*.tmp
 # локальные короткие прогоны
 reports/progony/lok-*/

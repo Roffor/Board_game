@@ -1,25 +1,19 @@
 id: m148-avans
 imya: Аванс
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П–Д
 vid: связка
 nomer_idei: 148
 cena: 0
 tekst: '{cena:мана}. Возьми лучшую сожжённую карту в руку, её цена становится долгом.'
 effekt:
-- verni:
-    n: 1
-- dolg: 1
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  cena:
-  - 0
-  - 3
+- {verni: {n: 1}}
+- {dolg: 1}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
 - 'упрощено для стенда: долг — 1 мана, а не цена именно этой карты'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

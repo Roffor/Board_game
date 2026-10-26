@@ -7,24 +7,19 @@ vid: атака
 nomer_idei: 66
 cena: 0
 chisla:
-  uron: 4
+  uron: 1
 tekst: '{cena:мана}. Наложи Порчу. Если Порча уже была, вместо этого {uron:урон}.'
 effekt:
 - esli: porcha > 0
   to:
-  - uron: uron
+  - {uron: uron}
   inache:
-  - porcha: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 8
-  cena:
-  - 0
-  - 3
+  - {porcha: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 8], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: uron 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: uron 2 → 1'

@@ -1,7 +1,7 @@
 id: m053-teplyj-pepel
 imya: Тёплый пепел
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П
 vid: защита
 nomer_idei: 53
@@ -10,18 +10,10 @@ chisla:
   shchit: 3
 tekst: '{cena:мана}. До конца раунда: каждая карта, которую сжигает союзник, даёт тебе {shchit:щит}.'
 effekt:
-- do_konca_raunda:
-    teplyj_pepel: shchit
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {teplyj_pepel: shchit}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -1,22 +1,24 @@
 id: b001-udar-mecha
 imya: Удар меча
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: атака
 nomer_idei: 1
 chisla:
-  uron: 3
+  uron: 2
 tekst: '{uron:урон}.'
 effekt:
-- uron: uron
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 6
+- {uron: uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 6]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  uron 1 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: uron 3 → 2'
+kopij: 2

@@ -104,8 +104,8 @@ class Fight:
         # Жрец
         self.vows = []; self.bless_riders = []; self.inspired = []
         self.bless_trig_rnd = 0; self.bless_trig_last = 0; self.bless_trig_fight = 0
-        self.kinds_rnd = set(); self.pray_rnd = 0; self.mir_rnd = 0; self.weak = 0; self.brand = 0
-        self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0; self.news = False
+        self.kinds_rnd = set(); self.pray_rnd = 0; self.mir_rnd = 0; self.weak = 0; self.brand = 0; self.atakoval = False
+        self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0; self.news = False; self.dm_rnd = False
         self.vigil = False; self.banner = False; self.banner_keep = 0; self.cover = False
         self._free = 0
         # Паладин (банк): благословения Лунарис/Соларис, Перехват, запреты, отложенные щиты, открытый верх колоды
@@ -332,7 +332,7 @@ class Fight:
                 n = mag2.shield_mod(self, hid, n)
             h.shield += n
             if n > 0:
-                h.shielded_rnd += 1
+                h.shielded_rnd += 1; self.st('shchit_' + hid, n)
             if self.nm:
                 mag2.after_shield(self, hid, n)
 
@@ -504,7 +504,11 @@ class Fight:
         P = self.H[self.P]
         n_open = (n_open or self.R['molitva_otkryt']) + self.pray_bonus; self.pray_bonus = 0
         lg = P.legend.get('dvojnaya_molitva'); base_play = n_play
+        if lg is not None and self.dm_rnd:
+            lg = None                    # Никита 2026-10-27: только первая Молитва в раунде
         if lg is not None:
+            if not self.planning:
+                self.dm_rnd = True
             d = int(lg.get('dop_kart', 1)); n_play += d; n_open += d
             if self.bl[self.P] == 'lun':
                 n_open += int(lg.get('lun_otkryt', 0))
@@ -655,6 +659,10 @@ class Fight:
             return {'type': 'защита', 'acts': [('shield', 10), ('atk', est // 2, 'single', 1)], 'text': '?'}
         return {'type': 'усиление', 'acts': [('buff', 2)], 'text': '?'}
 
+    def _nichya(self, c):
+        """Ничья по условию цели — враг бьёт по очереди (нечётный раунд — первого, чётный — второго), игроки не выбирают."""
+        return c[0] if len(c) == 1 else sorted(c)[self.rnd % len(c)]
+
     def targets(self, tgt, n):
         alive = self.alive_ids()
         if not alive:
@@ -677,6 +685,15 @@ class Fight:
         if tgt == 'unshielded':
             c = [k for k in alive if self.H[k].shield == 0] or alive
             return [self.choices.take_hit(self, c, n)]
+        if tgt == 'leastshield':          # у кого меньше щита (2026-10-26: цель по условию вместо броска)
+            m = min(self.H[k].shield for k in alive)
+            return [self._nichya([k for k in alive if self.H[k].shield == m])]
+        if tgt == 'weakest_t':            # самый раненый, ничья — по очереди (тренажёр 26.10; старый 'weakest' — для Катакомб)
+            m = min(self.H[k].hp for k in alive)
+            return [self._nichya([k for k in alive if self.H[k].hp == m])]
+        if tgt == 'healthiest':
+            m = max(self.H[k].hp for k in alive)
+            return [self._nichya([k for k in alive if self.H[k].hp == m])]
         return [alive[0]]
 
     def deal(self, k, n, src='удар'):
@@ -693,23 +710,31 @@ class Fight:
         horig = h; zm = {}; snyato = 0
         if h.blessed and n > 0:
             zm = h.zmod
+            shipy_n = self.R.get('zaslon_shipy', 0)
             if zm.get('polnyj'):
                 b = n
+            elif shipy_n:
+                b = 0                    # Никита 2026-10-26: Заслон — шипы, удар не ослабляет
             else:
                 b = (self.R['blagoslovenie_bolshoe'] if (k == self.M and self.bless_big) else self.bless_n) + zm.get('sila', 0)
             snyato = min(n, max(0, b)); n -= snyato
+            if shipy_n and not zm.get('polnyj') and self.E.hp > 0:
+                t = shipy_n + zm.get('sila', 0)
+                lgs = self.H[self.P].legend.get('shipy_zaslona')    # Никита 2026-10-27: легендарка усиливает шипы
+                if lgs:
+                    t += int(lgs.get('dop_shipy', 1)) + (int(lgs.get('sol_uron', 0)) if self.bl[self.P] == 'sol' else 0)
+                self.L(f'      Заслон (шипы) на {h.name}: враг получает {t}'); self._raw_hit(self.P, t); self.st('zaslon_shipy', t)
+                snyato = t               # «когда сработает» с числом snyato считает урон шипов
             shipy = self.H[self.P].legend.get('shipy_zaslona')
-            if not (zm.get('stojkij') or (shipy and self.bl[self.P] == 'lun')):
+            # Шипы под Лунарис держали Заслон весь бой; с 2026-10-26 (Никита) — только если у карты есть число lun_ne_snimaetsya
+            if not (zm.get('stojkij') or (shipy and shipy.get('lun_ne_snimaetsya') and self.bl[self.P] == 'lun')):
                 h.blessed = False; h.zmod = {}
-            self.L(f'      Заслон на {h.name}: удар слабее на {snyato}')
+            if not shipy_n:
+                self.L(f'      Заслон на {h.name}: удар слабее на {snyato}')
             if self.intercept and k != self.P and self.H[self.P].alive:     # Перехват: удар принимает Паладин
                 n = max(0, n - (self.intercept - 1)); k = self.P; h = self.H[k]
                 self.L(f'      Перехват: удар принимает {h.name}')
         a = min(h.shield, n); h.shield -= a; n -= a
-        if trig and a > 0 and self.H[self.P].legend.get('shipy_zaslona') and self.E.hp > 0:
-            lg = self.H[self.P].legend['shipy_zaslona']
-            t = a + (int(lg.get('sol_uron', 0)) if self.bl[self.P] == 'sol' else 0)
-            self.L(f'      Шипы Заслона: враг получает {t}'); self._raw_hit(self.P, t); self.st('shipy_uron', t)
         if n > 0:
             if not self.planning:
                 h.taken += min(n, h.hp)
@@ -747,10 +772,14 @@ class Fight:
             for act in intent['acts']:
                 k = act[0]
                 if k == 'atk':
-                    n = act[1] + e.buff + (e.traits.get('dark', 0) if self.dark else 0) - (1 if self.flash_weak else 0)
+                    self.atakoval = True
+                    # дотест 2026-10-26: «ярость» — с раунда yarost_raund враг бьёт на yarost сильнее (0 — выключено)
+                    yr = self.R.get('yarost', {}).get(e.tier, 0) if isinstance(self.R.get('yarost'), dict) else 0
+                    n = act[1] + e.buff + (yr if yr and self.rnd >= self.R.get('yarost_raund', 99) else 0) + (e.traits.get('dark', 0) if self.dark else 0) - (1 if self.flash_weak else 0)
                     n = max(0, n)
                     for _ in range(act[3]):
                         for tk in self.targets(act[2], n):
+                            self.st('vrag_bil', n)
                             self.deal(tk, n)
                     if self.nm:
                         mag2.enemy_attack(self, n)
@@ -967,7 +996,7 @@ class Fight:
     def start_round(self):
         """Начало раунда: намерение, добор, эффекты начала раунда. Дальше ходит игрок."""
         R = self.R; e = self.E; M, P = self.H[self.M], self.H[self.P]
-        self.rnd += 1; self.st('raundov')
+        self.rnd += 1; self.st('raundov'); self.atakoval = False
         if self.dark:
             self.st('raundov_v_temnote')
         e.intent = self.draw_intent() if e.deckmode else e.cycle[e.idx % len(e.cycle)]
@@ -995,7 +1024,7 @@ class Fight:
             h.disc_rnd = 0; h.burned_by_ally_rnd = 0; h.played = []; h.next_bonus = 0
         self.bless_trig_last = self.bless_trig_rnd
         self.bless_trig_rnd = 0; self.kinds_rnd = set(); self.pray_rnd = 0; self.mir_rnd = 0; self.weak = 0
-        self.brand = 0; self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0
+        self.brand = 0; self.martyr = 0; self.bless_big = False; self.pray_bonus = 0; self.mir_plus = 0; self.dm_rnd = False
         self.inspired = []; self.news = False; self.mmult = False; self.burned_rnd = 0
         self.bl_swapped = False; self.intercept = 0; self.no_dmg_cards = False; self.no_hand = False
         if self.rnd > R['predel_raundov']:
@@ -1119,6 +1148,9 @@ class Fight:
             if not (h.blessed and h.zmod.get('opora')):
                 h.shield = 0
             if h.blessed and h.zmod.get('stojkij'):
+                self.unzaslon(h.id)
+            # Никита 2026-10-26: Заслон одноразовый — враг атаковал в этом раунде, Заслон снимается; не атаковал — остаётся
+            elif h.blessed and self.atakoval and self.R.get('zaslon_do_ataki', 0):
                 self.unzaslon(h.id)
             h.vanguard = False
             back = [c for c in h.hand if any(c is x for x in self.opened)]

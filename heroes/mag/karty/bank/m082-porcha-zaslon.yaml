@@ -1,27 +1,22 @@
 id: m082-porcha-zaslon
 imya: Порча-заслон
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: защита
 nomer_idei: 82
-cena: 0
+cena: 1
 chisla:
   dop: 2
 tekst: '{cena:мана}. Пока на враге Порча, в этом раунде ты и союзник получаете на {dop} щита больше.'
 effekt:
-- do_konca_raunda:
-    porcha_shchit: dop
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  dop:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {porcha_shchit: dop}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {dop: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: cena 0 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -1,27 +1,26 @@
 id: m086-pepel-v-glaza
 imya: Пепел в глаза
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: связка
 nomer_idei: 86
-cena: 0
+cena: 2
 tekst: '{cena:мана}. Сожги карту из руки: наложи Порчу.'
 effekt:
-- sozhgi:
-    otkuda: ruka
-    n: 1
-    v: s
+- {sozhgi: {otkuda: ruka, n: 1, v: s}}
 - esli: s
   to:
-  - porcha: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+  - {porcha: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: cena 1 → 0'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: cena 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 40: cena 1 → 2'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

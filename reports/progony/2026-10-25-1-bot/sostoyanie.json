@@ -1,0 +1,37 @@
+{
+ "prohod": 2,
+ "istoriya": [
+  {
+   "prohod": 1,
+   "vesa": {
+    "ves_ubijstva": 12,
+    "ves_zaslona": 1.5,
+    "ves_very": 0.6,
+    "ves_ruki": 0.0,
+    "ves_sozhzhennoj": 0.6,
+    "ves_podnosheniya": 1.8,
+    "ves_dolga": 1.6,
+    "ocenka_molitvy": 4.0,
+    "ocenka_obeta": 0.9
+   },
+   "prinyato": []
+  },
+  {
+   "prohod": 2,
+   "vesa": {
+    "ves_ubijstva": 12,
+    "ves_zaslona": 1.5,
+    "ves_very": 0.6,
+    "ves_ruki": 0.0,
+    "ves_sozhzhennoj": 0.6,
+    "ves_podnosheniya": 1.8,
+    "ves_dolga": 1.6,
+    "ocenka_molitvy": 4.0,
+    "ocenka_obeta": 0.45
+   },
+   "prinyato": [
+    "ocenka_obeta: 0.9 → 0.45 (J 0.987)"
+   ]
+  }
+ ]
+}

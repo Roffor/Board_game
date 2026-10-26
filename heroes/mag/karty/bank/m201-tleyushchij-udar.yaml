@@ -1,0 +1,25 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m201-tleyushchij-udar
+imya: Тлеющий удар
+geroj: mag
+nabor: start
+bild: ''
+vid: атака
+nomer_idei: 201
+cena: 1
+chisla:
+  uron: 2
+  dop: 1
+tekst: '{cena:мана}. {uron:урон}. Если в этом раунде сожжена карта, ещё {dop:урон}.'
+effekt:
+- {uron: uron + (dop if szhzheno_v_raunde > 0 else 0)}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 46: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 61: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 62: uron 3 → 2'
+- '2026-10-27 Claude: решение Никиты 3А: в старт вместо карты щита'
+kopij: 1

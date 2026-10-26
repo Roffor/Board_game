@@ -1,0 +1,27 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m239-kredit-duhov
+imya: Кредит духов
+geroj: mag
+nabor: bank
+bild: Д
+vid: связка
+nomer_idei: 239
+cena: 0
+chisla:
+  mana: 2
+  dobor: 2
+  dolg_n: 1
+tekst: '{cena:мана}. Выбери: +{mana:мана} в долг или возьми {dobor:карту} и {dolg_n:мана} в долг.'
+varianty:
+- nazvanie: мана
+  effekt:
+  - {mana_v_dolg: mana}
+- nazvanie: карты
+  effekt:
+  - {dobor: dobor}
+  - {dolg: dolg_n}
+bot: {poryadok: 2, cennost: 5, pereplan: true}
+granicy: {mana: [0, 6], dobor: [0, 6], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'

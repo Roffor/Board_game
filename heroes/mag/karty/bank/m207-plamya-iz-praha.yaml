@@ -1,0 +1,25 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m207-plamya-iz-praha
+imya: Пламя из праха
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 207
+cena: 1
+chisla:
+  uron: 2
+  za: 1
+tekst: '{cena:мана}. {uron:урон} и ещё {za:урон} за каждую карту, сожжённую в этом раунде.'
+effekt:
+- {uron: uron + za * szhzheno_v_raunde}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], za: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 40: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 50: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 52: uron 1 → 2'

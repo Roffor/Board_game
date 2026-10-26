@@ -1,0 +1,26 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b219-zaslon-i-shchit
+imya: Заслон и щит
+geroj: zhrec
+nabor: bank
+bild: З
+vid: защита
+nomer_idei: 219
+chisla:
+  shchit: 1
+tekst: Заслон союзнику. {shchit:щит} себе.
+effekt:
+- {zaslon: {komu: soyuznik}}
+- {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 24: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 31: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 37: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 39: shchit 2 → 1'

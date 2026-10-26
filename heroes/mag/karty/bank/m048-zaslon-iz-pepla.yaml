@@ -5,24 +5,15 @@ nabor: bank
 bild: П
 vid: защита
 nomer_idei: 48
-cena: 1
+cena: 0
 chisla:
   za: 1
 tekst: '{cena:мана}. {za:щит} за каждую карту в зоне сожжённых.'
 effekt:
-- shchit:
-    komu: ja
-    n: za * szhzheno_vsego
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 4
-  cena:
-  - 0
-  - 3
+- {shchit: {komu: ja, n: za * szhzheno_vsego}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {za: [0, 4], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: cena 1 → 0'

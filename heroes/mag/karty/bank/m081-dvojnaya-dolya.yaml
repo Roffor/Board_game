@@ -1,7 +1,7 @@
 id: m081-dvojnaya-dolya
 imya: Двойная доля
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: атака
 nomer_idei: 81
@@ -10,15 +10,10 @@ tekst: '{cena:мана}. Если на враге Порча, бонус Пор�
 effekt:
 - esli: porcha > 0
   to:
-  - do_konca_raunda:
-      dvojnaya_porcha: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+  - {do_konca_raunda: {dvojnaya_porcha: 1}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

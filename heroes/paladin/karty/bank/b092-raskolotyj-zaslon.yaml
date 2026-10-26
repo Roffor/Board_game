@@ -1,7 +1,7 @@
 id: b092-raskolotyj-zaslon
 imya: Расколотый заслон
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: З
 vid: защита
 nomer_idei: 92
@@ -9,21 +9,13 @@ chisla:
   slabee: 1
 tekst: 'Сними Заслон с союзника: Заслон на него и на тебя, каждый слабее обычного на {slabee}.'
 effekt:
-- snyat_zaslon:
-    s: soyuznik
-    v: s
+- {snyat_zaslon: {s: soyuznik, v: s}}
 - esli: s
   to:
-  - zaslon:
-      komu: oba
-      sila: -slabee
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  slabee:
-  - 0
-  - 4
+  - {zaslon: {komu: oba, sila: -slabee}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {slabee: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

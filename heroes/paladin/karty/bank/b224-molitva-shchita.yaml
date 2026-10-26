@@ -1,0 +1,26 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b224-molitva-shchita
+imya: Молитва щита
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 224
+chisla:
+  shchit: 1
+tekst: '{shchit:щит} союзнику. Молитва.'
+effekt:
+- {shchit: {komu: soyuznik, n: shchit}}
+- {molitva: null}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {shchit: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: shchit 2 → 1'

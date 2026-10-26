@@ -1,0 +1,41 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b208-svyatoj-obereg
+imya: Святой оберег
+geroj: zhrec
+nabor: bank
+bild: В
+vid: защита
+nomer_idei: 208
+chisla:
+  shchit: 1
+  shchit_big: 1
+  doplata: 2
+tekst: '{shchit:щит} союзнику. Доплата {doplata:веру}: {shchit_big:щит}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit_big if oplacheno else shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6], shchit_big: [0, 8], doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 7: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 8: shchit 2 → 1'
+- '2026-10-26 Claude: shchit_big 5 → 3 (большой отложенный/доплатный щит подгонка не резала: рычаг брал первое число; Никита: «Это слишком много!»)'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: shchit_big 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: shchit_big 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit_big 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 41: shchit_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 46: shchit_big 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 47: shchit_big 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 48: shchit_big 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 49: shchit_big 2 → 1'
+- '2026-10-26 Claude: подгонка 4,5 ч, пачка 2: щит за доплату 1 → 3 (доплата ничего не давала)'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 56: shchit_big 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 57: shchit_big 2 → 1'

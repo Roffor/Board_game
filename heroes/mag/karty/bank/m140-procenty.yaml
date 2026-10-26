@@ -1,22 +1,18 @@
 id: m140-procenty
 imya: Проценты
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р–Д
 vid: связка
 nomer_idei: 140
 cena: 0
 tekst: '{cena:мана}. Если в начале следующего хода ты не отдашь долг полностью, на врага ложится Порча, а долг растёт.'
 effekt:
-- procenty: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {procenty: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
 - 'упрощено для стенда: срабатывает один раз, в начале следующего хода'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

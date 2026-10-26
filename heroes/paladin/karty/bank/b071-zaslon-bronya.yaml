@@ -5,17 +5,15 @@ nabor: bank
 bild: З
 vid: защита
 nomer_idei: 71
-tekst: Заслон союзнику. Когда он сработает, снятый урон становится щитом союзнику на следующий раунд.
+tekst: Заслон союзнику. Когда он сработает, урон шипов становится щитом союзнику на следующий раунд.
 effekt:
 - zaslon:
     komu: soyuznik
     effekt:
-    - shchit_potom:
-        komu: soyuznik
-        n: snyato
-bot:
-  poryadok: 4
-  cennost: 5
+    - {shchit_potom: {komu: soyuznik, n: snyato}}
+bot: {poryadok: 4, cennost: 5}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Claude: текст под Заслон-шипы (решение Никиты: Заслон не ослабляет удар, а бьёт шипами). Было: «Заслон союзнику. Когда он сработает,
+  снятый урон становится щитом союзнику на следующий раунд.»'

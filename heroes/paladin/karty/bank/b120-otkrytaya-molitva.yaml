@@ -1,17 +1,15 @@
 id: b120-otkrytaya-molitva
 imya: Открытая молитва
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М
 vid: молитва
 nomer_idei: 120
 tekst: 'Открой верхнюю карту колоды: в этом раунде её можно сыграть как из руки. Не сыграна — возвращается на верх.'
 effekt:
-- otkryt_verh: 1
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
+- {otkryt_verh: 1}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

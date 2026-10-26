@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m224-metka-dlya-soyuznika
+imya: Метка для союзника
+geroj: mag
+nabor: bank
+bild: Р
+vid: связка
+nomer_idei: 224
+cena: 2
+chisla:
+  bonus: 1
+tekst: '{cena:мана}. Наложи Порчу. Следующее попадание союзника в этом раунде сильнее на {bonus}.'
+effekt:
+- {porcha: 1}
+- {bonus_soyuzniku: bonus}
+bot: {poryadok: 3, cennost: 5}
+granicy: {bonus: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: cena 1 → 2'

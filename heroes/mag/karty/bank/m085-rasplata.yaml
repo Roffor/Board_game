@@ -1,7 +1,7 @@
 id: m085-rasplata
 imya: Расплата
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: связка
 nomer_idei: 85
@@ -10,21 +10,13 @@ chisla:
   dobor: 2
 tekst: '{cena:мана}. Сними Порчу: союзник берёт {dobor:карту}.'
 effekt:
-- snyat_porchu:
-    v: s
+- {snyat_porchu: {v: s}}
 - esli: s
   to:
-  - dobor_soyuznika: dobor
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  dobor:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+  - {dobor_soyuznika: dobor}
+bot: {poryadok: 3, cennost: 5}
+granicy: {dobor: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

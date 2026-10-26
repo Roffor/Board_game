@@ -1,7 +1,7 @@
 id: b010-prival
 imya: Привал
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: вера
 nomer_idei: 10
@@ -10,23 +10,14 @@ chisla:
   vera: 1
 tekst: Возьми {dobor:карту}. Если это карта щита, +{vera:вера}.
 effekt:
-- pust:
-    z: verh_zashchita
-- dobor: dobor
+- {pust: {z: verh_zashchita}}
+- {dobor: dobor}
 - esli: z
   to:
-  - vera: vera
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
-granicy:
-  dobor:
-  - 0
-  - 4
-  vera:
-  - 0
-  - 4
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {dobor: [0, 4], vera: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'

@@ -1,7 +1,7 @@
 id: m104-poruchitel
 imya: Поручитель
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Д
 vid: связка
 nomer_idei: 104
@@ -10,19 +10,12 @@ tekst: '{cena:мана}. Союзник может сжечь карту из р
 effekt:
 - esli: dolg > 0
   to:
-  - soyuznik_szhigaet:
-      n: 1
-      v: s
-  - spisat_dolg:
-      n: s
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+  - {soyuznik_szhigaet: {n: 1, v: s}}
+  - {spisat_dolg: {n: s}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
 - 'упрощено для стенда: жетон Подношения не даётся и так: сжигается одна карта'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

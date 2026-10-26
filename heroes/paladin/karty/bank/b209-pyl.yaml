@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b209-pyl
+imya: Пыл
+geroj: zhrec
+nabor: bank
+bild: В
+vid: вера
+nomer_idei: 209
+chisla:
+  vera: 2
+  uron: 1
+tekst: +{vera:вера}. {uron:урон}.
+effekt:
+- {vera: vera}
+- {uron: uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 6], uron: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 16: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 17: uron 2 → 1'

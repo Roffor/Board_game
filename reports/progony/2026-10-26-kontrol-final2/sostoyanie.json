@@ -1,0 +1,18 @@
+{
+ "seed0": 14621554,
+ "faza": 1,
+ "potracheno": {
+  "kontrol": 1464.637445449829
+ },
+ "volna": {
+  "kontrol": 66
+ },
+ "sled_i": {
+  "kontrol": 13500
+ },
+ "podbor": {},
+ "zadanie": null,
+ "start": "2026-10-26 21:05:19",
+ "srok_sek": 1440.0,
+ "gotovo": true
+}

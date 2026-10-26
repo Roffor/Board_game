@@ -1,0 +1,1540 @@
+diff -ruN heroes/mag/karty/bank/m003-dvulikij-zhest.yaml heroes/mag/karty/bank/m003-dvulikij-zhest.yaml
+--- heroes/mag/karty/bank/m003-dvulikij-zhest.yaml	2026-10-26 05:29:18.914462314 +0300
++++ heroes/mag/karty/bank/m003-dvulikij-zhest.yaml	2026-10-26 07:45:11.675771939 +0300
+@@ -54,3 +54,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 53: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m004-strazh-poroga.yaml heroes/mag/karty/bank/m004-strazh-poroga.yaml
+--- heroes/mag/karty/bank/m004-strazh-poroga.yaml	2026-10-26 03:20:54.868339306 +0300
++++ heroes/mag/karty/bank/m004-strazh-poroga.yaml	2026-10-26 07:08:16.655563533 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 4
+ cena: 1
+ chisla:
+-  shchit: 2
++  shchit: 3
+ tekst: '{cena:мана}. Авангард. {shchit:щит} себе.'
+ effekt:
+ - {avangard: ja}
+@@ -33,3 +33,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
+diff -ruN heroes/mag/karty/bank/m007-otlozhennyj-obereg.yaml heroes/mag/karty/bank/m007-otlozhennyj-obereg.yaml
+--- heroes/mag/karty/bank/m007-otlozhennyj-obereg.yaml	2026-10-26 03:20:54.872003368 +0300
++++ heroes/mag/karty/bank/m007-otlozhennyj-obereg.yaml	2026-10-26 07:08:16.659188396 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 7
+ cena: 1
+ chisla:
+-  shchit: 2
++  shchit: 3
+   shchit_big: 7
+   ocenka: 5
+ tekst: '{cena:мана}. Сейчас: {shchit:щит} себе. Или после хода врага: {shchit_big:щит} себе.'
+@@ -42,3 +42,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
+diff -ruN heroes/mag/karty/bank/m013-svecha-predkov.yaml heroes/mag/karty/bank/m013-svecha-predkov.yaml
+--- heroes/mag/karty/bank/m013-svecha-predkov.yaml	2026-10-26 05:17:45.473010190 +0300
++++ heroes/mag/karty/bank/m013-svecha-predkov.yaml	2026-10-26 07:49:21.972731037 +0300
+@@ -43,3 +43,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 53: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 59: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m016-skvoz-zaslon.yaml heroes/mag/karty/bank/m016-skvoz-zaslon.yaml
+--- heroes/mag/karty/bank/m016-skvoz-zaslon.yaml	2026-10-26 04:48:59.126313658 +0300
++++ heroes/mag/karty/bank/m016-skvoz-zaslon.yaml	2026-10-26 07:31:18.643189522 +0300
+@@ -30,3 +30,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 54: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m021-plechom-k-plechu.yaml heroes/mag/karty/bank/m021-plechom-k-plechu.yaml
+--- heroes/mag/karty/bank/m021-plechom-k-plechu.yaml	2026-10-26 00:19:21.153006798 +0300
++++ heroes/mag/karty/bank/m021-plechom-k-plechu.yaml	2026-10-26 08:19:07.742792050 +0300
+@@ -5,7 +5,7 @@
+ bild: ''
+ vid: защита
+ nomer_idei: 21
+-cena: 1
++cena: 0
+ chisla:
+   shchit: 1
+ tekst: '{cena:мана}. До конца раунда: когда союзник получает щит, ты получаешь {shchit:щит}.'
+@@ -24,3 +24,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m023-gri-gri.yaml heroes/mag/karty/bank/m023-gri-gri.yaml
+--- heroes/mag/karty/bank/m023-gri-gri.yaml	2026-10-26 05:46:10.835409094 +0300
++++ heroes/mag/karty/bank/m023-gri-gri.yaml	2026-10-26 08:19:07.726730630 +0300
+@@ -46,3 +46,11 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m026-perekrestok.yaml heroes/mag/karty/bank/m026-perekrestok.yaml
+--- heroes/mag/karty/bank/m026-perekrestok.yaml	2026-10-26 06:32:38.275659565 +0300
++++ heroes/mag/karty/bank/m026-perekrestok.yaml	2026-10-26 08:14:58.349655392 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 26
+ cena: 1
+ chisla:
+-  uron: 3
++  uron: 2
+   shchit: 1
+   dobor: 2
+ tekst: '{cena:мана}. Выбери одно: {uron:урон}, {shchit:щит} или возьми {dobor:карту}.'
+@@ -61,3 +61,12 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m027-ochag-greet-oboih.yaml heroes/mag/karty/bank/m027-ochag-greet-oboih.yaml
+--- heroes/mag/karty/bank/m027-ochag-greet-oboih.yaml	2026-10-26 05:46:10.839093027 +0300
++++ heroes/mag/karty/bank/m027-ochag-greet-oboih.yaml	2026-10-26 08:19:07.715400506 +0300
+@@ -45,3 +45,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m035-chistyj-list.yaml heroes/mag/karty/bank/m035-chistyj-list.yaml
+--- heroes/mag/karty/bank/m035-chistyj-list.yaml	2026-10-26 03:54:02.171643006 +0300
++++ heroes/mag/karty/bank/m035-chistyj-list.yaml	2026-10-26 07:08:16.567068088 +0300
+@@ -5,7 +5,7 @@
+ bild: П
+ vid: связка
+ nomer_idei: 35
+-cena: 1
++cena: 0
+ tekst: '{cena:мана}. Сожги руку, возьми столько же карт.'
+ effekt:
+ - {pust: {r: ruka}}
+@@ -23,3 +23,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: cena 0 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: cena 1 → 0'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: cena 1 → 0'
+diff -ruN heroes/mag/karty/bank/m038-feniks.yaml heroes/mag/karty/bank/m038-feniks.yaml
+--- heroes/mag/karty/bank/m038-feniks.yaml	2026-10-26 03:59:24.862239610 +0300
++++ heroes/mag/karty/bank/m038-feniks.yaml	2026-10-26 07:45:11.678542227 +0300
+@@ -33,3 +33,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 42: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m039-zhadnye-duhi.yaml heroes/mag/karty/bank/m039-zhadnye-duhi.yaml
+--- heroes/mag/karty/bank/m039-zhadnye-duhi.yaml	2026-10-26 03:01:27.640286158 +0300
++++ heroes/mag/karty/bank/m039-zhadnye-duhi.yaml	2026-10-26 08:02:18.451513861 +0300
+@@ -33,3 +33,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: cena 0 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: cena 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: cena 2 → 1'
+diff -ruN heroes/mag/karty/bank/m040-slepoe-podnoshenie.yaml heroes/mag/karty/bank/m040-slepoe-podnoshenie.yaml
+--- heroes/mag/karty/bank/m040-slepoe-podnoshenie.yaml	2026-10-26 06:32:38.270712498 +0300
++++ heroes/mag/karty/bank/m040-slepoe-podnoshenie.yaml	2026-10-26 07:57:58.005785847 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 40
+ cena: 1
+ chisla:
+-  uron: 3
++  uron: 2
+ tekst: '{cena:мана}. Сожги две верхние карты своей колоды не глядя. {uron:урон}.'
+ effekt:
+ - {sozhgi: {otkuda: verh, n: 2}}
+@@ -36,3 +36,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 44: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m041-prah-k-prahu.yaml heroes/mag/karty/bank/m041-prah-k-prahu.yaml
+--- heroes/mag/karty/bank/m041-prah-k-prahu.yaml	2026-10-26 06:38:17.243586382 +0300
++++ heroes/mag/karty/bank/m041-prah-k-prahu.yaml	2026-10-26 08:19:07.740197681 +0300
+@@ -68,3 +68,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m042-pozhiranie.yaml heroes/mag/karty/bank/m042-pozhiranie.yaml
+--- heroes/mag/karty/bank/m042-pozhiranie.yaml	2026-10-26 01:54:29.014195414 +0300
++++ heroes/mag/karty/bank/m042-pozhiranie.yaml	2026-10-26 07:53:50.026640088 +0300
+@@ -37,3 +37,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron 3 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m044-mimoletnyj-duh.yaml heroes/mag/karty/bank/m044-mimoletnyj-duh.yaml
+--- heroes/mag/karty/bank/m044-mimoletnyj-duh.yaml	2026-10-26 01:49:25.720868658 +0300
++++ heroes/mag/karty/bank/m044-mimoletnyj-duh.yaml	2026-10-26 08:02:18.423400446 +0300
+@@ -30,3 +30,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 3 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 30: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m046-sytye-duhi.yaml heroes/mag/karty/bank/m046-sytye-duhi.yaml
+--- heroes/mag/karty/bank/m046-sytye-duhi.yaml	2026-10-26 06:32:38.264377711 +0300
++++ heroes/mag/karty/bank/m046-sytye-duhi.yaml	2026-10-26 07:35:46.448885909 +0300
+@@ -40,3 +40,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m051-eho-obryada.yaml heroes/mag/karty/bank/m051-eho-obryada.yaml
+--- heroes/mag/karty/bank/m051-eho-obryada.yaml	2026-10-26 06:32:38.257745934 +0300
++++ heroes/mag/karty/bank/m051-eho-obryada.yaml	2026-10-26 07:39:57.266186975 +0300
+@@ -39,3 +39,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 63: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 2 → 3'
+diff -ruN heroes/mag/karty/bank/m054-pepel-na-vetru.yaml heroes/mag/karty/bank/m054-pepel-na-vetru.yaml
+--- heroes/mag/karty/bank/m054-pepel-na-vetru.yaml	2026-10-26 06:32:38.279863645 +0300
++++ heroes/mag/karty/bank/m054-pepel-na-vetru.yaml	2026-10-26 07:57:58.010274188 +0300
+@@ -51,3 +51,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 37: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m056-poslednyaya-iskra.yaml heroes/mag/karty/bank/m056-poslednyaya-iskra.yaml
+--- heroes/mag/karty/bank/m056-poslednyaya-iskra.yaml	2026-10-26 03:54:02.180103923 +0300
++++ heroes/mag/karty/bank/m056-poslednyaya-iskra.yaml	2026-10-26 08:19:07.718596840 +0300
+@@ -5,9 +5,9 @@
+ bild: П
+ vid: защита
+ nomer_idei: 56
+-cena: 2
++cena: 0
+ chisla:
+-  shchit: 2
++  shchit: 1
+ tekst: '{cena:мана}. {shchit:щит} себе. Сожги эту карту и ещё одну из руки (две сожжённые — жетон Подношения).'
+ effekt:
+ - {shchit: {komu: ja, n: shchit}}
+@@ -31,3 +31,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: shchit 3 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m057-koster-na-dvoih.yaml heroes/mag/karty/bank/m057-koster-na-dvoih.yaml
+--- heroes/mag/karty/bank/m057-koster-na-dvoih.yaml	2026-10-26 05:17:45.470076276 +0300
++++ heroes/mag/karty/bank/m057-koster-na-dvoih.yaml	2026-10-26 07:08:16.564826188 +0300
+@@ -5,7 +5,7 @@
+ bild: П
+ vid: защита
+ nomer_idei: 57
+-cena: 1
++cena: 0
+ chisla:
+   shchit: 1
+ tekst: '{cena:мана}. Ты и союзник сжигаете по карте из руки, оба получаете {shchit:щит}.'
+@@ -41,3 +41,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: cena 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 59: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: cena 1 → 0'
+diff -ruN heroes/mag/karty/bank/m061-sglaz.yaml heroes/mag/karty/bank/m061-sglaz.yaml
+--- heroes/mag/karty/bank/m061-sglaz.yaml	2026-10-26 01:38:22.728485754 +0300
++++ heroes/mag/karty/bank/m061-sglaz.yaml	2026-10-26 07:31:18.649967766 +0300
+@@ -27,3 +27,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: cena 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: cena 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: cena 1 → 2'
+diff -ruN heroes/mag/karty/bank/m063-gnil.yaml heroes/mag/karty/bank/m063-gnil.yaml
+--- heroes/mag/karty/bank/m063-gnil.yaml	2026-10-26 00:19:21.138380179 +0300
++++ heroes/mag/karty/bank/m063-gnil.yaml	2026-10-26 07:31:18.671442229 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 63
+ cena: 1
+ chisla:
+-  uron: 1
++  uron: 2
+ tekst: '{cena:мана}. Порча в этом раунде не снимается. Если на враге Порча, в конце хода героев {uron:урон}.'
+ effekt:
+ - {porcha_derzhitsya: 1}
+@@ -27,3 +27,4 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 1 → 2'
+diff -ruN heroes/mag/karty/bank/m064-osinyj-roj.yaml heroes/mag/karty/bank/m064-osinyj-roj.yaml
+--- heroes/mag/karty/bank/m064-osinyj-roj.yaml	2026-10-26 01:54:29.019892027 +0300
++++ heroes/mag/karty/bank/m064-osinyj-roj.yaml	2026-10-26 07:57:58.013352717 +0300
+@@ -29,3 +29,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 29: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 30: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 2 → 1'
+diff -ruN heroes/mag/karty/bank/m065-grad.yaml heroes/mag/karty/bank/m065-grad.yaml
+--- heroes/mag/karty/bank/m065-grad.yaml	2026-10-26 01:43:42.515659363 +0300
++++ heroes/mag/karty/bank/m065-grad.yaml	2026-10-26 07:22:06.300982140 +0300
+@@ -23,3 +23,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 29: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 1'
+diff -ruN heroes/mag/karty/bank/m067-tyanushchaya-porcha.yaml heroes/mag/karty/bank/m067-tyanushchaya-porcha.yaml
+--- heroes/mag/karty/bank/m067-tyanushchaya-porcha.yaml	2026-10-26 06:32:38.260351584 +0300
++++ heroes/mag/karty/bank/m067-tyanushchaya-porcha.yaml	2026-10-26 08:10:38.620845990 +0300
+@@ -42,3 +42,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 67: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 15: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m071-pyl-mertveca.yaml heroes/mag/karty/bank/m071-pyl-mertveca.yaml
+--- heroes/mag/karty/bank/m071-pyl-mertveca.yaml	2026-10-26 02:38:57.416562767 +0300
++++ heroes/mag/karty/bank/m071-pyl-mertveca.yaml	2026-10-26 07:13:11.481993227 +0300
+@@ -5,7 +5,7 @@
+ bild: Р
+ vid: связка
+ nomer_idei: 71
+-cena: 2
++cena: 3
+ podnoshenie: 1
+ tekst: '{cena:мана}. Наложи Порчу. Подношение: Порча в конце раунда не снимается.'
+ effekt:
+@@ -30,3 +30,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: cena 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 30: cena 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 2 → 3'
+diff -ruN heroes/mag/karty/bank/m072-sglaz-i-obereg.yaml heroes/mag/karty/bank/m072-sglaz-i-obereg.yaml
+--- heroes/mag/karty/bank/m072-sglaz-i-obereg.yaml	2026-10-26 03:37:08.571807866 +0300
++++ heroes/mag/karty/bank/m072-sglaz-i-obereg.yaml	2026-10-26 07:39:57.285232857 +0300
+@@ -27,3 +27,11 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 42: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: shchit 3 → 2'
+diff -ruN heroes/mag/karty/bank/m074-otvetnyj-sglaz.yaml heroes/mag/karty/bank/m074-otvetnyj-sglaz.yaml
+--- heroes/mag/karty/bank/m074-otvetnyj-sglaz.yaml	2026-10-26 06:38:17.238240924 +0300
++++ heroes/mag/karty/bank/m074-otvetnyj-sglaz.yaml	2026-10-26 08:06:35.124788203 +0300
+@@ -38,3 +38,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 56: cena 0 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: cena 1 → 0'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: cena 0 → 1'
+diff -ruN heroes/mag/karty/bank/m077-klyuch-k-sglazu.yaml heroes/mag/karty/bank/m077-klyuch-k-sglazu.yaml
+--- heroes/mag/karty/bank/m077-klyuch-k-sglazu.yaml	2026-10-26 04:48:59.138990488 +0300
++++ heroes/mag/karty/bank/m077-klyuch-k-sglazu.yaml	2026-10-26 07:13:11.509621444 +0300
+@@ -36,3 +36,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 50: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 2 → 3'
+diff -ruN heroes/mag/karty/bank/m083-broshennyj-zhrebij.yaml heroes/mag/karty/bank/m083-broshennyj-zhrebij.yaml
+--- heroes/mag/karty/bank/m083-broshennyj-zhrebij.yaml	2026-10-26 02:44:04.358588348 +0300
++++ heroes/mag/karty/bank/m083-broshennyj-zhrebij.yaml	2026-10-26 08:02:18.426099463 +0300
+@@ -5,7 +5,7 @@
+ bild: Р
+ vid: связка
+ nomer_idei: 83
+-cena: 2
++cena: 3
+ tekst: '{cena:мана}. Сбрось карту: наложи Порчу.'
+ effekt:
+ - {sbros: {n: 1, v: s}}
+@@ -29,3 +29,6 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 30: cena 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: cena 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: cena 2 → 3'
+diff -ruN heroes/mag/karty/bank/m086-pepel-v-glaza.yaml heroes/mag/karty/bank/m086-pepel-v-glaza.yaml
+--- heroes/mag/karty/bank/m086-pepel-v-glaza.yaml	2026-10-26 03:26:36.116012391 +0300
++++ heroes/mag/karty/bank/m086-pepel-v-glaza.yaml	2026-10-26 07:26:47.772584548 +0300
+@@ -23,3 +23,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: cena 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 40: cena 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 1 → 2'
+diff -ruN heroes/mag/karty/bank/m088-dobivanie.yaml heroes/mag/karty/bank/m088-dobivanie.yaml
+--- heroes/mag/karty/bank/m088-dobivanie.yaml	2026-10-26 03:12:08.320418270 +0300
++++ heroes/mag/karty/bank/m088-dobivanie.yaml	2026-10-26 07:31:18.687098076 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 88
+ cena: 1
+ chisla:
+-  uron: 4
++  uron: 6
+ tekst: '{cena:мана}. Если у врага меньше половины здоровья, наложи Порчу и нанеси {uron:урон}.'
+ effekt:
+ - esli: vrag_zdorove * 2 < vrag_maks_zdorove
+@@ -32,3 +32,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron 5 → 6'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 5 → 6'
+diff -ruN heroes/mag/karty/bank/m089-sglaz-primanka.yaml heroes/mag/karty/bank/m089-sglaz-primanka.yaml
+--- heroes/mag/karty/bank/m089-sglaz-primanka.yaml	2026-10-26 03:12:08.332261556 +0300
++++ heroes/mag/karty/bank/m089-sglaz-primanka.yaml	2026-10-26 07:45:11.692237500 +0300
+@@ -23,3 +23,11 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: cena 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m093-krivoe-zerkalo.yaml heroes/mag/karty/bank/m093-krivoe-zerkalo.yaml
+--- heroes/mag/karty/bank/m093-krivoe-zerkalo.yaml	2026-10-26 05:46:10.846352201 +0300
++++ heroes/mag/karty/bank/m093-krivoe-zerkalo.yaml	2026-10-26 08:19:07.722574150 +0300
+@@ -5,7 +5,7 @@
+ bild: Р
+ vid: защита
+ nomer_idei: 93
+-cena: 1
++cena: 0
+ tekst: '{cena:мана}. {shchit:щит} себе. Если на враге Порча, его атака в этом раунде бьёт и его самого.'
+ effekt:
+ - {shchit: {komu: ja, n: shchit}}
+@@ -40,5 +40,12 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+ chisla:
+   shchit: 1
+diff -ruN heroes/mag/karty/bank/m096-duh-hranitel.yaml heroes/mag/karty/bank/m096-duh-hranitel.yaml
+--- heroes/mag/karty/bank/m096-duh-hranitel.yaml	2026-10-26 04:15:55.848017483 +0300
++++ heroes/mag/karty/bank/m096-duh-hranitel.yaml	2026-10-26 08:02:18.442164516 +0300
+@@ -28,3 +28,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 5 → 6'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 49: uron 6 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 4 → 5'
+diff -ruN heroes/mag/karty/bank/m097-vechnyj-obereg.yaml heroes/mag/karty/bank/m097-vechnyj-obereg.yaml
+--- heroes/mag/karty/bank/m097-vechnyj-obereg.yaml	2026-10-26 05:46:10.860151803 +0300
++++ heroes/mag/karty/bank/m097-vechnyj-obereg.yaml	2026-10-26 08:14:58.360254272 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 97
+ cena: 0
+ chisla:
+-  shchit: 1
++  shchit: 2
+ tekst: '{cena:мана}. Карта остаётся перед тобой, пока платишь: в начале каждого хода плата растёт на 1, и пока она лежит, ты и союзник получаете
+   {shchit:щит}.'
+ effekt:
+@@ -47,3 +47,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
+diff -ruN heroes/mag/karty/bank/m098-doplata-v-dolg.yaml heroes/mag/karty/bank/m098-doplata-v-dolg.yaml
+--- heroes/mag/karty/bank/m098-doplata-v-dolg.yaml	2026-10-26 03:42:31.759300961 +0300
++++ heroes/mag/karty/bank/m098-doplata-v-dolg.yaml	2026-10-26 08:02:18.432720691 +0300
+@@ -43,3 +43,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 41: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 1 → 2'
+diff -ruN heroes/mag/karty/bank/m102-ryvok.yaml heroes/mag/karty/bank/m102-ryvok.yaml
+--- heroes/mag/karty/bank/m102-ryvok.yaml	2026-10-26 03:12:08.325848958 +0300
++++ heroes/mag/karty/bank/m102-ryvok.yaml	2026-10-26 07:49:21.987079982 +0300
+@@ -30,3 +30,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: cena 0 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: cena 1 → 0'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: cena 0 → 1'
+diff -ruN heroes/mag/karty/bank/m108-chistye-ruki.yaml heroes/mag/karty/bank/m108-chistye-ruki.yaml
+--- heroes/mag/karty/bank/m108-chistye-ruki.yaml	2026-10-26 06:32:38.254506896 +0300
++++ heroes/mag/karty/bank/m108-chistye-ruki.yaml	2026-10-26 08:10:38.623826642 +0300
+@@ -33,3 +33,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 67: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 15: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m109-svecha-v-dolg.yaml heroes/mag/karty/bank/m109-svecha-v-dolg.yaml
+--- heroes/mag/karty/bank/m109-svecha-v-dolg.yaml	2026-10-26 04:26:46.180847277 +0300
++++ heroes/mag/karty/bank/m109-svecha-v-dolg.yaml	2026-10-26 07:53:50.049539350 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 109
+ cena: 2
+ chisla:
+-  uron: 3
++  uron: 4
+ tekst: '{cena:мана}. {uron:урон}. Эту карту можно сыграть в долг вместо маны.'
+ effekt:
+ - {uron: uron}
+@@ -41,3 +41,8 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 3 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 51: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 3 → 4'
+diff -ruN heroes/mag/karty/bank/m110-zajm-dlya-druga.yaml heroes/mag/karty/bank/m110-zajm-dlya-druga.yaml
+--- heroes/mag/karty/bank/m110-zajm-dlya-druga.yaml	2026-10-26 00:19:21.143341307 +0300
++++ heroes/mag/karty/bank/m110-zajm-dlya-druga.yaml	2026-10-26 08:19:07.729862544 +0300
+@@ -5,7 +5,7 @@
+ bild: Д
+ vid: защита
+ nomer_idei: 110
+-cena: 1
++cena: 0
+ chisla:
+   shchit: 1
+   dolg_n: 1
+@@ -27,3 +27,12 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 3 → 2'
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 1 → 0'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/mag/karty/bank/m120-mana-v-peple.yaml heroes/mag/karty/bank/m120-mana-v-peple.yaml
+--- heroes/mag/karty/bank/m120-mana-v-peple.yaml	2026-10-26 02:44:04.366995394 +0300
++++ heroes/mag/karty/bank/m120-mana-v-peple.yaml	2026-10-26 08:06:35.127771766 +0300
+@@ -32,3 +32,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 4 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: uron 4 → 3'
+diff -ruN heroes/mag/karty/bank/m125-dolzhnik-pod-zashchitoj.yaml heroes/mag/karty/bank/m125-dolzhnik-pod-zashchitoj.yaml
+--- heroes/mag/karty/bank/m125-dolzhnik-pod-zashchitoj.yaml	2026-10-26 05:46:10.831423766 +0300
++++ heroes/mag/karty/bank/m125-dolzhnik-pod-zashchitoj.yaml	2026-10-26 08:19:07.734536999 +0300
+@@ -34,3 +34,11 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit_mal 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit_mal 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit_mal 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit_mal 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit_mal 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit_mal 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit_mal 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit_mal 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit_mal 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit_mal 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit_mal 2 → 1'
+diff -ruN heroes/mag/karty/bank/m127-shvyrnut-v-ogon.yaml heroes/mag/karty/bank/m127-shvyrnut-v-ogon.yaml
+--- heroes/mag/karty/bank/m127-shvyrnut-v-ogon.yaml	2026-10-26 04:54:57.955630772 +0300
++++ heroes/mag/karty/bank/m127-shvyrnut-v-ogon.yaml	2026-10-26 07:57:58.017731359 +0300
+@@ -46,3 +46,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 44: cena 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: cena 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 56: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: cena 2 → 3'
+diff -ruN heroes/mag/karty/bank/m128-mechenyj-udar.yaml heroes/mag/karty/bank/m128-mechenyj-udar.yaml
+--- heroes/mag/karty/bank/m128-mechenyj-udar.yaml	2026-10-26 05:05:56.590640949 +0300
++++ heroes/mag/karty/bank/m128-mechenyj-udar.yaml	2026-10-26 08:14:58.356081741 +0300
+@@ -41,3 +41,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 58: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 3 → 2'
+diff -ruN heroes/mag/karty/bank/m130-neugasimyj-sglaz.yaml heroes/mag/karty/bank/m130-neugasimyj-sglaz.yaml
+--- heroes/mag/karty/bank/m130-neugasimyj-sglaz.yaml	2026-10-26 04:26:46.184223305 +0300
++++ heroes/mag/karty/bank/m130-neugasimyj-sglaz.yaml	2026-10-26 07:13:11.491270557 +0300
+@@ -5,7 +5,7 @@
+ bild: П–Р
+ vid: связка
+ nomer_idei: 130
+-cena: 1
++cena: 0
+ tekst: '{cena:мана}. Сожги две карты из руки: Порча в этом раунде не снимается.'
+ effekt:
+ - {sozhgi: {otkuda: ruka, n: 2, v: s}}
+@@ -30,3 +30,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: cena 0 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: cena 1 → 0'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 51: cena 0 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 1 → 0'
+diff -ruN heroes/mag/karty/bank/m137-dolzhnik-proklinaet.yaml heroes/mag/karty/bank/m137-dolzhnik-proklinaet.yaml
+--- heroes/mag/karty/bank/m137-dolzhnik-proklinaet.yaml	2026-10-26 04:04:52.119394902 +0300
++++ heroes/mag/karty/bank/m137-dolzhnik-proklinaet.yaml	2026-10-26 08:06:35.131626484 +0300
+@@ -41,3 +41,15 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 44: cena 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: cena 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: cena 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: cena 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: cena 2 → 3'
+diff -ruN heroes/mag/karty/bank/m141-pod-sglazom-v-dolg.yaml heroes/mag/karty/bank/m141-pod-sglazom-v-dolg.yaml
+--- heroes/mag/karty/bank/m141-pod-sglazom-v-dolg.yaml	2026-10-26 03:26:36.121982299 +0300
++++ heroes/mag/karty/bank/m141-pod-sglazom-v-dolg.yaml	2026-10-26 07:39:57.256111567 +0300
+@@ -37,3 +37,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 30: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron 4 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 40: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 5 → 4'
+diff -ruN heroes/paladin/karty/bank/b003-dvuruchnyj-zamah.yaml heroes/paladin/karty/bank/b003-dvuruchnyj-zamah.yaml
+--- heroes/paladin/karty/bank/b003-dvuruchnyj-zamah.yaml	2026-10-26 06:32:38.300347937 +0300
++++ heroes/paladin/karty/bank/b003-dvuruchnyj-zamah.yaml	2026-10-26 07:57:57.980927982 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 3
+ chisla:
+-  uron: 5
++  uron: 4
+ tekst: '{uron:урон}. Считается в лимите за две карты.'
+ effekt:
+ - {uron: uron}
+@@ -46,3 +46,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 4 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 57: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 5 → 4'
+diff -ruN heroes/paladin/karty/bank/b004-shag-vpered.yaml heroes/paladin/karty/bank/b004-shag-vpered.yaml
+--- heroes/paladin/karty/bank/b004-shag-vpered.yaml	2026-10-26 03:20:54.874636390 +0300
++++ heroes/paladin/karty/bank/b004-shag-vpered.yaml	2026-10-26 07:08:16.661751846 +0300
+@@ -6,7 +6,7 @@
+ vid: защита
+ nomer_idei: 4
+ chisla:
+-  shchit: 2
++  shchit: 3
+ tekst: Авангард. {shchit:щит} себе.
+ effekt:
+ - {avangard: ja}
+@@ -30,3 +30,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
+diff -ruN heroes/paladin/karty/bank/b006-rassvet-i-sumerki.yaml heroes/paladin/karty/bank/b006-rassvet-i-sumerki.yaml
+--- heroes/paladin/karty/bank/b006-rassvet-i-sumerki.yaml	2026-10-26 06:38:17.226937633 +0300
++++ heroes/paladin/karty/bank/b006-rassvet-i-sumerki.yaml	2026-10-26 08:10:38.608374857 +0300
+@@ -56,3 +56,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 15: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b007-obet-utra.yaml heroes/paladin/karty/bank/b007-obet-utra.yaml
+--- heroes/paladin/karty/bank/b007-obet-utra.yaml	2026-10-26 03:20:54.878149320 +0300
++++ heroes/paladin/karty/bank/b007-obet-utra.yaml	2026-10-26 07:08:16.664550045 +0300
+@@ -6,7 +6,7 @@
+ vid: защита
+ nomer_idei: 7
+ chisla:
+-  shchit: 2
++  shchit: 3
+   shchit_big: 5
+   vera: 1
+   ocenka: 4
+@@ -39,3 +39,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: shchit 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
+diff -ruN heroes/paladin/karty/bank/b015-tyazhelyj-dospeh.yaml heroes/paladin/karty/bank/b015-tyazhelyj-dospeh.yaml
+--- heroes/paladin/karty/bank/b015-tyazhelyj-dospeh.yaml	2026-10-26 06:32:38.311764586 +0300
++++ heroes/paladin/karty/bank/b015-tyazhelyj-dospeh.yaml	2026-10-26 07:31:18.752443812 +0300
+@@ -26,3 +26,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 68: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b016-udar-shchitom.yaml heroes/paladin/karty/bank/b016-udar-shchitom.yaml
+--- heroes/paladin/karty/bank/b016-udar-shchitom.yaml	2026-10-26 06:43:50.856763669 +0300
++++ heroes/paladin/karty/bank/b016-udar-shchitom.yaml	2026-10-26 08:19:07.708217232 +0300
+@@ -53,3 +53,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 54: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 71: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b017-poslednij-rubezh.yaml heroes/paladin/karty/bank/b017-poslednij-rubezh.yaml
+--- heroes/paladin/karty/bank/b017-poslednij-rubezh.yaml	2026-10-26 00:33:46.804384126 +0300
++++ heroes/paladin/karty/bank/b017-poslednij-rubezh.yaml	2026-10-26 08:19:07.711233015 +0300
+@@ -6,7 +6,7 @@
+ vid: защита
+ nomer_idei: 17
+ chisla:
+-  shchit: 1
++  shchit: 3
+   shchit_mal: 1
+ tekst: 'Если у союзника здоровья меньше, чем у тебя: Авангард и {shchit:щит}. Иначе {shchit_mal:щит}.'
+ effekt:
+@@ -27,3 +27,11 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: shchit 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 15: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 3'
+diff -ruN heroes/paladin/karty/bank/b019-karayushchij-vypad.yaml heroes/paladin/karty/bank/b019-karayushchij-vypad.yaml
+--- heroes/paladin/karty/bank/b019-karayushchij-vypad.yaml	2026-10-26 06:32:38.236353771 +0300
++++ heroes/paladin/karty/bank/b019-karayushchij-vypad.yaml	2026-10-26 07:45:11.654453926 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 19
+ chisla:
+-  uron: 1
++  uron: 2
+   uron_big: 4
+   doplata: 2
+ tekst: '{uron:урон}. Доплата {doplata:веру}: {uron_big:урон}.'
+@@ -42,3 +42,6 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b021-vyzov.yaml heroes/paladin/karty/bank/b021-vyzov.yaml
+--- heroes/paladin/karty/bank/b021-vyzov.yaml	2026-10-26 03:48:41.344370374 +0300
++++ heroes/paladin/karty/bank/b021-vyzov.yaml	2026-10-26 08:10:38.612003055 +0300
+@@ -44,3 +44,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 4 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 44: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 15: uron 5 → 4'
+diff -ruN heroes/paladin/karty/bank/b022-zavershayushchij-udar.yaml heroes/paladin/karty/bank/b022-zavershayushchij-udar.yaml
+--- heroes/paladin/karty/bank/b022-zavershayushchij-udar.yaml	2026-10-26 03:01:27.602862859 +0300
++++ heroes/paladin/karty/bank/b022-zavershayushchij-udar.yaml	2026-10-26 08:02:18.407925065 +0300
+@@ -37,3 +37,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron 5 → 6'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 6 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 5 → 4'
+diff -ruN heroes/paladin/karty/bank/b023-pervyj-natisk.yaml heroes/paladin/karty/bank/b023-pervyj-natisk.yaml
+--- heroes/paladin/karty/bank/b023-pervyj-natisk.yaml	2026-10-26 03:59:24.840124753 +0300
++++ heroes/paladin/karty/bank/b023-pervyj-natisk.yaml	2026-10-26 08:14:58.328873439 +0300
+@@ -44,3 +44,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 34: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b024-mech-i-shchit.yaml heroes/paladin/karty/bank/b024-mech-i-shchit.yaml
+--- heroes/paladin/karty/bank/b024-mech-i-shchit.yaml	2026-10-26 06:32:38.241448608 +0300
++++ heroes/paladin/karty/bank/b024-mech-i-shchit.yaml	2026-10-26 08:02:18.412263996 +0300
+@@ -47,3 +47,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 35: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b025-otmshchenie.yaml heroes/paladin/karty/bank/b025-otmshchenie.yaml
+--- heroes/paladin/karty/bank/b025-otmshchenie.yaml	2026-10-26 04:54:57.944938202 +0300
++++ heroes/paladin/karty/bank/b025-otmshchenie.yaml	2026-10-26 07:57:57.984593101 +0300
+@@ -43,3 +43,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 56: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b026-chasha-na-dvoih.yaml heroes/paladin/karty/bank/b026-chasha-na-dvoih.yaml
+--- heroes/paladin/karty/bank/b026-chasha-na-dvoih.yaml	2026-10-26 05:46:10.868452087 +0300
++++ heroes/paladin/karty/bank/b026-chasha-na-dvoih.yaml	2026-10-26 08:19:07.747835548 +0300
+@@ -56,3 +56,13 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 51: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b027-perekrestok.yaml heroes/paladin/karty/bank/b027-perekrestok.yaml
+--- heroes/paladin/karty/bank/b027-perekrestok.yaml	2026-10-26 06:38:17.231696583 +0300
++++ heroes/paladin/karty/bank/b027-perekrestok.yaml	2026-10-26 08:10:38.617310994 +0300
+@@ -63,3 +63,11 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 15: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b033-smirenie.yaml heroes/paladin/karty/bank/b033-smirenie.yaml
+--- heroes/paladin/karty/bank/b033-smirenie.yaml	2026-10-26 04:48:59.164375490 +0300
++++ heroes/paladin/karty/bank/b033-smirenie.yaml	2026-10-26 07:26:47.841339470 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 33
+ chisla:
+-  uron: 5
++  uron: 6
+   uron_mal: 1
+ tekst: 'Если вера 0: {uron:урон}. Иначе {uron_mal:урон}.'
+ effekt:
+@@ -29,3 +29,4 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 33: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 52: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 5 → 6'
+diff -ruN heroes/paladin/karty/bank/b035-rovno-tri.yaml heroes/paladin/karty/bank/b035-rovno-tri.yaml
+--- heroes/paladin/karty/bank/b035-rovno-tri.yaml	2026-10-26 06:16:28.783393063 +0300
++++ heroes/paladin/karty/bank/b035-rovno-tri.yaml	2026-10-26 08:19:07.761863192 +0300
+@@ -6,7 +6,7 @@
+ vid: связка
+ nomer_idei: 35
+ chisla:
+-  uron: 5
++  uron: 6
+   shchit: 1
+   uron_mal: 1
+ tekst: 'Если вера ровно 3: {uron:урон} и {shchit:щит} союзнику. Иначе {uron_mal:урон}.'
+@@ -48,3 +48,8 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 54: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 66: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 6 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b037-chet-i-nechet.yaml heroes/paladin/karty/bank/b037-chet-i-nechet.yaml
+--- heroes/paladin/karty/bank/b037-chet-i-nechet.yaml	2026-10-26 05:46:10.871925295 +0300
++++ heroes/paladin/karty/bank/b037-chet-i-nechet.yaml	2026-10-26 08:19:07.765515480 +0300
+@@ -40,3 +40,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b038-klinok-veruyushchego.yaml heroes/paladin/karty/bank/b038-klinok-veruyushchego.yaml
+--- heroes/paladin/karty/bank/b038-klinok-veruyushchego.yaml	2026-10-26 04:04:52.102519998 +0300
++++ heroes/paladin/karty/bank/b038-klinok-veruyushchego.yaml	2026-10-26 08:02:18.478267532 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 38
+ chisla:
+-  uron: 1
++  uron: 2
+   uron_big: 5
+ tekst: '{uron:урон}. Вера 4+: {uron_big:урон}.'
+ effekt:
+@@ -33,3 +33,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 46: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 1 → 2'
+diff -ruN heroes/paladin/karty/bank/b039-strazh-obeta.yaml heroes/paladin/karty/bank/b039-strazh-obeta.yaml
+--- heroes/paladin/karty/bank/b039-strazh-obeta.yaml	2026-10-26 05:29:18.940008739 +0300
++++ heroes/paladin/karty/bank/b039-strazh-obeta.yaml	2026-10-26 08:19:07.774416406 +0300
+@@ -37,3 +37,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 51: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b047-polnota.yaml heroes/paladin/karty/bank/b047-polnota.yaml
+--- heroes/paladin/karty/bank/b047-polnota.yaml	2026-10-26 06:38:17.234993897 +0300
++++ heroes/paladin/karty/bank/b047-polnota.yaml	2026-10-26 07:45:11.661766336 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 47
+ chisla:
+-  uron: 2
++  uron: 3
+ tekst: 'Если вера 6: эта карта не считается в лимит. {uron:урон}.'
+ effekt:
+ - esli: vera >= 6
+@@ -43,3 +43,12 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 57: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 4 → 3'
+diff -ruN heroes/paladin/karty/bank/b052-svet-nadezhdy.yaml heroes/paladin/karty/bank/b052-svet-nadezhdy.yaml
+--- heroes/paladin/karty/bank/b052-svet-nadezhdy.yaml	2026-10-26 00:03:29.430223357 +0300
++++ heroes/paladin/karty/bank/b052-svet-nadezhdy.yaml	2026-10-26 08:19:07.750276776 +0300
+@@ -25,3 +25,5 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 2 → 3'
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b056-znamenie.yaml heroes/paladin/karty/bank/b056-znamenie.yaml
+--- heroes/paladin/karty/bank/b056-znamenie.yaml	2026-10-26 00:19:21.205268680 +0300
++++ heroes/paladin/karty/bank/b056-znamenie.yaml	2026-10-26 07:26:47.868961973 +0300
+@@ -31,3 +31,5 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b057-posvyashchenie.yaml heroes/paladin/karty/bank/b057-posvyashchenie.yaml
+--- heroes/paladin/karty/bank/b057-posvyashchenie.yaml	2026-10-26 04:37:46.720816949 +0300
++++ heroes/paladin/karty/bank/b057-posvyashchenie.yaml	2026-10-26 07:26:47.875832819 +0300
+@@ -42,3 +42,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 52: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 53: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b059-chudo-shchedrosti.yaml heroes/paladin/karty/bank/b059-chudo-shchedrosti.yaml
+--- heroes/paladin/karty/bank/b059-chudo-shchedrosti.yaml	2026-10-26 01:58:31.927310335 +0300
++++ heroes/paladin/karty/bank/b059-chudo-shchedrosti.yaml	2026-10-26 07:31:18.763763937 +0300
+@@ -22,3 +22,7 @@
+ - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+ - '2026-10-26 Claude: подгонка, правка работы карты (план §этап 2 п.5; бот играл её в 2–5% случаев, когда в руке): добавлено «2 щита союзнику».
+   Было: «Чудо: союзник берёт карту за каждые {za} веры.»'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b069-otvetnyj-zaslon.yaml heroes/paladin/karty/bank/b069-otvetnyj-zaslon.yaml
+--- heroes/paladin/karty/bank/b069-otvetnyj-zaslon.yaml	2026-10-26 03:48:41.347345573 +0300
++++ heroes/paladin/karty/bank/b069-otvetnyj-zaslon.yaml	2026-10-26 08:14:58.332077342 +0300
+@@ -6,7 +6,7 @@
+ vid: связка
+ nomer_idei: 69
+ chisla:
+-  uron: 2
++  uron: 3
+ tekst: Заслон союзнику. Когда он сработает, {uron:урон} врагу.
+ effekt:
+ - zaslon:
+@@ -37,3 +37,10 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron 5 → 4'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 44: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 4 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 3 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 4 → 3'
+diff -ruN heroes/paladin/karty/bank/b074-perehvat.yaml heroes/paladin/karty/bank/b074-perehvat.yaml
+--- heroes/paladin/karty/bank/b074-perehvat.yaml	2026-10-26 05:29:18.949981547 +0300
++++ heroes/paladin/karty/bank/b074-perehvat.yaml	2026-10-26 08:14:58.393675140 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 74
+ chisla:
+   sila: 2
+-  shchit: 1
++  shchit: 2
+ tekst: В этом раунде удар по герою под Заслоном принимаешь ты, и он слабее ещё на {sila}. {shchit:щит} себе.
+ effekt:
+ - {perehvat: sila}
+@@ -34,3 +34,6 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
+diff -ruN heroes/paladin/karty/bank/b075-shchit-pod-zaslonom.yaml heroes/paladin/karty/bank/b075-shchit-pod-zaslonom.yaml
+--- heroes/paladin/karty/bank/b075-shchit-pod-zaslonom.yaml	2026-10-25 23:24:22.355946374 +0300
++++ heroes/paladin/karty/bank/b075-shchit-pod-zaslonom.yaml	2026-10-26 07:35:46.537777027 +0300
+@@ -17,3 +17,7 @@
+ - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 3 → 2'
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b076-udar-pod-zaslonom.yaml heroes/paladin/karty/bank/b076-udar-pod-zaslonom.yaml
+--- heroes/paladin/karty/bank/b076-udar-pod-zaslonom.yaml	2026-10-26 03:54:02.168746463 +0300
++++ heroes/paladin/karty/bank/b076-udar-pod-zaslonom.yaml	2026-10-26 08:02:18.415318384 +0300
+@@ -35,3 +35,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 41: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b077-svyataya-bronya.yaml heroes/paladin/karty/bank/b077-svyataya-bronya.yaml
+--- heroes/paladin/karty/bank/b077-svyataya-bronya.yaml	2026-10-26 00:15:02.384875004 +0300
++++ heroes/paladin/karty/bank/b077-svyataya-bronya.yaml	2026-10-26 07:31:18.774406174 +0300
+@@ -27,3 +27,9 @@
+ - '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b078-zaslon-naperyod.yaml heroes/paladin/karty/bank/b078-zaslon-naperyod.yaml
+--- heroes/paladin/karty/bank/b078-zaslon-naperyod.yaml	2026-10-26 05:46:10.888903611 +0300
++++ heroes/paladin/karty/bank/b078-zaslon-naperyod.yaml	2026-10-26 07:17:44.301918780 +0300
+@@ -47,3 +47,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b081-znamya-nad-golovoj.yaml heroes/paladin/karty/bank/b081-znamya-nad-golovoj.yaml
+--- heroes/paladin/karty/bank/b081-znamya-nad-golovoj.yaml	2026-10-26 03:42:31.800707975 +0300
++++ heroes/paladin/karty/bank/b081-znamya-nad-golovoj.yaml	2026-10-26 07:39:57.237831942 +0300
+@@ -47,3 +47,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 40: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b082-pamyat-zaslona.yaml heroes/paladin/karty/bank/b082-pamyat-zaslona.yaml
+--- heroes/paladin/karty/bank/b082-pamyat-zaslona.yaml	2026-10-26 05:17:45.509010192 +0300
++++ heroes/paladin/karty/bank/b082-pamyat-zaslona.yaml	2026-10-26 08:14:58.335986791 +0300
+@@ -45,3 +45,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 53: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 59: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b084-obmen.yaml heroes/paladin/karty/bank/b084-obmen.yaml
+--- heroes/paladin/karty/bank/b084-obmen.yaml	2026-10-26 05:29:18.943168712 +0300
++++ heroes/paladin/karty/bank/b084-obmen.yaml	2026-10-26 07:17:44.276755435 +0300
+@@ -37,3 +37,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b086-zaslon-i-mech.yaml heroes/paladin/karty/bank/b086-zaslon-i-mech.yaml
+--- heroes/paladin/karty/bank/b086-zaslon-i-mech.yaml	2026-10-26 03:42:31.792707974 +0300
++++ heroes/paladin/karty/bank/b086-zaslon-i-mech.yaml	2026-10-26 07:35:46.432791979 +0300
+@@ -36,3 +36,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 39: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b089-zaslon-pod-blagosloveniem.yaml heroes/paladin/karty/bank/b089-zaslon-pod-blagosloveniem.yaml
+--- heroes/paladin/karty/bank/b089-zaslon-pod-blagosloveniem.yaml	2026-10-26 02:49:22.448541307 +0300
++++ heroes/paladin/karty/bank/b089-zaslon-pod-blagosloveniem.yaml	2026-10-26 07:49:21.965432492 +0300
+@@ -45,3 +45,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 31: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 34: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b091-zaslon-klyatva.yaml heroes/paladin/karty/bank/b091-zaslon-klyatva.yaml
+--- heroes/paladin/karty/bank/b091-zaslon-klyatva.yaml	2026-10-26 05:46:10.875624679 +0300
++++ heroes/paladin/karty/bank/b091-zaslon-klyatva.yaml	2026-10-26 07:17:44.283995746 +0300
+@@ -45,3 +45,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b093-svet-na-shchite.yaml heroes/paladin/karty/bank/b093-svet-na-shchite.yaml
+--- heroes/paladin/karty/bank/b093-svet-na-shchite.yaml	2026-10-26 03:01:27.605361548 +0300
++++ heroes/paladin/karty/bank/b093-svet-na-shchite.yaml	2026-10-26 08:02:18.483885607 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 93
+ chisla:
+-  uron_mal: 1
++  uron_mal: 2
+ tekst: Урон = щит союзника, если на нём Заслон. Иначе {uron_mal:урон}.
+ effekt:
+ - {uron: shchit_soyuznika if soyuznik_zaslon else uron_mal}
+@@ -25,3 +25,8 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron_mal 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron_mal 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: uron_mal 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron_mal 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron_mal 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron_mal 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron_mal 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron_mal 1 → 2'
+diff -ruN heroes/paladin/karty/bank/b097-kara-nebesnaya.yaml heroes/paladin/karty/bank/b097-kara-nebesnaya.yaml
+--- heroes/paladin/karty/bank/b097-kara-nebesnaya.yaml	2026-10-26 04:04:52.104778481 +0300
++++ heroes/paladin/karty/bank/b097-kara-nebesnaya.yaml	2026-10-26 08:14:58.338897513 +0300
+@@ -34,3 +34,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: uron 4 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: uron 5 → 6'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: uron 6 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: uron 6 → 5'
+diff -ruN heroes/paladin/karty/bank/b098-prozrenie.yaml heroes/paladin/karty/bank/b098-prozrenie.yaml
+--- heroes/paladin/karty/bank/b098-prozrenie.yaml	2026-10-26 05:29:18.964921732 +0300
++++ heroes/paladin/karty/bank/b098-prozrenie.yaml	2026-10-26 08:19:07.757683641 +0300
+@@ -42,3 +42,9 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 60: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 61: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 62: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b100-psalom.yaml heroes/paladin/karty/bank/b100-psalom.yaml
+--- heroes/paladin/karty/bank/b100-psalom.yaml	2026-10-26 04:54:57.948779787 +0300
++++ heroes/paladin/karty/bank/b100-psalom.yaml	2026-10-26 07:57:57.999097760 +0300
+@@ -38,3 +38,11 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 47: uron 3 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 55: uron 2 → 3'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 56: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: uron 3 → 2'
+diff -ruN heroes/paladin/karty/bank/b101-otlozhennyj-psalom.yaml heroes/paladin/karty/bank/b101-otlozhennyj-psalom.yaml
+--- heroes/paladin/karty/bank/b101-otlozhennyj-psalom.yaml	2026-10-26 06:38:17.248525518 +0300
++++ heroes/paladin/karty/bank/b101-otlozhennyj-psalom.yaml	2026-10-26 08:19:07.770939260 +0300
+@@ -62,3 +62,15 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 67: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 70: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: shchit 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: shchit 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 12: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b102-vozvrashchenie.yaml heroes/paladin/karty/bank/b102-vozvrashchenie.yaml
+--- heroes/paladin/karty/bank/b102-vozvrashchenie.yaml	2026-10-26 06:32:38.286371479 +0300
++++ heroes/paladin/karty/bank/b102-vozvrashchenie.yaml	2026-10-26 08:06:35.118541547 +0300
+@@ -6,7 +6,7 @@
+ vid: атака
+ nomer_idei: 102
+ chisla:
+-  uron: 2
++  uron: 1
+ tekst: '{uron:урон}. После розыгрыша положи эту карту на верх колоды.'
+ effekt:
+ - {uron: uron}
+@@ -40,3 +40,14 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 59: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 1: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 2: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 6: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 7: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 10: uron 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 11: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: uron 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b114-svyatye-moshchi.yaml heroes/paladin/karty/bank/b114-svyatye-moshchi.yaml
+--- heroes/paladin/karty/bank/b114-svyatye-moshchi.yaml	2026-10-26 06:32:38.304420191 +0300
++++ heroes/paladin/karty/bank/b114-svyatye-moshchi.yaml	2026-10-26 07:45:11.671384317 +0300
+@@ -7,7 +7,7 @@
+ nomer_idei: 114
+ chisla:
+   vera: 2
+-  uron: 6
++  uron: 5
+ tekst: 'Сожги верхнюю карту колоды: +{vera:вера}. Если это карта урона, ещё {uron:урон}.'
+ effekt:
+ - {osobyj: {imya: sozhgi_verh_svoej, v: a}}
+@@ -37,3 +37,8 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: uron 5 → 6'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 48: uron 6 → 5'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 3: uron 6 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 5 → 4'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 4 → 5'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 8: uron 5 → 6'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 9: uron 6 → 5'
+diff -ruN heroes/paladin/karty/bank/b133-obryad-dvoih.yaml heroes/paladin/karty/bank/b133-obryad-dvoih.yaml
+--- heroes/paladin/karty/bank/b133-obryad-dvoih.yaml	2026-10-26 05:46:10.864007500 +0300
++++ heroes/paladin/karty/bank/b133-obryad-dvoih.yaml	2026-10-26 08:19:07.753935554 +0300
+@@ -39,3 +39,5 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: shchit 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 16: shchit 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 17: shchit 2 → 1'
+diff -ruN heroes/paladin/karty/bank/b145-vozglas.yaml heroes/paladin/karty/bank/b145-vozglas.yaml
+--- heroes/paladin/karty/bank/b145-vozglas.yaml	2026-10-26 06:32:38.297740788 +0300
++++ heroes/paladin/karty/bank/b145-vozglas.yaml	2026-10-26 08:06:35.121488609 +0300
+@@ -34,3 +34,7 @@
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: uron 1 → 2'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 68: uron 2 → 1'
+ - '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 69: uron 1 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 4: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 5: uron 3 → 2'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 13: uron 2 → 3'
++- '2026-10-26 стенд, подгонка ruka5-podgonka, круг 14: uron 3 → 2'
+diff -ruN dungeons/trenazher/vragi/boss-velikan.yaml dungeons/trenazher/vragi/boss-velikan.yaml
+--- dungeons/trenazher/vragi/boss-velikan.yaml	2026-10-26 06:49:24.138720034 +0300
++++ dungeons/trenazher/vragi/boss-velikan.yaml	2026-10-26 08:19:07.867992612 +0300
+@@ -2,7 +2,7 @@
+ id: velikan
+ imya: Великан
+ yarus: BOSS
+-zdorove: 60
++zdorove: 54
+ rezhim: cikl
+ namereniya:
+ - tip: удар
+@@ -13,7 +13,7 @@
+   - {ataka: 6, cel: vse}
+ - tip: защита
+   dejstviya:
+-  - {shchit: 4}
++  - {shchit: 0}
+   - {ataka: 6}
+ - tip: удар
+   dejstviya:
+diff -ruN dungeons/trenazher/vragi/el-palach.yaml dungeons/trenazher/vragi/el-palach.yaml
+--- dungeons/trenazher/vragi/el-palach.yaml	2026-10-26 06:49:24.128254130 +0300
++++ dungeons/trenazher/vragi/el-palach.yaml	2026-10-26 08:19:07.840720791 +0300
+@@ -2,7 +2,7 @@
+ id: palach
+ imya: Палач
+ yarus: EL
+-zdorove: 40
++zdorove: 39
+ rezhim: cikl
+ namereniya:
+ - tip: удар
+@@ -15,7 +15,7 @@
+   - {ataka: 6}
+ - tip: защита
+   dejstviya:
+-  - {shchit: 8}
++  - {shchit: 0}
+   - {ataka: 6}
+   - {ataka: 6}
+ - tip: удар
+diff -ruN dungeons/trenazher/vragi/el-strazh-vorot.yaml dungeons/trenazher/vragi/el-strazh-vorot.yaml
+--- dungeons/trenazher/vragi/el-strazh-vorot.yaml	2026-10-26 06:49:24.133792798 +0300
++++ dungeons/trenazher/vragi/el-strazh-vorot.yaml	2026-10-26 08:19:07.854043270 +0300
+@@ -2,13 +2,13 @@
+ id: strazh-vorot
+ imya: Страж ворот
+ yarus: EL
+-zdorove: 40
++zdorove: 34
+ shchit_na_starte: 6
+ rezhim: cikl
+ namereniya:
+ - tip: защита
+   dejstviya:
+-  - {shchit: 1}
++  - {shchit: 0}
+   - {ataka: 6}
+   - {ataka: 6}
+ - tip: удар
+diff -ruN dungeons/trenazher/vragi/i-chuchelo-rubaka.yaml dungeons/trenazher/vragi/i-chuchelo-rubaka.yaml
+--- dungeons/trenazher/vragi/i-chuchelo-rubaka.yaml	2026-10-26 06:49:24.103129033 +0300
++++ dungeons/trenazher/vragi/i-chuchelo-rubaka.yaml	2026-10-26 08:19:07.790549396 +0300
+@@ -15,6 +15,6 @@
+   - {ataka: 6}
+ - tip: защита
+   dejstviya:
+-  - {shchit: 49}
++  - {shchit: 66}
+   - {ataka: 6}
+   - {ataka: 5}
+diff -ruN dungeons/trenazher/vragi/i-chuchelo-strazh.yaml dungeons/trenazher/vragi/i-chuchelo-strazh.yaml
+--- dungeons/trenazher/vragi/i-chuchelo-strazh.yaml	2026-10-26 06:49:24.107669297 +0300
++++ dungeons/trenazher/vragi/i-chuchelo-strazh.yaml	2026-10-26 08:19:07.804161588 +0300
+@@ -7,7 +7,7 @@
+ namereniya:
+ - tip: защита
+   dejstviya:
+-  - {shchit: 50}
++  - {shchit: 33}
+   - {ataka: 6}
+   - {ataka: 6}
+ - tip: удар
+diff -ruN dungeons/trenazher/vragi/ii-latnik.yaml dungeons/trenazher/vragi/ii-latnik.yaml
+--- dungeons/trenazher/vragi/ii-latnik.yaml	2026-10-26 06:49:24.115224333 +0300
++++ dungeons/trenazher/vragi/ii-latnik.yaml	2026-10-26 08:19:07.815964836 +0300
+@@ -2,7 +2,7 @@
+ id: latnik
+ imya: Латник
+ yarus: II
+-zdorove: 16
++zdorove: 12
+ shchit_na_starte: 4
+ svojstva: {bronya: 1}
+ rezhim: cikl
+diff -ruN dungeons/trenazher/vragi/ii-mechnik.yaml dungeons/trenazher/vragi/ii-mechnik.yaml
+--- dungeons/trenazher/vragi/ii-mechnik.yaml	2026-10-26 06:49:24.122057562 +0300
++++ dungeons/trenazher/vragi/ii-mechnik.yaml	2026-10-26 08:19:07.828030416 +0300
+@@ -2,7 +2,7 @@
+ id: mechnik
+ imya: Мечник
+ yarus: II
+-zdorove: 19
++zdorove: 15
+ svojstva: {bronya: 1}
+ rezhim: cikl
+ namereniya:
+diff -ruN design/03-bazovye-pravila.yaml design/03-bazovye-pravila.yaml
+--- design/03-bazovye-pravila.yaml	2026-10-26 02:36:19.490420320 +0300
++++ design/03-bazovye-pravila.yaml	2026-10-26 07:03:10.091154130 +0300
+@@ -1,7 +1,7 @@
+ # Общие числа правил боя. Пороги соглашения по балансу — в soglashenie.yaml.
+ # Агент может менять числа здесь только в границах, которые разрешил план.
+ 
+-ruka: 6                    # в начале раунда герои добирают руку до 6 карт
++ruka: 5                    # в начале раунда герои добирают руку до 6 карт
+ mana_maga: 3               # мана мага в начале раунда
+ limit_kart_zhreca: 3       # Жрец играет до 3 карт из руки за ход
+ vera_maks: 6               # вера Жреца 0–6

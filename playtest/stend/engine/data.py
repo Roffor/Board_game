@@ -211,10 +211,11 @@ class CardInst:
 
 
 # ---------------------------------------------------------------- враги и локации
-TARGETS = {'odin': 'single', 'vse': 'all', 'ranenyj': 'weakest', 'bez_shchita': 'unshielded', 'motylek': 'moth'}
+TARGETS = {'odin': 'single', 'vse': 'all', 'ranenyj': 'weakest', 'bez_shchita': 'unshielded', 'motylek': 'moth',
+           'zdorovyj': 'healthiest', 'menshe_shchita': 'leastshield', 'samyj_ranenyj': 'weakest_t'}   # zdorovyj — у кого больше здоровья (2026-10-26)
 
 
-TG_TEXT = {'single': '', 'all': ' по всем', 'weakest': ' по самому раненому', 'unshielded': ' по незащищённому',
+TG_TEXT = {'single': '', 'all': ' по всем', 'weakest': ' по самому раненому', 'unshielded': ' по незащищённому', 'healthiest': ' по самому здоровому', 'leastshield': ' по тому, у кого меньше щита', 'weakest_t': ' по самому раненому',
            'moth': ' (мотылёк)'}
 
 
@@ -328,6 +329,7 @@ class Game:
         self.cards = {}
         for hp in lay['geroi']:
             h = self._load(hp)
+            h = self._patch('geroj', h.get('id'), h)      # правки «geroj.<id>.zdorove» (2026-10-26: замер здоровья пары)
             self.heroes[h['id']] = h
             for cp in lay['karty'](os.path.dirname(hp), h['id']):
                 raw = self._load(cp)
@@ -337,6 +339,11 @@ class Game:
                 if c.hero != h['id']:
                     raise DataError(f'{cp}: geroj «{c.hero}», а лежит в папке героя {h["id"]}')
                 self.cards[c.cid] = c
+        # podzemelye в правилах — играть только врагов и комнаты одного подземелья (папка dungeons/<имя>/)
+        pz = self.rules.get('podzemelye')
+        if pz:
+            pick = lambda ps: [p for p in ps if os.path.basename(os.path.dirname(os.path.dirname(p))) == pz]
+            lay['vragi'], lay['lokacii'] = pick(lay['vragi']), pick(lay['lokacii'])
         self.enemies = {}
         for ep in lay['vragi']:
             raw = self._load(ep)
@@ -393,19 +400,26 @@ class Game:
         for hid, h in self.heroes.items():
             start = [c for c in self.cards.values() if c.hero == hid and c.set == 'start']
             n = sum(c.copies for c in start)
-            if n != h.get('start_kart', 15):
+            # 0 стартовых — допустимо: старт тогда задаёт план (geroi.<герой>.start), как при подборе старта из банка
+            if n not in (0, h.get('start_kart', 15)):
                 raise DataError(f'герой {hid}: в стартовой колоде {n} карт, нужно {h.get("start_kart", 15)}')
             for c in self.cards.values():
                 if c.hero == hid and c.replaces and c.replaces not in self.cards:
-                    raise DataError(f'{c.path}: zamenyaet «{c.replaces}» — такой карты нет')
+                    if c.set in ('start', 'bank', 'legendarka'):
+                        raise DataError(f'{c.path}: zamenyaet «{c.replaces}» — такой карты нет')
+                    c.replaces = None     # старый пул ссылается на стёртый старт 2026-10-25: заменяет по виду
 
     def hero_cards(self, hid, sets):
         return sorted((c for c in self.cards.values() if c.hero == hid and c.set in sets), key=lambda c: c.cid)
 
-    def start_deck(self, hid):
+    def start_deck(self, hid, zapasnoj=False):
+        """Стартовая колода. zapasnoj=True — если стартовых карт нет (старт подбирается планом),
+        вернуть 15 первых нейтральных карт банка: нужно тестам движка, которым колода нужна любая."""
         d = []
         for c in self.hero_cards(hid, {'start'}):
             d += [c] * c.copies
+        if not d and zapasnoj:
+            d = [c for c in self.hero_cards(hid, {'bank'}) if not c.build][:self.heroes[hid].get('start_kart', 15)]
         return d
 
     def enemies_of(self, tier):

@@ -6,22 +6,19 @@ bild: М
 vid: атака
 nomer_idei: 112
 chisla:
-  uron: 4
+  uron: 6
 tekst: Сбрось верхнюю карту колоды. Если это карта урона, {uron:урон}.
 effekt:
-- sbros_verha:
-    n: 1
-    v: a
+- {sbros_verha: {n: 1, v: a}}
 - esli: a
   to:
-  - uron: uron
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 8
+  - {uron: uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 8]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: uron 4 → 5'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: uron 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: uron 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 17: uron 5 → 6'

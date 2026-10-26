@@ -1,0 +1,23 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m219-porcha-i-pepel
+imya: Порча и пепел
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 219
+cena: 0
+chisla:
+  uron: 1
+tekst: '{cena:мана}. Сожги карту из руки: наложи Порчу и {uron:урон}.'
+effekt:
+- {sozhgi: {otkuda: ruka, n: 1, v: s}}
+- esli: s
+  to:
+  - {porcha: 1}
+  - {uron: uron}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'

@@ -5,22 +5,15 @@ nabor: bank
 bild: Д
 vid: атака
 nomer_idei: 105
-cena: 1
+cena: 0
 chisla:
   za: 3
 tekst: '{cena:мана}. {za:урон} за каждый жетон долга у тебя.'
 effekt:
-- uron: za * dolg
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {uron: za * dolg}
+bot: {poryadok: 3, cennost: 5}
+granicy: {za: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: cena 1 → 0'

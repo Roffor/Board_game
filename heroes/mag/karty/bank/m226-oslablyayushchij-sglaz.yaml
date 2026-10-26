@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m226-oslablyayushchij-sglaz
+imya: Ослабляющий сглаз
+geroj: mag
+nabor: zapas
+bild: Р
+vid: защита
+nomer_idei: 226
+cena: 2
+chisla:
+  oslab: 1
+tekst: '{cena:мана}. Наложи Порчу. В этом раунде враг бьёт на {oslab} слабее.'
+effekt:
+- {porcha: 1}
+- {oslab_vraga: oslab}
+bot: {poryadok: 3, cennost: 5}
+granicy: {oslab: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 5: cena 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 6: cena 1 → 2'
+- '2026-10-26 Никита: «Слабость» (враг бьёт слабее) убрать совсем — в запас'

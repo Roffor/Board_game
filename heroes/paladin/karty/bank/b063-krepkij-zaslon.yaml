@@ -7,18 +7,13 @@ vid: защита
 nomer_idei: 63
 chisla:
   sila: 2
-tekst: Заслон союзнику. Этот Заслон ослабляет удар ещё на {sila}.
+tekst: Заслон союзнику. Шипы этого Заслона бьют ещё на {sila}.
 effekt:
-- zaslon:
-    komu: soyuznik
-    sila: sila
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  sila:
-  - 0
-  - 5
+- {zaslon: {komu: soyuznik, sila: sila}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {sila: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Claude: текст под Заслон-шипы (решение Никиты: Заслон не ослабляет удар, а бьёт шипами). Было: «Заслон союзнику. Этот Заслон ослабляет
+  удар ещё на {sila}.»'

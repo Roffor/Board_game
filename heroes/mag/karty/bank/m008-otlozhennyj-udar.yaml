@@ -1,20 +1,20 @@
 id: m008-otlozhennyj-udar
 imya: Отложенный удар
 geroj: mag
-nabor: bank
+nabor: start
 bild: ''
 vid: атака
 nomer_idei: 8
 cena: 1
 chisla:
-  uron: 3
-  uron_big: 6
+  uron: 1
+  uron_big: 3
   ocenka: 5
 tekst: '{cena:мана}. Сейчас: {uron:урон}. Или после хода врага: {uron_big:урон}.'
 varianty:
 - nazvanie: сейчас
   effekt:
-  - uron: uron
+  - {uron: uron}
 - nazvanie: после
   effekt:
   - obet:
@@ -22,23 +22,20 @@ varianty:
       vid_ocenki: dmg
       ocenka_bota: ocenka
       effekt:
-      - uron: uron_big
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 6
-  uron_big:
-  - 0
-  - 12
-  ocenka:
-  - 0
-  - 10
-  cena:
-  - 0
-  - 3
+      - {uron: uron_big}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], uron_big: [0, 12], ocenka: [0, 10], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron_big 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: uron_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 16: uron_big 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: uron_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron_big 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 47: uron_big 4 → 3'
+- '2026-10-27 Claude: решение Никиты 3А: в старт вместо карты щита'
+kopij: 1

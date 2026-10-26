@@ -1,0 +1,63 @@
+# Контроль базового набора reports/obshchie/06-bazovyj-nabor.md. Запуск — только по слову Никиты.
+nazvanie: 2026-10-27-baza-kontrol
+opisanie: Контроль базового набора (по 30 апгрейдов на героя) и 6 легендарок после правок 2А/3А. Без правок.
+srok_chasov: 0.4
+seed0: 27102026
+tajmaut_boya_sek: 30
+geroi:
+  mag:
+    start: &id001 [m001-udar, m001-udar, m002-obereg, m007-otlozhennyj-obereg, m008-otlozhennyj-udar, m009-trojnaya-primeta, m010-gadanie-na-uglyah, m011-shepot-predkov, m012-dym-nad-ochagom, m016-skvoz-zaslon, m019-ritualnyj-krug, m028-iskra-v-peple,
+      m094-zajm, m201-tleyushchij-udar, m221-nit-porchi]
+    pul: &id002 [m003-dvulikij-zhest, m005-povorot-neba, m024-polnye-ruki, m026-perekrestok, m014-zhertvennaya-chasha, m025-poslednij-dovod, m038-feniks, m048-zaslon-iz-pepla, m042-pozhiranie, m044-mimoletnyj-duh, m051-eho-obryada, m207-plamya-iz-praha,
+      m039-zhadnye-duhi, m064-osinyj-roj, m067-tyanushchaya-porcha, m070-dva-proklyatiya, m074-otvetnyj-sglaz, m077-klyuch-k-sglazu, m088-dobivanie, m087-zloradstvo, m098-doplata-v-dolg, m105-dolgovaya-yama, m108-chistye-ruki, m114-vklad, m122-karty-vzajmy,
+      m100-skidka-duhov, m096-duh-hranitel, m134-polnyj-obryad, m245-pepelnyj-zajm, m141-pod-sglazom-v-dolg]
+  zhrec:
+    start: &id003 [b001-udar-mecha, b001-udar-mecha, b002-shchit-very, b002-shchit-very, b004-shag-vpered, b007-obet-utra, b008-trojnoe-znamenie, b010-prival, b013-pokayanie, b014-stroj, b028-svecha, b029-chudo-sveta, b061-zaslon, b062-dvojnoj-zaslon,
+      b094-tihaya-molitva]
+    pul: &id004 [b003-dvuruchnyj-zamah, b016-udar-shchitom, b018-pravednyj-gnev, b022-zavershayushchij-udar, b023-pervyj-natisk, b026-chasha-na-dvoih, b032-maloe-chudo, b033-smirenie, b035-rovno-tri, b046-chudo-suda, b050-chudo-razdeleniya, b055-stojkost,
+      b214-obet-sily, b066-stojkij-zaslon, b068-primanka, b071-zaslon-bronya, b073-sorvat-zaslon, b074-perehvat, b078-zaslon-naperyod, b080-opornyj-zaslon, b096-znamenie-svyshe, b100-psalom, b108-tyazhkaya-molitva, b111-predvestie, b118-horal, b121-obet-molchaniya,
+      b126-molitva-pod-udarom, b133-obryad-dvoih, b137-zaslon-iz-kolody, b149-perevernutaya-molitva]
+fazy:
+- id: kontrol
+  tip: progon
+  dolya: 1.0
+  pervaya_volna: 800
+  volna: 200
+  varianty:
+  - {metka: baza-nabor}
+  - metka: leg-m152-pepelnyj-tron
+    geroi:
+      mag:
+        start: *id001
+        pul: *id002
+        obyazatelno: [m152-pepelnyj-tron]
+  - metka: leg-m156-glubokij-sglaz
+    geroi:
+      mag:
+        start: *id001
+        pul: *id002
+        obyazatelno: [m156-glubokij-sglaz]
+  - metka: leg-m158-plata-duham
+    geroi:
+      mag:
+        start: *id001
+        pul: *id002
+        obyazatelno: [m158-plata-duham]
+  - metka: leg-b151-neugasimaya-vera
+    geroi:
+      zhrec:
+        start: *id003
+        pul: *id004
+        obyazatelno: [b151-neugasimaya-vera]
+  - metka: leg-b152-dvojnaya-molitva
+    geroi:
+      zhrec:
+        start: *id003
+        pul: *id004
+        obyazatelno: [b152-dvojnaya-molitva]
+  - metka: leg-b153-shipy-zaslona
+    geroi:
+      zhrec:
+        start: *id003
+        pul: *id004
+        obyazatelno: [b153-shipy-zaslona]

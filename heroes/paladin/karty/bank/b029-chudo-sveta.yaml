@@ -1,7 +1,7 @@
 id: b029-chudo-sveta
 imya: Чудо света
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: В
 vid: атака
 nomer_idei: 29
@@ -10,20 +10,13 @@ chisla:
   plus: 0
 tekst: 'Чудо: {za:урон} за каждую сожжённую веру.'
 effekt:
-- chudo: f
-- uron: za * f + (plus if f > 0 else 0)
+- {chudo: f}
+- {uron: za * f + (plus if f > 0 else 0)}
 metki:
 - chudo
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 4
-  plus:
-  - 0
-  - 3
+bot: {poryadok: 4, cennost: 5}
+granicy: {za: [0, 4], plus: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'

@@ -1,0 +1,26 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m232-udar-v-dolg
+imya: Удар в долг
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 232
+cena: 0
+chisla:
+  uron: 3
+  dolg_n: 2
+tekst: '{cena:мана}. {uron:урон}. {dolg_n:мана} в долг.'
+effekt:
+- {uron: uron}
+- {dolg: dolg_n}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 7], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 5: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 56: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 57: uron 4 → 3'

@@ -1,22 +1,17 @@
 id: m079-sglaz-iz-ruk-soyuznika
 imya: Сглаз из рук союзника
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: связка
 nomer_idei: 79
 cena: 0
 tekst: '{cena:мана}. Следующее попадание союзника в этом раунде накладывает Порчу.'
 effekt:
-- do_konca_raunda:
-    soyuznik_nakladyvaet: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {soyuznik_nakladyvaet: 1}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -7,26 +7,31 @@ vid: вера
 nomer_idei: 52
 chisla:
   vera: 3
-  shchit: 2
+  shchit: 1
 tekst: 'Если вера меньше 2: +{vera:вера}. Иначе {shchit:щит} обоим.'
 effekt:
 - esli: vera < 2
   to:
-  - vera: vera
+  - {vera: vera}
   inache:
-  - shchit:
-      komu: oba
-      n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 6
-  shchit:
-  - 0
-  - 5
+  - {shchit: {komu: oba, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 6], shchit: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 7: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 8: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 18: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 22: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 23: shchit 2 → 1'

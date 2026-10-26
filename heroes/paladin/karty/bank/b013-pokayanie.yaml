@@ -1,7 +1,7 @@
 id: b013-pokayanie
 imya: Покаяние
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: вера
 nomer_idei: 13
@@ -10,24 +10,14 @@ chisla:
   dobor: 1
 tekst: 'Сбрось карту: +{vera:вера}, возьми {dobor:карту}.'
 effekt:
-- sbros:
-    n: 1
-    v: s
+- {sbros: {n: 1, v: s}}
 - esli: s
   to:
-  - vera: vera
-  - dobor: dobor
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
-granicy:
-  vera:
-  - 0
-  - 4
-  dobor:
-  - 0
-  - 4
+  - {vera: vera}
+  - {dobor: dobor}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {vera: [0, 4], dobor: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'

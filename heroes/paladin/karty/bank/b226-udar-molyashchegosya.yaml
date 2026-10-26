@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b226-udar-molyashchegosya
+imya: Удар молящегося
+geroj: zhrec
+nabor: bank
+bild: М
+vid: атака
+nomer_idei: 226
+chisla:
+  uron: 2
+  dop: 2
+tekst: '{uron:урон}. Если эта карта сыграна Молитвой, ещё {dop:урон}.'
+effekt:
+- {uron: uron + (dop if sygrana_molitvoj else 0)}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 6], dop: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 15: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron 3 → 2'

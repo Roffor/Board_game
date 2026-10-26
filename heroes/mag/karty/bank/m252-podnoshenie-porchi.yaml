@@ -1,0 +1,29 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m252-podnoshenie-porchi
+imya: Подношение порчи
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 252
+cena: 1
+podnoshenie: 1
+chisla:
+  uron: 2
+  dop: 2
+tekst: '{cena:мана}. {uron:урон}. Подношение: наложи Порчу и ещё {dop:урон}.'
+effekt:
+- {uron: uron}
+- esli: podnoshenie
+  to:
+  - {porcha: 1}
+  - {uron: dop}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 6: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 49: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 50: uron 1 → 2'

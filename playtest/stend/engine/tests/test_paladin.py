@@ -8,12 +8,12 @@ ROOT = os.path.join(os.path.dirname(__file__), '..', '..', '..', '..')
 
 
 def fight(g, extra=(), seed=3):
-    decks = {h: g.start_deck(h) for h in g.heroes}
+    decks = {h: g.start_deck(h, zapasnoj=True) for h in g.heroes}
     decks['zhrec'] = decks['zhrec'] + [g.cards[c] for c in extra]
     e = g.enemies_of('II')[0]
     f = Fight(g, decks, e, None, seed, Choices())
     f.start_round()
-    f.E.hp = f.E.maxhp = 99; f.E.shield = 0; f.E.porcha = 0
+    f.E.hp = f.E.maxhp = 99; f.E.shield = 0; f.E.porcha = 0; f.E.traits.pop('armor', None)   # Броня врага мешала проверке урона в 1
     return f
 
 
@@ -23,7 +23,8 @@ def play(f, cid, vi=0):
 
 
 def run():
-    g = load_game(ROOT)
+    # механики старого Заслона (ослабляет удар) проверяются при zaslon_shipy 0; шипы — отдельной проверкой ниже
+    g = load_game(ROOT, {'pravila.zaslon_shipy': 0})
     bad = []; n = [0]
 
     def check(name, cond):
@@ -54,10 +55,15 @@ def run():
     f = fight(g); play(f, 'b061-zaslon'); play(f, 'b074-perehvat'); M, P = f.H[f.M], f.H[f.P]
     mh, ph = M.hp, P.hp; P.shield = 0; f.deal(f.M, 8)
     check('Перехват: бьёт Паладина', M.hp == mh and P.hp == ph - 3)
-    # Шипы: урон = снятый ударом щит
-    f = fight(g, ['b153-shipy-zaslona']); play(f, 'b061-zaslon'); M = f.H[f.M]; M.shield = 4; e0 = f.E.hp
-    f.bl[f.P] = 'lun'; f.deal(f.M, 6)
-    check('Шипы по снятому щиту', e0 - f.E.hp == 3 and M.blessed)
+    # Заслон-шипы (Никита 2026-10-26): удар не ослабляет, враг получает zaslon_shipy; снимается
+    g2 = load_game(ROOT, {'pravila.zaslon_shipy': 3})
+    f = fight(g2); play(f, 'b061-zaslon'); M = f.H[f.M]; M.shield = 0; hp = M.hp; e0 = f.E.hp
+    f.deal(f.M, 5); check('Заслон-шипы: урон проходит, враг −3', M.hp == hp - 5 and e0 - f.E.hp == 3 and not M.blessed)
+    # Легендарка «Шипы заслона» (Никита 2026-10-27): шипы каждого Заслона сильнее, под Соларис ещё
+    f = fight(g2, ['b153-shipy-zaslona']); play(f, 'b061-zaslon'); f.H[f.M].shield = 0; e0 = f.E.hp
+    f.bl[f.P] = 'lun'; f.deal(f.M, 5); check('Шипы заслона: шипы +1', e0 - f.E.hp == 4)
+    f = fight(g2, ['b153-shipy-zaslona']); play(f, 'b061-zaslon'); f.H[f.M].shield = 0; e0 = f.E.hp
+    f.bl[f.P] = 'sol'; f.deal(f.M, 5); check('Шипы заслона Соларис: шипы +2', e0 - f.E.hp == 5)
     # Благословения
     f = fight(g); check('Старт: маг Соларис', f.bl[f.M] == 'sol' and f.bl[f.P] == 'lun')
     e0 = f.E.hp; play(f, 'b006-rassvet-i-sumerki'); check('Лунарис: щит союзнику', f.E.hp == e0)

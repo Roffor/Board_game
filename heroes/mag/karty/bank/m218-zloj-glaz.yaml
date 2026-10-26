@@ -1,0 +1,28 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m218-zloj-glaz
+imya: Злой глаз
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 218
+cena: 1
+chisla:
+  uron: 1
+tekst: '{cena:мана}. Если на враге Порча, {uron:урон}. Иначе наложи Порчу.'
+effekt:
+- esli: porcha > 0
+  to:
+  - {uron: uron}
+  inache:
+  - {porcha: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 7], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 53: uron 2 → 1'

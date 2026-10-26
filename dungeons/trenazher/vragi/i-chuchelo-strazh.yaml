@@ -1,0 +1,19 @@
+# Тренажёр (2026-10-26, Никита: «Не дроби на два удара. Бей либо пару, либо конкретного игрока по условию»). Одна атака в намерении; рядовой ≤8, элита ≤13, босс ≤16, в одну цель ≤10.
+id: chuchelo-strazh
+imya: Чучело-страж
+yarus: I
+zdorove: 20
+rezhim: cikl
+namereniya:
+- tip: защита
+  dejstviya:
+  - {shchit: 10}
+  - {ataka: 8, cel: zdorovyj}
+- tip: удар
+  dejstviya:
+  - {shchit: 3}
+  - {ataka: 8, cel: menshe_shchita}
+- tip: удар
+  dejstviya:
+  - {shchit: 3}
+  - {ataka: 4, cel: vse}

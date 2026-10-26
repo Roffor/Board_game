@@ -1,38 +1,31 @@
 id: b106-litaniya
 imya: Литания
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М
 vid: защита
 nomer_idei: 106
 chisla:
-  shchit: 4
+  shchit: 1
   dop: 3
   vera: 1
 tekst: '{shchit:щит} союзнику. Если в этом раунде ты играл Молитву, ещё {dop:щит} и +{vera:вера}.'
 effekt:
-- shchit:
-    komu: soyuznik
-    n: shchit
+- {shchit: {komu: soyuznik, n: shchit}}
 - esli: molitv_v_raunde > 0
   to:
-  - shchit:
-      komu: soyuznik
-      n: dop
-  - vera: vera
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 8
-  dop:
-  - 0
-  - 6
-  vera:
-  - 0
-  - 4
+  - {shchit: {komu: soyuznik, n: dop}}
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 8], dop: [0, 6], vera: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 64: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 65: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

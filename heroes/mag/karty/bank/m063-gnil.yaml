@@ -1,32 +1,30 @@
 id: m063-gnil
 imya: Гниль
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: атака
 nomer_idei: 63
 cena: 1
 chisla:
-  uron: 4
+  uron: 1
 tekst: '{cena:мана}. Порча в этом раунде не снимается. Если на враге Порча, в конце хода героев {uron:урон}.'
 effekt:
-- porcha_derzhitsya: 1
+- {porcha_derzhitsya: 1}
 - esli: porcha > 0
   to:
-  - osobyj:
-      imya: pozdnij_uron
-      n: uron
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 8
-  cena:
-  - 0
-  - 3
+  - {osobyj: {imya: pozdnij_uron, n: uron}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 8], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
 - 'упрощено для стенда: урон приходит в конце фазы героев (готовая операция «поздний урон»), а не в конце раунда'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: uron 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 5: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: uron 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: uron 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

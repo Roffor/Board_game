@@ -1,25 +1,20 @@
 id: m136-prostit-dolg
 imya: Простить долг
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р–Д
 vid: связка
 nomer_idei: 136
 cena: 0
 tekst: '{cena:мана}. Сними Порчу: долг списан.'
 effekt:
-- snyat_porchu:
-    v: s
+- {snyat_porchu: {v: s}}
 - esli: s
   to:
   - spisat_dolg: {}
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

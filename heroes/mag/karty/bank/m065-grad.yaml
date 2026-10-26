@@ -11,22 +11,15 @@ chisla:
   raz: 3
 tekst: '{cena:мана}. {raz:попадание} по {uron}.'
 effekt:
-- udary:
-    n: uron
-    raz: raz
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 4
-  raz:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+- {udary: {n: uron, raz: raz}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 4], raz: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 24: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 29: uron 2 → 1'

@@ -1,27 +1,26 @@
 id: b131-snyatie-v-veru
 imya: Снятие в веру
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В–З
 vid: вера
 nomer_idei: 131
 chisla:
   vera: 3
-tekst: 'Сними Заслон с союзника: +{vera:вера}.'
+  shchit: 1
+tekst: '{shchit:щит} союзнику. Сними Заслон с союзника: +{vera:вера}.'
 effekt:
-- snyat_zaslon:
-    s: soyuznik
-    v: s
+- {shchit: {komu: soyuznik, n: shchit}}
+- {snyat_zaslon: {s: soyuznik, v: s}}
 - esli: s
   to:
-  - vera: vera
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 6
+  - {vera: vera}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 6], shchit: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Claude: подгонка, правка работы карты (план §этап 2 п.5; бот играл её в 2–5% случаев, когда в руке): добавлено «2 щита союзнику».
+  Было: «Сними Заслон с союзника: +{vera:вера}.»'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 58: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

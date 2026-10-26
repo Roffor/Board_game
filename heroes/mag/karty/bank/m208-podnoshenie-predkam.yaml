@@ -1,0 +1,23 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m208-podnoshenie-predkam
+imya: Подношение предкам
+geroj: mag
+nabor: bank
+bild: П
+vid: связка
+nomer_idei: 208
+cena: 0
+chisla:
+  mana: 2
+tekst: '{cena:мана}. Сожги две карты из руки: +{mana:мана}.'
+effekt:
+- {sozhgi: {otkuda: ruka, n: 2, v: s}}
+- esli: s >= 2
+  to:
+  - {mana: mana}
+bot: {poryadok: 3, cennost: 5}
+granicy: {mana: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 1 → 0'

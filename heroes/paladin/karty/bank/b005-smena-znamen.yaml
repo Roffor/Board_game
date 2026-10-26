@@ -1,7 +1,7 @@
 id: b005-smena-znamen
 imya: Смена знамён
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: ''
 vid: вера
 nomer_idei: 5
@@ -9,17 +9,13 @@ chisla:
   vera: 1
 tekst: Смени благословения. +{vera:вера}.
 effekt:
-- smena_blagoslovenij: 1
-- vera: vera
+- {smena_blagoslovenij: 1}
+- {vera: vera}
 metki:
 - blag
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 4
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

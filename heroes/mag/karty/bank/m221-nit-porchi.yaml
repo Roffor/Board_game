@@ -1,0 +1,21 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m221-nit-porchi
+imya: Нить порчи
+geroj: mag
+nabor: start
+bild: Р
+vid: связка
+nomer_idei: 221
+cena: 1
+chisla:
+  dobor: 1
+tekst: '{cena:мана}. Наложи Порчу, возьми {dobor:карту}.'
+effekt:
+- {porcha: 1}
+- {dobor: dobor}
+bot: {poryadok: 3, cennost: 5}
+granicy: {dobor: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 Claude: в старт вместо Слабости (Порча в старте мага)'

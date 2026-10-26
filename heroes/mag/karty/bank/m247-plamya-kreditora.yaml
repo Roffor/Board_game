@@ -1,0 +1,28 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m247-plamya-kreditora
+imya: Пламя кредитора
+geroj: mag
+nabor: bank
+bild: П–Д
+vid: атака
+nomer_idei: 247
+cena: 0
+chisla:
+  uron: 1
+  za: 2
+  dolg_n: 1
+tekst: '{cena:мана}. {uron:урон} и ещё {za:урон} за каждую карту, сожжённую в этом раунде. {dolg_n:мана} в долг.'
+effekt:
+- {uron: uron + za * szhzheno_v_raunde}
+- {dolg: dolg_n}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], za: [1, 6], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 17: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 25: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 62: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 63: uron 2 → 1'

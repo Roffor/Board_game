@@ -1,0 +1,28 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b230-molitva-o-sile
+imya: Молитва о силе
+geroj: zhrec
+nabor: bank
+bild: М–В
+vid: молитва
+nomer_idei: 230
+chisla:
+  vera: 1
+  uron: 6
+  porog: 4
+tekst: '+{vera:вера}. Молитва. Вера {porog}+: ещё {uron:урон}.'
+effekt:
+- {vera: vera}
+- {molitva: null}
+- esli: vera >= porog
+  to:
+  - {uron: uron}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {vera: [0, 6], uron: [0, 6], porog: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 3: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 6: uron 5 → 6'

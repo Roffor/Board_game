@@ -1,29 +1,25 @@
 id: b028-svecha
 imya: Свеча
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: В
 vid: вера
 nomer_idei: 28
 chisla:
   vera: 2
-  shchit: 1
+  shchit: 2
 tekst: +{vera:вера}. {shchit:щит} себе.
 effekt:
-- vera: vera
-- shchit:
-    komu: ja
-    n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  vera:
-  - 0
-  - 5
-  shchit:
-  - 0
-  - 4
+- {vera: vera}
+- {shchit: {komu: ja, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {vera: [0, 5], shchit: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 19: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 13: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 29: shchit 1 → 2'

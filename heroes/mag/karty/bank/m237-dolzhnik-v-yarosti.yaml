@@ -1,0 +1,22 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m237-dolzhnik-v-yarosti
+imya: Должник в ярости
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 237
+cena: 1
+chisla:
+  uron: 2
+  dop: 2
+tekst: '{cena:мана}. {uron:урон}. Если у тебя есть долг, ещё {dop:урон}.'
+effekt:
+- {uron: uron + (dop if dolg > 0 else 0)}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: uron 3 → 2'

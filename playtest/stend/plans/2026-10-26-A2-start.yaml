@@ -1,0 +1,131 @@
+nazvanie: 2026-10-26-A2-start
+opisanie: 'Старт: сколько щита (после пересборки врагов).'
+srok_chasov: 0.05
+seed0: 262602
+tajmaut_boya_sek: 30
+geroi:
+  mag: {pul: bank}
+  zhrec: {pul: bank}
+fazy:
+- id: s
+  tip: progon
+  dolya: 1
+  pervaya_volna: 400
+  volna: 200
+  varianty:
+  - metka: s0-7shch
+    geroi:
+      mag:
+        start: [m001-udar, m001-udar, m002-obereg, m002-obereg, m004-strazh-poroga, m007-otlozhennyj-obereg, m009-trojnaya-primeta, m010-gadanie-na-uglyah, m011-shepot-predkov, m012-dym-nad-ochagom, m019-ritualnyj-krug, m028-iskra-v-peple, m094-zajm, m202-pepelnaya-zavesa,
+          m221-nit-porchi]
+        pul: [m003-dvulikij-zhest, m005-povorot-neba, m006-otgolosok-peremeny, m008-otlozhennyj-udar, m013-svecha-predkov, m014-zhertvennaya-chasha, m016-skvoz-zaslon, m018-pripryatat, m022-dym-blagovonij, m023-gri-gri, m024-polnye-ruki, m025-poslednij-dovod,
+          m026-perekrestok, m027-ochag-greet-oboih, m029-dvojnaya-zhertva, m031-ten-iz-pepla, m032-vozvrashchennyj, m033-vse-v-ogon, m034-pepel-pomnit, m035-chistyj-list, m036-gadanie-peplom, m038-feniks, m039-zhadnye-duhi, m040-slepoe-podnoshenie, m041-prah-k-prahu,
+          m042-pozhiranie, m043-golod-ognya, m044-mimoletnyj-duh, m045-shchedraya-zhertva, m046-sytye-duhi, m048-zaslon-iz-pepla, m049-pepelnaya-burya, m050-podmenysh, m051-eho-obryada, m054-pepel-na-vetru, m055-dym-predkov, m057-koster-na-dvoih, m058-pustoj-altar,
+          m059-golod-plameni, m061-sglaz, m064-osinyj-roj, m065-grad, m066-dvojnoj-sglaz, m067-tyanushchaya-porcha, m070-dva-proklyatiya, m071-pyl-mertveca, m074-otvetnyj-sglaz, m077-klyuch-k-sglazu, m078-tolko-pod-sglazom, m083-broshennyj-zhrebij, m084-znaki-soshlis,
+          m087-zloradstvo, m088-dobivanie, m090-porcha-golod, m091-hudoj-znak, m093-krivoe-zerkalo, m096-duh-hranitel, m097-vechnyj-obereg, m098-doplata-v-dolg, m100-skidka-duhov, m101-otlozhit, m102-ryvok, m105-dolgovaya-yama, m108-chistye-ruki, m109-svecha-v-dolg,
+          m112-lunnyj-kredit, m113-smena-neba, m114-vklad, m116-poslednij-zajm, m118-zaklad-neba, m119-zajm-na-dvoih, m120-mana-v-peple, m122-karty-vzajmy, m124-va-bank, m125-dolzhnik-pod-zashchitoj, m126-rost-procentov, m127-shvyrnut-v-ogon, m128-mechenyj-udar,
+          m132-zhertva-za-dvoih, m134-polnyj-obryad, m135-peregruzka-sglazom, m137-dolzhnik-proklinaet, m138-perelozhit-dolg, m141-pod-sglazom-v-dolg, m142-zalogovyj-sglaz, m146-zheton-pod-raspisku, m149-sgorevshaya-raspiska, m201-tleyushchij-udar, m203-dvojnoj-vypad,
+          m204-iskra-nadezhdy, m205-zhertvennyj-ogon, m206-pepelnyj-shchit, m207-plamya-iz-praha, m208-podnoshenie-predkam, m209-ognennyj-dar, m210-toplivo-ochaga, m211-koster-v-ladonyah, m212-chernaya-metka, m213-ukol-proklyatiya, m214-sglaz-shchit, m215-ship-porchi,
+          m216-gniloj-ukus, m217-porcha-na-dvoih, m218-zloj-glaz, m219-porcha-i-pepel, m220-proklyatyj-shchit, m222-vorozhba, m223-grad-proklyatij, m224-metka-dlya-soyuznika, m225-tyazhelaya-porcha, m231-bystryj-zajm, m232-udar-v-dolg, m233-shchit-v-dolg,
+          m234-chistyj-raschet, m235-otsrochka, m236-zalog-sily, m237-dolzhnik-v-yarosti, m238-dolgovaya-metka, m239-kredit-duhov, m240-dolzhnik-b-yot, m241-duhi-zhdut, m242-vklad-predkam, m243-zajm-na-shchit, m244-ogon-v-uplatu, m245-pepelnyj-zajm, m246-goryashchaya-raspiska,
+          m247-plamya-kreditora, m248-zola-i-dolg, m249-podnoshenie-v-rassrochku, m250-goryashchij-sglaz, m251-proklyatyj-pepel, m252-podnoshenie-porchi, m253-sglaz-v-rassrochku, m254-dolg-proklyatogo]
+      zhrec:
+        start: [b001-udar-mecha, b001-udar-mecha, b002-shchit-very, b002-shchit-very, b004-shag-vpered, b007-obet-utra, b008-trojnoe-znamenie, b010-prival, b013-pokayanie, b014-stroj, b028-svecha, b029-chudo-sveta, b061-zaslon, b062-dvojnoj-zaslon, b094-tihaya-molitva]
+        pul: [b003-dvuruchnyj-zamah, b006-rassvet-i-sumerki, b009-ispytanie, b011-nastavlenie, b016-udar-shchitom, b018-pravednyj-gnev, b019-karayushchij-vypad, b020-blagaya-vest, b021-vyzov, b022-zavershayushchij-udar, b023-pervyj-natisk, b024-mech-i-shchit,
+          b025-otmshchenie, b026-chasha-na-dvoih, b027-perekrestok, b030-chudo-zastupnichestva, b032-maloe-chudo, b033-smirenie, b035-rovno-tri, b037-chet-i-nechet, b038-klinok-veruyushchego, b039-strazh-obeta, b040-propoved, b043-anafema, b046-chudo-suda,
+          b047-polnota, b050-chudo-razdeleniya, b051-ogon-very, b052-svet-nadezhdy, b055-stojkost, b057-posvyashchenie, b060-zhertvennik, b063-krepkij-zaslon, b064-zaslon-na-sebya, b065-zaslon-dlya-dvoih, b066-stojkij-zaslon, b067-perehodyashchij-zaslon,
+          b068-primanka, b069-otvetnyj-zaslon, b070-zaslon-vest, b071-zaslon-bronya, b073-sorvat-zaslon, b074-perehvat, b076-udar-pod-zaslonom, b078-zaslon-naperyod, b079-obryad-zaslona, b080-opornyj-zaslon, b081-znamya-nad-golovoj, b082-pamyat-zaslona,
+          b083-bystryj-zaslon, b084-obmen, b085-polnyj-zaslon, b086-zaslon-i-mech, b087-zaslon-na-rassvete, b088-tyazhelyj-zaslon, b089-zaslon-pod-blagosloveniem, b090-poslednij-zaslon, b091-zaslon-klyatva, b093-svet-na-shchite, b095-vsenoshchnaya, b096-znamenie-svyshe,
+          b097-kara-nebesnaya, b098-prozrenie, b099-chetki, b100-psalom, b101-otlozhennyj-psalom, b102-vozvrashchenie, b103-kolokol, b104-otkrovenie, b105-perebor-chetok, b107-molitva-iz-glubiny, b108-tyazhkaya-molitva, b109-pustaya-molitva, b111-predvestie,
+          b112-posoh-palomnika, b113-kayushchijsya, b114-svyatye-moshchi, b116-slovo-nastavnika, b118-horal, b119-molitva-v-stroyu, b121-obet-molchaniya, b122-molitva-otvet, b124-horugv, b126-molitva-pod-udarom, b127-chudo-stojkosti, b128-zaslon-very,
+          b129-plata-za-zaslon, b130-vera-na-shchite, b132-chudo-vozmezdiya, b133-obryad-dvoih, b134-zaslon-pod-chudo, b135-pokrov-molitvy, b136-molitva-za-brata, b137-zaslon-iz-kolody, b138-kolokol-trevogi, b139-zastava, b140-litaniya-strazhi, b141-znamya-na-kolode,
+          b142-shchit-iz-molitvy, b144-dar-svyshe, b145-vozglas, b147-svyatoe-kope, b148-post-i-molitva, b149-perevernutaya-molitva, b150-vera-v-kolodu, b201-mech-sveta, b202-shchit-stroya, b203-udar-i-stojka, b204-boevoj-klich, b205-ogon-very, b206-shchit-molitvennika,
+          b207-karayushchaya-vera, b208-svyatoj-obereg, b209-pyl, b210-vspyshka-very, b211-tverdaya-vera, b212-propoved-mecha, b213-blagodat, b214-obet-sily, b215-krepost-duha, b216-neistovaya-vera, b217-svet-v-ladonyah, b218-zaslon-very, b219-zaslon-i-shchit,
+          b220-karayushchij-zaslon, b221-pod-zashchitoj, b222-stena, b223-molitva-mecha, b224-molitva-shchita, b225-pesn, b226-udar-molyashchegosya, b227-shchit-molyashchegosya, b228-blagaya-molitva, b229-stih, b230-molitva-o-sile, b231-chudo-molitvy]
+  - metka: s1-6shch
+    geroi:
+      mag:
+        start: [m001-udar, m001-udar, m213-ukol-proklyatiya, m002-obereg, m004-strazh-poroga, m007-otlozhennyj-obereg, m009-trojnaya-primeta, m010-gadanie-na-uglyah, m011-shepot-predkov, m012-dym-nad-ochagom, m019-ritualnyj-krug, m028-iskra-v-peple, m094-zajm,
+          m202-pepelnaya-zavesa, m221-nit-porchi]
+        pul: [m003-dvulikij-zhest, m005-povorot-neba, m006-otgolosok-peremeny, m008-otlozhennyj-udar, m013-svecha-predkov, m014-zhertvennaya-chasha, m016-skvoz-zaslon, m018-pripryatat, m022-dym-blagovonij, m023-gri-gri, m024-polnye-ruki, m025-poslednij-dovod,
+          m026-perekrestok, m027-ochag-greet-oboih, m029-dvojnaya-zhertva, m031-ten-iz-pepla, m032-vozvrashchennyj, m033-vse-v-ogon, m034-pepel-pomnit, m035-chistyj-list, m036-gadanie-peplom, m038-feniks, m039-zhadnye-duhi, m040-slepoe-podnoshenie, m041-prah-k-prahu,
+          m042-pozhiranie, m043-golod-ognya, m044-mimoletnyj-duh, m045-shchedraya-zhertva, m046-sytye-duhi, m048-zaslon-iz-pepla, m049-pepelnaya-burya, m050-podmenysh, m051-eho-obryada, m054-pepel-na-vetru, m055-dym-predkov, m057-koster-na-dvoih, m058-pustoj-altar,
+          m059-golod-plameni, m061-sglaz, m064-osinyj-roj, m065-grad, m066-dvojnoj-sglaz, m067-tyanushchaya-porcha, m070-dva-proklyatiya, m071-pyl-mertveca, m074-otvetnyj-sglaz, m077-klyuch-k-sglazu, m078-tolko-pod-sglazom, m083-broshennyj-zhrebij, m084-znaki-soshlis,
+          m087-zloradstvo, m088-dobivanie, m090-porcha-golod, m091-hudoj-znak, m093-krivoe-zerkalo, m096-duh-hranitel, m097-vechnyj-obereg, m098-doplata-v-dolg, m100-skidka-duhov, m101-otlozhit, m102-ryvok, m105-dolgovaya-yama, m108-chistye-ruki, m109-svecha-v-dolg,
+          m112-lunnyj-kredit, m113-smena-neba, m114-vklad, m116-poslednij-zajm, m118-zaklad-neba, m119-zajm-na-dvoih, m120-mana-v-peple, m122-karty-vzajmy, m124-va-bank, m125-dolzhnik-pod-zashchitoj, m126-rost-procentov, m127-shvyrnut-v-ogon, m128-mechenyj-udar,
+          m132-zhertva-za-dvoih, m134-polnyj-obryad, m135-peregruzka-sglazom, m137-dolzhnik-proklinaet, m138-perelozhit-dolg, m141-pod-sglazom-v-dolg, m142-zalogovyj-sglaz, m146-zheton-pod-raspisku, m149-sgorevshaya-raspiska, m201-tleyushchij-udar, m203-dvojnoj-vypad,
+          m204-iskra-nadezhdy, m205-zhertvennyj-ogon, m206-pepelnyj-shchit, m207-plamya-iz-praha, m208-podnoshenie-predkam, m209-ognennyj-dar, m210-toplivo-ochaga, m211-koster-v-ladonyah, m212-chernaya-metka, m214-sglaz-shchit, m215-ship-porchi, m216-gniloj-ukus,
+          m217-porcha-na-dvoih, m218-zloj-glaz, m219-porcha-i-pepel, m220-proklyatyj-shchit, m222-vorozhba, m223-grad-proklyatij, m224-metka-dlya-soyuznika, m225-tyazhelaya-porcha, m231-bystryj-zajm, m232-udar-v-dolg, m233-shchit-v-dolg, m234-chistyj-raschet,
+          m235-otsrochka, m236-zalog-sily, m237-dolzhnik-v-yarosti, m238-dolgovaya-metka, m239-kredit-duhov, m240-dolzhnik-b-yot, m241-duhi-zhdut, m242-vklad-predkam, m243-zajm-na-shchit, m244-ogon-v-uplatu, m245-pepelnyj-zajm, m246-goryashchaya-raspiska,
+          m247-plamya-kreditora, m248-zola-i-dolg, m249-podnoshenie-v-rassrochku, m250-goryashchij-sglaz, m251-proklyatyj-pepel, m252-podnoshenie-porchi, m253-sglaz-v-rassrochku, m254-dolg-proklyatogo]
+      zhrec:
+        start: [b001-udar-mecha, b001-udar-mecha, b209-pyl, b002-shchit-very, b004-shag-vpered, b007-obet-utra, b008-trojnoe-znamenie, b010-prival, b013-pokayanie, b014-stroj, b028-svecha, b029-chudo-sveta, b061-zaslon, b062-dvojnoj-zaslon, b094-tihaya-molitva]
+        pul: [b003-dvuruchnyj-zamah, b006-rassvet-i-sumerki, b009-ispytanie, b011-nastavlenie, b016-udar-shchitom, b018-pravednyj-gnev, b019-karayushchij-vypad, b020-blagaya-vest, b021-vyzov, b022-zavershayushchij-udar, b023-pervyj-natisk, b024-mech-i-shchit,
+          b025-otmshchenie, b026-chasha-na-dvoih, b027-perekrestok, b030-chudo-zastupnichestva, b032-maloe-chudo, b033-smirenie, b035-rovno-tri, b037-chet-i-nechet, b038-klinok-veruyushchego, b039-strazh-obeta, b040-propoved, b043-anafema, b046-chudo-suda,
+          b047-polnota, b050-chudo-razdeleniya, b051-ogon-very, b052-svet-nadezhdy, b055-stojkost, b057-posvyashchenie, b060-zhertvennik, b063-krepkij-zaslon, b064-zaslon-na-sebya, b065-zaslon-dlya-dvoih, b066-stojkij-zaslon, b067-perehodyashchij-zaslon,
+          b068-primanka, b069-otvetnyj-zaslon, b070-zaslon-vest, b071-zaslon-bronya, b073-sorvat-zaslon, b074-perehvat, b076-udar-pod-zaslonom, b078-zaslon-naperyod, b079-obryad-zaslona, b080-opornyj-zaslon, b081-znamya-nad-golovoj, b082-pamyat-zaslona,
+          b083-bystryj-zaslon, b084-obmen, b085-polnyj-zaslon, b086-zaslon-i-mech, b087-zaslon-na-rassvete, b088-tyazhelyj-zaslon, b089-zaslon-pod-blagosloveniem, b090-poslednij-zaslon, b091-zaslon-klyatva, b093-svet-na-shchite, b095-vsenoshchnaya, b096-znamenie-svyshe,
+          b097-kara-nebesnaya, b098-prozrenie, b099-chetki, b100-psalom, b101-otlozhennyj-psalom, b102-vozvrashchenie, b103-kolokol, b104-otkrovenie, b105-perebor-chetok, b107-molitva-iz-glubiny, b108-tyazhkaya-molitva, b109-pustaya-molitva, b111-predvestie,
+          b112-posoh-palomnika, b113-kayushchijsya, b114-svyatye-moshchi, b116-slovo-nastavnika, b118-horal, b119-molitva-v-stroyu, b121-obet-molchaniya, b122-molitva-otvet, b124-horugv, b126-molitva-pod-udarom, b127-chudo-stojkosti, b128-zaslon-very,
+          b129-plata-za-zaslon, b130-vera-na-shchite, b132-chudo-vozmezdiya, b133-obryad-dvoih, b134-zaslon-pod-chudo, b135-pokrov-molitvy, b136-molitva-za-brata, b137-zaslon-iz-kolody, b138-kolokol-trevogi, b139-zastava, b140-litaniya-strazhi, b141-znamya-na-kolode,
+          b142-shchit-iz-molitvy, b144-dar-svyshe, b145-vozglas, b147-svyatoe-kope, b148-post-i-molitva, b149-perevernutaya-molitva, b150-vera-v-kolodu, b201-mech-sveta, b202-shchit-stroya, b203-udar-i-stojka, b204-boevoj-klich, b205-ogon-very, b206-shchit-molitvennika,
+          b207-karayushchaya-vera, b208-svyatoj-obereg, b210-vspyshka-very, b211-tverdaya-vera, b212-propoved-mecha, b213-blagodat, b214-obet-sily, b215-krepost-duha, b216-neistovaya-vera, b217-svet-v-ladonyah, b218-zaslon-very, b219-zaslon-i-shchit, b220-karayushchij-zaslon,
+          b221-pod-zashchitoj, b222-stena, b223-molitva-mecha, b224-molitva-shchita, b225-pesn, b226-udar-molyashchegosya, b227-shchit-molyashchegosya, b228-blagaya-molitva, b229-stih, b230-molitva-o-sile, b231-chudo-molitvy]
+  - metka: s2-5shch-uron
+    geroi:
+      mag:
+        start: [m001-udar, m001-udar, m213-ukol-proklyatiya, m002-obereg, m204-iskra-nadezhdy, m007-otlozhennyj-obereg, m009-trojnaya-primeta, m010-gadanie-na-uglyah, m011-shepot-predkov, m012-dym-nad-ochagom, m019-ritualnyj-krug, m028-iskra-v-peple, m094-zajm,
+          m202-pepelnaya-zavesa, m221-nit-porchi]
+        pul: [m003-dvulikij-zhest, m005-povorot-neba, m006-otgolosok-peremeny, m008-otlozhennyj-udar, m013-svecha-predkov, m014-zhertvennaya-chasha, m016-skvoz-zaslon, m018-pripryatat, m022-dym-blagovonij, m023-gri-gri, m024-polnye-ruki, m025-poslednij-dovod,
+          m026-perekrestok, m027-ochag-greet-oboih, m029-dvojnaya-zhertva, m031-ten-iz-pepla, m032-vozvrashchennyj, m033-vse-v-ogon, m034-pepel-pomnit, m035-chistyj-list, m036-gadanie-peplom, m038-feniks, m039-zhadnye-duhi, m040-slepoe-podnoshenie, m041-prah-k-prahu,
+          m042-pozhiranie, m043-golod-ognya, m044-mimoletnyj-duh, m045-shchedraya-zhertva, m046-sytye-duhi, m048-zaslon-iz-pepla, m049-pepelnaya-burya, m050-podmenysh, m051-eho-obryada, m054-pepel-na-vetru, m055-dym-predkov, m057-koster-na-dvoih, m058-pustoj-altar,
+          m059-golod-plameni, m061-sglaz, m064-osinyj-roj, m065-grad, m066-dvojnoj-sglaz, m067-tyanushchaya-porcha, m070-dva-proklyatiya, m071-pyl-mertveca, m074-otvetnyj-sglaz, m077-klyuch-k-sglazu, m078-tolko-pod-sglazom, m083-broshennyj-zhrebij, m084-znaki-soshlis,
+          m087-zloradstvo, m088-dobivanie, m090-porcha-golod, m091-hudoj-znak, m093-krivoe-zerkalo, m096-duh-hranitel, m097-vechnyj-obereg, m098-doplata-v-dolg, m100-skidka-duhov, m101-otlozhit, m102-ryvok, m105-dolgovaya-yama, m108-chistye-ruki, m109-svecha-v-dolg,
+          m112-lunnyj-kredit, m113-smena-neba, m114-vklad, m116-poslednij-zajm, m118-zaklad-neba, m119-zajm-na-dvoih, m120-mana-v-peple, m122-karty-vzajmy, m124-va-bank, m125-dolzhnik-pod-zashchitoj, m126-rost-procentov, m127-shvyrnut-v-ogon, m128-mechenyj-udar,
+          m132-zhertva-za-dvoih, m134-polnyj-obryad, m135-peregruzka-sglazom, m137-dolzhnik-proklinaet, m138-perelozhit-dolg, m141-pod-sglazom-v-dolg, m142-zalogovyj-sglaz, m146-zheton-pod-raspisku, m149-sgorevshaya-raspiska, m201-tleyushchij-udar, m203-dvojnoj-vypad,
+          m205-zhertvennyj-ogon, m206-pepelnyj-shchit, m207-plamya-iz-praha, m208-podnoshenie-predkam, m209-ognennyj-dar, m210-toplivo-ochaga, m211-koster-v-ladonyah, m212-chernaya-metka, m214-sglaz-shchit, m215-ship-porchi, m216-gniloj-ukus, m217-porcha-na-dvoih,
+          m218-zloj-glaz, m219-porcha-i-pepel, m220-proklyatyj-shchit, m222-vorozhba, m223-grad-proklyatij, m224-metka-dlya-soyuznika, m225-tyazhelaya-porcha, m231-bystryj-zajm, m232-udar-v-dolg, m233-shchit-v-dolg, m234-chistyj-raschet, m235-otsrochka,
+          m236-zalog-sily, m237-dolzhnik-v-yarosti, m238-dolgovaya-metka, m239-kredit-duhov, m240-dolzhnik-b-yot, m241-duhi-zhdut, m242-vklad-predkam, m243-zajm-na-shchit, m244-ogon-v-uplatu, m245-pepelnyj-zajm, m246-goryashchaya-raspiska, m247-plamya-kreditora,
+          m248-zola-i-dolg, m249-podnoshenie-v-rassrochku, m250-goryashchij-sglaz, m251-proklyatyj-pepel, m252-podnoshenie-porchi, m253-sglaz-v-rassrochku, m254-dolg-proklyatogo]
+      zhrec:
+        start: [b001-udar-mecha, b001-udar-mecha, b209-pyl, b002-shchit-very, b004-shag-vpered, b007-obet-utra, b008-trojnoe-znamenie, b010-prival, b013-pokayanie, b204-boevoj-klich, b028-svecha, b029-chudo-sveta, b061-zaslon, b062-dvojnoj-zaslon, b094-tihaya-molitva]
+        pul: [b003-dvuruchnyj-zamah, b006-rassvet-i-sumerki, b009-ispytanie, b011-nastavlenie, b016-udar-shchitom, b018-pravednyj-gnev, b019-karayushchij-vypad, b020-blagaya-vest, b021-vyzov, b022-zavershayushchij-udar, b023-pervyj-natisk, b024-mech-i-shchit,
+          b025-otmshchenie, b026-chasha-na-dvoih, b027-perekrestok, b030-chudo-zastupnichestva, b032-maloe-chudo, b033-smirenie, b035-rovno-tri, b037-chet-i-nechet, b038-klinok-veruyushchego, b039-strazh-obeta, b040-propoved, b043-anafema, b046-chudo-suda,
+          b047-polnota, b050-chudo-razdeleniya, b051-ogon-very, b052-svet-nadezhdy, b055-stojkost, b057-posvyashchenie, b060-zhertvennik, b063-krepkij-zaslon, b064-zaslon-na-sebya, b065-zaslon-dlya-dvoih, b066-stojkij-zaslon, b067-perehodyashchij-zaslon,
+          b068-primanka, b069-otvetnyj-zaslon, b070-zaslon-vest, b071-zaslon-bronya, b073-sorvat-zaslon, b074-perehvat, b076-udar-pod-zaslonom, b078-zaslon-naperyod, b079-obryad-zaslona, b080-opornyj-zaslon, b081-znamya-nad-golovoj, b082-pamyat-zaslona,
+          b083-bystryj-zaslon, b084-obmen, b085-polnyj-zaslon, b086-zaslon-i-mech, b087-zaslon-na-rassvete, b088-tyazhelyj-zaslon, b089-zaslon-pod-blagosloveniem, b090-poslednij-zaslon, b091-zaslon-klyatva, b093-svet-na-shchite, b095-vsenoshchnaya, b096-znamenie-svyshe,
+          b097-kara-nebesnaya, b098-prozrenie, b099-chetki, b100-psalom, b101-otlozhennyj-psalom, b102-vozvrashchenie, b103-kolokol, b104-otkrovenie, b105-perebor-chetok, b107-molitva-iz-glubiny, b108-tyazhkaya-molitva, b109-pustaya-molitva, b111-predvestie,
+          b112-posoh-palomnika, b113-kayushchijsya, b114-svyatye-moshchi, b116-slovo-nastavnika, b118-horal, b119-molitva-v-stroyu, b121-obet-molchaniya, b122-molitva-otvet, b124-horugv, b126-molitva-pod-udarom, b127-chudo-stojkosti, b128-zaslon-very,
+          b129-plata-za-zaslon, b130-vera-na-shchite, b132-chudo-vozmezdiya, b133-obryad-dvoih, b134-zaslon-pod-chudo, b135-pokrov-molitvy, b136-molitva-za-brata, b137-zaslon-iz-kolody, b138-kolokol-trevogi, b139-zastava, b140-litaniya-strazhi, b141-znamya-na-kolode,
+          b142-shchit-iz-molitvy, b144-dar-svyshe, b145-vozglas, b147-svyatoe-kope, b148-post-i-molitva, b149-perevernutaya-molitva, b150-vera-v-kolodu, b201-mech-sveta, b202-shchit-stroya, b203-udar-i-stojka, b205-ogon-very, b206-shchit-molitvennika,
+          b207-karayushchaya-vera, b208-svyatoj-obereg, b210-vspyshka-very, b211-tverdaya-vera, b212-propoved-mecha, b213-blagodat, b214-obet-sily, b215-krepost-duha, b216-neistovaya-vera, b217-svet-v-ladonyah, b218-zaslon-very, b219-zaslon-i-shchit, b220-karayushchij-zaslon,
+          b221-pod-zashchitoj, b222-stena, b223-molitva-mecha, b224-molitva-shchita, b225-pesn, b226-udar-molyashchegosya, b227-shchit-molyashchegosya, b228-blagaya-molitva, b229-stih, b230-molitva-o-sile, b231-chudo-molitvy]
+  - metka: s3-5shch-bez
+    geroi:
+      mag:
+        start: [m001-udar, m001-udar, m210-toplivo-ochaga, m002-obereg, m213-ukol-proklyatiya, m007-otlozhennyj-obereg, m009-trojnaya-primeta, m010-gadanie-na-uglyah, m011-shepot-predkov, m012-dym-nad-ochagom, m019-ritualnyj-krug, m028-iskra-v-peple, m094-zajm,
+          m202-pepelnaya-zavesa, m221-nit-porchi]
+        pul: [m003-dvulikij-zhest, m005-povorot-neba, m006-otgolosok-peremeny, m008-otlozhennyj-udar, m013-svecha-predkov, m014-zhertvennaya-chasha, m016-skvoz-zaslon, m018-pripryatat, m022-dym-blagovonij, m023-gri-gri, m024-polnye-ruki, m025-poslednij-dovod,
+          m026-perekrestok, m027-ochag-greet-oboih, m029-dvojnaya-zhertva, m031-ten-iz-pepla, m032-vozvrashchennyj, m033-vse-v-ogon, m034-pepel-pomnit, m035-chistyj-list, m036-gadanie-peplom, m038-feniks, m039-zhadnye-duhi, m040-slepoe-podnoshenie, m041-prah-k-prahu,
+          m042-pozhiranie, m043-golod-ognya, m044-mimoletnyj-duh, m045-shchedraya-zhertva, m046-sytye-duhi, m048-zaslon-iz-pepla, m049-pepelnaya-burya, m050-podmenysh, m051-eho-obryada, m054-pepel-na-vetru, m055-dym-predkov, m057-koster-na-dvoih, m058-pustoj-altar,
+          m059-golod-plameni, m061-sglaz, m064-osinyj-roj, m065-grad, m066-dvojnoj-sglaz, m067-tyanushchaya-porcha, m070-dva-proklyatiya, m071-pyl-mertveca, m074-otvetnyj-sglaz, m077-klyuch-k-sglazu, m078-tolko-pod-sglazom, m083-broshennyj-zhrebij, m084-znaki-soshlis,
+          m087-zloradstvo, m088-dobivanie, m090-porcha-golod, m091-hudoj-znak, m093-krivoe-zerkalo, m096-duh-hranitel, m097-vechnyj-obereg, m098-doplata-v-dolg, m100-skidka-duhov, m101-otlozhit, m102-ryvok, m105-dolgovaya-yama, m108-chistye-ruki, m109-svecha-v-dolg,
+          m112-lunnyj-kredit, m113-smena-neba, m114-vklad, m116-poslednij-zajm, m118-zaklad-neba, m119-zajm-na-dvoih, m120-mana-v-peple, m122-karty-vzajmy, m124-va-bank, m125-dolzhnik-pod-zashchitoj, m126-rost-procentov, m127-shvyrnut-v-ogon, m128-mechenyj-udar,
+          m132-zhertva-za-dvoih, m134-polnyj-obryad, m135-peregruzka-sglazom, m137-dolzhnik-proklinaet, m138-perelozhit-dolg, m141-pod-sglazom-v-dolg, m142-zalogovyj-sglaz, m146-zheton-pod-raspisku, m149-sgorevshaya-raspiska, m201-tleyushchij-udar, m203-dvojnoj-vypad,
+          m204-iskra-nadezhdy, m205-zhertvennyj-ogon, m206-pepelnyj-shchit, m207-plamya-iz-praha, m208-podnoshenie-predkam, m209-ognennyj-dar, m211-koster-v-ladonyah, m212-chernaya-metka, m214-sglaz-shchit, m215-ship-porchi, m216-gniloj-ukus, m217-porcha-na-dvoih,
+          m218-zloj-glaz, m219-porcha-i-pepel, m220-proklyatyj-shchit, m222-vorozhba, m223-grad-proklyatij, m224-metka-dlya-soyuznika, m225-tyazhelaya-porcha, m231-bystryj-zajm, m232-udar-v-dolg, m233-shchit-v-dolg, m234-chistyj-raschet, m235-otsrochka,
+          m236-zalog-sily, m237-dolzhnik-v-yarosti, m238-dolgovaya-metka, m239-kredit-duhov, m240-dolzhnik-b-yot, m241-duhi-zhdut, m242-vklad-predkam, m243-zajm-na-shchit, m244-ogon-v-uplatu, m245-pepelnyj-zajm, m246-goryashchaya-raspiska, m247-plamya-kreditora,
+          m248-zola-i-dolg, m249-podnoshenie-v-rassrochku, m250-goryashchij-sglaz, m251-proklyatyj-pepel, m252-podnoshenie-porchi, m253-sglaz-v-rassrochku, m254-dolg-proklyatogo]
+      zhrec:
+        start: [b001-udar-mecha, b001-udar-mecha, b228-blagaya-molitva, b002-shchit-very, b004-shag-vpered, b007-obet-utra, b008-trojnoe-znamenie, b010-prival, b013-pokayanie, b209-pyl, b028-svecha, b029-chudo-sveta, b061-zaslon, b062-dvojnoj-zaslon, b094-tihaya-molitva]
+        pul: [b003-dvuruchnyj-zamah, b006-rassvet-i-sumerki, b009-ispytanie, b011-nastavlenie, b016-udar-shchitom, b018-pravednyj-gnev, b019-karayushchij-vypad, b020-blagaya-vest, b021-vyzov, b022-zavershayushchij-udar, b023-pervyj-natisk, b024-mech-i-shchit,
+          b025-otmshchenie, b026-chasha-na-dvoih, b027-perekrestok, b030-chudo-zastupnichestva, b032-maloe-chudo, b033-smirenie, b035-rovno-tri, b037-chet-i-nechet, b038-klinok-veruyushchego, b039-strazh-obeta, b040-propoved, b043-anafema, b046-chudo-suda,
+          b047-polnota, b050-chudo-razdeleniya, b051-ogon-very, b052-svet-nadezhdy, b055-stojkost, b057-posvyashchenie, b060-zhertvennik, b063-krepkij-zaslon, b064-zaslon-na-sebya, b065-zaslon-dlya-dvoih, b066-stojkij-zaslon, b067-perehodyashchij-zaslon,
+          b068-primanka, b069-otvetnyj-zaslon, b070-zaslon-vest, b071-zaslon-bronya, b073-sorvat-zaslon, b074-perehvat, b076-udar-pod-zaslonom, b078-zaslon-naperyod, b079-obryad-zaslona, b080-opornyj-zaslon, b081-znamya-nad-golovoj, b082-pamyat-zaslona,
+          b083-bystryj-zaslon, b084-obmen, b085-polnyj-zaslon, b086-zaslon-i-mech, b087-zaslon-na-rassvete, b088-tyazhelyj-zaslon, b089-zaslon-pod-blagosloveniem, b090-poslednij-zaslon, b091-zaslon-klyatva, b093-svet-na-shchite, b095-vsenoshchnaya, b096-znamenie-svyshe,
+          b097-kara-nebesnaya, b098-prozrenie, b099-chetki, b100-psalom, b101-otlozhennyj-psalom, b102-vozvrashchenie, b103-kolokol, b104-otkrovenie, b105-perebor-chetok, b107-molitva-iz-glubiny, b108-tyazhkaya-molitva, b109-pustaya-molitva, b111-predvestie,
+          b112-posoh-palomnika, b113-kayushchijsya, b114-svyatye-moshchi, b116-slovo-nastavnika, b118-horal, b119-molitva-v-stroyu, b121-obet-molchaniya, b122-molitva-otvet, b124-horugv, b126-molitva-pod-udarom, b127-chudo-stojkosti, b128-zaslon-very,
+          b129-plata-za-zaslon, b130-vera-na-shchite, b132-chudo-vozmezdiya, b133-obryad-dvoih, b134-zaslon-pod-chudo, b135-pokrov-molitvy, b136-molitva-za-brata, b137-zaslon-iz-kolody, b138-kolokol-trevogi, b139-zastava, b140-litaniya-strazhi, b141-znamya-na-kolode,
+          b142-shchit-iz-molitvy, b144-dar-svyshe, b145-vozglas, b147-svyatoe-kope, b148-post-i-molitva, b149-perevernutaya-molitva, b150-vera-v-kolodu, b201-mech-sveta, b202-shchit-stroya, b203-udar-i-stojka, b204-boevoj-klich, b205-ogon-very, b206-shchit-molitvennika,
+          b207-karayushchaya-vera, b208-svyatoj-obereg, b210-vspyshka-very, b211-tverdaya-vera, b212-propoved-mecha, b213-blagodat, b214-obet-sily, b215-krepost-duha, b216-neistovaya-vera, b217-svet-v-ladonyah, b218-zaslon-very, b219-zaslon-i-shchit, b220-karayushchij-zaslon,
+          b221-pod-zashchitoj, b222-stena, b223-molitva-mecha, b224-molitva-shchita, b225-pesn, b226-udar-molyashchegosya, b227-shchit-molyashchegosya, b229-stih, b230-molitva-o-sile, b231-chudo-molitvy]

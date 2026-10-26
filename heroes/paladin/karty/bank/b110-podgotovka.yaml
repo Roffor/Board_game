@@ -1,7 +1,7 @@
 id: b110-podgotovka
 imya: Подготовка
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М
 vid: вера
 nomer_idei: 110
@@ -11,23 +11,15 @@ tekst: Положи одну или две карты из руки на вер�
 varianty:
 - nazvanie: одну
   effekt:
-  - na_verh_iz_ruki:
-      n: 1
-      v: k
-  - vera: za * k
+  - {na_verh_iz_ruki: {n: 1, v: k}}
+  - {vera: za * k}
 - nazvanie: две
   effekt:
-  - na_verh_iz_ruki:
-      n: 2
-      v: k
-  - vera: za * k
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  za:
-  - 0
-  - 4
+  - {na_verh_iz_ruki: {n: 2, v: k}}
+  - {vera: za * k}
+bot: {poryadok: 4, cennost: 5}
+granicy: {za: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -1,0 +1,25 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m216-gniloj-ukus
+imya: Гнилой укус
+geroj: mag
+nabor: bank
+bild: Р
+vid: атака
+nomer_idei: 216
+cena: 1
+chisla:
+  uron: 1
+  dop: 2
+tekst: '{cena:мана}. {uron:урон}. Если на враге Порча, ещё {dop:урон}.'
+effekt:
+- {uron: uron + (dop if porcha > 0 else 0)}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 5: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 9: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 10: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 70: uron 2 → 1'

@@ -1,0 +1,29 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b207-karayushchaya-vera
+imya: Карающая вера
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 207
+chisla:
+  uron: 1
+  uron_big: 3
+  doplata: 2
+tekst: '{uron:урон}. Доплата {doplata:веру}: {uron_big:урон}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 2}
+  effekt:
+  - {uron: uron_big if oplacheno else uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 6], uron_big: [0, 8], doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: uron_big 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 69: uron_big 4 → 3'

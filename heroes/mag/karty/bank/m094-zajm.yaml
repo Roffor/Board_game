@@ -1,7 +1,7 @@
 id: m094-zajm
 imya: Займ
 geroj: mag
-nabor: bank
+nabor: start
 bild: Д
 vid: связка
 nomer_idei: 94
@@ -10,18 +10,10 @@ chisla:
   mana: 2
 tekst: '{cena:мана}. +{mana:мана}. В следующий ход у тебя на столько же меньше.'
 effekt:
-- mana_v_dolg: mana
-bot:
-  poryadok: 3
-  cennost: 5
-  mana_v_plane: 2
-granicy:
-  mana:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {mana_v_dolg: mana}
+bot: {poryadok: 3, cennost: 5, mana_v_plane: 2}
+granicy: {mana: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'

@@ -1,24 +1,27 @@
 id: b014-stroj
 imya: Строй
 geroj: zhrec
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 14
 chisla:
-  shchit: 3
+  shchit: 2
 tekst: '{shchit:щит} себе и союзнику.'
 effekt:
-- shchit:
-    komu: oba
-    n: shchit
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
+- {shchit: {komu: oba, n: shchit}}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 6]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 20: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 29: shchit 1 → 2'

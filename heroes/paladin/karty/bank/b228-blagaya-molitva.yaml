@@ -1,0 +1,19 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b228-blagaya-molitva
+imya: Благая молитва
+geroj: zhrec
+nabor: bank
+bild: М
+vid: молитва
+nomer_idei: 228
+chisla:
+  dobor: 1
+tekst: Возьми {dobor:карту}. Молитва.
+effekt:
+- {dobor: dobor}
+- {molitva: null}
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {dobor: [0, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'

@@ -9,14 +9,27 @@ chisla:
   uron_mal: 1
 tekst: Урон = щит союзника, если на нём Заслон. Иначе {uron_mal:урон}.
 effekt:
-- uron: shchit_soyuznika if soyuznik_zaslon else uron_mal
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  uron_mal:
-  - 0
-  - 4
+- {uron: shchit_soyuznika if soyuznik_zaslon else uron_mal}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron_mal: [0, 4]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 20: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 21: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 24: uron_mal 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron_mal 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 7: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron_mal 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 19: uron_mal 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron_mal 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 63: uron_mal 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 66: uron_mal 2 → 1'

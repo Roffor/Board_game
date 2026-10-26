@@ -1,23 +1,17 @@
 id: m144-topka
 imya: Топка
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П–Д
 vid: связка
 nomer_idei: 144
 cena: 0
 tekst: '{cena:мана}. До конца хода каждая сожжённая тобой карта даёт ману.'
 effekt:
-- do_konca_raunda:
-    topka: 1
-bot:
-  poryadok: 3
-  cennost: 5
-  mana_v_plane: 1
-granicy:
-  cena:
-  - 0
-  - 3
+- {do_konca_raunda: {topka: 1}}
+bot: {poryadok: 3, cennost: 5, mana_v_plane: 1}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

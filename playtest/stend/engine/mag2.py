@@ -28,6 +28,7 @@ mag_pravila_2026_10_24: 1. Старые бои (золотые тесты) ид�
   sygraj_szhzhennuyu: 1 / vernut_potom: 1   сыграть лучшую сожжённую бесплатно / вернуть её в руку в следующий ход
   szhech_kolodu: {v} / verh_iz_szhzhennyh / zameshaj_szhzhennye / snyat_shchit_vraga / uderzhat
   do_konca_raunda: {флаг: X}                флаги раунда (список в ROUND_FLAGS)"""
+import os
 from .effects import op, X, compile_block, who, store, Ctx, EffectError
 
 ROUND_FLAGS = {
@@ -74,7 +75,8 @@ class M2:
 def enabled(f, decks):
     if f.R.get('mag_pravila_2026_10_24', 0):
         return True
-    return any(c.set in ('bank', 'legendarka') for c in decks.get(f.M, []))
+    # карты банка, взятые в старт (nabor: start, файл в karty/bank/), тоже включают правила — старт из банка с 2026-10-25
+    return any(c.set in ('bank', 'legendarka') or '/bank/' in c.path.replace(os.sep, '/') for c in decks.get(f.M, []))
 
 
 # ================================================================ хуки движка
@@ -87,8 +89,8 @@ def cost_of(f, h, card):
         return 0
     c -= m.skidka
     lg = h.legend.get('pepelnyj_tron')
-    if lg is not None and any(card is x for x in m.ash) and f.bl[h.id] == 'sol':
-        c -= int(lg.get('sol_skidka', 1))
+    if lg is not None and any(card is x for x in m.ash) and 'iz_pepla' not in d.tags:
+        c += int(lg.get('doplata', 1))             # Никита 2026-10-27: из сожжённых — с доплатой (было: Соларис дешевле)
     if 'pozhiranie' in d.tags:
         c -= len(h.disc)
     return max(0, int(c))

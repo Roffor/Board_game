@@ -1,0 +1,28 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m211-koster-v-ladonyah
+imya: Костёр в ладонях
+geroj: mag
+nabor: bank
+bild: П
+vid: атака
+nomer_idei: 211
+cena: 2
+podnoshenie: 1
+chisla:
+  uron: 4
+  dop: 3
+tekst: '{cena:мана}. {uron:урон}. Подношение: ещё {dop:урон}.'
+effekt:
+- {uron: uron}
+- esli: podnoshenie
+  to:
+  - {uron: dop}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 7], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 5: uron 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 51: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 63: uron 3 → 4'

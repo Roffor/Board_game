@@ -1,0 +1,34 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m233-shchit-v-dolg
+imya: Щит в долг
+geroj: mag
+nabor: bank
+bild: Д
+vid: защита
+nomer_idei: 233
+cena: 0
+chisla:
+  shchit: 1
+  dolg_n: 1
+tekst: '{cena:мана}. {shchit:щит} себе или союзнику. {dolg_n:мана} в долг.'
+varianty:
+- nazvanie: себе
+  effekt:
+  - {shchit: {komu: ja, n: shchit}}
+  - {dolg: dolg_n}
+- nazvanie: союзнику
+  effekt:
+  - {shchit: {komu: soyuznik, n: shchit}}
+  - {dolg: dolg_n}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 8], dolg_n: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: shchit 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 5: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка 4,5 ч, пачка 2: щит 1 → 3, долг 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 56: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 57: shchit 2 → 1'

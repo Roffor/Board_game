@@ -1,27 +1,30 @@
 id: b077-svyataya-bronya
 imya: Святая броня
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: З
 vid: защита
 nomer_idei: 77
 chisla:
-  shchit: 4
+  shchit: 1
 tekst: '{shchit:щит} себе. Если на тебе Заслон, ещё Авангард.'
 effekt:
-- shchit:
-    komu: ja
-    n: shchit
+- {shchit: {komu: ja, n: shchit}}
 - esli: ja_zaslon
   to:
-  - avangard: ja
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 8
+  - {avangard: ja}
+bot: {poryadok: 4, cennost: 5}
+granicy: {shchit: [0, 8]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: shchit 4 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 6: shchit 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: shchit 2 → 3'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 8: shchit 3 → 4'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 9: shchit 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 12: shchit 2 → 1'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

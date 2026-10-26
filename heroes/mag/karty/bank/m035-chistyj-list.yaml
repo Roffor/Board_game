@@ -8,21 +8,19 @@ nomer_idei: 35
 cena: 0
 tekst: '{cena:мана}. Сожги руку, возьми столько же карт.'
 effekt:
-- pust:
-    r: ruka
-- sozhgi:
-    otkuda: ruka
-    n: r
-    v: k
-- dobor: k
-bot:
-  poryadok: 3
-  cennost: 5
-  pereplan: true
-granicy:
-  cena:
-  - 0
-  - 3
+- {pust: {r: ruka}}
+- {sozhgi: {otkuda: ruka, n: r, v: k}}
+- {dobor: k}
+bot: {poryadok: 3, cennost: 5, pereplan: true}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 21: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 36: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 43: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 45: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 1 → 0'

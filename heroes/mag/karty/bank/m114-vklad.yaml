@@ -11,22 +11,11 @@ chisla:
   plus: 2
 tekst: '{cena:мана}. Отдай {n:мана} сейчас, в следующий ход получишь на {plus} больше.'
 effekt:
-- vklad:
-    n: n
-    plus: plus
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  n:
-  - 0
-  - 4
-  plus:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {vklad: {n: n, plus: plus}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {n: [0, 4], plus: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: cena 1 → 0'

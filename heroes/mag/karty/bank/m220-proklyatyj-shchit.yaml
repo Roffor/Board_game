@@ -1,0 +1,30 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m220-proklyatyj-shchit
+imya: Проклятый щит
+geroj: mag
+nabor: bank
+bild: Р
+vid: защита
+nomer_idei: 220
+cena: 0
+chisla:
+  shchit: 1
+  dop: 2
+tekst: '{cena:мана}. {shchit:щит} себе. Если на враге Порча, ещё {dop:щит} союзнику.'
+effekt:
+- {shchit: {komu: ja, n: shchit}}
+- esli: porcha > 0
+  to:
+  - {shchit: {komu: soyuznik, n: dop}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 6], dop: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 2: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 3: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 23: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 37: shchit 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 39: shchit 2 → 1'

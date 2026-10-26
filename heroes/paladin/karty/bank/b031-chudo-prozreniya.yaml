@@ -1,7 +1,7 @@
 id: b031-chudo-prozreniya
 imya: Чудо прозрения
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: вера
 nomer_idei: 31
@@ -9,18 +9,13 @@ chisla:
   za: 2
 tekst: 'Чудо: возьми карту за каждые {za} веры.'
 effekt:
-- chudo: f
-- dobor: f // za
+- {chudo: f}
+- {dobor: f // za}
 metki:
 - chudo
-bot:
-  poryadok: 4
-  cennost: 5
-  pereplan: true
-granicy:
-  za:
-  - 0
-  - 5
+bot: {poryadok: 4, cennost: 5, pereplan: true}
+granicy: {za: [0, 5]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

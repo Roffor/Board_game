@@ -1,18 +1,17 @@
 id: b058-relikvarij
 imya: Реликварий
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: В
 vid: вера
 nomer_idei: 58
 tekst: Вся вера уходит на эту карту и в начале следующего раунда возвращается на кубик.
 effekt:
-- ocenka: 0.3 * vera
-- relikvarij: 1
-bot:
-  poryadok: 4
-  cennost: 5
+- {ocenka: 0.3 * vera}
+- {relikvarij: 1}
+bot: {poryadok: 4, cennost: 5}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
 - 'упрощено для стенда: в идее веру возвращают, сбросив карту; на стенде — сама в начале следующего раунда'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

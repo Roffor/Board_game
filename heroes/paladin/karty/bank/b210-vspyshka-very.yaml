@@ -1,0 +1,29 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: b210-vspyshka-very
+imya: Вспышка веры
+geroj: zhrec
+nabor: bank
+bild: В
+vid: атака
+nomer_idei: 210
+chisla:
+  uron: 1
+  uron_big: 3
+  doplata: 1
+tekst: '{uron:урон}. Доплата {doplata:веру}: {uron_big:урон}.'
+varianty:
+- nazvanie: ''
+  effekt:
+  - {uron: uron}
+- nazvanie: доплата
+  doplata: {vera: 1}
+  effekt:
+  - {uron: uron_big if oplacheno else uron}
+bot: {poryadok: 4, cennost: 5}
+granicy: {uron: [0, 6], uron_big: [0, 7], doplata: [1, 6]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 21: uron_big 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 26: uron_big 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 32: uron_big 4 → 3'

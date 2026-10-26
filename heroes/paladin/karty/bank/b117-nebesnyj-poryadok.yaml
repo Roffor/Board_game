@@ -1,7 +1,7 @@
 id: b117-nebesnyj-poryadok
 imya: Небесный порядок
 geroj: zhrec
-nabor: bank
+nabor: zapas
 bild: М
 vid: молитва
 nomer_idei: 117
@@ -9,15 +9,11 @@ chisla:
   n: 3
 tekst: Замешай сброс в колоду. Посмотри {n} верхние карты и разложи в любом порядке.
 effekt:
-- zameshaj_sbros: 1
-- uporyadochit: n
-bot:
-  poryadok: 4
-  cennost: 5
-granicy:
-  n:
-  - 0
-  - 6
+- {zameshaj_sbros: 1}
+- {uporyadochit: n}
+bot: {poryadok: 4, cennost: 5}
+granicy: {n: [0, 6]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/paladin/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

@@ -8,14 +8,13 @@ nomer_idei: 101
 cena: 0
 tekst: '{cena:мана}. Отложи карту из руки на следующий ход: тогда сыграешь её бесплатно.'
 effekt:
-- otlozhit_kartu: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {otlozhit_kartu: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 13: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 16: cena 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 17: cena 1 → 0'

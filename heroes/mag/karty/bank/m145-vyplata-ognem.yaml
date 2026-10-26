@@ -1,26 +1,18 @@
 id: m145-vyplata-ognem
 imya: Выплата огнём
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: П–Д
 vid: связка
 nomer_idei: 145
 cena: 0
 tekst: '{cena:мана}. Отдай долг, сжигая карты из руки: одна карта за одну ману долга.'
 effekt:
-- sozhgi:
-    otkuda: ruka
-    n: dolg
-    v: k
-- spisat_dolg:
-    n: k
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  cena:
-  - 0
-  - 3
+- {sozhgi: {otkuda: ruka, n: dolg, v: k}}
+- {spisat_dolg: {n: k}}
+bot: {poryadok: 3, cennost: 5}
+granicy: {cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

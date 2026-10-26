@@ -1,18 +1,18 @@
 id: m073-otlozhennyj-sglaz
 imya: Отложенный сглаз
 geroj: mag
-nabor: bank
+nabor: zapas
 bild: Р
 vid: связка
 nomer_idei: 73
-cena: 0
+cena: 3
 chisla:
   ocenka: 3
 tekst: '{cena:мана}. Сейчас: Порча. Или после хода врага: Порча до конца следующего раунда.'
 varianty:
 - nazvanie: сейчас
   effekt:
-  - porcha: 1
+  - {porcha: 1}
 - nazvanie: после
   effekt:
   - obet:
@@ -20,18 +20,17 @@ varianty:
       vid_ocenki: dmg
       ocenka_bota: ocenka
       effekt:
-      - porcha: 1
-      - porcha_derzhitsya: 1
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  ocenka:
-  - 0
-  - 10
-  cena:
-  - 0
-  - 3
+      - {porcha: 1}
+      - {porcha_derzhitsya: 1}
+bot: {poryadok: 3, cennost: 5}
+granicy: {ocenka: [0, 10], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 2: cena 1 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: cena 2 → 3'
+- '2026-10-26 Claude: подгонка, ручная правка числа: цена 3 → 1 (стенд поднял до 3, карта перестала играться)'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 32: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: cena 2 → 3'
+- '2026-10-26 Никита: в запас — бот почти не играл (<0,5 розыгрыша за бой и <35%, когда в руке; подгонка, круг 72)'

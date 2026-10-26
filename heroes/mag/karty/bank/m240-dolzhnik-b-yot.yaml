@@ -1,0 +1,24 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m240-dolzhnik-b-yot
+imya: Должник бьёт
+geroj: mag
+nabor: bank
+bild: Д
+vid: атака
+nomer_idei: 240
+cena: 1
+chisla:
+  uron: 2
+  za: 2
+tekst: '{cena:мана}. {za:урон} за каждый жетон долга, но не меньше {uron:урон}.'
+effekt:
+- {uron: 'max(uron, za * dolg)'}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], za: [1, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: uron 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 17: uron 4 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 46: uron 3 → 2'

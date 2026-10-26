@@ -1,0 +1,15 @@
+# Этап 2 плана 2026-10-25-podgonka-16ch.md: баланс кругами (stend/podgonka.py). srok_chasov ставится при запуске так, чтобы закончить к ~09:15 26.10.
+srok_chasov: 9.5
+seed0: 251025
+boev: {I: 1000, II: 3000, EL: 3000, BOSS: 3000}
+porog_r: 0.3
+porog_p: 1.5
+sdvig_kart: 8
+min_boev_karty: 60
+redko: 0.5
+redko_dolya: 0.35
+start_kazhdye: 1
+start_kart: 2
+vragi_kazhdye: 1
+udar_maks: 6
+tajmaut: 30

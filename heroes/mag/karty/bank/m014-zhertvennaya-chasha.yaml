@@ -7,30 +7,27 @@ vid: атака
 nomer_idei: 14
 cena: 1
 chisla:
-  uron: 3
-  uron_big: 6
+  uron: 1
+  uron_big: 4
 tekst: '{cena:мана}. {uron:урон}. После розыгрыша можешь сжечь эту карту, тогда {uron_big:урон}.'
 varianty:
 - nazvanie: ''
   effekt:
-  - uron: uron
+  - {uron: uron}
 - nazvanie: сжечь
   effekt:
-  - uron: uron_big
-  - osobyj: sozhgi_etu
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  uron:
-  - 0
-  - 6
-  uron_big:
-  - 0
-  - 12
-  cena:
-  - 0
-  - 3
+  - {uron: uron_big}
+  - {osobyj: sozhgi_etu}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], uron_big: [0, 12], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 3: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 23: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 24: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: uron 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: uron 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 20: uron_big 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 48: uron_big 5 → 4'

@@ -1,35 +1,35 @@
 id: m019-ritualnyj-krug
 imya: Ритуальный круг
 geroj: mag
-nabor: bank
+nabor: start
 bild: ''
 vid: защита
 nomer_idei: 19
 cena: 1
 chisla:
-  shchit: 3
-  uron: 3
+  shchit: 2
+  uron: 2
 tekst: '{cena:мана}. {shchit:щит} себе и союзнику. Если на враге Порча, ещё {uron:урон}.'
 effekt:
-- shchit:
-    komu: oba
-    n: shchit
+- {shchit: {komu: oba, n: shchit}}
 - esli: porcha > 0
   to:
-  - uron: uron
-bot:
-  poryadok: 3
-  cennost: 5
-granicy:
-  shchit:
-  - 0
-  - 6
-  uron:
-  - 0
-  - 6
-  cena:
-  - 0
-  - 3
+  - {uron: uron}
+bot: {poryadok: 3, cennost: 5}
+granicy: {shchit: [0, 6], uron: [0, 6], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 Claude: в старт (вариант start-4 этапа 0б подгонки), копий 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: uron 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 3 → 2'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: uron 2 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 4: shchit 2 → 1'
+- '2026-10-26 Claude: подгонка, круг 9: старт срезан до 1, а бои яруса I короткими держала Порча +2 за попадание; числа старта возвращены к исходным:
+  shchit 1 → 3; uron 1 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: uron 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 20: shchit 2 → 3'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 22: shchit 3 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 11: shchit 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 29: shchit 1 → 2'

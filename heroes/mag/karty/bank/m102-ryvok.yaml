@@ -11,24 +11,25 @@ chisla:
   dobor: 2
 tekst: '{cena:мана}. +{mana:мана}, возьми {dobor:карту}. Эта карта сгорает.'
 effekt:
-- mana: mana
-- dobor: dobor
-- osobyj: sozhgi_etu
-bot:
-  poryadok: 3
-  cennost: 5
-  mana_v_plane: 1
-  pereplan: true
-granicy:
-  mana:
-  - 0
-  - 4
-  dobor:
-  - 0
-  - 5
-  cena:
-  - 0
-  - 3
+- {mana: mana}
+- {dobor: dobor}
+- {osobyj: sozhgi_etu}
+bot: {poryadok: 3, cennost: 5, mana_v_plane: 1, pereplan: true}
+granicy: {mana: [0, 4], dobor: [0, 5], cena: [0, 3]}
 status: ideya
 istoriya:
 - '2026-10-25 Claude: перевод идеи из heroes/mag/idei-kart.md, числа черновые'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 1: cena 0 → 1'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 7: cena 1 → 0'
+- '2026-10-25 стенд, подгонка 2026-10-25-2-podgonka, круг 10: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 11: cena 1 → 2'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 20: cena 2 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 21: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 25: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 26: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 27: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 28: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-25-2-podgonka, круг 38: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 1: cena 1 → 0'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 47: cena 0 → 1'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 57: cena 1 → 0'

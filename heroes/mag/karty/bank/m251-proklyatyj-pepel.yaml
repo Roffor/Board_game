@@ -1,0 +1,30 @@
+# Новая карта банка 2026-10-26 (stend/bank_novye_2026_10_26.py)
+id: m251-proklyatyj-pepel
+imya: Проклятый пепел
+geroj: mag
+nabor: bank
+bild: П–Р
+vid: атака
+nomer_idei: 251
+cena: 0
+chisla:
+  uron: 3
+tekst: '{cena:мана}. Если на враге Порча, сожги карту из руки: {uron:урон}.'
+effekt:
+- esli: porcha > 0
+  to:
+  - {sozhgi: {otkuda: ruka, n: 1, v: s}}
+  - esli: s
+    to:
+    - {uron: uron}
+bot: {poryadok: 3, cennost: 5}
+granicy: {uron: [0, 6], cena: [0, 3]}
+status: ideya
+istoriya:
+- '2026-10-26 Claude: новая карта вместо неиграбельных (решение Никиты «придумай сам»), числа черновые'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 4: uron 3 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 12: uron 4 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 14: uron 5 → 6'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 34: uron 6 → 5'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 51: uron 5 → 4'
+- '2026-10-26 стенд, подгонка 2026-10-26-B-podgonka, круг 61: uron 4 → 3'
