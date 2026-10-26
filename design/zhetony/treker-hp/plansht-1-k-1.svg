@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="75mm" viewBox="0 0 120 75">
+<rect width="120" height="75" fill="#fff"/>
+<text x="5" y="6" font-family="Arial, sans-serif" font-size="3.6">Печать 100 %. Красный пунктир — рез.</text><text x="5" y="10.5" font-family="Arial, sans-serif" font-size="3.6">Метки: два кубика 7–8 мм (десятки и единицы).</text>
+<rect x="5" y="14" width="86.0" height="55.5" rx="3" fill="#f6efe0" stroke="#b03030" stroke-width="0.6" stroke-dasharray="2 1"/>
+<text x="48.0" y="20.5" font-family="Arial, sans-serif" font-size="4.3" text-anchor="middle" font-weight="bold">ЗДОРОВЬЕ ВРАГА</text>
+<rect x="7.50" y="23.00" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="11.55" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">0</text>
+<rect x="15.60" y="23.00" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="19.65" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">10</text>
+<rect x="23.70" y="23.00" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="27.75" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">20</text>
+<rect x="31.80" y="23.00" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="35.85" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">30</text>
+<rect x="39.90" y="23.00" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="43.95" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">40</text>
+<rect x="48.00" y="23.00" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="52.05" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">50</text>
+<rect x="56.10" y="23.00" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="60.15" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">60</text>
+<rect x="64.20" y="23.00" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="68.25" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">70</text>
+<rect x="72.30" y="23.00" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="76.35" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">80</text>
+<rect x="80.40" y="23.00" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="84.45" y="31.33" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">90</text>
+<rect x="7.50" y="36.67" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="11.55" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">100</text>
+<rect x="15.60" y="36.67" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="19.65" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">110</text>
+<rect x="23.70" y="36.67" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="27.75" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">120</text>
+<rect x="31.80" y="36.67" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="35.85" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">130</text>
+<rect x="39.90" y="36.67" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="43.95" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">140</text>
+<rect x="48.00" y="36.67" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="52.05" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">150</text>
+<rect x="56.10" y="36.67" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="60.15" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">160</text>
+<rect x="64.20" y="36.67" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="68.25" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">170</text>
+<rect x="72.30" y="36.67" width="8.10" height="13.67" fill="#e2cfa6" stroke="#8a8170" stroke-width="0.25"/>
+<text x="76.35" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">180</text>
+<rect x="80.40" y="36.67" width="8.10" height="13.67" fill="#ecdcb8" stroke="#8a8170" stroke-width="0.25"/>
+<text x="84.45" y="45.00" font-family="Arial, sans-serif" font-size="3.6" text-anchor="middle">190</text>
+<rect x="7.50" y="53.33" width="8.10" height="13.67" fill="#fff" stroke="#8a8170" stroke-width="0.25"/>
+<text x="11.55" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">0</text>
+<rect x="15.60" y="53.33" width="8.10" height="13.67" fill="#efe6d2" stroke="#8a8170" stroke-width="0.25"/>
+<text x="19.65" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">1</text>
+<rect x="23.70" y="53.33" width="8.10" height="13.67" fill="#fff" stroke="#8a8170" stroke-width="0.25"/>
+<text x="27.75" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">2</text>
+<rect x="31.80" y="53.33" width="8.10" height="13.67" fill="#efe6d2" stroke="#8a8170" stroke-width="0.25"/>
+<text x="35.85" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">3</text>
+<rect x="39.90" y="53.33" width="8.10" height="13.67" fill="#fff" stroke="#8a8170" stroke-width="0.25"/>
+<text x="43.95" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">4</text>
+<rect x="48.00" y="53.33" width="8.10" height="13.67" fill="#efe6d2" stroke="#8a8170" stroke-width="0.25"/>
+<text x="52.05" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">5</text>
+<rect x="56.10" y="53.33" width="8.10" height="13.67" fill="#fff" stroke="#8a8170" stroke-width="0.25"/>
+<text x="60.15" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">6</text>
+<rect x="64.20" y="53.33" width="8.10" height="13.67" fill="#efe6d2" stroke="#8a8170" stroke-width="0.25"/>
+<text x="68.25" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">7</text>
+<rect x="72.30" y="53.33" width="8.10" height="13.67" fill="#fff" stroke="#8a8170" stroke-width="0.25"/>
+<text x="76.35" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">8</text>
+<rect x="80.40" y="53.33" width="8.10" height="13.67" fill="#efe6d2" stroke="#8a8170" stroke-width="0.25"/>
+<text x="84.45" y="61.67" font-family="Arial, sans-serif" font-size="4.4" text-anchor="middle">9</text>
+</svg>
