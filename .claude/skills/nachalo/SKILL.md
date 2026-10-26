@@ -11,7 +11,7 @@ disable-model-invocation: true
 ## Шаги
 
 1. Прочитай, не пересказывая Никите:
-   - `STATUS.md`;
+   - свежий итог в `reports/obshchie/` (последний по номеру);
    - `ai/pamyat/MEMORY.md` и записи, которые относятся к текущим направлениям;
    - `ai/pravila/01-obshchenie.md` (если ещё не читал в этой беседе);
    - последние записи `ai/pravila/uroki.md` и свежие файлы памяти.
